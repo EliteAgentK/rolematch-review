@@ -1,0 +1,141 @@
+{
+ "readingIssues": [
+  "This document had no readable text, so it was read by OCR (93% average confidence). OCR can misread characters and columns; check it against the original."
+ ],
+ "record": {
+  "name": "Thandi Mokoena",
+  "role": "Senior Full-Stack Developer",
+  "skills": [
+   "TypeScript",
+   "JavaScript",
+   "React",
+   "Node.js",
+   "PostgreSQL",
+   "Docker",
+   "Git",
+   "REST APIs",
+   "Jest",
+   "AWS"
+  ],
+  "experience": "10",
+  "location": "Cape Town, South Africa",
+  "email": "thandi.mokoena@example.test",
+  "phone": "082 555 0101",
+  "workHistory": [
+   {
+    "company": "Cobalt Travel",
+    "position": "Senior Developer",
+    "startDate": "Mar 2020",
+    "endDate": "Present",
+    "responsibilities": [
+     "Led a team of four building a booking platform used by 200 hotels.",
+     "Built React and TypeScript front ends and Node.js REST APIs backed by PostgreSQL.",
+     "Mentored two junior developers and introduced code reviews."
+    ]
+   },
+   {
+    "company": "Pixel Foundry",
+    "position": "Developer",
+    "startDate": "Jan 2016",
+    "endDate": "Feb 2020",
+    "responsibilities": [
+     "Built JavaScript and React single-page applications for retail clients.",
+     "Wrote automated tests with Jest and set up Docker-based builds."
+    ]
+   }
+  ],
+  "summary": "Full-stack developer with eight years of experience building web applications in TypeScript, React and Node. js. I enjoy mentoring and shipping reliable software.",
+  "education": [
+   {
+    "degree": "BSc Computer Science",
+    "institution": "University of Cape Town",
+    "year": "2015",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2015, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 10,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

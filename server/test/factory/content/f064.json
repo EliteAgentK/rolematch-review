@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "id": "f064",
+  "field": "nursing",
+  "role": "Professional Nurse",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations",
+   "career-change"
+  ],
+  "name": "Sipho Nkosi",
+  "city": "Midrand"
+ },
+ "name": "Sipho Nkosi",
+ "email": "sipho.nkosi@example.test",
+ "phone": "011 555 1064",
+ "headline": "Mid-Level Registered Nurse | Acute Care Specialist | Health Data Integration | BEE-Compliant Practice",
+ "summary": "Mid-level Registered Nurse with 6 years of progressive experience in acute and geriatric care. Proven track record in digital health integration, clinical leadership, and BEE-compliant operations. Based in Midrand, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed 15-bed acute ward, ensuring 98% patient safety compliance using EHR-Next and audit logs (2023–Present)",
+    "Coordinated 30+ staff shifts with SAP HCM, reducing absenteeism by 22% in 2024 (2023–Present)",
+    "Led clinical audits using SQL queries on EHR data, identifying 12 high-risk cases annually (2023–Present)",
+    "Trained 12 new nurses in BEE-compliant protocols, improving onboarding success by 40% (2023–Present)"
+   ],
+   "city": "Midrand",
+   "company": "MedCare Health",
+   "end": "Present",
+   "start": "2023-04",
+   "title": "Senior Acute Care Nurse"
+  },
+  {
+   "bullets": [
+    "Directed 10-bed ICU unit, achieving 99% patient satisfaction via structured feedback loops (2022–2023)",
+    "Reduced sepsis response time by 30% using real-time dashboards (KPI-Track) and clinical alerts (2022–2023)",
+    "Collaborated with PM team to align staffing with patient volume peaks, improving bed utilization by 18% (2022–2023)",
+    "Introduced clinical checklists in 5 wards, cutting errors by 25% in 6 months (2022–2023)"
+   ],
+   "city": "Midrand",
+   "company": "CityCare Hospitals",
+   "end": "2023-03",
+   "start": "2021-07",
+   "title": "Clinical Lead – ICU"
+  },
+  {
+   "bullets": [
+    "Managed 8-bed geriatric unit, improving patient mobility outcomes by 35% using structured rehab plans (2020–2021)",
+    "Integrated EHR with mobile devices, increasing documentation speed by 50% in 4 wards (2020–2021)",
+    "Led BEE-compliant recruitment drive, hiring 15 staff from underrepresented groups (2020–2021)",
+    "Reduced medication errors by 40% using barcode scanning and audit trails (2020–2021)"
+   ],
+   "city": "Midrand",
+   "company": "Midrand Health Services",
+   "end": "2020-06",
+   "start": "2018-03",
+   "title": "Geriatric Care Nurse"
+  },
+  {
+   "bullets": [
+    "Supported 120+ patients in outpatient clinics using CRM tools (CareFlow), improving follow-up rates by 38% (2017–2018)",
+    "Designed patient intake forms with IFRS compliance, reducing data entry errors by 55% (2017–2018)",
+    "Trained 10 staff on digital record systems, improving data consistency by 42% (2017–2018)",
+    "Improved patient satisfaction scores from 3.2 to 4.1/5 via structured feedback (2017–2018)"
+   ],
+   "city": "Midrand",
+   "company": "HealthLink Clinic",
+   "end": "2018-02",
+   "start": "2015-08",
+   "title": "Outpatient Nurse Coordinator"
+  },
+  {
+   "bullets": [
+    "Managed data collection for 500+ patients in a public health study using SQL and Excel, published in SAJH (2016–2017)",
+    "Developed a mobile app prototype for chronic disease tracking, used by 120 patients (2016–2017)",
+    "Conducted 20+ field visits to rural clinics, improving data accuracy by 30% (2016–2017)",
+    "Collaborated with HR to design staff training modules for digital health tools (2016–2017)"
+   ],
+   "city": "Pretoria",
+   "company": "Pretoria Health Research Unit",
+   "end": "2017-01",
+   "start": "2014-09",
+   "title": "Health Data Analyst (Field Role)"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Nursing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Health Informatics",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2013
+  },
+  {
+   "institution": "Midrand College of Health Sciences",
+   "qualification": "Certificate in Medical Records Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2011
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Nursing Board",
+   "name": "Registration as a Registered Nurse (RN)",
+   "year": 2019
+  },
+  {
+   "issuer": "National Institute for Health Sciences",
+   "name": "Advanced Clinical Practice in Acute Care",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Certificate in Healthcare Leadership",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "EHR-Next",
+  "SAP HCM",
+  "SQL",
+  "KPI-Track",
+  "IFRS",
+  "BEE",
+  "CRM",
+  "Clinical Audit",
+  "Patient Safety",
+  "Mobile Health Tools",
+  "Staff Training",
+  "Data Compliance",
+  "ICU Management",
+  "Geriatric Care",
+  "Public Health Data"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Led digital patient record rollout at MedCare Health using EHR-Next platform, improving data access by 40% across 12 clinics in Gauteng (2023–Present)",
+  "Optimized ward workflow with SAP HCM tools, reducing patient wait times by 28% in 3 acute units (2022–2023)",
+  "Implemented BEE-compliant staffing model at CityCare Hospitals, increasing staff retention by 35% over 18 months (2021–2023)",
+  "Trained 45 nurses in IFRS-based clinical documentation, reducing audit errors by 50% in 2022 (2021–2022)",
+  "Integrated EHR with SMS alerts for critical alerts, cutting missed vital signs by 60% in 5 wards (2020–2021)",
+  "Led cross-functional team to deploy mobile health units in underserved areas, serving 1,200+ patients monthly (2019–2020)",
+  "Improved infection control compliance by 45% using real-time dashboards (KPI-Track), across 8 departments (2018–2019)"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:58:12.320Z"
+ }
+}

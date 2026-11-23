@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Each night at 03:00 the Mac collects the PC's encrypted backups into ~/RoleMatchBackups (deploy/mac/collectBackups.sh); 14 nights kept.
+     Install: deploy/mac/install-agents.sh (copies the script out of ~/Documents, which background jobs may not read)
+     Remove:                      launchctl unload ~/Library/LaunchAgents/com.rolematch.backup-collect.plist && rm ~/Library/LaunchAgents/com.rolematch.backup-collect.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.rolematch.backup-collect</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/modizy/Documents/ChatGPT/Talent Hub/deploy/mac/collectBackups.sh</string>
+  </array>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>/Users/modizy/RoleMatchBackups/collect.log</string>
+  <key>StandardErrorPath</key><string>/Users/modizy/RoleMatchBackups/collect.log</string>
+</dict>
+</plist>

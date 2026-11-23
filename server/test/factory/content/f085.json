@@ -1,0 +1,111 @@
+{
+ "spec": {
+  "id": "f085",
+  "field": "mining engineering",
+  "role": "Mine Planning Engineer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "prose-history",
+   "career-gap"
+  ],
+  "name": "Bongani Adams",
+  "city": "Johannesburg"
+ },
+ "name": "Bongani Adams",
+ "email": "bongani.adams@example.test",
+ "phone": "061 555 1085",
+ "headline": "Junior Mine Planning Engineer | South African Mining Industry | Proficient in mine design, resource estimation, and production planning tools",
+ "summary": "Junior Mine Planning Engineer with 2 years of hands-on experience in mine design, resource modeling, and production planning. Proven track record in reducing operational costs and improving planning accuracy using industry-standard tools. Based in Johannesburg, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Designed a 3D mine layout for a gold project in Limpopo using MineSight, achieving 95% alignment with geological data and reducing drilling costs by 18%.",
+    "Built a haul road network in AutoCAD and validated it with GIS data, cutting transport time by 15% and improving vehicle routing efficiency by 22%.",
+    "Developed a production schedule in MinePlan for a nickel operation, achieving 98% adherence and reducing overruns by 12% over 10 months.",
+    "Performed resource block modeling using GOCAD and Surfer, improving grade estimation accuracy from 72% to 89% for a 300,000-tonne deposit.",
+    "Integrated drilling data into MineSight, reducing data entry errors by 40% and improving planning precision by 30%.",
+    "Conducted a feasibility study for a new open-cut operation using Excel and Python, identifying a 14% reduction in initial capital costs.",
+    "Collaborated with geologists to create a 3D geological model for a platinum project, improving grade prediction accuracy by 28% at 100m depth."
+   ],
+   "city": "Johannesburg",
+   "company": "Amanzi Mining Solutions",
+   "end": "2023-06",
+   "start": "2021-03",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Led a feasibility study for a new iron ore project in the North West using MineSight and Excel, identifying a 16% improvement in ore recovery and 10% lower operating costs.",
+    "Developed a 3D mine plan for a copper deposit using GOCAD and MinePlan, achieving 94% alignment with field data and reducing planning time by 25%.",
+    "Built a haulage and processing flow diagram using AutoCAD and Surfer, improving logistics planning and reducing delays by 18%.",
+    "Conducted a resource estimation review for a 200,000-tonne deposit, improving grade accuracy from 75% to 91% using statistical modeling in Surfer.",
+    "Integrated drilling and assay data into MineSight, reducing data entry errors by 35% and improving plan reliability by 38%.",
+    "Performed a production schedule simulation in MinePlan, reducing overruns by 15% and improving output consistency by 20% over 8 months.",
+    "Collaborated with field teams to validate a 3D geological model, improving grade prediction accuracy by 30% at 150m depth."
+   ],
+   "city": "Johannesburg",
+   "company": "Klipsch Mining Group",
+   "end": "Present",
+   "start": "2024-09",
+   "title": "Junior Mine Planning Engineer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "BEng Mining Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Geotechnical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Mining and Metallurgy",
+   "name": "Advanced Mine Planning and Design Certification",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "MineSight",
+  "GOCAD",
+  "Surfer",
+  "AutoCAD",
+  "Excel",
+  "Python (basic scripting)",
+  "3D mine planning",
+  "Resource estimation",
+  "Production scheduling",
+  "Geological modeling",
+  "Feasibility analysis"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed a 3D mine layout for a gold deposit in Limpopo using MineSight, reducing drilling costs by 18% over 12 months at scale of 1.2 million tonnes.",
+  "Optimized haul road routing in a copper project using Surfer and AutoCAD, cutting transport time by 15% and improving fleet efficiency by 22%.",
+  "Built a production schedule in MinePlan for a nickel operation, achieving 98% schedule adherence and reducing overruns by 12% over 10 months.",
+  "Conducted resource block modeling using Surfer and GOCAD, improving grade estimation accuracy from 72% to 89% for a 300,000-tonne deposit.",
+  "Integrated drilling data into a mine plan using MineSight, reducing data entry errors by 40% and improving planning precision by 30%.",
+  "Performed feasibility analysis for a new open-cut operation using Excel and Python scripts, identifying a 14% cost reduction in initial capital expenditure.",
+  "Collaborated with geologists to create a 3D geological model for a platinum project, improving grade prediction accuracy by 28% at 100m depth."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:29:59.524Z"
+ }
+}

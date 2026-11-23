@@ -1,0 +1,55 @@
+{
+  "name": "rolematch-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:visual": "playwright test -c playwright.visual.config.ts",
+    "test:visual:record": "VISUAL_RECORD=1 playwright test -c playwright.visual.config.ts",
+    "build:brand": "node scripts/buildBrand.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:leftovers": "knip && node scripts/checkStyles.mjs",
+    "setup:hooks": "git config core.hooksPath .githooks && echo \"pre-commit secret scan enabled (needs gitleaks: brew install gitleaks)\"",
+    "safety:secrets": "node scripts/safety/secretScan.mjs",
+    "safety:licences": "node scripts/safety/licenceCheck.mjs",
+    "safety:audit": "npm --prefix server run audit:check",
+    "safety:selftest": "node --test scripts/safety/*.test.mjs",
+    "safety": "npm run safety:selftest && npm run safety:secrets && npm run safety:licences && npm run safety:audit"
+  },
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "RoleMatch recruitment workflow and candidate-to-role matching frontend prototype",
+  "dependencies": {
+    "@chakra-ui/react": "^3.37.0",
+    "@emotion/react": "^11.14.0",
+    "@fontsource/outfit": "^5.3.0",
+    "@fontsource/sora": "^5.3.0",
+    "@lottiefiles/dotlottie-react": "^0.20.0",
+    "@lottiefiles/dotlottie-web": "^0.81.0",
+    "chart.js": "^4.6.1",
+    "motion": "^14.7.1",
+    "react": "^19.3.1",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.3.1",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.5.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/react": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "imapflow": "2.10.2",
+    "knip": "^6.45.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "allowScripts": {
+    "fsevents": false
+  }
+}

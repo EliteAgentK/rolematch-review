@@ -1,0 +1,80 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Job panel with tabs</title>
+<style>
+:root{--page:#141a24;--card:#1c2330;--tile:#232c3b;--line:#2f3a4c;--ink:#e8edf4;--muted:#9aa7b8;--soft:#c3cdd9;--brand:#2f9ec4;--teal:#17c3b2;--amber:#f2b84b;--green:#57c98a}
+*{box-sizing:border-box}body{margin:0;background:var(--page);font:14px/1.5 -apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;color:var(--ink);padding:28px;width:1340px}
+.top{margin:0 0 18px}.top h1{margin:0 0 4px;font-size:22px}.top p{margin:0;color:var(--soft)}
+.wrap{display:flex;gap:36px;align-items:flex-start}
+.col{width:600px}.cap{color:var(--muted);font-size:13px;margin:0 0 8px}
+.bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.bar h2{margin:0;font-size:19px}
+.btns{display:flex;gap:8px}.btn{border:1px solid var(--line);color:var(--soft);padding:5px 11px;border-radius:9px;font-size:12.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--brand),var(--teal))}
+h1.t{margin:2px 0 0;font-size:24px}.co{color:#6cc3e3;font-size:15px;font-weight:600}.dept{color:var(--muted);font-size:12.5px}
+.tabs{display:flex;gap:4px;margin:16px 0 14px;border-bottom:1px solid var(--line)}
+.tab{padding:8px 11px;font-size:13px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.tab b{font-weight:600;color:var(--soft)}.tab .c{font-size:11px;background:var(--tile);border-radius:999px;padding:1px 7px;margin-left:5px;color:var(--soft)}
+.tab.on{color:var(--ink);border-color:var(--teal)}.tab.on b{color:var(--ink)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;font-size:13px;margin-bottom:12px}
+.f{display:flex;gap:8px;padding:5px 0;border-bottom:1px dashed #283244}.f .k{color:var(--muted);width:104px;flex:none}.f .v{color:var(--ink)}
+.f.w{grid-column:1/-1}
+.more{font-size:12.5px;color:#6cc3e3;margin:2px 0 12px}
+.prov{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted);margin:4px 0 14px}.dot{width:8px;height:8px;border-radius:50%;background:var(--green)}.prov a{color:#6cc3e3;margin-left:auto}
+.sh{display:flex;align-items:baseline;gap:8px;margin:14px 0 8px}.sh h3{margin:0;font-size:14.5px}
+.chip{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line)}.doc{border-color:#2d6b52;color:#8be0b3}.must{border-color:#1f6f8f;color:#8fd6f0}
+.box{background:var(--tile);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.mb{background:linear-gradient(180deg,#183447,#1a2a3a);border:1px solid #23506a}.mb ol{margin:2px 0 0;padding-left:20px}.mb li{margin:4px 0}
+.mb .foot{font-size:11.5px;color:var(--muted);margin-top:6px}
+.g{background:#1f2735;border-radius:10px;margin:7px 0;overflow:hidden}
+.gh{display:flex;justify-content:space-between;padding:10px 12px;font-size:13.5px;color:var(--soft)}.gh .n{color:var(--muted)}
+.g.open .gh{color:var(--ink);font-weight:600}
+.it{padding:8px 12px 8px 14px;border-left:3px solid var(--green);margin:0 10px 8px;background:#232c3b;border-radius:7px;font-size:13px}
+.note{margin-top:22px}.note div{display:grid;grid-template-columns:28px 1fr;gap:10px;margin:10px 0;font-size:13px;color:var(--soft)}
+.note .no{width:26px;height:26px;border-radius:50%;background:#1f3b4c;color:#9fe0f5;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+.note b{color:var(--ink)}
+</style></head><body>
+<div class="top"><h1>Job panel, shorter: tabs</h1><p>Everything stays on the panel; only the Overview is open by default. Left: what a recruiter sees first. Right: the Responsibilities tab.</p></div>
+<div class="wrap">
+<div class="col"><p class="cap">Overview tab · opens first</p>
+<div class="bar"><h2>Role Details</h2><div class="btns"><span class="btn">View shortlist</span><span class="btn">Edit role</span><span class="btn">Delete</span></div></div>
+<div class="card">
+ <h1 class="t">Head of Technology</h1><div class="co">Absa Group</div><div class="dept">Absa Group Technology – Everyday Banking</div>
+ <div class="tabs"><span class="tab on"><b>Overview</b></span><span class="tab"><b>Requirements</b><span class="c">11</span></span><span class="tab"><b>Responsibilities</b><span class="c">28</span></span><span class="tab"><b>Skills</b><span class="c">18</span></span><span class="tab"><b>More</b><span class="c">3</span></span></div>
+ <div class="facts">
+  <div class="f"><span class="k">Location</span><span class="v">Johannesburg, Gauteng</span></div>
+  <div class="f"><span class="k">Employment</span><span class="v">Permanent, full time</span></div>
+  <div class="f w"><span class="k">Work arrangement</span><span class="v">Hybrid: three days a week in the office</span></div>
+  <div class="f w"><span class="k">Reports to</span><span class="v">Chief Technology Officer, Everyday Banking</span></div>
+  <div class="f w"><span class="k">Pay</span><span class="v">Market related, with short- and long-term incentives</span></div>
+ </div>
+ <div class="more">+ 4 more facts: job grade, team, closing date, reference</div>
+ <div class="prov"><span class="dot"></span>Read by AI · 71 details, each found in the job description<a>View original job</a></div>
+ <div class="sh"><h3>Summary</h3><span class="chip doc">From the job description</span></div>
+ <div class="box">The Head of Technology leads the technology function for Everyday Banking: the engineering teams, platforms and services that customers use every day to bank, pay, borrow and save.</div>
+ <div class="sh"><h3>What matching screens on</h3><span class="chip must">Must-haves · 5</span></div>
+ <div class="box mb"><ol><li>Bachelor's degree in Computer Science, Information Systems, Engineering or a related field</li><li>At least 15 years in technology, at least 8 in senior leadership</li><li>At least 5 years leading teams of 200 or more in financial services</li><li>Large-scale technology modernisation, including cloud migration</li><li>Working within a regulated environment, with auditors and regulators</li></ol>
+ <div class="foot">Every other requirement still counts in the score · see Requirements</div></div>
+</div></div>
+<div class="col"><p class="cap">Responsibilities tab · groups fold, one open at a time</p>
+<div class="bar"><h2>Role Details</h2><div class="btns"><span class="btn">View shortlist</span><span class="btn">Edit role</span><span class="btn">Delete</span></div></div>
+<div class="card">
+ <h1 class="t">Head of Technology</h1><div class="co">Absa Group</div><div class="dept">Absa Group Technology – Everyday Banking</div>
+ <div class="tabs"><span class="tab"><b>Overview</b></span><span class="tab"><b>Requirements</b><span class="c">11</span></span><span class="tab on"><b>Responsibilities</b><span class="c">28</span></span><span class="tab"><b>Skills</b><span class="c">18</span></span><span class="tab"><b>More</b><span class="c">3</span></span></div>
+ <div class="g open"><div class="gh"><span>1. Technology strategy and architecture</span><span class="n">4</span></div>
+  <div class="it">Define and own the technology strategy and roadmap for Everyday Banking, aligned to the group technology strategy and the business plan.</div>
+  <div class="it">Lead the modernisation of core channels and platforms, including migration to cloud, decomposition of legacy systems and adoption of reusable group platforms.</div>
+  <div class="it">Set architecture principles and standards for the business unit and chair its architecture review forum.</div>
+  <div class="it">Assess emerging technologies, including artificial intelligence, for their value, risk and fit with the bank's controls.</div></div>
+ <div class="g"><div class="gh"><span>2. Delivery and engineering</span><span class="n">5</span></div></div>
+ <div class="g"><div class="gh"><span>3. Service stability and resilience</span><span class="n">4</span></div></div>
+ <div class="g"><div class="gh"><span>4. Security, risk and compliance</span><span class="n">4</span></div></div>
+ <div class="g"><div class="gh"><span>5. People and leadership</span><span class="n">4</span></div></div>
+ <div class="g"><div class="gh"><span>6. Financial and vendor management</span><span class="n">4</span></div></div>
+ <div class="g"><div class="gh"><span>7. Stakeholder management</span><span class="n">3</span></div></div>
+</div>
+<div class="note">
+ <div><span class="no">1</span><span><b>Overview fits one screen:</b> facts, summary and the must-haves, the three things a recruiter checks before matching.</span></div>
+ <div><span class="no">2</span><span><b>Tabs carry their counts,</b> so nothing is hidden: you can see there are 28 responsibilities without opening them.</span></div>
+ <div><span class="no">3</span><span><b>Requirements tab:</b> requirements and advantageous items, in the job's own groups. <b>Skills tab:</b> skills and competencies. <b>More:</b> benefits, relationships, how to apply.</span></div>
+ <div><span class="no">4</span><span><b>The panel remembers the tab</b> you last used, so comparing several jobs stays quick.</span></div>
+</div></div>
+</div></body></html>

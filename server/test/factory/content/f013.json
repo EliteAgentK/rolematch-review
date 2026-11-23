@@ -1,0 +1,161 @@
+{
+ "spec": {
+  "id": "f013",
+  "field": "mining engineering",
+  "role": "Mine Planning Engineer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "personal-details",
+   "long-academic"
+  ],
+  "name": "Bongani Adams",
+  "city": "Johannesburg"
+ },
+ "name": "Bongani Adams",
+ "email": "bongani.adams@example.test",
+ "phone": "061 555 1013",
+ "headline": "Junior Mine Planning Engineer | Resource Estimation | Mine Design | Geostatistics | South African Mining Environment",
+ "summary": "Junior Mine Planning Engineer with 2 years of hands-on experience in mine design, resource estimation, and digital modeling. Proven track record in using industry-standard tools to improve efficiency, accuracy, and cost-effectiveness in mining operations. Strong foundation in geostatistics and sustainable mining practices.",
+ "roles": [
+  {
+   "bullets": [
+    "Built 3D mine plans in MineSight for a gold project in Limpopo, scaling from 100m to 500m depth with 98% accuracy in grade prediction.",
+    "Used Surfer to generate contour maps from drill data, improving resource estimation precision by 14% in Q2 2024.",
+    "Collaborated with geologists to validate block models in GOCAD, reducing model revision cycles by 30% over 6 months.",
+    "Produced a mine plan with optimized extraction sequence using MineSight, increasing daily output by 11% in pilot phase."
+   ],
+   "city": "Johannesburg",
+   "company": "Amanzi Mining Solutions",
+   "end": "2025-03",
+   "start": "2023-07",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Developed a surface mining plan for a coal project using Surfer and AutoCAD, reducing surface footprint by 15% and improving access routes.",
+    "Integrated GPS and drone data into mine planning using QGIS and ArcGIS, improving spatial accuracy by 20%.",
+    "Built a digital mine model in GOCAD with 1m resolution, enabling real-time simulation of extraction sequences.",
+    "Presented mine plan to senior team, leading to approval of a new production schedule with 10% higher output."
+   ],
+   "city": "Johannesburg",
+   "company": "Nkosi Minerals Group",
+   "end": "Present",
+   "start": "2025-04",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Created a block model for a nickel deposit using Surfer and SAGA, achieving 95% consistency with field data.",
+    "Used Excel and Python to automate grade calculation, reducing manual input time by 35% and improving data integrity.",
+    "Conducted a feasibility study for a new mine site using GIS and cost modeling, identifying a R2.8M savings in infrastructure."
+   ],
+   "city": "Pretoria",
+   "company": "Vulindlela Mining Development",
+   "end": "2023-06",
+   "start": "2021-08",
+   "title": "Mine Planning Assistant"
+  },
+  {
+   "bullets": [
+    "Supported mine design team in preparing a 3-year production plan using MineSight and Excel, aligning with operational budgets.",
+    "Mapped drill hole data using Surfer, improving spatial visualization and aiding decision-making in planning meetings.",
+    "Prepared technical reports for mine planning with clear visualizations, used in 3 internal reviews with 100% approval."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Mining Services",
+   "end": "2021-07",
+   "start": "2020-03",
+   "title": "Mine Planning Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "BEng (Hons) Mining Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Diploma in Mine Surveying and Geomatics",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Certificate in Sustainable Mining Practices",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2021
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Mining and Metallurgy (SAIMM)",
+   "name": "Advanced Mine Planning and Design Certificate",
+   "year": 2023
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Certified in Geostatistical Interpolation for Resource Estimation",
+   "year": -1
+  },
+  {
+   "issuer": "Cape Town Institute of Technology",
+   "name": "Safety in Mining Operations Short Course",
+   "year": 2022
+  },
+  {
+   "issuer": "National Institute of Occupational Safety and Health (NIOSH)",
+   "name": "Mine Site Risk Assessment and Mitigation",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "MineSight",
+  "GOCAD",
+  "Surfer",
+  "SAGA",
+  "AutoCAD",
+  "QGIS",
+  "ArcGIS",
+  "Geostatistics",
+  "Block Modeling",
+  "Resource Estimation",
+  "Mine Design",
+  "Python (basic scripting)",
+  "Cost Modeling",
+  "Drill Data Analysis",
+  "Mine Safety Planning"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed 3D mine layout for a gold deposit in Limpopo using Surfer and MineSight, improving extraction efficiency by 18% over 6 months.",
+  "Built a block model for a copper project in North West using GOCAD and Kriging, reducing estimation error by 12% compared to previous models.",
+  "Optimized haul road network in a platinum mine using AutoCAD and GIS, cutting transport costs by R120,000 annually.",
+  "Designed a surface mining plan for a coal project in Mpumalanga using MineSight and Surfer, increasing throughput by 22% in first quarter.",
+  "Conducted resource estimation for a nickel deposit using geostatistical tools in SAGA and Surfer, improving grade accuracy by 15%.",
+  "Performed feasibility analysis for a new underground mine using MineSight and Excel, identifying a 14% cost reduction in drilling operations.",
+  "Integrated drilling data into a mine plan using GOCAD and Python scripts, reducing data entry time by 40% and improving model consistency."
+ ],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:53:17.191Z"
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "spec": {
+  "id": "f054",
+  "field": "auditing",
+  "role": "Internal Auditor",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "overlapping-contract"
+  ],
+  "name": "Pieter Maseko",
+  "city": "Pretoria"
+ },
+ "name": "Pieter Maseko",
+ "email": "pieter.maseko@example.test",
+ "phone": "071 555 1054",
+ "headline": "Senior Internal Auditor with 20+ years of experience in financial and operational audit, risk assessment, and compliance within South African corporates.",
+ "summary": "Results-driven internal auditor with extensive experience in financial, operational, and compliance audits across diverse sectors. Proven track record in risk mitigation, control evaluation, and audit leadership within South African organisations.",
+ "roles": [
+  {
+   "bullets": [
+    "Led internal audit operations for a diversified manufacturing group, ensuring compliance with SARS and ISO 9001 standards.",
+    "Conducted risk-based audits, reducing operational exposure by 30% over five years.",
+    "Developed audit frameworks aligned with SAICA guidelines and corporate governance policies."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Dynamics Ltd",
+   "end": "2023-08",
+   "start": "2018-03",
+   "title": "Senior Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Directed audit activities across 12 departments, improving audit coverage and efficiency by 40%.",
+    "Identified systemic control gaps, resulting in R12M in cost savings through process redesign.",
+    "Reported directly to the Audit Committee, providing strategic insights on financial and operational risks."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Holdings Group",
+   "end": "Present",
+   "start": "2023-09",
+   "title": "Director of Internal Audit"
+  },
+  {
+   "bullets": [
+    "Managed audit planning and execution for a public infrastructure project, ensuring adherence to procurement regulations.",
+    "Coordinated with regulators and stakeholders to validate compliance with National Treasury guidelines.",
+    "Delivered audit reports with actionable recommendations, improving accountability in project delivery."
+   ],
+   "city": "Pretoria",
+   "company": "African Infrastructure Partners",
+   "end": "2023-08",
+   "start": "2020-04",
+   "title": "Internal Audit Manager"
+  },
+  {
+   "bullets": [
+    "Performed financial and compliance audits for a logistics firm, identifying fraud risks and control weaknesses.",
+    "Trained 15 junior auditors on SAICA standards and audit documentation best practices.",
+    "Maintained audit records in line with SARS and ICAI requirements."
+   ],
+   "city": "Pretoria",
+   "company": "KwaZulu Logistics Solutions",
+   "end": "2020-03",
+   "start": "2016-07",
+   "title": "Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Conducted operational audits for a retail chain, improving inventory accuracy and reducing losses by 18%.",
+    "Evaluated internal controls for cash handling and procurement, enhancing fraud prevention.",
+    "Supported audit readiness for annual financial statements and regulatory inspections."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Retail Group",
+   "end": "2016-06",
+   "start": "2013-02",
+   "title": "Audit Officer"
+  },
+  {
+   "bullets": [
+    "Provided audit support for a government-linked enterprise, ensuring compliance with public sector financial regulations.",
+    "Reviewed procurement and expenditure cycles, identifying inefficiencies and recommending improvements.",
+    "Maintained audit logs and documentation for regulatory audits and internal reviews."
+   ],
+   "city": "Pretoria",
+   "company": "Sasol Infrastructure Services",
+   "end": "2013-01",
+   "start": "2010-05",
+   "title": "Internal Audit Assistant"
+  },
+  {
+   "bullets": [
+    "Supported audit initiatives in a public health facility, ensuring compliance with financial and operational standards.",
+    "Collaborated with departmental managers to strengthen internal controls and reporting processes.",
+    "Conducted field audits and prepared reports for senior management review."
+   ],
+   "city": "Pretoria",
+   "company": "HealthLink Services",
+   "end": "2010-04",
+   "start": "2008-09",
+   "title": "Junior Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Performed short-term compliance audits for a technology startup, assessing financial and data governance.",
+    "Evaluated data privacy practices in line with the POPIA framework.",
+    "Delivered a 30-day audit report with recommendations for improved data handling."
+   ],
+   "city": "Pretoria",
+   "company": "TechNova Solutions",
+   "end": "2023-07",
+   "start": "2023-05",
+   "title": "Contract Internal Auditor"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Accounting)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Postgraduate Diploma in Risk Management",
+   "status": "completed",
+   "statusWords": "completed",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Chartered Accountants",
+   "name": "Professional Certification in Internal Auditing",
+   "year": 2010
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Commerce (Accounting)",
+   "year": 2005
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Postgraduate Diploma in Risk Management",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Risk assessment",
+  "Compliance auditing",
+  "Financial statement review",
+  "Process improvement",
+  "SAICA standards",
+  "POPIA compliance",
+  "Audit planning and reporting"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:41:23.692Z"
+ }
+}

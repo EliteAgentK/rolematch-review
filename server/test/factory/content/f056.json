@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "id": "f056",
+  "field": "banking credit",
+  "role": "Credit Risk Analyst",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "career-change"
+  ],
+  "name": "Fatima Smith",
+  "city": "Midrand"
+ },
+ "name": "Fatima Smith",
+ "email": "fatima.smith@example.test",
+ "phone": "011 555 1056",
+ "headline": "Mid-level Credit Risk Analyst | South African Banking Sector | 7 Years Experience",
+ "summary": "Experienced credit risk professional with 7 years in financial analysis and risk assessment. Transitioned from operations to credit risk with strong foundation in financial data and compliance.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on loan performance and delinquency trends.",
+    "Helped assess customer creditworthiness using internal data.",
+    "Updated risk registers for portfolio monitoring."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Financial Services",
+   "end": "2023-04",
+   "start": "2018-07",
+   "title": "Credit Analyst (SME Lending)"
+  },
+  {
+   "bullets": [
+    "Did daily monitoring of credit exposures and portfolio health.",
+    "Assisted in preparing monthly risk reports for senior management.",
+    "Reviewed loan applications for compliance and risk scoring."
+   ],
+   "city": "Pretoria",
+   "company": "Vosat Holdings",
+   "end": "2021-03",
+   "start": "2019-01",
+   "title": "Credit Risk Associate"
+  },
+  {
+   "bullets": [
+    "Did data entry and validation for financial records.",
+    "Helped manage client accounts in a retail banking environment.",
+    "Supported internal audits with documentation checks."
+   ],
+   "city": "Cape Town",
+   "company": "Ocean Bank Group",
+   "end": "2019-01",
+   "start": "2016-05",
+   "title": "Operations Assistant"
+  },
+  {
+   "bullets": [
+    "Did credit assessments for new business clients.",
+    "Helped prepare credit documentation for loan approvals.",
+    "Reviewed credit limits and flagged high-risk cases."
+   ],
+   "city": "Midrand",
+   "company": "African Capital Trust",
+   "end": "Present",
+   "start": "2016-03",
+   "title": "Mid-Level Credit Risk Analyst"
+  },
+  {
+   "bullets": [
+    "Did financial data analysis for internal reports.",
+    "Helped with budgeting and forecasting for departments.",
+    "Supported team in tracking KPIs and performance metrics."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Financial Solutions",
+   "end": "2015-08",
+   "start": "2014-02",
+   "title": "Financial Data Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (Finance)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Banking and Financial Services",
+   "name": "Credit Risk Management Certificate",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Advanced Diploma in Financial Analysis",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Credit scoring",
+  "Loan portfolio analysis",
+  "Risk assessment",
+  "Data validation",
+  "Excel modeling",
+  "SQL queries",
+  "Financial reporting",
+  "Compliance checks",
+  "Stress testing",
+  "Portfolio monitoring",
+  "Delinquency analysis",
+  "Credit documentation",
+  "Risk register management",
+  "SME lending",
+  "Internal audit support",
+  "KPI tracking",
+  "Financial data entry",
+  "Performance metrics",
+  "Data entry",
+  "Report preparation"
+ ],
+ "languages": [
+  "English",
+  "isiZulu"
+ ],
+ "projects": [
+  "Developed credit scoring models for SMEs using Excel and SQL.",
+  "Conducted loan portfolio reviews to identify risk exposure trends.",
+  "Performed stress testing on exposure limits in retail lending."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:43:54.946Z"
+ }
+}

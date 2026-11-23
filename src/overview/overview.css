@@ -1,0 +1,241 @@
+/* The Overview page (owner, 10 Nov 2026; design: docs/product/design/dashboard.html). Scoped to .ov. Colours are tokens: the four top blocks take the
+ * letters of "Role" (R blue, o orange, l yellow, e green), departments their own colours (departments.ts). Motion follows src/theme/motion.css and stops
+ * entirely for anyone whose device asks for reduced motion. On a computer the page fits one screen; on a phone it has its own composition. */
+.ov{
+  --R:#3AA8D1; --o:#F58220; --l:#FFD600; --e:#00A651;
+  --cerulean:#3AA8D1; --teal:#17C3B2; --amber:#FFCB77; --coral:#FE6D73; --green:#2BD47D; --violet:#8E7CFF;
+  --out:cubic-bezier(.16,1,.3,1);
+  --page:#0A1120; --page2:#0E1830; --card:rgba(20,32,56,.72); --card-solid:#13203A; --line:rgba(148,178,220,.12); --line-strong:rgba(148,178,220,.22);
+  --ink:#EAF1FA; --soft:#B7C6DA; --muted:#8193AD; --tile:rgba(255,255,255,.04); --grid:rgba(148,178,220,.08); --glow:.55;
+  min-height:100vh; color:var(--ink); font:14px/1.5 Sora,system-ui,sans-serif;
+  background:radial-gradient(1200px 600px at 78% -10%,rgba(23,195,178,calc(.16*var(--glow))),transparent 60%),radial-gradient(900px 520px at 8% 0%,rgba(58,168,209,calc(.22*var(--glow))),transparent 60%),linear-gradient(180deg,var(--page),var(--page2));
+}
+.chakra-ui-light .ov{
+  --R:#0072BC; --o:#E36F0C; --l:#C99400; --e:#008F47;
+  --cerulean:#1F8DB8; --teal:#0E9E90; --amber:#C98A12; --coral:#E2535A; --green:#13985A; --violet:#6B5BE0;
+  --page:#F3F7FB; --page2:#E9F1F8; --card:rgba(255,255,255,.88); --card-solid:#FFFFFF; --line:rgba(16,42,77,.10); --line-strong:rgba(16,42,77,.18);
+  --ink:#0F2137; --soft:#334B66; --muted:#5D7189; --tile:rgba(16,42,77,.04); --grid:rgba(16,42,77,.07); --glow:.18;
+}
+.ov h1,.ov h3,.ov .num{font-family:Outfit,Sora,sans-serif}
+.ov button{font:inherit;color:inherit}
+.ov .wrap{max-width:1600px;margin:0 auto;padding:0 28px 28px}
+
+/* title row */
+.ov .title{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin:22px 0 16px;flex-wrap:wrap}
+.ov .title h1{margin:0;font-size:32px;letter-spacing:-.6px;display:flex;align-items:center;gap:12px}
+.ov .title p{margin:4px 0 0;color:var(--soft)}
+.ov .controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.ov .seg{display:flex;padding:3px;border-radius:12px;border:1px solid var(--line);background:var(--tile)}
+.ov .seg button{border:0;background:none;padding:6px 12px;border-radius:9px;font-size:12.5px;cursor:pointer;color:var(--soft);transition:background .25s var(--out),color .25s}
+.ov .seg button.on{background:var(--card-solid);color:var(--ink);box-shadow:0 1px 0 var(--line-strong) inset}
+.ov .seg button:not(.on):hover{color:var(--ink);background:var(--card-solid)}
+.ov .mode button.on.demo{background:color-mix(in srgb,var(--amber) 22%,var(--card-solid));color:var(--ink)}
+.ov .mode button.on.live{background:color-mix(in srgb,var(--green) 22%,var(--card-solid))}
+.ov .badge{font:600 11px Sora;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid}
+.ov .badge.demo{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent)}
+.ov .badge.live{color:var(--green);border-color:color-mix(in srgb,var(--green) 45%,transparent);display:inline-flex;align-items:center;gap:6px}
+.ov .refresh{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);padding:4px 10px 4px 6px;border-radius:999px;border:1px solid var(--line);background:var(--tile);cursor:pointer}
+.ov .refresh svg{width:22px;height:22px}.ov .refresh:hover{color:var(--ink);border-color:var(--line-strong)}
+.ov .refresh.busy svg{animation:ov-spin .9s linear infinite}
+@keyframes ov-spin{to{transform:rotate(360deg)}}
+.ov .notice{margin:0 0 14px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--tile);color:var(--soft);font-size:13px}
+
+/* cards */
+.ov .grid{display:grid;gap:16px}
+.ov .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;backdrop-filter:blur(10px);overflow:hidden;min-width:0;
+  opacity:0;transform:translateY(14px);animation:ov-rise .56s var(--out) forwards;transition:border-color .35s var(--out),transform .35s var(--out),box-shadow .35s var(--out)}
+.ov .card:hover{border-color:var(--line-strong)}
+@keyframes ov-rise{to{opacity:1;transform:none}}
+.ov .card h3{margin:0;font-size:16.5px;letter-spacing:-.2px;display:flex;align-items:center;gap:10px}
+.ov .sub{margin:2px 0 0;color:var(--muted);font-size:12.5px}
+.ov .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.ov .ic{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;flex:none}
+.ov .svgic{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ov .clickable{cursor:pointer}
+
+/* the four numbers */
+.ov .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ov .kpi{padding:16px 18px}
+.ov .kpi:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px var(--c)}
+.ov .kpi.still:hover{transform:none;box-shadow:none}   /* Credits opens nothing, so it does not offer itself */
+.ov .kpi::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--c);box-shadow:0 0 18px var(--c)}
+.ov .kpi .row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ov .kpi .label{color:var(--soft);font-size:13px;display:flex;gap:10px;align-items:center}
+.ov .kpi .num{font-size:34px;font-weight:700;letter-spacing:-1px;margin:6px 0 0;line-height:1.15}
+.ov .delta{font-size:12px;color:var(--muted)}.ov .delta b{color:var(--green);font-weight:600}.ov .delta b.down{color:var(--coral)}
+.ov .spark{width:104px;height:38px;flex:none}
+.ov .ring{width:52px;height:52px;flex:none}
+.ov .glow{animation:ov-glow 1.6s var(--out)}
+@keyframes ov-glow{25%{text-shadow:0 0 18px var(--c,var(--teal))}100%{text-shadow:none}}
+
+/* activity and strongest matches */
+.ov .row2{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.ov .tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:-2px 0 10px}
+.ov .tabs button{border:0;background:none;padding:7px 12px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500}
+.ov .tabs button.on{color:var(--ink);border-color:var(--teal)}
+.ov .tabs button:not(.on):hover{color:var(--ink);border-color:var(--line-strong)}
+.ov .legend{display:flex;gap:8px;flex-wrap:wrap}
+.ov .chip{display:flex;align-items:center;gap:7px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;cursor:pointer;background:var(--tile);transition:opacity .3s}
+.ov .chip i{width:9px;height:9px;border-radius:50%;background:var(--c)}
+.ov .chip.off{opacity:.38}
+.ov .chip:hover{border-color:var(--line-strong)}
+.ov .chart{position:relative;height:260px;min-height:150px}
+.ov .chart svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ov .tip{position:absolute;pointer-events:none;background:var(--card-solid);border:1px solid var(--line-strong);border-radius:12px;padding:10px 12px;font-size:12px;min-width:160px;box-shadow:0 18px 40px -18px rgba(0,0,0,.6);opacity:0;transition:opacity .2s;z-index:2}
+.ov .tip b{font-family:Outfit;font-size:13px}.ov .tip div{display:flex;justify-content:space-between;gap:16px}.ov .tip div > span i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.ov .nowdot{animation:ov-now 2.2s var(--out) infinite;transform-box:fill-box;transform-origin:center}
+@keyframes ov-now{0%{transform:scale(1);opacity:.9}70%{transform:scale(3.2);opacity:0}100%{opacity:0}}
+.ov .funnel{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;align-items:end;height:100%;min-height:150px;padding-top:6px}
+.ov .stage{display:flex;flex-direction:column;justify-content:flex-end;height:100%;min-width:0}
+.ov .stage .barv{border-radius:12px 12px 6px 6px;background:linear-gradient(180deg,var(--c),color-mix(in srgb,var(--c) 25%,transparent));transform-origin:bottom;animation:ov-grow .7s var(--out) both}
+@keyframes ov-grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.ov .stage .n{font:700 22px Outfit;margin-bottom:6px}.ov .stage .t{font-size:12.5px;color:var(--soft);margin-top:8px}.ov .stage .conv{font-size:11.5px;color:var(--muted)}
+.ov .bm{position:relative;display:grid;grid-template-columns:1fr 1fr;column-gap:12%;row-gap:12px;align-content:space-around;min-height:220px}
+.ov .bm svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.ov .person,.ov .job{position:relative;z-index:1;display:flex;gap:10px;align-items:center;padding:9px 12px;border-radius:14px;border:1px solid var(--line-strong);background:var(--card-solid);cursor:pointer;transition:transform .35s var(--out),box-shadow .35s var(--out);min-width:0}
+.ov .person:hover,.ov .job:hover,.ov .hot{transform:scale(1.03);box-shadow:0 12px 30px -16px var(--teal)}
+.ov .av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font:700 12px Outfit;color:#fff;flex:none}
+.ov .person b,.ov .job b{display:block;font-size:12.5px;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ov .job b.full{white-space:normal;overflow:visible;text-overflow:clip}   /* a job always by its full name, on two lines if it needs them */
+.ov .person div > span,.ov .job div > span{font-size:11px;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ov .score{margin-left:auto;font:700 12px Outfit;padding:3px 8px;border-radius:999px;background:color-mix(in srgb,var(--teal) 18%,transparent);color:var(--teal);flex:none}
+.ov .flow{fill:none;stroke-width:2;stroke-dasharray:6 8;animation:ov-flow 2.4s linear infinite;opacity:.75;transition:opacity .25s,stroke-width .25s}
+@keyframes ov-flow{to{stroke-dashoffset:-56}}
+.ov .bmlist{display:none}
+.ov .note{font-size:11.5px;color:var(--muted);margin-top:8px}
+.ov .empty{color:var(--muted);font-size:13px;padding:14px;border:1px dashed var(--line);border-radius:12px;text-align:center}
+
+/* departments, incoming talent, needs attention */
+.ov .row3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ov .fam{display:grid;grid-template-columns:minmax(90px,150px) 1fr 52px;gap:12px;align-items:center;padding:6px;border-radius:12px;cursor:pointer;transition:background .25s}
+.ov .fam:hover,.ov .fam.on{background:var(--tile)}
+.ov .fam .name{font-weight:500;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ov .fam .track{display:block;height:10px;border-radius:99px;background:var(--tile);overflow:hidden;position:relative}
+.ov .fam .fill{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--c),color-mix(in srgb,var(--c) 70%,#fff));box-shadow:0 0 14px color-mix(in srgb,var(--c) 60%,transparent);transition:width .7s var(--out);position:relative;overflow:hidden}
+.ov .fam .fill::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-100%)}
+.ov .fam.sweep .fill::after{animation:ov-sweep 1.1s var(--out)}
+@keyframes ov-sweep{to{transform:translateX(100%)}}
+.ov .fam .v{font:600 15px Outfit;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ov .famdetail{margin-top:6px;font-size:12.5px;color:var(--soft);min-height:20px}
+.ov .donutwrap{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center}
+.ov .donut{position:relative;width:150px;height:150px}
+.ov .donut svg{transform:rotate(-90deg)}
+.ov .donut circle.s{fill:none;stroke-width:18;transition:stroke-width .25s var(--out),opacity .25s,stroke-dasharray .9s var(--out);cursor:pointer}
+.ov .donut .mid{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+/* The centre stays inside the ring's hole at every size: the label wraps to two short lines rather than running under the ring. */
+.ov .donut .mid>div{max-width:62%;line-height:1.15}.ov .donut .mid b{display:block;font:700 24px Outfit;line-height:1.1}.ov .donut .mid div > span{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.ov .band{display:grid;grid-template-columns:12px 1fr auto auto;gap:10px;align-items:center;padding:5px 8px;border-radius:10px;cursor:pointer;font-size:13px}
+.ov .band:hover,.ov .band.on{background:var(--tile)}
+.ov .band i{width:10px;height:10px;border-radius:50%;background:var(--c)}
+.ov .band em{font-style:normal;color:var(--muted);font-size:12px}
+.ov .att{display:flex;gap:12px;align-items:center;padding:9px 12px;border-radius:14px;border:1px solid var(--line);background:var(--tile);margin-bottom:8px;cursor:pointer;transition:transform .3s var(--out),border-color .3s;width:100%;text-align:left}
+.ov .att:hover{transform:translateX(3px);border-color:var(--line-strong)}
+.ov .att b{display:block;font-size:13px}.ov .att div > span{font-size:11.5px;color:var(--muted)}
+.ov .att .go{margin-left:auto;color:var(--muted)}
+.ov .count{font:700 13px Outfit;min-width:28px;text-align:center;padding:2px 8px;border-radius:999px}
+.ov .att.calm{opacity:.62}
+
+/* team activity */
+.ov .team{display:grid;grid-template-columns:210px minmax(0,1fr);gap:16px;align-items:center}
+.ov .events{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;overscroll-behavior-x:contain;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 90%,transparent)}
+.ov .events::-webkit-scrollbar{display:none}   /* scrolled by wheel, trackpad or touch; the fade at each end says there is more */
+.ov .ev{flex:none;display:flex;gap:10px;align-items:center;padding:9px 14px;border-radius:14px;border:1px solid var(--line);background:var(--tile);min-width:250px;max-width:360px;animation:ov-in .5s var(--out) both}
+.ov .ev.fresh{animation:ov-slide .7s var(--out) both;border-color:color-mix(in srgb,var(--teal) 55%,transparent)}
+@keyframes ov-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@keyframes ov-slide{from{opacity:0;transform:translateX(-30px) scale(.97)}to{opacity:1;transform:none}}
+.ov .ev b{display:block;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ov .ev .when{display:block;font-size:11px;color:var(--muted)}
+/* The avatar's initials stay white on its own colour (a caption style once turned them grey). */
+.ov span.av{color:#fff;font:700 12px Outfit;letter-spacing:.02em;text-shadow:0 1px 2px rgba(0,0,0,.25)}
+.ov .dot{display:inline-flex;align-items:center;gap:6px}
+.ov .dot::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;animation:ov-pulse 2s infinite}
+@keyframes ov-pulse{0%{box-shadow:0 0 0 0 currentColor}70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+
+/* A computer: the whole page on one screen. Rows keep their natural height; the activity and strongest matches row takes what is left. Below 840 px of
+   height that row would be squashed (measured 10 Nov 2026 at 1280 x 800), so a shorter screen scrolls instead, with every block at its full size. */
+@media (min-width:1200px) and (min-height:840px){
+  .ov{height:100vh;display:flex;flex-direction:column;overflow:hidden}
+  .ov .wrap{flex:1;min-height:0;width:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto auto;gap:12px;padding-bottom:12px}
+  .ov .wrap.has-notice{grid-template-rows:auto auto auto minmax(0,1fr) auto auto}
+  .ov .title{margin:12px 0 0}.ov .title h1{font-size:25px}.ov .title p{font-size:13px}
+  .ov .notice{margin:0}
+  .ov .hd{margin-bottom:8px}.ov .card h3{font-size:15.5px}.ov .ic{width:28px;height:28px;border-radius:9px}
+  .ov .kpi{padding:10px 14px}.ov .kpi .num{font-size:26px;margin-top:0}.ov .kpi .delta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ov .spark{width:88px;height:28px}.ov .ring{width:38px;height:38px}
+  .ov .row2{min-height:0}.ov .row2 > .card{display:flex;flex-direction:column;min-height:0;padding:14px 18px}
+  .ov .tabs{margin-bottom:6px}
+  .ov .chartbox{flex:1;min-height:0;display:flex;flex-direction:column}
+  .ov .chart{flex:1;height:auto;min-height:120px}
+  .ov .bm{flex:1;min-height:0;row-gap:6px}.ov .bm > div{gap:6px!important}.ov .person,.ov .job{padding:5px 10px}.ov .av{width:26px;height:26px;font-size:11px}
+  .ov .row3 .card{padding:12px 16px}
+  .ov .fam{padding:3px 6px}.ov .famdetail{display:none}
+  .ov .donutwrap{grid-template-columns:108px 1fr}.ov .donut{width:108px;height:108px}.ov .donut svg{width:108px;height:108px}.ov .donut .mid b{font-size:18px}.ov .donut .mid div > span{font-size:9.5px}.ov .band{padding:3px 8px}
+  .ov .att{padding:4px 10px;margin-bottom:4px}.ov .att div > span{display:none}.ov .att .ic{width:24px;height:24px}.ov .att b{font-size:12.5px}.ov .more{margin-top:0}
+  .ov .team{padding:8px 16px}.ov .team .sub{display:none}.ov .ev{padding:6px 12px}
+}
+/* Narrower computers and tablets: two columns, the page scrolls. */
+@media (max-width:1199px){.ov .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.ov .row2,.ov .row3{grid-template-columns:1fr}.ov .team{grid-template-columns:1fr}}
+/* A phone: its own composition. Numbers two by two, one card a row, strongest matches as a list, the team's activity as a short feed. */
+@media (max-width:700px){
+  .ov .wrap{padding:0 16px 96px}
+  .ov .title h1{font-size:24px}.ov .title p{font-size:13px}
+  .ov .kpi{padding:12px 14px}.ov .kpi .num{font-size:24px}.ov .spark{display:none}.ov .ring{width:36px;height:36px}.ov .kpi .label{font-size:12px}.ov .delta{font-size:11px}
+  .ov .chart{height:210px}
+  .ov .bm{display:none}.ov .bmlist{display:grid;gap:8px}
+  .ov .pair{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:var(--tile)}
+  .ov .pair b{font-size:13px}.ov .pair > span:not(.score){font-size:12px;color:var(--muted);grid-column:1}.ov .pair .score{grid-row:1 / span 2;grid-column:2;align-self:center}
+  .ov .donutwrap{grid-template-columns:1fr;justify-items:center}
+  .ov .ev{min-width:0;max-width:none}
+  .ov .funnel{gap:6px}.ov .stage .n{font-size:17px}
+  .ov .hd{flex-wrap:wrap}.ov .legend{width:100%}.ov .controls{gap:8px}
+}
+@media (prefers-reduced-motion:reduce){.ov *,.ov *::before,.ov *::after{animation:none!important;transition:none!important}.ov .card{opacity:1;transform:none}}
+
+/* Recent portal activity (owner, 10 Nov 2026): the strip passes slowly to the left and stops while it is pointed at or holds focus; a line lifts a little
+   under the pointer, as a card does. The second copy of the lines makes the loop seamless and is hidden from screen readers. */
+.ov .events .track{display:flex;gap:12px;width:max-content}
+.ov button.ev{font:inherit;color:inherit;text-align:left;cursor:pointer}
+.ov .ev{transition:transform .25s var(--out),box-shadow .25s var(--out),border-color .25s}
+.ov .ev.clickable:hover,.ov .ev.clickable:focus-visible{transform:translateY(-3px);box-shadow:0 10px 24px -14px rgba(0,0,0,.55);border-color:var(--line-strong);outline:none}
+.ov .fam.clickable:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
+/* The blocks a keyboard can now reach and press show where focus is, in the same way (code review, 16 Nov 2026, G-M8). */
+.ov .card.clickable:focus-visible,.ov .chip:focus-visible,.ov .pair.clickable:focus-visible,.ov .chart:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+/* Needs attention when nothing waits: a real answer, said calmly. */
+.ov .allclear{display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px dashed var(--line-strong);background:color-mix(in srgb,var(--green) 6%,transparent)}
+.ov .allclear .tick{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--green);font-weight:700;flex:none}
+.ov .allclear b{display:block;font-size:13px}.ov .allclear span:not(.tick){font-size:11.5px;color:var(--muted)}
+.ov .more{margin:2px 4px 0;font-size:11.5px;color:var(--muted)}
+/* In Demo a click says what it would open in Live. */
+.ov .hint{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:40;max-width:min(560px,calc(100vw - 32px));padding:10px 16px;border-radius:12px;background:var(--card-solid);border:1px solid var(--line-strong);box-shadow:0 18px 40px -18px rgba(0,0,0,.6);font-size:13px;animation:ov-in .35s var(--out) both}
+@media (max-width:700px){.ov .hint{bottom:88px}}
+@media (prefers-reduced-motion:reduce){.ov .ev.clickable:hover{transform:none}}
+/* An activity line's detail: a small card over the strip, closed by Escape, Close or a click elsewhere. */
+.ov .evscrim{position:fixed;inset:0;z-index:44}
+.ov .evdetail{position:fixed;z-index:45;width:360px;padding:16px;border-radius:16px;background:var(--card-solid);border:1px solid var(--line-strong);box-shadow:0 24px 60px -24px rgba(0,0,0,.65);animation:ov-pop .22s var(--out) both}
+@keyframes ov-pop{from{opacity:0;transform:translateY(6px) scale(.98)}to{opacity:1;transform:none}}
+.ov .evdetail .who{display:flex;gap:10px;align-items:center}.ov .evdetail .who b{display:block;font-size:14px}.ov .evdetail .who span:not(.av){display:block;font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ov .evdetail .what{margin:12px 0 4px;font-size:13.5px;line-height:1.4}.ov .evdetail .at{margin:0;font-size:12px;color:var(--muted)}
+.ov .evdetail .acts{display:flex;gap:8px;justify-content:flex-end;align-items:center;margin-top:14px}
+/* The house button (src/theme/recipes.ts): taken over on hover by a second colour sweeping in from the left under the text, growing 3% (owner, 10 Nov
+   2026: "why do these buttons not hover"). The main button is cerulean taken over by teal; the other is calm ink taken over by cerulean. */
+.ov .evdetail button{position:relative;isolation:isolate;overflow:hidden;font-family:inherit;font-weight:600;font-size:12.5px;padding:7px 12px;border-radius:10px;border:1px solid var(--line-strong);background:var(--tile);color:var(--ink);cursor:pointer;transition:color .2s .1s,border-color .2s .1s,transform .4s cubic-bezier(.65,0,.35,1)}
+.ov .evdetail button::before{content:"";position:absolute;inset:0;z-index:-1;background:#227C9D;transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.65,0,.35,1)}
+.ov .evdetail button:hover{color:#fff;border-color:#227C9D;transform:scale(1.03)}.ov .evdetail button:hover::before{transform:scaleX(1)}
+.ov .evdetail button.primary{border:0;color:#fff;background:#227C9D}.ov .evdetail button.primary::before{background:#17C3B2}
+.ov .evdetail button:focus-visible{outline:2px solid #227C9D;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.ov .evdetail button,.ov .evdetail button::before{transition:none}.ov .evdetail button:hover{transform:none}}
+.ov .evdetail .gone{font-size:12px;color:var(--muted);margin-right:auto}
+.ov .evdetail .facts{margin:10px 0 0;padding:0 0 0 16px;font-size:12.5px;line-height:1.5;color:var(--soft)}
+.ov .evdetail .recs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;max-height:120px;overflow-y:auto}
+.ov .evdetail .recs button{font-size:12px;padding:4px 9px;border-radius:8px}
+.ov .attpanel{left:0;right:0;top:14vh;margin:0 auto;width:min(520px,calc(100vw - 32px))}
+.ov .attpanel .pairs{display:flex;flex-direction:column;gap:6px;margin-top:12px;max-height:46vh;overflow-y:auto}
+.ov .attpanel .pairs button{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:10px;align-items:center;text-align:left;font-weight:500}
+.ov .attpanel .pairs .who{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ov .attpanel .pairs .job{color:var(--soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ov .attpanel .pairs .score{min-width:34px;text-align:center;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--teal) 20%,transparent);color:var(--teal);font-weight:700}
+.ov .attpanel .pairs .state{font-size:11.5px;color:var(--muted)}
+.ov .attpanel .pairs button:hover .job,.ov .attpanel .pairs button:hover .state,.ov .attpanel .pairs button:hover .score{color:#fff}
+/* A phone: the latest 50 as a vertical feed that scrolls by itself only when a thumb moves it. */
+@media (max-width:700px){
+  .ov .events{max-height:340px;overflow-x:hidden;overflow-y:auto;mask-image:linear-gradient(180deg,#000 90%,transparent)}
+  .ov .events .track{flex-direction:column;width:100%}
+}

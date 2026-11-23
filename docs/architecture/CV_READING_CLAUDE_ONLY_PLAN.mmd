@@ -1,0 +1,26 @@
+flowchart TB
+  subgraph TODAY["TODAY (from the code)"]
+    direction TB
+    T1["Upload: file type and size checked"] --> T2["Text from the file: Word, PDF, OCR for scans and photos"]
+    T2 --> T3["Parser's word rules read every field: name, contact, jobs, education, skills (rules.ts, candidatePipeline.ts)"]
+    T3 --> T4{"Parser found a name?"}
+    T4 -->|"no, and the CV looks unusable"| TX["REFUSED: Claude never sees it"]
+    T4 -->|yes| T5["Duplicate check on the parser's name and email"]
+    T5 --> T6["Claude reads the CV; the parser's name is masked before sending"]
+    T6 --> T7["Code checks Claude's values against the document"]
+    T7 --> T8["The two readings reconciled (reconcile.ts); parser roles and skills added"]
+    T8 --> T9["Published"]
+    T6 -.->|"Claude fails twice"| TF["Parser's reading published instead"]
+  end
+  subgraph WILLBE["WILL BE"]
+    direction TB
+    W1["Upload: file type and size checked"] --> W2["Text from the file: Word, PDF, OCR (unchanged)"]
+    W2 --> W3["Safety checks: hidden text, instructions planted in a CV, page limits (unchanged)"]
+    W3 --> W4["Claude reads the whole CV, personal details included, no masking"]
+    W4 --> W5["Code checks every value against the document (unchanged)"]
+    W5 --> W6["Duplicate check on Claude's name and email"]
+    W6 --> W7["Published"]
+    W4 -.->|"Claude fails or no credit"| WF["Waits: AI could not read this, Retry (as jobs)"]
+  end
+  R["Removed completely: the parser's CV field rules, the reconciling, the name refusal before Claude, the parser fallback"]
+  WILLBE --- R

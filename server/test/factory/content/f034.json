@@ -1,0 +1,162 @@
+{
+ "spec": {
+  "id": "f034",
+  "field": "human resources",
+  "role": "HR Business Partner",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "comma-titles",
+   "not-completed"
+  ],
+  "name": "Yusuf Zulu",
+  "city": "Pretoria"
+ },
+ "name": "Yusuf Zulu",
+ "email": "yusuf.zulu@example.test",
+ "phone": "031 555 1034",
+ "headline": "Executive HR Business Partner | 18 Years in Strategic HR Leadership | Pretoria, South Africa",
+ "summary": "Results-driven Executive HR Business Partner with 18 years of progressive experience in strategic HR leadership, talent development, and organisational performance. Proven track record in driving retention, engagement, and operational efficiency across diverse South African organisations. Based in Pretoria with deep local market insight.",
+ "roles": [
+  {
+   "bullets": [
+    "Led end-to-end talent strategy for 12,000+ employees at Nkosi Dynamics, using SAP SuccessFactors, improving retention by 18% over 18 months.",
+    "Designed and launched a performance management system in Q3 2022, reducing appraisal cycle time by 40% and increasing manager feedback quality by 35%.",
+    "Spearheaded a skills gap analysis for 800+ staff, identifying 15 key competencies; implemented training roadmap with 92% staff participation.",
+    "Reduced time-to-fill for critical roles by 30% through optimized sourcing and vendor partnerships using LinkedIn Talent Solutions and Workday.",
+    "Improved employee engagement scores from 3.2 to 4.6 (out of 5) via targeted initiatives, measured by annual survey (n=5,200).",
+    "Managed a R12M annual HR budget, achieving 12% cost savings through process automation and vendor renegotiation using Oracle HCM Cloud.",
+    "Developed and rolled out a DEI strategy for 10+ departments, increasing diversity in leadership by 22% within 14 months."
+   ],
+   "city": "Pretoria",
+   "company": "Nkosi Dynamics",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Executive HR Business Partner, People Strategy"
+  },
+  {
+   "bullets": [
+    "Built and managed a global talent acquisition framework for 3 regional offices, reducing hiring costs by 25% using HireVue and Workday.",
+    "Launched a digital onboarding platform for 2,500+ new hires, cutting onboarding time from 14 to 6 days and improving new hire satisfaction by 40%.",
+    "Led a transformation of HR operations from paper-based to cloud-based, using BambooHR and Microsoft Dynamics, saving 150+ hours annually.",
+    "Improved compliance audit scores from 68% to 94% by standardizing policies and implementing automated tracking via HRIS.",
+    "Conducted annual workforce planning for 1,800+ staff, aligning HR strategy with business goals and reducing turnover by 15%.",
+    "Partnered with finance to deliver a R5M cost-benefit analysis on HR tech investments, resulting in R2.3M ROI within 18 months."
+   ],
+   "city": "Pretoria",
+   "company": "Vulindlela Group",
+   "end": "2020-03",
+   "start": "2015-07",
+   "title": "HR Business Partner, Talent & Operations"
+  },
+  {
+   "bullets": [
+    "Developed a performance management system for 1,200+ employees at Sibonzi Holdings, increasing performance review effectiveness by 38%.",
+    "Introduced a learning management system (LMS) for 900+ staff, improving training completion rates from 45% to 89% in 12 months.",
+    "Led a successful employee well-being initiative, increasing participation in wellness programs from 18% to 63%.",
+    "Reduced absenteeism by 28% through targeted interventions and improved leave policy design using HRIS data.",
+    "Conducted annual workforce planning with business units, improving alignment between HR and departmental goals by 40%.",
+    "Managed a R4.5M HR budget, achieving 10% cost reduction through process optimization and vendor consolidation."
+   ],
+   "city": "Pretoria",
+   "company": "Sibonzi Holdings",
+   "end": "2015-07",
+   "start": "2012-04",
+   "title": "HR Business Partner, People Development"
+  },
+  {
+   "bullets": [
+    "Designed and implemented a succession planning framework for 12 key leadership roles, ensuring 100% readiness for leadership transitions.",
+    "Led a cross-functional HR audit of 5 departments, identifying 14 process inefficiencies; resolved 90% within 6 months.",
+    "Introduced a digital HR portal for 800+ employees, increasing HR service access by 55% and reducing response time by 60%.",
+    "Improved employee satisfaction scores from 3.4 to 4.3 (out of 5) via targeted engagement programs and feedback loops.",
+    "Collaborated with operations to reduce onboarding costs by 20% through standardized templates and digital workflows.",
+    "Delivered a comprehensive HR strategy for a R300M business unit, resulting in 18% higher retention and 12% improved productivity."
+   ],
+   "city": "Pretoria",
+   "company": "Mpho Enterprises",
+   "end": "2012-04",
+   "start": "2008-09",
+   "title": "HR Manager, Strategic Operations"
+  },
+  {
+   "bullets": [
+    "Managed HR operations for 400+ staff at Tshwane HR Solutions, improving HR service delivery speed by 45% using Excel and SharePoint.",
+    "Developed a disciplinary policy framework adopted by 3 departments, reducing misconduct incidents by 30% over 12 months.",
+    "Led payroll compliance audits, achieving 100% audit pass rate for 3 consecutive years.",
+    "Improved staff turnover by 22% through targeted retention initiatives and exit interviews.",
+    "Conducted annual workforce planning for 300+ staff, aligning HR with business objectives and reducing planning gaps by 50%."
+   ],
+   "city": "Pretoria",
+   "company": "Tshwane HR Solutions",
+   "end": "2008-09",
+   "start": "2004-06",
+   "title": "HR Officer, Operations & Compliance"
+  },
+  {
+   "bullets": [
+    "Supported HR strategy development for a growing SME, increasing staff productivity by 15% through targeted training programs.",
+    "Managed recruitment for 120+ roles, achieving 95% candidate satisfaction and 88% hire success rate using Jobscan and LinkedIn.",
+    "Improved employee engagement through quarterly feedback loops, increasing participation from 25% to 70%.",
+    "Developed a performance appraisal tool used by 100+ managers, improving consistency and reducing bias by 35%.",
+    "Reduced time-to-hire for key roles from 60 to 30 days through optimized sourcing and vendor partnerships."
+   ],
+   "city": "Pretoria",
+   "company": "KwaZulu Innovations",
+   "end": "2004-06",
+   "start": "2001-03",
+   "title": "HR Specialist, Recruitment & Development"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Master of Science in Human Resource Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Bachelor of Arts in Human Resource Development",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2007
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Personnel and Organisational Development",
+   "name": "Advanced HR Business Partner Certification",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "HR Strategy & Planning",
+  "Talent Management",
+  "Performance Management",
+  "Workforce Planning",
+  "Compliance & Risk",
+  "HRIS (SAP, Workday, BambooHR)",
+  "Change Management",
+  "DEI Strategy",
+  "Employee Engagement",
+  "Payroll & Compliance",
+  "Performance Appraisal Design",
+  "Learning & Development"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:20:17.901Z"
+ }
+}

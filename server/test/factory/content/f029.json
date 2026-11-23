@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "id": "f029",
+  "field": "accounting",
+  "role": "Financial Accountant",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "prose-history"
+  ],
+  "name": "Naledi Mahlangu",
+  "city": "Johannesburg"
+ },
+ "name": "Naledi Mahlangu",
+ "email": "naledi.mahlangu@example.test",
+ "phone": "061 555 1029",
+ "headline": "Junior Financial Accountant | Financial Reporting | South African Accounting Standards",
+ "summary": "Dedicated junior financial professional with 3 years of hands-on experience in financial accounting. Skilled in daily transaction processing and financial reporting within South African standards. Proven ability to support financial operations in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Processed daily journal entries and ledger updates.",
+    "Generated monthly trial balances and financial summaries.",
+    "Assisted in reconciling bank statements and intercompany accounts."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Holdings Ltd",
+   "end": "2024-03",
+   "start": "2022-07",
+   "title": "Junior Financial Accountant"
+  },
+  {
+   "bullets": [
+    "Did reports for management and internal stakeholders.",
+    "Helped customers with financial queries and document requests.",
+    "Updated financial records in SAP and Excel systems."
+   ],
+   "city": "Johannesburg",
+   "company": "Vosatana Group",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Junior Financial Accountant"
+  },
+  {
+   "bullets": [
+    "Maintained general ledger and sub-ledger records.",
+    "Prepared budget forecasts and variance analysis.",
+    "Supported month-end closing procedures."
+   ],
+   "city": "Johannesburg",
+   "company": "Makwetse Financial Services",
+   "end": "2022-06",
+   "start": "2021-03",
+   "title": "Accounting Assistant"
+  },
+  {
+   "bullets": [
+    "Entered transaction data into accounting software.",
+    "Assisted with payroll and tax compliance tasks.",
+    "Performed basic financial analysis for departmental reviews."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Accounting Solutions",
+   "end": "2021-02",
+   "start": "2020-08",
+   "title": "Trainee Accountant"
+  },
+  {
+   "bullets": [
+    "Organised and filed financial documents.",
+    "Supported monthly closing and reconciliation tasks.",
+    "Updated financial records in QuickBooks and Excel."
+   ],
+   "city": "Johannesburg",
+   "company": "Siboneni Business Consultants",
+   "end": "2020-07",
+   "start": "2019-04",
+   "title": "Accounting Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Accounting)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "National Diploma in Accounting",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Chartered Accountants (SAICA)",
+   "name": "Certificate in Financial Accounting",
+   "year": 2023
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Diploma in Business Accounting",
+   "year": 2022
+  }
+ ],
+ "skills": [
+  "Financial reporting",
+  "Ledger maintenance",
+  "SAP accounting",
+  "Excel (advanced)",
+  "QuickBooks",
+  "Bank reconciliation",
+  "Budget preparation",
+  "Variance analysis",
+  "GAAP and SARS compliance",
+  "Trial balance preparation",
+  "Internal controls",
+  "Audit support",
+  "Financial statement analysis",
+  "Data entry",
+  "Document management",
+  "Accounting software proficiency",
+  "Monthly closing procedures",
+  "Intercompany accounting",
+  "Tax compliance basics",
+  "Financial forecasting"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed monthly financial reports for internal use.",
+  "Assisted in preparing quarterly financial statements.",
+  "Supported audit documentation processes."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:15:55.296Z"
+ }
+}

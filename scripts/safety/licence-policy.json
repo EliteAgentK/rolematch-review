@@ -1,0 +1,87 @@
+{
+  "note": "Owner rule: permissively licensed software only. `allowed` passes automatically. Anything else fails `npm run safety:licences` unless it has an exception below with a reason, an owner, a scope (package, version range, dev or production) and a review date. An exception with status \"pending-review\" is a classification waiting for the owner's decision, not a legal conclusion; it passes (with a warning) only until its reviewBy date. An exception with devOnly true fails if any matching package becomes a production dependency.",
+  "allowed": [
+    "MIT",
+    "MIT-0",
+    "ISC",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "0BSD",
+    "Unlicense",
+    "Zlib",
+    "CC0-1.0",
+    "BlueOak-1.0.0"
+  ],
+  "exceptions": [
+    {
+      "packages": [
+        "@fontsource/outfit",
+        "@fontsource/sora"
+      ],
+      "versions": "5.x",
+      "scope": "production (frontend): font files sent to browsers",
+      "licence": "OFL-1.1",
+      "status": "pending-review",
+      "owner": "project owner",
+      "reviewBy": "2026-11-30",
+      "reason": "SIL Open Font License: fonts may be used, bundled and redistributed with software; only selling the fonts on their own and reusing the reserved font names for modified fonts are restricted. Not on the permissive list because it is a font licence, not a software licence. Owner to confirm it fits the rule.",
+      "devOnly": false
+    },
+    {
+      "packages": [
+        "lightningcss",
+        "lightningcss-*"
+      ],
+      "versions": "1.x",
+      "scope": "development only: CSS tool used by the build (Vite); not shipped",
+      "licence": "MPL-2.0",
+      "status": "pending-review",
+      "owner": "project owner",
+      "reviewBy": "2026-11-30",
+      "reason": "Weak, file-level copyleft: obligations apply only if we change and distribute lightningcss's own files. We only run it at build time. Owner to confirm a development-only MPL tool is acceptable.",
+      "devOnly": true
+    },
+    {
+      "packages": [
+        "@img/sharp-libvips-*",
+        "@img/sharp-wasm32",
+        "@img/sharp-win32-*"
+      ],
+      "versions": "any",
+      "scope": "development only (server): image library binaries pulled in by a development tool",
+      "licence": "LGPL-3.0-or-later (libvips)",
+      "status": "pending-review",
+      "owner": "project owner",
+      "reviewBy": "2026-11-30",
+      "reason": "Library copyleft on the libvips binaries; installed only as a development dependency, not part of the running server. Owner to confirm; if it ever becomes a production dependency this needs a real decision.",
+      "devOnly": true
+    },
+    {
+      "packages": [
+        "duck"
+      ],
+      "versions": "0.1.x",
+      "scope": "production (server): used by mammoth when reading Word files",
+      "licence": "BSD (variant not stated)",
+      "status": "pending-review",
+      "owner": "project owner",
+      "reviewBy": "2026-11-30",
+      "reason": "The package says only \"BSD\", not which BSD licence. All common BSD variants are permissive, but the exact text should be checked in the package before this is accepted.",
+      "devOnly": false
+    },
+    {
+      "packages": [
+        "js-clipper"
+      ],
+      "versions": "1.x",
+      "scope": "development only (server)",
+      "licence": "boost (Boost Software License 1.0)",
+      "status": "pending-review",
+      "owner": "project owner",
+      "reviewBy": "2026-11-30",
+      "reason": "Boost Software License 1.0 is permissive; the package uses a non-standard identifier (\"boost\") so it is not matched automatically.",
+      "devOnly": true
+    }
+  ]
+}

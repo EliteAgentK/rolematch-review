@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Keeps the PC's RoleMatch Linux (WSL) running, where live runs: the Mac holds one session open in it, key-only, through the PC's limited "rolematch" account; macOS restarts it whenever it drops and at every login.
+     It was the model link until 8 Nov 2026 (it also carried the Mac's Ollama to the PC); the model is gone ("no more Ollama"), the keep-alive stays. A keep-alive on the PC itself would not depend on the Mac: that is a Windows setting for the owner.
+     Install:  deploy/mac/install-agents.sh (it puts in the Dell's address from pc.conf)
+     Remove:   launchctl unload ~/Library/LaunchAgents/com.rolematch.pc-keepalive.plist && rm ~/Library/LaunchAgents/com.rolematch.pc-keepalive.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.rolematch.pc-keepalive</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/ssh</string>
+    <string>-i</string><string>/Users/modizy/.ssh/rolematch_dell</string>
+    <string>-o</string><string>BatchMode=yes</string>
+    <string>-o</string><string>ServerAliveInterval=15</string>
+    <string>-o</string><string>ServerAliveCountMax=3</string>
+    <string>__PC__</string>
+    <string>wsl -d RoleMatch -u root -- sleep infinity</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>10</integer>
+  <key>StandardErrorPath</key><string>/tmp/rolematch-pc-keepalive.log</string>
+</dict>
+</plist>

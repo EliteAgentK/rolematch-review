@@ -1,0 +1,133 @@
+{
+ "spec": {
+  "id": "f058",
+  "field": "human resources",
+  "role": "HR Business Partner",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "not-completed",
+   "comma-titles"
+  ],
+  "name": "Yusuf Zulu",
+  "city": "Pretoria"
+ },
+ "name": "Yusuf Zulu",
+ "email": "yusuf.zulu@example.test",
+ "phone": "031 555 1058",
+ "headline": "Executive HR Business Partner | 18 Years in Strategic HR Leadership | Pretoria, South Africa",
+ "summary": "Results-driven Executive HR Business Partner with 18 years of progressive experience in strategic HR leadership, talent management, and organisational development across diverse South African industries. Proven track record in driving measurable improvements in employee engagement, retention, and operational efficiency.",
+ "roles": [
+  {
+   "bullets": [
+    "Led end-to-end talent strategy for 12,000+ employees using SAP SuccessFactors, improving retention by 18% over 18 months.",
+    "Designed and launched a digital onboarding platform in SAP HCM, reducing new hire time-to-productivity by 35%.",
+    "Spearheaded a pay equity audit across 5 divisions using Tableau, identifying and resolving 12 disparities with 100% compliance.",
+    "Reduced employee turnover in high-performing departments by 22% through targeted engagement programs using SurveyMonkey and Power BI."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Holdings Group",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Executive HR Business Partner, People Strategy"
+  },
+  {
+   "bullets": [
+    "Built and managed a performance management system in Workday, increasing manager feedback quality by 40% and engagement scores by 28%.",
+    "Introduced a skills gap analysis tool using People Analytics, identifying 300+ skill shortages and driving targeted upskilling programs.",
+    "Reduced HR operational costs by R1.2M annually through process automation using Oracle HRMS and UiPath.",
+    "Led a DEI initiative that increased employee inclusion scores from 3.2 to 4.7 on internal surveys, with 92% participation."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Industrial Solutions",
+   "end": "2020-03",
+   "start": "2016-07",
+   "title": "HR Business Partner, People Operations"
+  },
+  {
+   "bullets": [
+    "Launched a global talent pipeline strategy for 8 key roles, sourcing 100% of candidates through LinkedIn and Talent.com, reducing time-to-fill by 50%.",
+    "Developed a learning roadmap using LMS (Moodle), increasing employee training completion by 60% in 12 months.",
+    "Improved employee satisfaction scores from 3.1 to 4.3 via quarterly feedback loops using Qualtrics and pulse surveys.",
+    "Reduced absenteeism by 30% in manufacturing units through targeted wellness programs and shift optimization."
+   ],
+   "city": "Pretoria",
+   "company": "African Infrastructure Partners",
+   "end": "2016-07",
+   "start": "2012-04",
+   "title": "HR Business Partner, Talent Development"
+  },
+  {
+   "bullets": [
+    "Managed HR operations for 300+ employees using BambooHR and Workday, cutting administrative workload by 45% through workflow redesign.",
+    "Introduced a performance review framework that increased manager effectiveness ratings by 38% in internal evaluations.",
+    "Led a compliance audit for the Employment Equity Act, achieving 100% audit pass with zero findings.",
+    "Reduced recruitment costs by R85K annually by optimizing vendor contracts and sourcing strategies."
+   ],
+   "city": "Pretoria",
+   "company": "Makwetla Logistics",
+   "end": "2012-04",
+   "start": "2008-09",
+   "title": "HR Manager, Operations & Compliance"
+  },
+  {
+   "bullets": [
+    "Developed a succession planning model for C-suite roles, identifying 12 high-potential employees with 90% accuracy in role fit.",
+    "Implemented a digital HR portal using BambooHR, improving HR service delivery time by 55%.",
+    "Reduced HR-related grievances by 40% through proactive conflict resolution and employee feedback systems.",
+    "Led a cross-functional team to redesign employee benefits, increasing satisfaction by 35% in post-implementation survey."
+   ],
+   "city": "Pretoria",
+   "company": "Sekhukhune Group",
+   "end": "2008-09",
+   "start": "2005-03",
+   "title": "HR Specialist, Strategic Development"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Master of Science in Human Resource Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Bachelor of Arts in Human Resource Development",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Personnel and Organisational Development",
+   "name": "Advanced HR Business Partner Certification",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "People Analytics",
+  "Performance Management",
+  "Talent Development",
+  "Compliance & Equity",
+  "Change Management",
+  "HR Technology (SAP, Workday, BambooHR)",
+  "DEI Strategy"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:45:55.993Z"
+ }
+}

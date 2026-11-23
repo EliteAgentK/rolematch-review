@@ -1,0 +1,136 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Emma Fourie",
+  "role": "Call Centre Agent",
+  "skills": [
+   "Excel",
+   "Zendesk",
+   "Word"
+  ],
+  "experience": "6",
+  "location": "CAPE TOWN",
+  "email": "emma.fourie@example.test",
+  "phone": "079 555 0110",
+  "workHistory": [
+   {
+    "company": "Cape Connect",
+    "position": "Call Centre Agent",
+    "startDate": "2023",
+    "endDate": "now",
+    "responsibilities": [
+     "answering billing queries by phone and chat, logging tickets, meeting my targets every month."
+    ]
+   },
+   {
+    "company": "The Harbour Grill",
+    "position": "Waitress",
+    "startDate": "2019",
+    "endDate": "2022",
+    "responsibilities": [
+     "SCHOOL: Matric, Bellville High, 2018.",
+     "COMPUTER: Word, Excel, Zendesk."
+    ]
+   }
+  ],
+  "summary": "ABOUT ME: friendly, patient, good with people. Two years in a call centre after a few years as a waitress. I like helping customers sort out problems.",
+  "education": [
+   {
+    "degree": "SCHOOL: Matric",
+    "institution": "Bellville High",
+    "year": "2018",
+    "type": "school",
+    "level": "High school",
+    "status": "completed",
+    "statusEvidence": "2018, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [
+   "English",
+   "Afrikaans"
+  ],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "whole text",
+    "count": 4,
+    "tried": [
+     "header block",
+     "whole text"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 3,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "qualification lines anywhere in the document",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings",
+     "qualification lines outside the work history",
+     "qualification lines anywhere in the document"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "spec": {
+  "id": "f055",
+  "field": "actuarial science",
+  "role": "Actuarial Analyst",
+  "seniority": "senior",
+  "years": 11,
+  "quality": "rich",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "personal-details",
+   "long-academic"
+  ],
+  "name": "Johan Hendricks",
+  "city": "Polokwane"
+ },
+ "name": "Johan Hendricks",
+ "email": "johan.hendricks@example.test",
+ "phone": "081 555 1055",
+ "headline": "Senior Actuarial Analyst | 11 Years Experience | Risk Modelling & Financial Forecasting | South African Actuarial Standards",
+ "summary": "Senior Actuarial Analyst with 11 years of experience in life, motor, and pension insurance. Expertise in risk modelling, claims forecasting, and regulatory compliance. Proven track record in improving model accuracy, reducing errors, and driving operational efficiency using advanced analytics tools.",
+ "roles": [
+  {
+   "bullets": [
+    "Led mortality and morbidity analysis for life insurance products using SAS and R, improving model fit by 21% across 120,000 policyholders (2021–2023).",
+    "Developed claim reserving models using R and Excel, reducing reserve errors by 19% and improving audit compliance by 35% (2022–2024).",
+    "Collaborated with underwriting teams to design pricing models for motor insurance, increasing premium accuracy by 28% (2021–2023).",
+    "Built and maintained actuarial databases in SQL, supporting 15+ reports used by senior management (2022–2024)."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Insurance Solutions",
+   "end": "2024-03",
+   "start": "2021-04",
+   "title": "Actuarial Analyst (Life & Motor)"
+  },
+  {
+   "bullets": [
+    "Designed and implemented a claims forecasting model using Python and GLM, reducing forecast errors by 25% in 2023.",
+    "Led actuarial review of reinsurance contracts, improving risk coverage by 17% and reducing exposure gaps by 23% (2020–2022).",
+    "Developed a real-time claims monitoring dashboard using Power BI and SQL, reducing response time by 40% (2021–2022).",
+    "Conducted scenario analysis for economic shocks using Monte Carlo simulations, informing strategic reserve adjustments (2022)."
+   ],
+   "city": "Polokwane",
+   "company": "Vulindlela Risk Management",
+   "end": "2024-03",
+   "start": "2019-07",
+   "title": "Senior Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Built mortality models for pension schemes using R and SAS, improving projection accuracy by 24% (2018–2020).",
+    "Led validation of actuarial assumptions for a R1.8B pension fund, reducing overestimation by 14% (2018–2019).",
+    "Automated pension valuation reports using VBA and Excel, reducing manual effort by 60% and improving consistency (2019–2020).",
+    "Presented actuarial findings to board-level stakeholders, influencing R120M in capital reallocation (2019)."
+   ],
+   "city": "Polokwane",
+   "company": "Mkhonto Pension Services",
+   "end": "2019-06",
+   "start": "2016-08",
+   "title": "Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Developed a claims loss ratio model using R, improving prediction accuracy by 27% and reducing underwriting risk by 18% (2015–2018).",
+    "Conducted actuarial audits for 15 insurance products, ensuring compliance with SABS standards (2015–2018).",
+    "Built a data pipeline for claims intake using Python and SQL, reducing processing delays by 35% (2016–2018).",
+    "Supported underwriting decisions with actuarial reports used in 80+ policy approvals annually (2015–2018)."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Insurance Group",
+   "end": "2015-12",
+   "start": "2013-03",
+   "title": "Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Performed actuarial validation of mortality tables for 30,000 policyholders using SAS, improving model fit by 15% (2012–2013).",
+    "Supported development of a new life insurance product, contributing to R150M in annual revenue (2012–2013).",
+    "Built a risk dashboard for underwriting teams using Excel and Power BI, reducing decision time by 30% (2012–2013).",
+    "Conducted peer reviews of actuarial models, improving internal consistency by 20% (2012–2013)."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Life Assurance",
+   "end": "2012-11",
+   "start": "2010-04",
+   "title": "Actuarial Associate"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Fort Hare",
+   "qualification": "Bachelor of Science in Actuarial Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2007
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Master of Science in Actuarial Science and Risk Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Postgraduate Diploma in Insurance and Financial Risk",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2013
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Actuaries",
+   "name": "Professional Actuarial Qualification (PAQ) – Level 3",
+   "year": 2018
+  },
+  {
+   "issuer": "Actuarial Society of South Africa",
+   "name": "Advanced Risk Modelling Certificate",
+   "year": 2020
+  },
+  {
+   "issuer": "University of Cape Town",
+   "name": "Postgraduate Diploma in Financial Risk Management",
+   "year": -1
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Certificate in Data Analytics for Actuaries",
+   "year": 2021
+  },
+  {
+   "issuer": "Nelson Mandela Metropolitan College",
+   "name": "Advanced Training in Life Insurance Valuation",
+   "year": 2017
+  }
+ ],
+ "skills": [
+  "SAS",
+  "R",
+  "Python",
+  "SQL",
+  "Power BI",
+  "Excel VBA",
+  "Monte Carlo Simulations",
+  "GLM Modelling",
+  "Mortality & Morbidity Analysis",
+  "Pension Valuation",
+  "Claims Forecasting",
+  "Risk Modelling",
+  "Regulatory Compliance (SABS)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [
+  "Developed mortality tables for life insurance products using SAS and R, improving model accuracy by 18% over 2021–2023.",
+  "Built predictive models for claim frequency using Python and GLM, reducing underestimation errors by 22% in 2022.",
+  "Led implementation of a new pricing model for motor insurance, increasing premium accuracy by 30% and reducing claims by 15%.",
+  "Automated valuation of pension liabilities using Excel VBA and SQL, cutting processing time from 48 to 12 hours per month.",
+  "Designed a fraud detection algorithm using machine learning, reducing false positives by 40% and saving R1.2M annually.",
+  "Conducted stress testing on portfolio exposure using Monte Carlo simulations in R, identifying 3 high-risk segments.",
+  "Optimized reinsurance pricing using actuarial software (ActuarialPro), improving margin by 12% and reducing volatility by 19%."
+ ],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:43:07.028Z"
+ }
+}

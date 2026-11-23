@@ -1,0 +1,10 @@
+[Unit]
+Description=Keep the local test stack (54321, 54322) reachable from this machine only, until it is retired by the own-database work
+After=docker.service
+Requires=docker.service
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c "for p in 54321 54322; do iptables -C DOCKER-USER -p tcp -m conntrack --ctorigdstport $p ! -s 127.0.0.0/8 -j DROP 2>/dev/null || iptables -I DOCKER-USER -p tcp -m conntrack --ctorigdstport $p ! -s 127.0.0.0/8 -j DROP; done"
+[Install]
+WantedBy=multi-user.target

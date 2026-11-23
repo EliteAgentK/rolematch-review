@@ -1,0 +1,370 @@
+{
+ "sample": {
+  "title": "Senior Software Developer",
+  "company": "Example Corp",
+  "location": "Johannesburg South Africa",
+  "department": "Engineering",
+  "employmentType": "Permanent full time",
+  "workArrangement": "Hybrid three days in office",
+  "remuneration": "",
+  "reportsTo": "",
+  "description": "Example Corp is looking for a Senior Software Developer to design, build and maintain secure, scalable web applications.",
+  "mandatoryRequirements": [
+   {
+    "text": "At least five years of professional software-development experience.",
+    "quote": "At least five years of professional software-development experience."
+   },
+   {
+    "text": "Strong experience with TypeScript and JavaScript.",
+    "quote": "Strong experience with TypeScript and JavaScript."
+   },
+   {
+    "text": "Production experience with React and Node.js.",
+    "quote": "Production experience with React and Node.js."
+   },
+   {
+    "text": "Working knowledge of relational databases, preferably PostgreSQL.",
+    "quote": "Working knowledge of relational databases, preferably PostgreSQL."
+   }
+  ],
+  "preferredRequirements": [
+   {
+    "text": "Docker and container-based development.",
+    "quote": "Docker and container-based development."
+   },
+   {
+    "text": "Kubernetes in production.",
+    "quote": "Kubernetes in production."
+   },
+   {
+    "text": "A relevant degree is preferred but not mandatory.",
+    "quote": "A relevant degree is preferred but not mandatory."
+   }
+  ],
+  "responsibilities": [
+   "Design and develop production-ready web applications and APIs.",
+   "Mentor junior and intermediate developers."
+  ],
+  "skills": [
+   {
+    "name": "JavaScript",
+    "quote": "Strong experience with TypeScript and JavaScript."
+   },
+   {
+    "name": "TypeScript",
+    "quote": "Strong experience with TypeScript and JavaScript."
+   },
+   {
+    "name": "React",
+    "quote": "Production experience with React and Node.js."
+   },
+   {
+    "name": "Node.js",
+    "quote": "Production experience with React and Node.js."
+   },
+   {
+    "name": "PostgreSQL",
+    "quote": "Working knowledge of relational databases, preferably PostgreSQL."
+   },
+   {
+    "name": "Docker",
+    "quote": "Docker and container-based development."
+   },
+   {
+    "name": "Kubernetes",
+    "quote": "Kubernetes in production."
+   },
+   {
+    "name": "Mentoring",
+    "quote": "Mentor junior and intermediate developers."
+   }
+  ],
+  "sections": [
+   {
+    "step": "title",
+    "status": "found",
+    "via": "the first short line that reads like a job title",
+    "count": 1,
+    "tried": [
+     "a Title / Job title / Position label",
+     "the first short line that reads like a job title"
+    ]
+   },
+   {
+    "step": "company",
+    "status": "found",
+    "via": "the line under the title",
+    "count": 1,
+    "tried": [
+     "a Company / Employer label",
+     "the line under the title"
+    ]
+   },
+   {
+    "step": "location",
+    "status": "found",
+    "via": "a Location / City label",
+    "count": 1,
+    "tried": [
+     "a Location / City label"
+    ]
+   },
+   {
+    "step": "overview",
+    "status": "found",
+    "via": "Overview heading",
+    "count": 1,
+    "tried": [
+     "Overview heading"
+    ]
+   },
+   {
+    "step": "responsibilities",
+    "status": "found",
+    "via": "Responsibilities heading",
+    "count": 2,
+    "tried": [
+     "Responsibilities heading",
+     "sentences (duties include, you will)"
+    ]
+   },
+   {
+    "step": "requirements",
+    "status": "found",
+    "via": "Requirements headings",
+    "count": 7,
+    "tried": [
+     "Requirements headings",
+     "requirements table",
+     "sentences (must have, the ideal candidate, is a plus)"
+    ]
+   }
+  ]
+ },
+ "sales": {
+  "title": "Sales Representative",
+  "company": "BrightFoods",
+  "location": "",
+  "department": "",
+  "employmentType": "",
+  "workArrangement": "Remote",
+  "remuneration": "",
+  "reportsTo": "",
+  "description": "",
+  "mandatoryRequirements": [
+   {
+    "text": "Two years of sales experience.",
+    "quote": "• Two years of sales experience."
+   },
+   {
+    "text": "Negotiation skills.",
+    "quote": "• Negotiation skills."
+   }
+  ],
+  "preferredRequirements": [
+   {
+    "text": "CRM experience.",
+    "quote": "• CRM experience."
+   },
+   {
+    "text": "A driver's licence is advantageous.",
+    "quote": "• A driver's licence is advantageous."
+   }
+  ],
+  "responsibilities": [
+   "Prospect and win new retail accounts.",
+   "Maintain client relationships."
+  ],
+  "skills": [
+   {
+    "name": "Communication",
+    "quote": "• Maintain client relationships."
+   },
+   {
+    "name": "Negotiation",
+    "quote": "• Negotiation skills."
+   },
+   {
+    "name": "CRM",
+    "quote": "• CRM experience."
+   }
+  ],
+  "sections": [
+   {
+    "step": "title",
+    "status": "found",
+    "via": "the first short line that reads like a job title",
+    "count": 1,
+    "tried": [
+     "a Title / Job title / Position label",
+     "the first short line that reads like a job title"
+    ]
+   },
+   {
+    "step": "company",
+    "status": "found",
+    "via": "the line under the title",
+    "count": 1,
+    "tried": [
+     "a Company / Employer label",
+     "the line under the title"
+    ]
+   },
+   {
+    "step": "location",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "a Location / City label",
+     "a line that reads like a place",
+     "the place after the title's dash"
+    ]
+   },
+   {
+    "step": "overview",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Overview heading",
+     "the opening paragraph"
+    ]
+   },
+   {
+    "step": "responsibilities",
+    "status": "found",
+    "via": "Responsibilities heading",
+    "count": 2,
+    "tried": [
+     "Responsibilities heading",
+     "sentences (duties include, you will)"
+    ]
+   },
+   {
+    "step": "requirements",
+    "status": "found",
+    "via": "Requirements headings",
+    "count": 4,
+    "tried": [
+     "Requirements headings",
+     "requirements table",
+     "sentences (must have, the ideal candidate, is a plus)"
+    ]
+   }
+  ]
+ },
+ "labelled": {
+  "title": "Data Analyst",
+  "company": "Globex Insights",
+  "location": "Cape Town, South Africa",
+  "department": "",
+  "employmentType": "Contract",
+  "workArrangement": "",
+  "remuneration": "",
+  "reportsTo": "",
+  "description": "We need an analyst to turn raw data into decisions for our commercial team.",
+  "mandatoryRequirements": [
+   {
+    "text": "You will have three or more years of experience in analytics.",
+    "quote": "You will have three or more years of experience in analytics. You are confident with SQL and Excel. You communicate clearly with stakeholders."
+   },
+   {
+    "text": "You are confident with SQL and Excel.",
+    "quote": "You will have three or more years of experience in analytics. You are confident with SQL and Excel. You communicate clearly with stakeholders."
+   },
+   {
+    "text": "You communicate clearly with stakeholders.",
+    "quote": "You will have three or more years of experience in analytics. You are confident with SQL and Excel. You communicate clearly with stakeholders."
+   }
+  ],
+  "preferredRequirements": [
+   {
+    "text": "Power BI or Tableau experience.",
+    "quote": "Power BI or Tableau experience."
+   }
+  ],
+  "responsibilities": [],
+  "skills": [
+   {
+    "name": "SQL",
+    "quote": "You will have three or more years of experience in analytics. You are confident with SQL and Excel. You communicate clearly with stakeholders."
+   },
+   {
+    "name": "Power BI",
+    "quote": "Power BI or Tableau experience."
+   },
+   {
+    "name": "Excel",
+    "quote": "You will have three or more years of experience in analytics. You are confident with SQL and Excel. You communicate clearly with stakeholders."
+   },
+   {
+    "name": "Communication",
+    "quote": "You will have three or more years of experience in analytics. You are confident with SQL and Excel. You communicate clearly with stakeholders."
+   },
+   {
+    "name": "Tableau",
+    "quote": "Power BI or Tableau experience."
+   }
+  ],
+  "sections": [
+   {
+    "step": "title",
+    "status": "found",
+    "via": "a Title / Job title / Position label",
+    "count": 1,
+    "tried": [
+     "a Title / Job title / Position label"
+    ]
+   },
+   {
+    "step": "company",
+    "status": "found",
+    "via": "a Company / Employer label",
+    "count": 1,
+    "tried": [
+     "a Company / Employer label"
+    ]
+   },
+   {
+    "step": "location",
+    "status": "found",
+    "via": "a Location / City label",
+    "count": 1,
+    "tried": [
+     "a Location / City label"
+    ]
+   },
+   {
+    "step": "overview",
+    "status": "found",
+    "via": "Overview heading",
+    "count": 1,
+    "tried": [
+     "Overview heading"
+    ]
+   },
+   {
+    "step": "responsibilities",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Responsibilities heading",
+     "sentences (duties include, you will)"
+    ]
+   },
+   {
+    "step": "requirements",
+    "status": "found",
+    "via": "Requirements headings",
+    "count": 4,
+    "tried": [
+     "Requirements headings",
+     "requirements table",
+     "sentences (must have, the ideal candidate, is a plus)"
+    ]
+   }
+  ]
+ }
+}

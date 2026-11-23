@@ -1,0 +1,115 @@
+{
+ "spec": {
+  "id": "f066",
+  "field": "sales",
+  "role": "Key Account Manager",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "remote-only"
+  ],
+  "name": "Chantelle Patel",
+  "city": "Pretoria"
+ },
+ "name": "Chantelle Patel",
+ "email": "chantelle.patel@example.test",
+ "phone": "031 555 1066",
+ "headline": "Executive Key Account Manager | Sales Leadership | Remote-Only",
+ "summary": "Experienced Executive Key Account Manager with 20+ years in sales leadership. Currently seeking remote opportunities. Based in Pretoria, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed key accounts for a B2B industrial equipment supplier, driving 15% YoY revenue growth from 2018–2023.",
+    "Led client relationship strategy, improving retention by 28% across high-value accounts in Gauteng and Western Cape."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Dynamics Ltd",
+   "end": "2023-12",
+   "start": "2018-04",
+   "title": "Key Account Manager"
+  },
+  {
+   "bullets": [
+    "Spearheaded sales expansion into new provinces, increasing market share by 12% in 2021–2022.",
+    "Coordinated cross-functional teams to deliver on-time project deliveries for enterprise clients."
+   ],
+   "city": "Pretoria",
+   "company": "Vosatex Solutions",
+   "end": "2023-03",
+   "start": "2020-07",
+   "title": "Senior Sales Executive"
+  },
+  {
+   "bullets": [
+    "Developed and executed account plans for 50+ clients, achieving 98% on-time delivery of sales targets.",
+    "Built trust with enterprise clients through consistent communication and proactive issue resolution."
+   ],
+   "city": "Pretoria",
+   "company": "Africor Holdings",
+   "end": "2020-06",
+   "start": "2015-03",
+   "title": "Account Manager"
+  },
+  {
+   "bullets": [
+    "Managed portfolio of 30+ key clients in the logistics sector, contributing to 18% revenue uplift in 2017–2019.",
+    "Conducted quarterly performance reviews and adjusted strategies based on market trends and client feedback."
+   ],
+   "city": "Pretoria",
+   "company": "KwaZulu Logistics Group",
+   "end": "2017-12",
+   "start": "2013-08",
+   "title": "Sales Account Executive"
+  },
+  {
+   "bullets": [
+    "Supported sales team in client onboarding, reducing time-to-value by 30% for new accounts.",
+    "Maintained CRM data accuracy and ensured compliance with internal sales reporting standards."
+   ],
+   "city": "Pretoria",
+   "company": "Makwetex Industries",
+   "end": "2016-03",
+   "start": "2011-05",
+   "title": "Sales Support Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Sales and Marketing)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Client relationship management",
+  "Sales strategy development",
+  "Market analysis",
+  "Negotiation",
+  "Performance reporting",
+  "Remote team coordination"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:59:49.805Z"
+ }
+}

@@ -1,0 +1,13 @@
+#!/bin/sh
+# Secret scan of the staged change before every commit (docs/security/SAFETY_CHECKS.md). Set up once with: npm run setup:hooks
+# Supplementary only: `git commit --no-verify` skips it, so CI's scan is the authoritative gate.
+# Never prints a secret value: only the rule, file and line. A scan that could not complete stops the commit; it is never treated as clean.
+node scripts/safety/secretScan.mjs --staged
+status=$?
+if [ "$status" -eq 1 ]; then
+  echo "pre-commit: commit stopped. Remove the value from the change; if it is a real key, treat it as exposed and rotate it." >&2
+  exit 1
+elif [ "$status" -ne 0 ]; then
+  echo "pre-commit: commit stopped because the secret scan could not complete (install gitleaks: brew install gitleaks)." >&2
+  exit 1
+fi

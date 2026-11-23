@@ -1,0 +1,139 @@
+{
+ "spec": {
+  "id": "f089",
+  "field": "retail management",
+  "role": "Store Manager",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "professional-designation"
+  ],
+  "name": "Rajesh Steyn",
+  "city": "Johannesburg"
+ },
+ "name": "Rajesh Steyn",
+ "email": "rajesh.steyn@example.test",
+ "phone": "021 555 1089",
+ "headline": "Junior Store Manager | Retail Operations | Customer Experience",
+ "summary": "Dedicated retail professional with 3 years of hands-on experience in store operations. Proven ability to manage daily tasks and support team performance in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on daily sales and stock levels.",
+    "Helped customers find products quickly.",
+    "Maintained store cleanliness and safety."
+   ],
+   "city": "Johannesburg",
+   "company": "Urban Bazaar Retail",
+   "end": "2024-03",
+   "start": "2021-07",
+   "title": "Store Assistant"
+  },
+  {
+   "bullets": [
+    "Updated inventory records daily.",
+    "Assisted in stock rotation and shelf audits.",
+    "Supported team during peak sales periods."
+   ],
+   "city": "Johannesburg",
+   "company": "Makati Grocers",
+   "end": "Present",
+   "start": "2023-04",
+   "title": "Junior Store Manager"
+  },
+  {
+   "bullets": [
+    "Managed daily store operations during shifts.",
+    "Coordinated with delivery staff for stock intake.",
+    "Monitored product expiry and disposal."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson’s Corner Store",
+   "end": "2023-04",
+   "start": "2021-01",
+   "title": "Store Supervisor"
+  },
+  {
+   "bullets": [
+    "Did daily stock checks and loss reports.",
+    "Supported staff with customer service tasks.",
+    "Maintained store layout and visual merchandising."
+   ],
+   "city": "Johannesburg",
+   "company": "Savanna Market Hub",
+   "end": "2021-01",
+   "start": "2019-06",
+   "title": "Retail Associate"
+  },
+  {
+   "bullets": [
+    "Helped with opening and closing procedures.",
+    "Logged daily sales and inventory data.",
+    "Assisted in training new staff members."
+   ],
+   "city": "Johannesburg",
+   "company": "Braamfontein Fresh",
+   "end": "2019-06",
+   "start": "2018-03",
+   "title": "Store Operative"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Retail Management)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Retail Operations",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Retail Management",
+   "name": "Certified Retail Operations Practitioner (CROP)",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Inventory management",
+  "Sales reporting",
+  "Customer service",
+  "Stock audits",
+  "Store layout",
+  "Team coordination",
+  "Point of sale systems",
+  "Loss prevention",
+  "Visual merchandising",
+  "Daily operations",
+  "Data entry",
+  "Budget tracking",
+  "Store safety",
+  "POS software",
+  "Team leadership",
+  "Retail compliance",
+  "Stock rotation",
+  "Customer feedback",
+  "Store inspections",
+  "Sales forecasting"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:36:19.838Z"
+ }
+}

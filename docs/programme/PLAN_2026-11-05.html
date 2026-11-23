@@ -1,0 +1,308 @@
+<title>RoleMatch Programme Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: one reading column; each mechanism gets a full-width figure, each workstream one table row with how it is proven. */
+:root { --bg:#f6f8f9; --fg:#14242e; --muted:#51656f; --line:#cfdbe1; --panel:#ffffff; --accent:#007ba7; --teal:#0b8f7f; --warn:#b4570c;
+  --display:"Manrope","Segoe UI",sans-serif; --body:"Source Sans 3","Segoe UI",sans-serif; --mono:"JetBrains Mono",Consolas,monospace; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0f1a20; --fg:#e6eff3; --muted:#9fb3bd; --line:#2c3e47; --panel:#16242c; --accent:#5cc0e4; --teal:#4fd1bd; --warn:#f0a35c; color-scheme:dark } }
+:root[data-theme="dark"] { --bg:#0f1a20; --fg:#e6eff3; --muted:#9fb3bd; --line:#2c3e47; --panel:#16242c; --accent:#5cc0e4; --teal:#4fd1bd; --warn:#f0a35c; color-scheme:dark }
+body { background:var(--bg); color:var(--fg); font:17px/1.55 var(--body); padding-block:40px 72px; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width:1000px; margin:0 auto; display:grid; gap:40px; }
+main > * { min-width:0; }
+h1,h2,h3 { font-family:var(--display); text-wrap:balance; margin:0; }
+h1 { font-size:2.1rem; line-height:1.15; font-weight:800; }
+h2 { font-size:1.35rem; margin-bottom:10px; font-weight:800; }
+h3 { font-size:1.02rem; margin-bottom:6px; font-weight:700; }
+p { margin:0 0 10px; max-width:72ch; }
+.lead { font-size:1.12rem; color:var(--muted); margin-top:10px; }
+ul { margin:0; padding-left:1.2em; display:grid; gap:6px; max-width:72ch; }
+figure { margin:14px 0 0; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px; }
+.draw { overflow-x:auto; }
+svg { display:block; width:100%; min-width:760px; height:auto; color:var(--fg); }
+svg text { font:12.5px var(--body); fill:currentColor; }
+svg .small { font-size:11.5px; fill:var(--muted); }
+svg .b { font-weight:600; }
+svg rect.box { fill:none; stroke:currentColor; stroke-width:1.2; }
+svg rect.new { fill:none; stroke:var(--accent); stroke-width:2.2; }
+svg rect.zone { fill:none; stroke:var(--muted); stroke-width:1; stroke-dasharray:5 4; }
+svg line, svg path.l { stroke:currentColor; stroke-width:1.2; fill:none; }
+svg .acc { stroke:var(--accent); stroke-width:2; }
+svg .guard { stroke:var(--warn); stroke-width:1.6; stroke-dasharray:6 4; }
+figcaption { margin-top:10px; color:var(--muted); font-size:.95rem; max-width:80ch; }
+.tablewrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; min-width:680px; font-size:.97rem; background:var(--panel); }
+th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+th { font-family:var(--display); font-size:.86rem; font-weight:700; }
+td.n { white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:600; }
+code { font-family:var(--mono); font-size:.86em; overflow-wrap:anywhere; }
+.pair { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+.pair > div { min-width:0; }
+</style>
+<main>
+<header>
+<h1>RoleMatch programme plan</h1>
+<p class="lead">How the LLM becomes part of the system, how the 5,000 and 30,000 user tests run, and how each piece is proven. Written 5 November 2026, about 09:30 SAST; updated about 12:00 with your auditor rule and what long CVs have shown. Report due about 20:00.</p>
+</header>
+
+<section>
+<h2>What changes, in one paragraph</h2>
+<p>The LLM runs as a background worker, the chef in the back. A record is published by the rules straight away. Minutes or seconds later the model reads the same document, and everything it proposes must quote the document. Configuration then decides, per field and document type, whether a proposal improves the record on its own, goes to a recruiter, or is only logged. A kind of proposal earns automatic use only by being measured accurate. Every recruiter answer feeds a private store that the next prompt or adapter is tested against. Scores stay arithmetic: the model never sets a percentage.</p>
+</section>
+
+<section>
+<h2>Your new rule: the LLM audits every CV before the panel</h2>
+<p>This replaces "publish first, read afterwards" for CVs. Nothing loads into a panel until the auditor has passed it. Where the parser struggled, the auditor corrects the record, and every correction must quote the CV. The rules still calculate every percentage.</p>
+<figure>
+<div class="draw"><svg viewBox="0 0 940 372" role="img" aria-label="An uploaded CV is read by rules into a draft record which waits, visible as being checked. The auditor checks each value against its source lines, in the document's own portal. Values that pass, and corrections that quote the document, make the panel record. If the model is down the document waits and an administrator can release it, labelled unaudited.">
+<defs><marker id="a6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<rect class="box" x="16" y="34" width="104" height="54" rx="5"/><text class="b" x="68" y="66" text-anchor="middle">Upload</text>
+<rect class="box" x="160" y="34" width="134" height="54" rx="5"/><text class="b" x="227" y="57" text-anchor="middle">Reader and rules</text><text class="small" x="227" y="75" text-anchor="middle">OCR if needed</text>
+<rect class="new" x="334" y="34" width="150" height="54" rx="5"/><text class="b" x="409" y="57" text-anchor="middle">Draft record</text><text class="small" x="409" y="75" text-anchor="middle">not on any panel yet</text>
+<rect class="new" x="524" y="34" width="150" height="54" rx="5"/><text class="b" x="599" y="57" text-anchor="middle">Instant checks</text><text class="small" x="599" y="75" text-anchor="middle">each value in the CV?</text>
+<rect class="new" x="714" y="34" width="210" height="54" rx="5"/><text class="b" x="819" y="57" text-anchor="middle">LLM auditor</text><text class="small" x="819" y="75" text-anchor="middle">value by value, with source lines</text>
+<line x1="120" y1="61" x2="158" y2="61" marker-end="url(#a6)"/><line x1="294" y1="61" x2="332" y2="61" marker-end="url(#a6)"/><line x1="484" y1="61" x2="522" y2="61" marker-end="url(#a6)"/><line x1="674" y1="61" x2="712" y2="61" marker-end="url(#a6)"/>
+<rect class="box" x="714" y="148" width="210" height="60" rx="5"/><text class="b" x="819" y="172" text-anchor="middle">Proof check, in code</text><text class="small" x="819" y="191" text-anchor="middle">a correction's quote must be in the CV</text>
+<line x1="819" y1="88" x2="819" y2="146" marker-end="url(#a6)"/><text class="small" x="828" y="122">answer as JSON</text>
+<rect class="new" x="420" y="148" width="200" height="60" rx="5"/><text class="b" x="520" y="172" text-anchor="middle">Decision by policy</text><text class="small" x="520" y="191" text-anchor="middle">configuration, versioned, measured</text>
+<line x1="714" y1="178" x2="622" y2="178" marker-end="url(#a6)"/>
+<rect class="box" x="160" y="134" width="184" height="42" rx="5"/><text class="b" x="252" y="160" text-anchor="middle">Approved: panel</text>
+<rect class="box" x="160" y="186" width="184" height="42" rx="5"/><text class="b" x="252" y="212" text-anchor="middle">Corrected: panel, marked</text>
+<rect class="box" x="160" y="238" width="184" height="42" rx="5"/><text class="b" x="252" y="264" text-anchor="middle">Questioned: panel, flagged</text>
+<line x1="420" y1="165" x2="346" y2="155" marker-end="url(#a6)"/><line x1="420" y1="180" x2="346" y2="205" marker-end="url(#a6)"/><line x1="440" y1="208" x2="346" y2="258" marker-end="url(#a6)"/>
+<rect class="box" x="16" y="186" width="104" height="42" rx="5"/><text class="small" x="68" y="204" text-anchor="middle">Original reading</text><text class="small" x="68" y="219" text-anchor="middle">always kept</text>
+<line x1="160" y1="207" x2="122" y2="207" marker-end="url(#a6)"/>
+<path class="l guard" d="M819 208 L819 310 L620 310" marker-end="url(#a6)"/><text class="small" x="828" y="262">model down, or no usable answer</text>
+<rect class="box" x="420" y="288" width="200" height="60" rx="5"/><text class="b" x="520" y="312" text-anchor="middle">Waits, and says so</text><text class="small" x="520" y="331" text-anchor="middle">retries by itself; admin may release</text>
+<path class="l guard" d="M420 318 L252 318 L252 282" marker-end="url(#a6)"/><text class="small" x="336" y="340" text-anchor="middle">released: labelled not audited, in the log</text>
+</svg></div>
+<figcaption>Blue is new. The rules' first reading is always kept, so every correction can be seen and undone. A correction applies by itself only for kinds of value where measurement earned it; until then it is put to the recruiter on the panel. Nothing lets the auditor change a percentage, a score or a person's own edits.</figcaption>
+</figure>
+<div class="tablewrap" style="margin-top:14px"><table>
+<tr><th>Decision</th><th>What I will do</th><th>Why</th></tr>
+<tr><td>What the auditor reads</td><td>Each value with the lines it came from, the top of the CV, and any referee or agency lines. Not the whole document each time</td><td>A full read is about 30 s, which would make a 500-CV batch wait over 4 hours. Measured speed goes in the report, and this is the first thing it tests</td></tr>
+<tr><td>Who can correct what</td><td>Identity, roles, qualifications, skills. A correction must quote the CV exactly, or it is refused and the value is flagged instead</td><td>A model can sound right and be wrong; a quote can be checked by code</td></tr>
+<tr><td>How it earns trust</td><td>Planted-error test: real records with errors put in on purpose (a referee's phone, a swapped employer, an invented role). It must catch them, and must not flag clean records</td><td>Measures catches and false alarms per field. Pass marks are written before the first run</td></tr>
+<tr><td>Model unavailable</td><td>Documents wait, visibly. They never reach a panel as if checked</td><td>Your rule is every CV. An administrator's release is logged and labelled</td></tr>
+<tr><td>Live speed today</td><td>Every upload waits for the auditor. On this Mac expect minutes per CV when busy</td><td>A real cost of this rule on one laptop GPU. More machines shorten it, by adding model workers and with no code change</td></tr>
+</table></div>
+<h3 style="margin-top:18px">Multi-tenancy in the auditor</h3>
+<div class="tablewrap"><table>
+<tr><th>Where</th><th>Rule</th><th>Proof</th></tr>
+<tr><td>Audit job</td><td>Carries its organisation and portal from the queue row; runs inside that scope, with row rules on. One document at a time, and nothing is shared between prompts but the fixed instructions</td><td>A job cannot read another portal's draft: test</td></tr>
+<tr><td>Draft record</td><td>Stored on the document row in its own portal. Invisible to every panel, search and match, and to other portals</td><td>Draft stays out of board, search and match lists: test</td></tr>
+<tr><td>Fair turns</td><td>Audits go before other model work. Between portals, the fewest running goes first. Each portal's waiting audits count against its own "documents waiting" limit</td><td>A busy portal cannot hold a quiet one's CV: test with two portals</td></tr>
+<tr><td>Corrections and answers</td><td>In the portal's own rows. Teaching examples never cross organisations</td><td>Added to the route isolation test, which refuses an unlisted route</td></tr>
+<tr><td>Administrator's release</td><td>Own portal only; audited with who and when. A hiring manager cannot</td><td>Route and role tests</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>What long CVs have already shown</h2>
+<p>The packs used until today were short: the "long form" pack is 3 to 4 pages. Your own CVs have a median of 4 and go up to 24. So I am writing real 15 to 30 page invented CVs, with answer keys. The first one exposed defects no short document could.</p>
+<div class="tablewrap"><table>
+<tr><th>Defect, at the root</th><th>Before</th><th>After</th></tr>
+<tr><td>Job descriptions: everything after the last known heading was scored as a requirement ("Submit a current CV", a footer)</td><td>A same-role match scored 53, "Partial alignment"</td><td>81, "Strong documented fit". Sections now end at any heading</td></tr>
+<tr><td>Credit for a word rather than the subject: an engineer credited for "Patient assessment" and "Tax compliance"</td><td>31% false credit on the long CV</td><td>13%, and falling. Judged sentence by sentence on the requirement's own subject</td></tr>
+<tr><td>Roles in two-column tables, roles run into their duties, lists with no heading, titles beginning with a label's word</td><td>Parsing about 92% on 70 people</td><td>99.8%</td></tr>
+<tr><td>Ranking both ways on those 70 people</td><td>Not measured before</td><td>Right profession first for every job; for each person, 97% first and 100% in the top three</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>What the first measurements changed</h2>
+<div class="tablewrap"><table>
+<tr><th>Found</th><th>Figure</th><th>What the plan does now</th></tr>
+<tr><td>More at once does not make this Mac's model faster</td><td>Ollama: about 2 reads a minute at 2, 4 or 6 at once (one read 34 s alone, 180 s at 6). MLX: 1.2 alone, 1.7 at 4, timed out at 8, measured with a crowd test running</td><td>Slots stay in configuration, set to what each machine really gives. Every portal still gets its fair turn. Speed comes from asking less per document and from adding machines, not from a bigger number in a setting</td></tr>
+<tr><td>Crowds arriving all read a hundred full records</td><td>2,500 users: 30 to 60% refused as busy during arrival</td><td>Done: one shared board page per portal and role, inside a memory limit. A reload after a change always reads fresh</td></tr>
+<tr><td>Settings limits count, then act</td><td>From reading the code; the probe will measure it</td><td>Replace with an atomic reservation, so 20 uploads at one moment cannot pass a limit of 3. Test first</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>System architecture</h2>
+<figure>
+<div class="draw"><svg viewBox="0 0 940 390" role="img" aria-label="Visitors reach the API through a tunnel. The API, reading worker and new model worker all use the Supabase database in Ireland. The model worker alone reaches the local model on the Mac's GPU, through a loopback bridge.">
+<defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<rect class="zone" x="176" y="16" width="550" height="360" rx="6"/><text class="small" x="186" y="366">Containers in the Mac's VM, today. On a real server, the same containers.</text>
+<rect class="box" x="16" y="44" width="124" height="58" rx="5"/><text class="b" x="78" y="69" text-anchor="middle">Recruiters</text><text class="small" x="78" y="87" text-anchor="middle">browsers</text>
+<rect class="box" x="196" y="44" width="124" height="58" rx="5"/><text class="b" x="258" y="69" text-anchor="middle">Tunnel</text><text class="small" x="258" y="87" text-anchor="middle">public address</text>
+<rect class="box" x="378" y="44" width="160" height="58" rx="5"/><text class="b" x="458" y="69" text-anchor="middle">API</text><text class="small" x="458" y="87" text-anchor="middle">10 connections, says busy past 80</text>
+<rect class="box" x="760" y="44" width="164" height="58" rx="5"/><text class="b" x="842" y="66" text-anchor="middle">Supabase, Ireland</text><text class="small" x="842" y="84" text-anchor="middle">records, queue, row rules</text>
+<rect class="box" x="378" y="160" width="160" height="58" rx="5"/><text class="b" x="458" y="185" text-anchor="middle">Reading worker</text><text class="small" x="458" y="203" text-anchor="middle">3 connections</text>
+<rect class="new" x="378" y="276" width="160" height="58" rx="5"/><text class="b" x="458" y="301" text-anchor="middle">Model worker (new)</text><text class="small" x="458" y="319" text-anchor="middle">model jobs only</text>
+<rect class="new" x="590" y="282" width="116" height="46" rx="5"/><text class="b" x="648" y="310" text-anchor="middle">Local bridge</text>
+<rect class="new" x="760" y="276" width="164" height="58" rx="5"/><text class="b" x="842" y="298" text-anchor="middle">Ollama, Mac's GPU</text><text class="small" x="842" y="316" text-anchor="middle">two approved models</text>
+<line x1="140" y1="73" x2="194" y2="73" marker-end="url(#a1)"/><text class="small" x="167" y="65" text-anchor="middle">HTTPS</text>
+<line x1="320" y1="73" x2="376" y2="73" marker-end="url(#a1)"/>
+<line x1="538" y1="73" x2="758" y2="73" marker-end="url(#a1)"/><text class="small" x="648" y="65" text-anchor="middle">encrypted, certificate checked</text>
+<line x1="538" y1="180" x2="770" y2="104" marker-end="url(#a1)"/><text class="small" x="620" y="126" text-anchor="middle">claims jobs, saves records</text>
+<line x1="538" y1="290" x2="800" y2="104" marker-end="url(#a1)"/><text class="small" x="690" y="218" text-anchor="start">claims model jobs, saves proposals</text>
+<line x1="538" y1="305" x2="588" y2="305" marker-end="url(#a1)"/>
+<line x1="706" y1="305" x2="758" y2="305" marker-end="url(#a1)"/><text class="small" x="648" y="348" text-anchor="middle">this computer only: no document leaves it</text>
+</svg></div>
+<figcaption>The blue boxes are what this plan adds. Only the model worker talks to the model, so a slow model cannot delay a sign-in, an upload or a match. The API and reading worker have no path to it.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>The workflow: from upload to a better record</h2>
+<figure>
+<div class="draw"><svg viewBox="0 0 940 400" role="img" aria-label="A document is read by rules and published at once. The model then reads it, its proposals must quote the document, and a policy gate applies, suggests or only logs them. Results and recruiter answers go to a scoreboard, which can downgrade the gate.">
+<defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<rect class="box" x="16" y="30" width="110" height="52" rx="5"/><text class="b" x="71" y="61" text-anchor="middle">Upload</text>
+<rect class="box" x="176" y="30" width="130" height="52" rx="5"/><text class="b" x="241" y="52" text-anchor="middle">Reader and rules</text><text class="small" x="241" y="69" text-anchor="middle">OCR if needed</text>
+<rect class="box" x="356" y="30" width="150" height="52" rx="5"/><text class="b" x="431" y="52" text-anchor="middle">Record published</text><text class="small" x="431" y="69" text-anchor="middle">person can work now</text>
+<rect class="box" x="572" y="30" width="110" height="52" rx="5"/><text class="b" x="627" y="61" text-anchor="middle">Model queue</text>
+<rect class="new" x="766" y="30" width="150" height="52" rx="5"/><text class="b" x="841" y="52" text-anchor="middle">Second read</text><text class="small" x="841" y="69" text-anchor="middle">one document, own portal</text>
+<line x1="126" y1="56" x2="174" y2="56" marker-end="url(#a2)"/><line x1="306" y1="56" x2="354" y2="56" marker-end="url(#a2)"/>
+<line x1="506" y1="56" x2="570" y2="56" marker-end="url(#a2)"/><text class="small" x="538" y="48" text-anchor="middle">queued</text>
+<line x1="682" y1="56" x2="764" y2="56" marker-end="url(#a2)"/><text class="small" x="723" y="48" text-anchor="middle">fair turn</text>
+<rect class="box" x="766" y="150" width="150" height="56" rx="5"/><text class="b" x="841" y="172" text-anchor="middle">Checks</text><text class="small" x="841" y="190" text-anchor="middle">quote is in the document</text>
+<line x1="841" y1="82" x2="841" y2="148" marker-end="url(#a2)"/><text class="small" x="850" y="118">JSON only</text>
+<rect class="new" x="540" y="150" width="150" height="56" rx="5"/><text class="b" x="615" y="172" text-anchor="middle">Policy gate</text><text class="small" x="615" y="190" text-anchor="middle">configuration, versioned</text>
+<line x1="766" y1="178" x2="692" y2="178" marker-end="url(#a2)"/>
+<path class="l acc" d="M570 150 L470 84" marker-end="url(#a2)"/><text class="small" x="440" y="118" text-anchor="start">apply: value added with its quote, audited, reversible</text>
+<rect class="box" x="300" y="150" width="150" height="56" rx="5"/><text class="b" x="375" y="172" text-anchor="middle">Recruiter</text><text class="small" x="375" y="190" text-anchor="middle">accepts or rejects</text>
+<line x1="540" y1="178" x2="452" y2="178" marker-end="url(#a2)"/><text class="small" x="496" y="170" text-anchor="middle">suggest</text>
+<rect class="new" x="430" y="290" width="260" height="60" rx="5"/><text class="b" x="560" y="314" text-anchor="middle">Scoreboard</text><text class="small" x="560" y="333" text-anchor="middle">precision by field, document type, model version</text>
+<line x1="615" y1="206" x2="600" y2="288" marker-end="url(#a2)"/><text class="small" x="616" y="250">every proposal</text>
+<line x1="375" y1="206" x2="470" y2="288" marker-end="url(#a2)"/><text class="small" x="330" y="250">every answer</text>
+<line x1="841" y1="206" x2="692" y2="310" marker-end="url(#a2)"/><text class="small" x="780" y="270">refused: no quote</text>
+<path class="l guard" d="M680 290 L664 208" marker-end="url(#a2)"/><text class="small" x="690" y="388" text-anchor="middle">Dashed: if measured precision falls below its limit, that kind of proposal drops from apply to suggest.</text>
+</svg></div>
+<figcaption>A person is never waiting on the model. "Apply" only ever adds a missing value and only for kinds of proposal that passed measurement. It never overwrites a value a person typed or changes a score. Matching follows the same shape: the rules answer at once, the model checks each requirement afterwards, and where they differ the requirement is flagged for a person.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>Every user and every portal at the same time</h2>
+<figure>
+<div class="draw"><svg viewBox="0 0 940 260" role="img" aria-label="People in many portals work directly with the API without waiting. Their model jobs enter one fair queue, which takes turns between organisations and portals, and runs several at once on model slots. More GPU machines add more slots.">
+<defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<rect class="box" x="16" y="24" width="150" height="40" rx="5"/><text x="91" y="49" text-anchor="middle">Portal A: 10 people</text>
+<rect class="box" x="16" y="84" width="150" height="40" rx="5"/><text x="91" y="109" text-anchor="middle">Portal B: 2 people</text>
+<rect class="box" x="16" y="144" width="150" height="40" rx="5"/><text x="91" y="169" text-anchor="middle">Portal C: 40 people</text>
+<rect class="box" x="250" y="24" width="150" height="40" rx="5"/><text class="b" x="325" y="49" text-anchor="middle">API</text>
+<line x1="166" y1="44" x2="248" y2="44" marker-end="url(#a3)"/><line x1="166" y1="104" x2="248" y2="50" marker-end="url(#a3)"/><line x1="166" y1="164" x2="248" y2="58" marker-end="url(#a3)"/>
+<text class="small" x="412" y="40">sign-in, board, upload, match:</text><text class="small" x="412" y="56">answered now, never in the model's line</text>
+<rect class="new" x="300" y="110" width="170" height="68" rx="5"/><text class="b" x="385" y="136" text-anchor="middle">Fair queue</text><text class="small" x="385" y="154" text-anchor="middle">fewest running goes first:</text><text class="small" x="385" y="169" text-anchor="middle">organisation, then portal</text>
+<line x1="325" y1="64" x2="360" y2="108" marker-end="url(#a3)"/><text class="small" x="262" y="92">model jobs</text>
+<rect class="new" x="560" y="110" width="170" height="68" rx="5"/><text class="b" x="645" y="136" text-anchor="middle">Model slots</text><text class="small" x="645" y="154" text-anchor="middle">several at once;</text><text class="small" x="645" y="169" text-anchor="middle">number set in configuration</text>
+<line x1="470" y1="144" x2="558" y2="144" marker-end="url(#a3)"/>
+<rect class="box" x="790" y="110" width="134" height="68" rx="5"/><text class="b" x="857" y="140" text-anchor="middle">Mac's GPU</text><text class="small" x="857" y="158" text-anchor="middle">today</text>
+<line x1="730" y1="144" x2="788" y2="144" marker-end="url(#a3)"/>
+<rect class="zone" x="790" y="194" width="134" height="48" rx="5"/><text class="small" x="857" y="222" text-anchor="middle">more GPU machines</text>
+<path class="l guard" d="M730 170 L788 214" marker-end="url(#a3)"/><text class="small" x="540" y="222">scale out by adding workers: no code change</text>
+</svg></div>
+<figcaption>Nobody stands in single file behind their own colleagues: the next turn goes to whichever portal has the least running, so a busy portal cannot starve a quiet one, and nobody waits for the model to use the service. The limit is measured: this Mac gives about 2 reads a minute however many run together, so a batch of 500 is read by the model over about 4 hours, with every record already usable from the first minute. To shorten that, the model is asked only about what the rules are unsure of, and more machines add more turns. True simultaneous reads need more GPUs; no setting changes that, and the report will say so.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>How it keeps learning, safely</h2>
+<figure>
+<div class="draw"><svg viewBox="0 0 940 240" role="img" aria-label="Evidence from recruiters and test packs enters a private store per organisation. Experiments test prompts, examples and adapters on frozen sets. Only what passes a gate becomes a new versioned configuration, which then produces new evidence.">
+<defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<rect class="box" x="16" y="40" width="150" height="74" rx="5"/><text class="b" x="91" y="64" text-anchor="middle">Evidence</text><text class="small" x="91" y="82" text-anchor="middle">corrections, accept/reject,</text><text class="small" x="91" y="98" text-anchor="middle">rule and model disagree</text>
+<rect class="box" x="216" y="40" width="150" height="74" rx="5"/><text class="b" x="291" y="64" text-anchor="middle">Private store</text><text class="small" x="291" y="82" text-anchor="middle">per organisation and</text><text class="small" x="291" y="98" text-anchor="middle">portal, row rules</text>
+<rect class="box" x="416" y="40" width="150" height="74" rx="5"/><text class="b" x="491" y="64" text-anchor="middle">Experiment</text><text class="small" x="491" y="82" text-anchor="middle">prompt, examples, adapter;</text><text class="small" x="491" y="98" text-anchor="middle">pass rule written first</text>
+<rect class="new" x="616" y="40" width="130" height="74" rx="5"/><text class="b" x="681" y="72" text-anchor="middle">Gate</text><text class="small" x="681" y="90" text-anchor="middle">frozen, untouched sets</text>
+<rect class="box" x="796" y="40" width="128" height="74" rx="5"/><text class="b" x="860" y="72" text-anchor="middle">New version</text><text class="small" x="860" y="90" text-anchor="middle">configuration, logged</text>
+<line x1="166" y1="77" x2="214" y2="77" marker-end="url(#a4)"/><line x1="366" y1="77" x2="414" y2="77" marker-end="url(#a4)"/><line x1="566" y1="77" x2="614" y2="77" marker-end="url(#a4)"/><line x1="746" y1="77" x2="794" y2="77" marker-end="url(#a4)"/><text class="small" x="770" y="68" text-anchor="middle">passes</text>
+<path class="l" d="M860 114 L860 170 L91 170 L91 116" marker-end="url(#a4)"/><text class="small" x="476" y="162" text-anchor="middle">runs in the background, and produces new evidence</text>
+<path class="l guard" d="M681 114 L681 150 L520 150 L500 116" marker-end="url(#a4)"/><text class="small" x="600" y="142" text-anchor="middle">fails: kept with its lesson</text>
+<text class="small" x="291" y="212" text-anchor="middle">Crossing organisations for training needs that organisation's permission and removal of identities.</text>
+</svg></div>
+<figcaption>"Always learning" means evidence collects itself and each candidate is tested automatically. It does not mean the model changes itself: a new version replaces the old only after passing. Scoring changes also need your approval. With your permission, every CV and job description in Downloads is used, split by person so no one appears in both training and test. Those files, and anything trained on them, stay on this machine.</figcaption>
+</figure>
+<h3 style="margin-top:18px">What the model is taught</h3>
+<div class="tablewrap"><table>
+<tr><th>Teaching</th><th>Content</th><th>How it is proven</th></tr>
+<tr><td>System brief, versioned</td><td>What RoleMatch is, the model's job as the background worker, the five evidence words, that absence is not proof, that it never scores or decides, that a portal's documents stay in that portal</td><td>The version is stored on every answer. Each new brief runs against the frozen sets before use</td></tr>
+<tr><td>Every extraction and matching test</td><td>Its right answers become training rows and examples, split by person</td><td>The untouched part of each pack is the exam</td></tr>
+<tr><td>Job title relevance</td><td>A title earns credit only where it relates to the requirement. "Senior Java Engineer" says nothing about an HR requirement</td><td>The R110 test turns from known failure to pass, with a pair of tests for a relevant and an irrelevant title in both match directions</td></tr>
+<tr><td>Recruiter answers</td><td>Accept and reject on each suggestion, kept per organisation</td><td>Scoreboard by field and model version</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>Multi-tenancy in this design</h2>
+<div class="tablewrap"><table>
+<tr><th>Where</th><th>Rule</th><th>Proof</th></tr>
+<tr><td>Model job</td><td>Carries its organisation and portal, read from the queue row; runs under that scope with row rules on</td><td>Job in portal A cannot read portal B's document, in a test</td></tr>
+<tr><td>Model input</td><td>One document or match at a time. Prompts are built per job; nothing shared between jobs except the fixed instructions</td><td>Output check: no other tenant's marker in any answer</td></tr>
+<tr><td>Proposals and answers</td><td>Stored with organisation and portal under row rules, read through the same route as the record</td><td>Added to the route isolation test, which refuses an unlisted route</td></tr>
+<tr><td>Caches</td><td>Keyed by portal, filled after membership is checked</td><td>Already tested; load tests check every list and search</td></tr>
+<tr><td>Learning</td><td>Examples never cross organisations without permission and removal of identities</td><td>Export refuses rows lacking a recorded permission</td></tr>
+<tr><td>Scoreboard</td><td>Platform sees counts by field and model version, with no document text</td><td>Schema holds no text column; test reads it</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>The 5,000 and 30,000 user tests</h2>
+<figure>
+<div class="draw"><svg viewBox="0 0 940 250" role="img" aria-label="Crowd processes on the PC and Mac send requests to several API servers on the Mac, which use the disposable database through their own tunnel. A guard watches the public live address and stops the test if live slows.">
+<defs><marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<rect class="box" x="16" y="36" width="170" height="56" rx="5"/><text class="b" x="101" y="60" text-anchor="middle">Crowd on the PC</text><text class="small" x="101" y="78" text-anchor="middle">12 processes, 24 threads</text>
+<rect class="box" x="16" y="116" width="170" height="56" rx="5"/><text class="b" x="101" y="140" text-anchor="middle">Crowd on the Mac</text><text class="small" x="101" y="158" text-anchor="middle">if the PC is not enough</text>
+<rect class="new" x="300" y="66" width="190" height="76" rx="5"/><text class="b" x="395" y="92" text-anchor="middle">API servers on the Mac</text><text class="small" x="395" y="110" text-anchor="middle">1, 2 and 4, to prove scaling out;</text><text class="small" x="395" y="126" text-anchor="middle">each person stays on one</text>
+<line x1="186" y1="64" x2="298" y2="92" marker-end="url(#a5)"/><text class="small" x="240" y="68" text-anchor="middle">over the LAN</text><line x1="186" y1="144" x2="298" y2="118" marker-end="url(#a5)"/>
+<rect class="box" x="580" y="66" width="150" height="76" rx="5"/><text class="b" x="655" y="96" text-anchor="middle">Disposable database</text><text class="small" x="655" y="114" text-anchor="middle">in the VM, invented data</text>
+<line x1="490" y1="104" x2="578" y2="104" marker-end="url(#a5)"/><text class="small" x="534" y="96" text-anchor="middle">own tunnel</text>
+<rect class="box" x="790" y="66" width="134" height="76" rx="5"/><text class="b" x="857" y="96" text-anchor="middle">Live service</text><text class="small" x="857" y="114" text-anchor="middle">untouched</text>
+<rect class="box" x="580" y="186" width="344" height="46" rx="5"/><text class="b" x="752" y="214" text-anchor="middle">Guard: live slower than 3 s three times, swap or disk limits</text>
+<path class="l guard" d="M857 184 L857 144" marker-end="url(#a5)"/><text class="small" x="866" y="168">watches</text>
+<path class="l guard" d="M580 209 L395 209 L395 144" marker-end="url(#a5)"/><text class="small" x="470" y="202" text-anchor="middle">stops the test</text>
+</svg></div>
+<figcaption>The tunnel is separate from Docker's control link, which a test knocked over earlier (R111). The live service shares the VM with this database, which is why the guard exists. Mail goes to a local sink, so nothing real is sent.</figcaption>
+</figure>
+<div class="tablewrap" style="margin-top:14px"><table>
+<tr><th>Test</th><th>Setup</th><th>What it must show</th></tr>
+<tr><td>30,000 sessions, first, as you asked</td><td>5,000 accounts with several sessions each; about 5,000 requests a second offered</td><td>Stays up, keeps organisations apart, serves what it can, says busy to the rest, recovers within 30 s. The report states exactly how many connections two machines reached</td></tr>
+<tr><td>5,000 people</td><td>136 organisations, close database; then Ireland's distance</td><td>Errors, p50/p95/p99, per-tenant spread. Ireland expected to refuse most; measured either way</td></tr>
+<tr><td>Settings limits at 5,000</td><td>Each limit on the Settings page driven to its edge during the crowd, one at a time and 20 at once</td><td>Each holds with a clear reason; another organisation unaffected; any overshoot reported as a defect</td></tr>
+<tr><td>Scale out, coming down</td><td>1,000 people on 1, 2, 4 API servers</td><td>More servers carry proportionally more; no cross-server errors</td></tr>
+<tr><td>Uploads and matching under load</td><td>Text, Word, scans; both matching directions; a deliberately busy organisation</td><td>Fair reading between organisations; no lost, duplicated or wrongly published record</td></tr>
+<tr><td>Soak</td><td>Normal traffic for an hour</td><td>Memory, connections and timings flat</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2>Order of work and how each step is proven</h2>
+<div class="tablewrap"><table>
+<tr><th>When</th><th>Step</th><th>Done means</th></tr>
+<tr><td class="n">Now</td><td>Bombard with 30,000 sessions, then come down: 5,000, limits, scale out. Score every kind of proposal against answer keys in the background</td><td>Tables above, each with its guard log. Figures by field and document type</td></tr>
+<tr><td class="n">11:30</td><td>Atomic limits; new table for proposals and reservations, with row rules</td><td>The probe's "20 at once" lines hold; tenant tests pass</td></tr>
+<tr><td class="n">12:30</td><td>Model worker live in shadow, with the system brief; proposals stored, nothing applied</td><td>Real run on live with an invented CV, in its own organisation; health unchanged; rollback tested</td></tr>
+<tr><td class="n">13:30</td><td>Gate, per-field policy in configuration, provenance, reversal, recruiter accept/reject, scoreboard</td><td>Tests first, including tenant separation; full suite and journeys pass</td></tr>
+<tr><td class="n">15:00</td><td>Policy set from measurement. Matching disagreement flag. Job title relevance in rules and in the model's teaching, both directions</td><td>Each "apply" backed by its figure on documents not used to set it; rejected kinds stay "suggest"; R110 passes</td></tr>
+<tr><td class="n">16:00</td><td>Training and learning job on the Downloads packs: examples, prompts and an adapter tested against frozen sets</td><td>At least one candidate taken through the whole loop, pass or fail, with the result recorded. Longer training continues overnight under the research runner</td></tr>
+<tr><td class="n">17:00</td><td>Uploads and matching under load; soak; replace X5's word list with a structural check; check what the interface tells people</td><td>Before-and-after figures; defects in the register</td></tr>
+<tr><td class="n">18:30</td><td>Release to live, with rollback ready; low-volume checks</td><td>Health, journeys, measured model effect on live invented documents</td></tr>
+<tr><td class="n">19:00</td><td>Write the status, maturity and LLM reports</td><td>A page you can open and share, by about 20:00</td></tr>
+</table></div>
+</section>
+
+<section class="pair">
+<div>
+<h3>Your decisions, now in the plan</h3>
+<ul>
+<li><b>Training:</b> all CVs and job descriptions in the Mac's Downloads folder. Yours to answer for on consent; kept on this machine.</li>
+<li><b>Job titles:</b> earn credit only where relevant to the specific job.</li>
+<li><b>The model:</b> it learns from every test and is given a brief on the whole system.</li>
+<li><b>Backups:</b> left alone for now. Efficiency is the concern.</li>
+<li><b>Big tests first:</b> 30,000, then work down.</li>
+</ul>
+</div>
+<div>
+<h3>What this plan will not claim</h3>
+<ul>
+<li>That the LLM is accurate before its table says so.</li>
+<li>That one laptop GPU serves a large platform. The design scales; this hardware does not.</li>
+<li>That 30,000 test sessions equal 30,000 real people on separate networks.</li>
+<li>That nothing is weak. Weak areas go in the report with their figures.</li>
+</ul>
+</div>
+</section>
+</main>

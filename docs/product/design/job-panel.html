@@ -1,0 +1,130 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Job panel design</title>
+<style>
+:root{--page:#141a24;--card:#1c2330;--tile:#232c3b;--line:#2f3a4c;--ink:#e8edf4;--muted:#9aa7b8;--soft:#c3cdd9;--brand:#2f9ec4;--teal:#17c3b2;--amber:#f2b84b;--red:#f07b7b;--green:#57c98a}
+*{box-sizing:border-box}body{margin:0;background:var(--page);font:14px/1.5 -apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;color:var(--ink);padding:28px}
+.wrap{display:flex;gap:36px;align-items:flex-start}
+.panel{width:600px;flex:none}
+.notes{width:560px;flex:none;padding-top:8px}
+.bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.bar h2{margin:0;font-size:20px}.btns{display:flex;gap:8px}
+.btn{border:1px solid var(--line);color:var(--soft);padding:6px 12px;border-radius:9px;font-size:13px}.btn.p{background:var(--brand);border-color:var(--brand);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--brand),var(--teal))}
+h1{margin:4px 0 2px;font-size:26px;letter-spacing:-.2px}
+.co{color:#6cc3e3;font-size:16px;font-weight:600}
+.dept{color:var(--muted);font-size:13px;margin-top:2px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 12px}
+.fact{background:var(--tile);border-radius:12px;padding:10px 12px}
+.fact .k{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.fact .v{font-size:14px;color:var(--ink);margin-top:2px}
+.fact.none .v{color:#6f7d90;font-style:italic}
+.fact.wide{grid-column:1/-1}
+.prov{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin:6px 0 4px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.prov a{color:#6cc3e3;text-decoration:none;margin-left:auto}
+.sec{margin-top:22px}
+.sh{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.sh h3{margin:0;font-size:15px}.sh .n{color:var(--muted);font-size:12px}
+.chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--soft)}
+.chip.doc{border-color:#2d6b52;color:#8be0b3}.chip.ai{border-color:#7a5c1f;color:var(--amber)}.chip.must{border-color:#1f6f8f;color:#8fd6f0}
+.box{background:var(--tile);border-radius:12px;padding:14px 16px}
+.must{background:linear-gradient(180deg,#183447,#1a2a3a);border:1px solid #23506a}
+.must ol{margin:6px 0 0;padding-left:20px}.must li{margin:6px 0}
+.must .foot{font-size:12px;color:var(--muted);margin-top:8px}
+.item{padding:9px 12px;border-left:3px solid var(--brand);background:#1f2735;border-radius:8px;margin:7px 0}
+.item.g{border-color:var(--green)}.item.y{border-color:var(--amber)}
+.grp{margin:12px 0 4px;font-size:12px;font-weight:700;color:var(--soft);letter-spacing:.03em}
+.grp .n{color:var(--muted);font-weight:500}
+.coll{display:flex;justify-content:space-between;padding:10px 12px;background:#1f2735;border-radius:8px;margin:7px 0;color:var(--soft)}
+.coll span:last-child{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}.sk{background:#163a4a;color:#9fe0f5;border-radius:8px;padding:4px 10px;font-size:13px}
+.comp{display:grid;grid-template-columns:150px 1fr;gap:6px 14px;font-size:13px}.comp b{color:var(--soft);font-weight:600}
+.foot2{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:22px}
+.notes h2{font-size:20px;margin:0 0 6px}.notes p{color:var(--soft);margin:0 0 14px}
+.n1{display:grid;grid-template-columns:34px 1fr;gap:12px;margin:14px 0}
+.n1 .no{width:34px;height:34px;border-radius:50%;background:#1f3b4c;color:#9fe0f5;display:flex;align-items:center;justify-content:center;font-weight:700}
+.n1 b{display:block;margin-bottom:2px}.n1 span{color:var(--soft);font-size:13px}
+</style></head><body><div class="wrap">
+<div class="panel">
+  <div class="bar"><h2>Role Details</h2><div class="btns"><span class="btn">View shortlist</span><span class="btn">Edit role</span><span class="btn">Delete</span></div></div>
+  <div class="card">
+    <h1>Head of Technology</h1>
+    <div class="co">Absa Group</div>
+    <div class="dept">Absa Group Technology – Everyday Banking</div>
+    <div class="facts">
+      <div class="fact"><div class="k">Location</div><div class="v">Johannesburg, Gauteng</div></div>
+      <div class="fact"><div class="k">Work arrangement</div><div class="v">Hybrid: three days a week in the office</div></div>
+      <div class="fact"><div class="k">Employment</div><div class="v">Permanent, full time</div></div>
+      <div class="fact"><div class="k">Reports to</div><div class="v">Chief Technology Officer, Everyday Banking</div></div>
+      <div class="fact wide"><div class="k">Pay</div><div class="v">Market related, with short- and long-term incentives</div></div>
+      <div class="fact"><div class="k">Job grade</div><div class="v">Executive</div></div>
+      <div class="fact"><div class="k">Team</div><div class="v">8 heads of department; about 350 people in total</div></div>
+      <div class="fact"><div class="k">Closing date</div><div class="v">28 November 2026</div></div>
+      <div class="fact"><div class="k">Reference</div><div class="v">EB-TECH-2026-114</div></div>
+    </div>
+    <div class="prov"><span class="dot"></span>Read by AI · 71 details, each found in the job description<a>View original job</a></div>
+
+    <div class="sec"><div class="sh"><h3>Summary</h3><span class="chip doc">From the job description</span></div>
+      <div class="box">The Head of Technology leads the technology function for Everyday Banking: the engineering teams, platforms and services that customers use every day to bank, pay, borrow and save.</div></div>
+
+    <div class="sec"><div class="sh"><h3>What matching screens on</h3><span class="chip must">Must-haves · 5</span></div>
+      <div class="box must"><ol>
+        <li>Bachelor's degree in Computer Science, Information Systems, Engineering or a related field</li>
+        <li>At least 15 years in technology, at least 8 in senior leadership</li>
+        <li>At least 5 years leading teams of 200 or more in banking, insurance or financial services</li>
+        <li>Large-scale technology modernisation, including cloud migration</li>
+        <li>Working within a regulated environment, with auditors and regulators</li></ol>
+        <div class="foot">Chosen by the AI from the requirements below, quoted from the job. Every other requirement still counts in the score.</div></div></div>
+
+    <div class="sec"><div class="sh"><h3>Requirements</h3><span class="n">6</span></div>
+      <div class="grp">Qualifications <span class="n">· 1</span></div>
+      <div class="item">Bachelor's degree in Computer Science, Information Systems, Engineering or a related field (NQF 7).</div>
+      <div class="grp">Experience <span class="n">· 5</span></div>
+      <div class="item">At least 15 years of experience in technology, of which at least 8 years in senior leadership roles.</div>
+      <div class="item">At least 5 years leading large technology teams (200 or more people) in banking, insurance or financial services.</div>
+      <div class="coll"><span>3 more</span><span>Show</span></div></div>
+
+    <div class="sec"><div class="sh"><h3>Advantageous</h3><span class="n">5</span></div>
+      <div class="item y">A postgraduate qualification such as an Honours degree, Master's degree or MBA is advantageous.</div>
+      <div class="item y">Certification in cloud architecture (for example AWS Solutions Architect Professional or Azure Solutions Architect Expert).</div>
+      <div class="coll"><span>3 more</span><span>Show</span></div></div>
+
+    <div class="sec"><div class="sh"><h3>Responsibilities</h3><span class="n">28 in 7 groups</span></div>
+      <div class="grp">1. Technology strategy and architecture <span class="n">· 4</span></div>
+      <div class="item g">Define and own the technology strategy and roadmap for Everyday Banking, aligned to the group technology strategy and the business plan.</div>
+      <div class="item g">Lead the modernisation of core channels and platforms, including migration to cloud, decomposition of legacy systems and adoption of reusable group platforms.</div>
+      <div class="coll"><span>2 more</span><span>Show</span></div>
+      <div class="coll"><span>2. Delivery and engineering</span><span>5</span></div>
+      <div class="coll"><span>3. Service stability and resilience</span><span>4</span></div>
+      <div class="coll"><span>4. Security, risk and compliance</span><span>4</span></div>
+      <div class="coll"><span>5. People and leadership</span><span>4</span></div>
+      <div class="coll"><span>6. Financial and vendor management</span><span>4</span></div>
+      <div class="coll"><span>7. Stakeholder management</span><span>3</span></div></div>
+
+    <div class="sec"><div class="sh"><h3>Key skills</h3><span class="n">12</span></div>
+      <div class="chips"><span class="sk">Enterprise architecture</span><span class="sk">Solution architecture</span><span class="sk">AWS</span><span class="sk">Azure</span><span class="sk">Microservices</span><span class="sk">APIs</span><span class="sk">DevOps</span><span class="sk">Continuous delivery</span><span class="sk">Site reliability engineering</span><span class="sk">Payments</span><span class="sk">Vendor management</span><span class="sk">TOGAF</span></div></div>
+
+    <div class="sec"><div class="sh"><h3>Competencies</h3><span class="n">6</span></div>
+      <div class="box comp"><b>Strategic thinking</b><span>Sees the long-term picture and connects technology choices to business results.</span><b>Leading people</b><span>Builds strong teams, develops leaders and creates an inclusive culture.</span><b>Driving results</b><span>Sets clear goals, holds people accountable and delivers under pressure.</span><b style="color:var(--muted)">3 more</b><span style="color:var(--muted)">Show</span></div></div>
+
+    <div class="sec"><div class="sh"><h3>Also in the job description</h3></div>
+      <div class="coll"><span>What we offer</span><span>4</span></div>
+      <div class="coll"><span>Working relationships</span><span>5</span></div>
+      <div class="coll"><span>Employment equity · How to apply · Privacy</span><span>3</span></div></div>
+
+    <div class="foot2"><span>Head of Technology - Job Description.docx · 6 pages</span><span>Posted 10/11/2026</span></div>
+  </div>
+</div>
+<div class="notes">
+  <h2>Proposed job panel</h2>
+  <p>The Absa job as it would appear. Everything on the left is read by Claude and checked against the job description by our code before it is shown.</p>
+  <div class="n1"><div class="no">1</div><div><b>Key facts as tiles</b><span>Every fact in the job's own words. The six fixed facts always appear; a fact the job does not give says "Not stated in the job". Other facts the job lists (grade, team, closing date, reference) appear as extra tiles.</span></div></div>
+  <div class="n1"><div class="no">2</div><div><b>Where it came from</b><span>One line says it was read by AI, how many details were checked, and links to the original.</span></div></div>
+  <div class="n1"><div class="no">3</div><div><b>Summary, labelled</b><span>The job's own summary, marked "From the job description". If the job has none, the AI writes two sentences from the document, marked "Written by AI from the job description".</span></div></div>
+  <div class="n1"><div class="no">4</div><div><b>What matching screens on</b><span>The at most 5 must-haves the matching brief uses, shown on the panel so a recruiter sees what drives every score, and can correct the job before matching.</span></div></div>
+  <div class="n1"><div class="no">5</div><div><b>The job's own structure</b><span>Requirements, advantageous items and responsibilities keep the groups and order the document uses, each item in full, nothing left out (checked by count).</span></div></div>
+  <div class="n1"><div class="no">6</div><div><b>Skills and competencies</b><span>Named skills as short chips; behavioural competencies as their own section with what each looks like.</span></div></div>
+  <div class="n1"><div class="no">7</div><div><b>Nothing thrown away</b><span>Benefits, working relationships, equity and application notes are kept under "Also in the job description", folded, so the panel stays calm.</span></div></div>
+  <div class="n1"><div class="no">8</div><div><b>Long lists fold</b><span>Two items show, the rest behind "Show"; groups fold with their counts. Edit opens the same fields, with the job's original words kept beside any change.</span></div></div>
+</div>
+</div></body></html>

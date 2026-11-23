@@ -1,0 +1,134 @@
+{
+ "spec": {
+  "id": "f015",
+  "field": "electrical trades",
+  "role": "Electrician",
+  "seniority": "senior",
+  "years": 13,
+  "quality": "average",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "prose-history"
+  ],
+  "name": "Karabo Dlamini",
+  "city": "Polokwane"
+ },
+ "name": "Karabo Dlamini",
+ "email": "karabo.dlamini@example.test",
+ "phone": "081 555 1015",
+ "headline": "Senior Electrician | 13 Years Experience | Polokwane | Specialised in Industrial & Commercial Electrical Systems",
+ "summary": "Experienced Senior Electrician with 13 years of hands-on experience in commercial, industrial, and public infrastructure electrical projects. Proven track record in safety compliance, system design, and team supervision across South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed electrical installations for commercial buildings in Polokwane and surrounding areas from 2013-2018.",
+    "Coordinated with contractors and inspectors to ensure compliance with SANS 204 and SANS 10142 standards.",
+    "Performed preventive maintenance on industrial motors and switchgear, reducing downtime by 30%."
+   ],
+   "city": "Polokwane",
+   "company": "KwaZulu Power Solutions",
+   "end": "2018-12",
+   "start": "2013-04",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Supervised electrical works for a new industrial park in Nelspruit, including cable routing and panel layout.",
+    "Trained 12 junior electricians in safe work practices and fault diagnosis techniques.",
+    "Led emergency power system installations during a power outage event in 2017."
+   ],
+   "city": "Nelspruit",
+   "company": "Mzansi Electrical Services",
+   "end": "2022-08",
+   "start": "2018-07",
+   "title": "Lead Electrician"
+  },
+  {
+   "bullets": [
+    "Executed full electrical design and installation for a 300m² commercial retail complex in Polokwane.",
+    "Collaborated with architects and structural engineers to integrate electrical systems into building plans.",
+    "Ensured all installations met SANS 10142 and local municipal electrical codes."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Electrical Works",
+   "end": "2024-03",
+   "start": "2022-09",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Managed electrical infrastructure for a new industrial manufacturing unit in Mpumalanga, including power distribution and control systems.",
+    "Conducted site inspections and safety audits, improving compliance with OHS regulations by 40%.",
+    "Supervised a team of 5 electricians during peak construction phases."
+   ],
+   "city": "Mpumalanga",
+   "company": "Vulindlela Power Systems",
+   "end": "2025-06",
+   "start": "2024-04",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Led electrical retrofitting of a municipal hospital’s power systems, enhancing reliability and safety.",
+    "Installed emergency power and backup systems in critical departments, meeting ISO 13849 standards.",
+    "Coordinated with medical staff to ensure zero disruption during operations."
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Health Electrical Services",
+   "end": "Present",
+   "start": "2025-07",
+   "title": "Senior Electrician"
+  }
+ ],
+ "education": [
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "National Diploma in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Electrical Engineering (SAIEE)",
+   "name": "Advanced Electrical Installation and Maintenance Certification",
+   "year": 2018
+  },
+  {
+   "issuer": "National Skills Authority (NSA)",
+   "name": "Level 6 Electrical Engineering (Senior Technician)",
+   "year": 2020
+  }
+ ],
+ "skills": [
+  "Electrical system design and installation",
+  "Fault diagnosis and troubleshooting",
+  "SANS 204 and SANS 10142 compliance",
+  "Industrial power systems",
+  "Safety protocols and OHS",
+  "Team leadership and training"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Designed and implemented a 100kW solar microgrid for a mining site in Limpopo, improving energy resilience and reducing grid dependency.",
+  "Led electrical upgrades for a 500m² industrial warehouse, including motor control systems and emergency power integration.",
+  "Conducted full electrical audits for a municipal water treatment facility, identifying and resolving 12 critical faults."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:55:41.786Z"
+ }
+}

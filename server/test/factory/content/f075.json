@@ -1,0 +1,130 @@
+{
+ "spec": {
+  "id": "f075",
+  "field": "cloud infrastructure",
+  "role": "Cloud Engineer",
+  "seniority": "senior",
+  "years": 13,
+  "quality": "average",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "professional-designation"
+  ],
+  "name": "Michael Govender",
+  "city": "Polokwane"
+ },
+ "name": "Michael Govender",
+ "email": "michael.govender@example.test",
+ "phone": "041 555 1075",
+ "headline": "Senior Cloud Engineer | 13+ Years in Cloud Infrastructure | SANC-Registered | Specialised in AWS, Azure, and Hybrid Environments",
+ "summary": "Results-driven Senior Cloud Engineer with 13 years of experience in designing, deploying, and managing scalable cloud infrastructures. Proven track record in AWS, Azure, and hybrid environments. SANC-registered and certified in cloud engineering practices.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed AWS and Azure environments for a national logistics firm, ensuring 99.99% SLA compliance.",
+    "Led infrastructure as code (IaC) strategy using Terraform and Ansible, improving deployment consistency and auditability."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Digital Solutions",
+   "end": "2024-03",
+   "start": "2018-06",
+   "title": "Senior Cloud Architect"
+  },
+  {
+   "bullets": [
+    "Spearheaded cloud security framework implementation, aligning with ISO 27001 and NIST standards.",
+    "Reduced cloud operational risks by 70% through automated monitoring and alerting systems."
+   ],
+   "city": "Polokwane",
+   "company": "Mokopane Tech Systems",
+   "end": "Present",
+   "start": "2021-04",
+   "title": "Senior Cloud Engineer"
+  },
+  {
+   "bullets": [
+    "Designed and deployed a multi-region cloud architecture for a financial services client, ensuring compliance with data residency laws.",
+    "Led end-to-end cloud operations for a public health platform, supporting 200+ daily users with zero downtime."
+   ],
+   "city": "Polokwane",
+   "company": "Valea Systems",
+   "end": "2021-03",
+   "start": "2015-08",
+   "title": "Cloud Infrastructure Lead"
+  },
+  {
+   "bullets": [
+    "Built and maintained cloud environments using AWS and OpenStack, supporting 50+ internal services.",
+    "Collaborated with DevOps teams to implement scalable, secure, and resilient cloud solutions."
+   ],
+   "city": "Polokwane",
+   "company": "KwaZulu Cloud Services",
+   "end": "2015-07",
+   "start": "2012-03",
+   "title": "Cloud Systems Engineer"
+  },
+  {
+   "bullets": [
+    "Supported cloud migration projects for SMEs, delivering solutions within tight timelines and budgets.",
+    "Conducted cloud performance testing and capacity planning for high-traffic web applications."
+   ],
+   "city": "Polokwane",
+   "company": "Sibonzi IT Solutions",
+   "end": "2012-02",
+   "start": "2010-05",
+   "title": "Cloud Systems Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "BSc Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "MSc Cloud Systems and Architecture",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Technology (SAIIT)",
+   "name": "Professional Cloud Engineer (PCE)",
+   "year": 2022
+  },
+  {
+   "issuer": "South African Council for Engineering (SACE)",
+   "name": "SANC Registration: Cloud Infrastructure Specialist",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "AWS, Azure, OpenStack",
+  "Infrastructure as Code (Terraform, Ansible)",
+  "Cloud Security & Compliance",
+  "CI/CD Pipelines",
+  "Cloud Cost Optimization",
+  "Disaster Recovery & High Availability"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [
+  "Led migration of 15+ enterprise apps to AWS, reducing latency by 40% and improving uptime to 99.99%.",
+  "Designed and deployed a hybrid cloud architecture for a provincial government service, achieving 99.9% availability.",
+  "Optimised cloud cost models across 30+ services, cutting annual spend by R1.2M.",
+  "Implemented CI/CD pipelines using Jenkins and Terraform, reducing deployment time by 60%."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:15:49.846Z"
+ }
+}

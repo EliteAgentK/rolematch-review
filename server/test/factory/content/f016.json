@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "id": "f016",
+  "field": "nursing",
+  "role": "Professional Nurse",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "not-completed",
+   "comma-titles"
+  ],
+  "name": "Sipho Nkosi",
+  "city": "Midrand"
+ },
+ "name": "Sipho Nkosi",
+ "email": "sipho.nkosi@example.test",
+ "phone": "011 555 1016",
+ "headline": "Mid-Level Professional Nurse | Clinical Leadership & Patient Safety | Midrand, South Africa",
+ "summary": "Results-driven mid-level professional nurse with 6 years of progressive clinical experience across acute, geriatric, and chronic care settings. Proven track record in improving patient outcomes, reducing readmissions, and leading clinical teams using evidence-based tools and digital systems. Based in Midrand, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Led daily ward rounds for 15+ patients using electronic medical records (EMR) at Soweto General Hospital, reducing patient readmission by 18% in 2023.",
+    "Trained 22 new nurses in clinical protocols using simulation labs, improving onboarding efficiency by 30% in 2024.",
+    "Implemented infection control protocols across 3 wards, cutting hospital-acquired infections by 25% in 6 months.",
+    "Coordinated emergency response during 12 high-volume incidents, reducing response time by 40% using real-time dashboards.",
+    "Conducted weekly patient safety audits with 100% compliance, identifying 15 critical gaps and resolving 90% within 30 days.",
+    "Managed a team of 8 nurses using nurse scheduling software, improving staff retention by 22% over 12 months."
+   ],
+   "city": "Soweto",
+   "company": "Soweto General Hospital",
+   "end": "2023-12",
+   "start": "2019-03",
+   "title": "Senior Nurse, Ward Management"
+  },
+  {
+   "bullets": [
+    "Directed ICU operations for 30+ patients daily using ICU monitoring systems, achieving 99.7% patient stability rate in 2024.",
+    "Introduced a pain assessment tool adopted by 100% of ICU staff, reducing patient pain scores by 35% in 3 months.",
+    "Led a quality improvement initiative that reduced sepsis response time from 90 to 45 minutes using real-time alerts.",
+    "Collaborated with pharmacists to reduce medication errors by 40% through digital prescribing checks.",
+    "Trained 14 staff on emergency protocols using VR simulations, improving response accuracy by 50% in 2024."
+   ],
+   "city": "Johannesburg",
+   "company": "MediCare Central Hospital",
+   "end": "Present",
+   "start": "2022-07",
+   "title": "Clinical Lead, Intensive Care Unit"
+  },
+  {
+   "bullets": [
+    "Managed a 12-bed maternity ward, ensuring 100% compliance with national maternal health guidelines.",
+    "Reduced postnatal complications by 28% through structured discharge planning using digital checklists.",
+    "Led weekly audits of maternal records, identifying and resolving 12 compliance issues in 2023.",
+    "Trained 10 midwifery staff on newborn resuscitation, improving survival rates by 15% in 2023."
+   ],
+   "city": "Sandton",
+   "company": "Sandton Maternity & Wellness Clinic",
+   "end": "2022-06",
+   "start": "2020-04",
+   "title": "Maternity Nurse, Clinical Supervisor"
+  },
+  {
+   "bullets": [
+    "Operated a 5-bed geriatric ward, improving patient mobility outcomes by 30% using tailored care plans.",
+    "Introduced fall prevention protocols adopted by 100% of staff, reducing falls by 45% in 10 months.",
+    "Conducted monthly patient satisfaction surveys with 95% positive feedback, driving service improvements.",
+    "Collaborated with physiotherapists to design mobility programs, increasing patient independence by 25%."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Health & Care Services",
+   "end": "2020-03",
+   "start": "2018-08",
+   "title": "Geriatric Nurse, Ward Manager"
+  },
+  {
+   "bullets": [
+    "Supported 10+ patients in chronic disease management using digital health tracking tools, improving adherence by 38%.",
+    "Developed a diabetes education program used by 80% of diabetic patients, increasing HbA1c control by 12%.",
+    "Trained 6 nurses in chronic disease protocols, reducing hospital visits by 20% in 6 months.",
+    "Used data dashboards to monitor patient outcomes, identifying 15 high-risk cases and preventing 10 admissions."
+   ],
+   "city": "Parktown",
+   "company": "Parktown Chronic Care Initiative",
+   "end": "2018-07",
+   "start": "2017-02",
+   "title": "Specialist Nurse, Chronic Disease Management"
+  },
+  {
+   "bullets": [
+    "Provided direct care to 40+ patients in a busy outpatient clinic, maintaining 99% patient satisfaction.",
+    "Introduced a patient intake form with digital validation, reducing errors by 50% in 3 months.",
+    "Led a team of 4 nurses in daily operations, improving workflow efficiency by 25%.",
+    "Conducted monthly patient feedback sessions, leading to 3 service redesigns in 2017."
+   ],
+   "city": "Boksburg",
+   "company": "Boksburg Community Health Centre",
+   "end": "2017-01",
+   "start": "2016-05",
+   "title": "Outpatient Nurse, Clinic Operations"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Nursing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Midwifery",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Nursing Council",
+   "name": "Registration as a Registered Nurse",
+   "year": 2019
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Diploma in Clinical Leadership",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Clinical assessment",
+  "Patient safety protocols",
+  "Electronic medical records (EMR)",
+  "Infection control",
+  "Team leadership",
+  "Data analysis",
+  "Emergency response",
+  "Patient education"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:57:07.250Z"
+ }
+}

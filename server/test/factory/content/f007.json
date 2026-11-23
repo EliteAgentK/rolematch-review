@@ -1,0 +1,134 @@
+{
+ "spec": {
+  "id": "f007",
+  "field": "actuarial science",
+  "role": "Actuarial Analyst",
+  "seniority": "senior",
+  "years": 11,
+  "quality": "rich",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "career-gap",
+   "prose-history"
+  ],
+  "name": "Johan Hendricks",
+  "city": "Polokwane"
+ },
+ "name": "Johan Hendricks",
+ "email": "johan.hendricks@example.test",
+ "phone": "081 555 1007",
+ "headline": "Senior Actuarial Analyst | Risk Modelling & Financial Forecasting | South African Actuarial Standards",
+ "summary": "Results-driven Senior Actuarial Analyst with 11 years of experience in life, health, and pension risk modelling. Proven track record in building scalable actuarial models, improving accuracy, and driving regulatory compliance. Based in Polokwane, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Built mortality models using SAS and R, improving life insurance claims accuracy by 18% across 200,000 policyholders (2020–2021).",
+    "Developed loss reserving models in Excel and Python, reducing reserve errors by 22% for a R1.2B portfolio.",
+    "Led actuarial validation of pension scheme projections using R and SQL, ensuring compliance with SARS guidelines.",
+    "Automated policy renewal risk assessments with Python scripts, cutting processing time by 40% for 15,000 policies annually.",
+    "Conducted stress testing on investment portfolios using Monte Carlo simulations in R, identifying 3 key risk scenarios with 95% confidence."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Insurance Solutions",
+   "end": "2021-12",
+   "start": "2020-03",
+   "title": "Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Designed capital adequacy models for a R500M life insurance product using SAS and Stata, increasing regulatory compliance by 30%.",
+    "Led actuarial review of reinsurance structures, reducing exposure by R180M through improved risk allocation.",
+    "Built predictive models for claim frequency using machine learning in Python, improving forecast accuracy by 28%.",
+    "Collaborated with finance teams to model product pricing under volatile interest rate scenarios, increasing profitability by 12%.",
+    "Presented actuarial findings to board-level stakeholders, influencing product design and risk appetite policies."
+   ],
+   "city": "Polokwane",
+   "company": "Mzansi Risk Partners",
+   "end": "2023-08",
+   "start": "2023-01",
+   "title": "Senior Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Developed a claims fraud detection system using R and data mining, reducing fraudulent claims by 35% in a R300M portfolio.",
+    "Built mortality and morbidity models for a new health insurance product using SAS and Stata, achieving 98% model fit accuracy.",
+    "Led actuarial validation of a new pension scheme, ensuring alignment with SARS and IASB standards.",
+    "Integrated actuarial data into enterprise risk management dashboards using Power BI and Tableau, improving reporting speed by 50%."
+   ],
+   "city": "Polokwane",
+   "company": "Vulindlela Financial Services",
+   "end": "2025-03",
+   "start": "2022-04",
+   "title": "Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Led end-to-end development of a life insurance pricing model using Python, SAS, and SQL, increasing premium accuracy by 25%.",
+    "Designed and implemented a dynamic risk assessment framework for long-term health policies, reducing underwriting risk by 20%.",
+    "Conducted actuarial audits of 120 policy portfolios, identifying and resolving 14 data inconsistencies with 100% accuracy.",
+    "Presented actuarial insights to executive leadership, directly influencing product strategy and capital allocation decisions."
+   ],
+   "city": "Polokwane",
+   "company": "Sibonelo Actuarial Group",
+   "end": "Present",
+   "start": "2025-04",
+   "title": "Senior Actuarial Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Science in Actuarial Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "University of Cape Town",
+   "qualification": "Master of Science in Actuarial Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2011
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Actuaries",
+   "name": "Professional Actuarial Qualification (PAQ)",
+   "year": 2015
+  },
+  {
+   "issuer": "University of Cape Town",
+   "name": "Master of Science in Actuarial Science",
+   "year": 2013
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Bachelor of Science in Actuarial Science",
+   "year": -1
+  }
+ ],
+ "skills": [
+  "SAS",
+  "R",
+  "Python",
+  "SQL",
+  "Power BI",
+  "Tableau",
+  "Monte Carlo Simulation",
+  "Life & Health Insurance Modelling",
+  "Pension Risk Analysis",
+  "Regulatory Compliance (SARS, IASB)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:40:03.542Z"
+ }
+}

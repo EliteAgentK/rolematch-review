@@ -1,0 +1,19 @@
+# Nothing enters an image unless it is named here: no settings, CVs, research, tests, planning documents or local data.
+*
+!package.json
+!package-lock.json
+!index.html
+!vite.config.mjs
+!tsconfig.json
+!tsconfig.node.json
+!public
+!src
+!server/package.json
+!server/package-lock.json
+!server/scripts/buildServer.mjs
+!server/src
+!server/teaching
+!supabase/migrations
+**/.env
+**/.env.*
+**/.DS_Store

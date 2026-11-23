@@ -1,0 +1,171 @@
+{
+ "spec": {
+  "id": "f094",
+  "field": "customer service",
+  "role": "Contact Centre Team Leader",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "remote-only",
+   "overlapping-contract"
+  ],
+  "name": "Zanele Botha",
+  "city": "Pretoria"
+ },
+ "name": "Zanele Botha",
+ "email": "zanele.botha@example.test",
+ "phone": "071 555 1094",
+ "headline": "Executive Contact Centre Team Leader | Remote-Only | 18 Years Customer Service Leadership | South African Market Expertise",
+ "summary": "Only seeking remote work opportunities. Proven track record in leading contact centre operations across South African markets. Specialised in customer service excellence, performance optimisation, and remote team leadership with 18 years of progressive experience.",
+ "roles": [
+  {
+   "bullets": [
+    "Led 120-agent team in a 24/7 contact centre, using Zendesk and Salesforce, reducing average handle time from 8.2 to 5.4 minutes, improving CSAT from 78% to 92% (2024-03 to Present).",
+    "Optimised shift scheduling via Power BI dashboards, cutting agent overtime by 18% and improving team retention by 22% (2024-03 to Present).",
+    "Introduced a real-time sentiment analysis tool (IBM Watson), detecting 90% of negative customer emotions early, reducing escalations by 35% (2024-03 to Present).",
+    "Trained 45 new agents using a blended LMS and on-the-job method, achieving 95% pass rate on compliance tests within 3 weeks (2024-03 to Present).",
+    "Reduced first-call resolution time by 28% through process redesign and script optimisation, using CallFlow Analytics (2024-03 to Present).",
+    "Achieved 98% compliance with service standards across all shift teams using daily audits and automated scorecards (2024-03 to Present).",
+    "Led a cross-functional initiative to integrate CRM with IVR, improving call routing accuracy by 40% and reducing missed calls by 30% (2024-03 to Present)."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Solutions Group",
+   "end": "Present",
+   "start": "2024-03",
+   "title": "Executive Contact Centre Team Leader"
+  },
+  {
+   "bullets": [
+    "Managed 80-agent team in a high-volume call centre, using Avaya and LivePerson, cutting average call duration by 15% and boosting CSAT to 90% (2021-06 to 2024-03).",
+    "Designed and implemented a shift rotation model that improved agent satisfaction by 30% and reduced absenteeism by 25% (2021-06 to 2024-03).",
+    "Launched a customer feedback loop using SurveyMonkey, increasing response rate from 12% to 68% and identifying 15+ recurring pain points (2021-06 to 2024-03).",
+    "Reduced training time for new hires from 14 to 8 days by creating a modular onboarding toolkit (2021-06 to 2024-03).",
+    "Improved first-call resolution by 33% through agent coaching and script refinement, using CallMetrics Pro (2021-06 to 2024-03).",
+    "Achieved 100% compliance with compliance audits across all departments during 2023 (2021-06 to 2024-03).",
+    "Led a digital transformation project that migrated legacy systems to cloud-based platforms, reducing downtime by 90% (2021-06 to 2024-03)."
+   ],
+   "city": "Pretoria",
+   "company": "Vosatex Communications",
+   "end": "2024-03",
+   "start": "2021-06",
+   "title": "Contact Centre Supervisor"
+  },
+  {
+   "bullets": [
+    "Directed a 50-agent team in a B2B support centre, using Oracle Service Cloud and Microsoft Teams, improving response time by 40% (2017-09 to 2021-06).",
+    "Introduced a performance dashboard (Power BI) that enabled real-time visibility into team KPIs, increasing manager decision speed by 50% (2017-09 to 2021-06).",
+    "Reduced customer complaints by 38% through proactive issue identification and agent coaching (2017-09 to 2021-06).",
+    "Developed a standard operating procedure (SOP) for complex issue handling, cutting resolution time by 22% (2017-09 to 2021-06).",
+    "Improved team productivity by 25% through daily stand-up meetings and performance reviews (2017-09 to 2021-06).",
+    "Achieved 95% agent retention over 3 years through mentorship and career path planning (2017-09 to 2021-06).",
+    "Led a successful agent recognition program that increased engagement by 45% and reduced turnover by 18% (2017-09 to 2021-06)."
+   ],
+   "city": "Pretoria",
+   "company": "Klipspringer Support Services",
+   "end": "2021-06",
+   "start": "2017-09",
+   "title": "Team Lead – Customer Service Operations"
+  },
+  {
+   "bullets": [
+    "Managed a 30-agent team in a retail support centre, using LiveAgent and Zendesk, reducing ticket resolution time by 30% (2013-04 to 2017-09).",
+    "Introduced a chatbot for common queries, handling 60% of Tier 1 issues, reducing agent workload by 20% (2013-04 to 2017-09).",
+    "Improved customer satisfaction by 28% through targeted training and feedback integration (2013-04 to 2017-09).",
+    "Reduced agent errors by 40% through a new error reporting and correction system (2013-04 to 2017-09).",
+    "Achieved 98% adherence to service protocols during quarterly audits (2013-04 to 2017-09).",
+    "Led a team-wide digital literacy initiative, improving agent performance scores by 35% (2013-04 to 2017-09).",
+    "Reduced training costs by 25% through self-paced learning modules (2013-04 to 2017-09)."
+   ],
+   "city": "Pretoria",
+   "company": "Makwetla Retail Solutions",
+   "end": "2017-09",
+   "start": "2013-04",
+   "title": "Customer Service Team Lead"
+  },
+  {
+   "bullets": [
+    "Supported 15 agents in a pilot contact centre, using a custom-built IVR and CRM integration, achieving 85% call completion rate (2010-08 to 2013-04).",
+    "Improved first-call resolution by 25% through process mapping and agent coaching (2010-08 to 2013-04).",
+    "Reduced average call duration by 12% using real-time coaching tools (2010-08 to 2013-04).",
+    "Identified and resolved 12 recurring service gaps, improving customer experience by 20% (2010-08 to 2013-04).",
+    "Achieved 90% agent compliance with service standards during audits (2010-08 to 2013-04).",
+    "Led a successful onboarding program that reduced ramp-up time from 3 to 1 week (2010-08 to 2013-04).",
+    "Improved team morale by 30% through weekly recognition events (2010-08 to 2013-04)."
+   ],
+   "city": "Pretoria",
+   "company": "Tshwane Call Centre Ltd",
+   "end": "2013-04",
+   "start": "2010-08",
+   "title": "Junior Contact Centre Supervisor"
+  },
+  {
+   "bullets": [
+    "Operated a 10-agent support desk using Microsoft Dynamics and internal tools, handling 1,200+ calls/month with 99% accuracy (2007-03 to 2010-08).",
+    "Reduced call handling time by 18% through improved script design and training (2007-03 to 2010-08).",
+    "Achieved 98% customer satisfaction in quarterly reviews (2007-03 to 2010-08).",
+    "Improved agent performance consistency by 30% through daily performance reviews (2007-03 to 2010-08).",
+    "Reduced error rates by 25% through a new quality assurance checklist (2007-03 to 2010-08).",
+    "Led a team of 3 agents in a high-volume environment, maintaining 99% uptime (2007-03 to 2010-08).",
+    "Identified and resolved 5 key service bottlenecks, improving overall efficiency by 15% (2007-03 to 2010-08)."
+   ],
+   "city": "Pretoria",
+   "company": "Sekhukhune Support Systems",
+   "end": "2010-08",
+   "start": "2007-03",
+   "title": "Customer Service Operator"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Business Administration (BBA) – Operations Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "Pretoria College of Business",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Customer Service Excellence",
+   "name": "Advanced Customer Experience Management",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Business Administration (BBA) – Operations Management",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Team Leadership",
+  "Customer Experience Design",
+  "Performance Management",
+  "Call Centre Operations",
+  "Process Improvement",
+  "CRM & IVR Systems",
+  "Data Analytics (Power BI, Salesforce)",
+  "Agent Training & Development",
+  "Remote Team Management"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:48:41.149Z"
+ }
+}

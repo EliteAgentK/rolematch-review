@@ -1,0 +1,19 @@
+# First LoRA run for the CV reader (docs/learning/FINE_TUNE_PLAN_2026-11-06.md). Data: ~/rolematch-ml/data (built by server/test/collection/buildTrainingSet.ts).
+# The prompt is kept exactly as live sends it, so the first question answered is "does training on our format help", not "does a shorter prompt help".
+model: mlx-community/Qwen3-4B-Instruct-2507-4bit
+train: true
+fine_tune_type: lora
+data: /Users/modizy/rolematch-ml/data
+batch_size: 1
+iters: 600                 # about one pass over the 585 training examples
+learning_rate: 1.0e-4
+num_layers: 16             # adapters on the top 16 of 36 layers
+lora_parameters: { rank: 8, scale: 20.0, dropout: 0.0 }
+max_seq_length: 8192       # median example 2,004 tokens, longest 6,192 (6 Nov); ml/checkData.py refuses any that would be cut (R159)
+grad_checkpoint: true      # trades speed for memory: the Mac has 16 GB
+mask_prompt: true          # learn the answers, not the CVs
+steps_per_report: 20
+steps_per_eval: 100
+val_batches: 25
+save_every: 100
+seed: 0

@@ -1,0 +1,156 @@
+{
+ "spec": {
+  "id": "f095",
+  "field": "telecommunications",
+  "role": "Network Engineer",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "study-in-progress"
+  ],
+  "name": "Kagiso Fourie",
+  "city": "Polokwane"
+ },
+ "name": "Kagiso Fourie",
+ "email": "kagiso.fourie@example.test",
+ "phone": "081 555 1095",
+ "headline": "Senior Network Engineer | Telecommunications | 12+ Years Experience | Polokwane",
+ "summary": "Experienced Senior Network Engineer with 12+ years in telecommunications. Strong background in network operations, design, and support. Proven track record in rural and urban network deployment. Currently pursuing advanced studies in telecommunications engineering.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on network performance and uptime.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and security protocols."
+   ],
+   "city": "Polokwane",
+   "company": "Vumela Telecom Solutions",
+   "end": "Present",
+   "start": "2021-03",
+   "title": "Senior Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on system failures and recovery actions.",
+    "Supported field teams with troubleshooting.",
+    "Updated network documentation and diagrams."
+   ],
+   "city": "Polokwane",
+   "company": "Mokopane Data Networks",
+   "end": "2021-02",
+   "start": "2018-06",
+   "title": "Network Systems Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports on equipment performance and maintenance.",
+    "Managed daily network operations.",
+    "Coordinated with vendors for spare parts."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Telecom Group",
+   "end": "2018-05",
+   "start": "2015-08",
+   "title": "Network Technician"
+  },
+  {
+   "bullets": [
+    "Did reports on network upgrades and testing.",
+    "Assisted in planning new site installations.",
+    "Performed basic network diagnostics."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Broadband",
+   "end": "2015-07",
+   "start": "2013-04",
+   "title": "Junior Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on network performance and issues.",
+    "Supported team with daily operations.",
+    "Maintained network equipment inventory."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Connect",
+   "end": "2013-03",
+   "start": "2012-01",
+   "title": "Network Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Telecommunications Engineering",
+   "status": "in_progress",
+   "statusWords": "expected 2027",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Network Systems and Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "National Certificate: Network Installation and Maintenance",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2013
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Telecommunications",
+   "name": "Advanced Network Architecture Certification",
+   "year": 2023
+  },
+  {
+   "issuer": "Telecom Skills Academy",
+   "name": "Cloud Networking & SD-WAN Specialist",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "Network design and planning",
+  "TCP/IP configuration",
+  "Firewall management",
+  "SD-WAN deployment",
+  "IP routing and switching",
+  "Network monitoring tools",
+  "Wi-Fi optimization",
+  "Telecom infrastructure",
+  "Cloud networking",
+  "Network security protocols",
+  "Troubleshooting",
+  "Cable management",
+  "ISP coordination",
+  "Network documentation",
+  "Remote access solutions",
+  "Bandwidth optimization",
+  "Latency analysis",
+  "IP address allocation",
+  "Network redundancy",
+  "DSL and fiber deployment"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led rollout of 5G backbone infrastructure in rural areas.",
+  "Optimized core network performance for 100k+ users.",
+  "Deployed hybrid cloud solutions for remote branch offices."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:50:28.061Z"
+ }
+}

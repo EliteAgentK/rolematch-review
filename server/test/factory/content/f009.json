@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "id": "f009",
+  "field": "insurance claims",
+  "role": "Claims Assessor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "long-academic"
+  ],
+  "name": "Tshepo Jacobs",
+  "city": "Johannesburg"
+ },
+ "name": "Tshepo Jacobs",
+ "email": "tshepo.jacobs@example.test",
+ "phone": "021 555 1009",
+ "headline": "Junior Claims Assessor with 4 years of hands-on experience in assessing and processing insurance claims across property, motor, and personal lines.",
+ "summary": "Detail-oriented junior claims professional with 4 years of progressive experience in assessing and managing insurance claims across diverse sectors. Strong foundation in risk assessment and compliance, with formal training in insurance operations and claims procedures.",
+ "roles": [
+  {
+   "bullets": [
+    "Assessed 150+ motor and property claims monthly, ensuring compliance with policy terms and regulatory standards.",
+    "Collaborated with adjusters to validate claim details and reduce processing time by 18%.",
+    "Maintained accurate claim records using internal systems, improving audit readiness by 30%."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Insurance Services",
+   "end": "2024-03",
+   "start": "2021-04",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Processed over 300 claims per quarter with 99.2% accuracy in documentation and assessment.",
+    "Identified inconsistencies in claim submissions, reducing fraud risk by 22% in Q3 2023.",
+    "Trained two new staff members on claim intake procedures and digital claim forms."
+   ],
+   "city": "Johannesburg",
+   "company": "Veldt Insurance Group",
+   "end": "Present",
+   "start": "2023-07",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Reviewed claim validity against policy conditions, ensuring fair and consistent assessments.",
+    "Supported senior assessors in complex claims involving third-party damage and liability.",
+    "Improved claim closure timelines by 15% through process optimization and documentation checks."
+   ],
+   "city": "Johannesburg",
+   "company": "African Risk Solutions Ltd",
+   "end": "2023-06",
+   "start": "2021-01",
+   "title": "Claims Assistant"
+  },
+  {
+   "bullets": [
+    "Managed intake and initial evaluation of claims via digital platforms, increasing throughput by 25%.",
+    "Conducted field visits for property claims, verifying damage and collecting evidence.",
+    "Maintained compliance with ISO 31000 risk management standards in claim handling."
+   ],
+   "city": "Johannesburg",
+   "company": "Savvy Claims Management",
+   "end": "2021-03",
+   "start": "2019-08",
+   "title": "Claims Officer (Entry Level)"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Science in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business and Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  },
+  {
+   "institution": "Midrand College",
+   "qualification": "National Certificate: Level 4 in Business Operations",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Risk Management",
+   "name": "Certificate in Insurance Claims Assessment",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Diploma in Risk and Insurance Management",
+   "year": 2021
+  },
+  {
+   "issuer": "Nelson Mandela Metropolitan College",
+   "name": "Short Course: Claims Investigation and Documentation",
+   "year": 0
+  },
+  {
+   "issuer": "Insurance Institute of South Africa",
+   "name": "Certified Claims Professional (CCP) Level 1",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Claims assessment",
+  "Policy interpretation",
+  "Documentation accuracy",
+  "Fraud detection",
+  "Digital claim systems",
+  "Regulatory compliance",
+  "Report writing",
+  "Customer communication"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:43:19.595Z"
+ }
+}

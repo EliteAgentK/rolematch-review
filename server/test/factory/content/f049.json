@@ -1,0 +1,129 @@
+{
+ "spec": {
+  "id": "f049",
+  "field": "software engineering",
+  "role": "Backend Developer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "career-gap",
+   "prose-history"
+  ],
+  "name": "Thandiwe Ndlovu",
+  "city": "Johannesburg"
+ },
+ "name": "Thandiwe Ndlovu",
+ "email": "thandiwe.ndlovu@example.test",
+ "phone": "021 555 1049",
+ "headline": "Junior Backend Developer | REST APIs | Node.js | PostgreSQL | Scalable Systems",
+ "summary": "Results-driven junior backend developer with 2 years of hands-on experience in building scalable, secure, and high-performance backend systems. Proven track record in API development, database optimization, and deployment automation. Strong foundation in South African tech ecosystems and local industry needs.",
+ "roles": [
+  {
+   "bullets": [
+    "Developed and maintained a REST API for a property management platform using Node.js and Express, serving 150+ active users with 99.5% uptime.",
+    "Integrated PostgreSQL with a real-time data sync module, reducing data inconsistency by 90% and improving data accuracy for 500+ property listings.",
+    "Collaborated with frontend teams to implement secure API endpoints using JWT and CORS, reducing authentication errors by 70% in production.",
+    "Optimized database queries using indexing and query planning, improving response times from 800ms to 180ms for 10k+ property searches.",
+    "Deployed services using Docker and AWS EC2, reducing deployment time from 4 hours to 30 minutes and improving environment consistency.",
+    "Wrote unit and integration tests using Jest and Supertest, increasing test coverage from 40% to 85% and reducing production bugs by 60%."
+   ],
+   "city": "Johannesburg",
+   "company": "NexaTech Solutions",
+   "end": "2023-06",
+   "start": "2021-03",
+   "title": "Junior Backend Developer"
+  },
+  {
+   "bullets": [
+    "Built a data pipeline for a local government initiative using Python and Airflow, processing 100k+ records monthly with 99.9% accuracy.",
+    "Developed a secure API for a public transport booking system using Flask and PostgreSQL, handling 5k+ daily requests with zero downtime.",
+    "Implemented role-based access control (RBAC) in a municipal service app, reducing unauthorized access incidents by 95%.",
+    "Automated deployment workflows using GitHub Actions and Docker, cutting release cycles from 3 days to 12 hours.",
+    "Integrated a real-time notification system using WebSockets and Redis, improving user engagement by 30% in pilot testing.",
+    "Collaborated with data scientists to design API endpoints for public data access, increasing API usage by 120% in 3 months."
+   ],
+   "city": "Johannesburg",
+   "company": "CityLink Digital",
+   "end": "2024-01",
+   "start": "2024-01",
+   "title": "Backend Developer (Internship)"
+  },
+  {
+   "bullets": [
+    "Designed and deployed a microservice for user profile management using NestJS and PostgreSQL, supporting 500+ concurrent users with <300ms latency.",
+    "Built a secure authentication flow with OAuth2 and JWT, reducing login failures by 80% and improving user retention by 15%.",
+    "Integrated a logging and monitoring stack using Winston and Prometheus, enabling real-time error detection and reducing incident response time by 50%.",
+    "Developed a data validation layer that reduced input errors by 75% and improved data quality for 20k+ user records.",
+    "Implemented CI/CD pipelines using GitHub Actions and Kubernetes, reducing deployment failures from 15% to under 2%.",
+    "Collaborated with DevOps to set up automated backups and disaster recovery, ensuring 99.99% data availability during outages."
+   ],
+   "city": "Johannesburg",
+   "company": "ApexFlow Systems",
+   "end": "Present",
+   "start": "2025-04",
+   "title": "Junior Backend Developer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Software Development",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2020
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Technology",
+   "name": "Certified Backend Development Fundamentals",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Node.js",
+  "Express.js",
+  "NestJS",
+  "PostgreSQL",
+  "MongoDB",
+  "REST APIs",
+  "Docker",
+  "AWS",
+  "Git",
+  "Jest",
+  "Redis",
+  "WebSockets",
+  "CI/CD",
+  "Microservices",
+  "Database Design",
+  "API Security"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Built a real-time inventory tracking API for a Johannesburg-based logistics startup using Node.js and Express, handling 15k+ daily transactions with 99.8% uptime.",
+  "Developed a microservice for order processing in a B2B e-commerce platform using NestJS and MongoDB, reducing order latency by 40% and increasing throughput by 35%.",
+  "Designed and implemented a user authentication system with JWT and OAuth2 for a fintech app, improving login success rate from 78% to 96% across 100k+ users.",
+  "Integrated a payment gateway with a South African mobile wallet API using Node.js and Axios, enabling 80% of users to complete payments on first try.",
+  "Built a scalable logging service in Python and Flask that processed 500k+ log entries daily, reducing debugging time by 60% for DevOps teams.",
+  "Created a REST API for a property management system using Express and PostgreSQL, supporting 200+ concurrent users with sub-200ms response times.",
+  "Developed a background job queue system using BullMQ and Redis, cutting processing delays by 50% and improving system reliability during peak loads."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:35:45.524Z"
+ }
+}

@@ -1,0 +1,45 @@
+# Nightly: the whole history's secret scan and a fresh vulnerability check, even when nothing changed, because new advisories are
+# published every day (docs/security/SAFETY_CHECKS.md). Bounded: one run at a time, fixed time limits, no automatic retries,
+# and the redacted findings report is kept for 14 days only.
+name: Nightly safety
+
+on:
+  schedule:
+    - cron: "30 1 * * *"   # 03:30 SAST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nightly-safety
+  cancel-in-progress: false   # never two at once; a still-running night is left to finish
+
+env:
+  GITLEAKS_VERSION: "8.30.1"
+  GITLEAKS_SHA256: "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"
+
+jobs:
+  scan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with: { fetch-depth: 0, persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with: { node-version: "24" }
+      - name: Install gitleaks (pinned version, checksum verified)
+        run: |
+          curl -sSfL -o /tmp/gitleaks.tgz "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  /tmp/gitleaks.tgz" | sha256sum --check --strict
+          tar -xzf /tmp/gitleaks.tgz -C /tmp gitleaks && sudo install /tmp/gitleaks /usr/local/bin/gitleaks
+      - run: node --test scripts/safety/*.test.mjs
+      - name: Secret scan of the whole history, every branch
+        run: node scripts/safety/secretScan.mjs --history 2>&1 | tee secret-scan.txt; exit "${PIPESTATUS[0]}"
+        shell: bash
+      - run: node scripts/safety/licenceCheck.mjs
+      - run: node server/scripts/auditCheck.mjs
+      - name: Keep the redacted report (rule, file, line; never values)
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9   # v7.0.2
+        with: { name: nightly-secret-scan, path: secret-scan.txt, retention-days: 14, if-no-files-found: ignore }

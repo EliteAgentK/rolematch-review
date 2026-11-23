@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "id": "f082",
+  "field": "human resources",
+  "role": "HR Business Partner",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "overlapping-contract",
+   "remote-only"
+  ],
+  "name": "Yusuf Zulu",
+  "city": "Pretoria"
+ },
+ "name": "Yusuf Zulu",
+ "email": "yusuf.zulu@example.test",
+ "phone": "031 555 1082",
+ "headline": "Executive HR Business Partner | Remote-Only | 18 Years Experience | South African HR Strategy & Talent Development",
+ "summary": "Only seeking remote work opportunities. Proven track record in executive HR leadership, talent development, and strategic workforce planning across diverse South African organisations. Specialised in digital HR transformation and employee experience innovation.",
+ "roles": [
+  {
+   "bullets": [
+    "Led end-to-end talent strategy for 1,200+ employees at Nkosi Dynamics, using SAP SuccessFactors; improved retention by 28% in 18 months.",
+    "Designed and launched a performance management system in Q3 2022, reducing appraisal cycle time by 40% and increasing manager feedback quality by 35%.",
+    "Spearheaded a skills gap analysis for 800+ staff, identifying 15 key competencies; drove targeted upskilling programs with 92% completion rate.",
+    "Implemented a digital onboarding process using Workday; reduced new hire onboarding time from 30 to 12 days, improving first-month productivity by 45%.",
+    "Partnered with finance to align HR spend with business goals; achieved 18% cost savings in HR operations over 24 months.",
+    "Led compliance audits for 12 departments; reduced regulatory risk by 50% and avoided R1.2M in potential penalties."
+   ],
+   "city": "Pretoria",
+   "company": "Nkosi Dynamics",
+   "end": "2024-03",
+   "start": "2019-04",
+   "title": "Senior HR Business Partner"
+  },
+  {
+   "bullets": [
+    "Developed and executed a DEI strategy for 3,500+ employees at Vosatla Group, increasing employee engagement scores from 3.2 to 4.6 on a 5-point scale.",
+    "Launched a leadership development pipeline for 120 high-potential staff; 78% progressed to senior roles within 18 months.",
+    "Integrated AI-driven analytics into HR reporting using Tableau; cut reporting time by 60% and improved decision accuracy by 30%.",
+    "Reduced time-to-hire by 35% through a redesigned recruitment workflow using LinkedIn Talent Solutions and ATS.",
+    "Led a cross-functional team to implement a remote work policy for 1,800+ employees; improved retention by 22% in first year.",
+    "Conducted annual workforce planning with 95% accuracy in forecasting, aligning HR strategy with business KPIs."
+   ],
+   "city": "Pretoria",
+   "company": "Vosatla Group",
+   "end": "2024-03",
+   "start": "2021-07",
+   "title": "HR Business Partner"
+  },
+  {
+   "bullets": [
+    "Managed HR operations for 2,100+ employees at Tshwane Solutions, using Oracle HCM; reduced HR operational costs by R1.8M annually.",
+    "Introduced a real-time employee feedback system via SurveyMonkey; engagement scores rose from 3.4 to 4.3 in 12 months.",
+    "Led a transformation of HR service delivery to a digital-first model; cut manual processes by 65% and improved response times by 70%.",
+    "Developed a succession planning framework for C-suite roles; identified 3 viable candidates with 90% accuracy in performance prediction.",
+    "Collaborated with operations to reduce turnover in key departments by 30% through targeted retention initiatives.",
+    "Achieved 100% compliance with labour law audits across 10 departments, avoiding penalties and improving audit scores."
+   ],
+   "city": "Pretoria",
+   "company": "Tshwane Solutions",
+   "end": "2024-03",
+   "start": "2016-08",
+   "title": "HR Operations Manager"
+  },
+  {
+   "bullets": [
+    "Directed HR strategy for 1,500+ staff at Mabuza Innovations, using BambooHR and PeopleSoft; improved employee satisfaction by 38%.",
+    "Built a talent acquisition roadmap with 90% alignment to business growth; filled 80% of critical roles within 60 days.",
+    "Introduced a learning management system (LMS) with 1,200+ users; increased training completion by 55% and reduced skill gaps by 40%.",
+    "Led a global diversity initiative for 2,000+ employees; increased representation of underrepresented groups by 25%.",
+    "Reduced HR-related incidents by 45% through proactive risk management and policy updates.",
+    "Delivered a comprehensive employee experience survey with 98% response rate; used insights to redesign onboarding and culture."
+   ],
+   "city": "Pretoria",
+   "company": "Mabuza Innovations",
+   "end": "Present",
+   "start": "2013-05",
+   "title": "HR Business Partner"
+  },
+  {
+   "bullets": [
+    "Provided temporary HR advisory support to Sibonelo Group (remote), managing 400+ staff during restructuring; reduced staff churn by 33% in 6 months.",
+    "Conducted workforce planning for 300+ roles during a digital transformation; ensured 100% alignment with business objectives.",
+    "Led compliance and policy review for 12 departments; improved audit readiness by 50% and reduced risk exposure by 40%.",
+    "Delivered a remote onboarding program for 150 new hires; reduced onboarding time by 50% and improved new hire performance by 30%."
+   ],
+   "city": "Remote",
+   "company": "Sibonelo Group",
+   "end": "2024-03",
+   "start": "2023-09",
+   "title": "Contract HR Advisor (Remote Support)"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Arts in Psychology",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  },
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Master of Business Administration (HR Specialisation)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Personnel Management",
+   "name": "Advanced HR Strategy & Leadership",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Master of Business Administration (HR Specialisation)",
+   "year": 0
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Bachelor of Arts in Psychology",
+   "year": 2005
+  }
+ ],
+ "skills": [
+  "HR Strategy & Planning",
+  "Talent Management",
+  "Performance Management",
+  "Workforce Planning",
+  "Compliance & Risk Management",
+  "Employee Experience",
+  "DEI Initiatives",
+  "HR Technology (SAP, Workday, Oracle, Tableau)",
+  "Change Management",
+  "Remote Work Policy Development"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:26:22.887Z"
+ }
+}

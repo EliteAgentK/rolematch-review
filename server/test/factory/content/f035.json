@@ -1,0 +1,151 @@
+{
+ "spec": {
+  "id": "f035",
+  "field": "recruitment",
+  "role": "Talent Acquisition Specialist",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "career-gap"
+  ],
+  "name": "Ayesha van der Merwe",
+  "city": "Polokwane"
+ },
+ "name": "Ayesha van der Merwe",
+ "email": "ayesha.vandermerwe@example.test",
+ "phone": "041 555 1035",
+ "headline": "Senior Talent Acquisition Specialist | South African Market Expert | End-to-End Recruitment Strategy",
+ "summary": "Results-driven Talent Acquisition professional with 12+ years of experience in end-to-end recruitment. Expertise in building pipelines, analysing market needs, and aligning hiring with business goals. Strong local market insight and process optimisation skills.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on hiring trends and market gaps.",
+    "Helped streamline recruitment processes.",
+    "Managed candidate pipelines for key roles."
+   ],
+   "city": "Polokwane",
+   "company": "Nkosi Talent Solutions",
+   "end": "2014-03",
+   "start": "2008-06",
+   "title": "Talent Acquisition Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring trends and market gaps.",
+    "Helped streamline recruitment processes.",
+    "Managed candidate pipelines for key roles."
+   ],
+   "city": "Polokwane",
+   "company": "Mpho Recruitment Group",
+   "end": "2019-08",
+   "start": "2014-04",
+   "title": "Senior Recruitment Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring trends and market gaps.",
+    "Helped streamline recruitment processes.",
+    "Managed candidate pipelines for key roles."
+   ],
+   "city": "Polokwane",
+   "company": "Sibonelo HR Services",
+   "end": "2021-02",
+   "start": "2019-09",
+   "title": "Lead Talent Acquisition Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring trends and market gaps.",
+    "Helped streamline recruitment processes.",
+    "Managed candidate pipelines for key roles."
+   ],
+   "city": "Polokwane",
+   "company": "Vulindlela People Solutions",
+   "end": "2023-07",
+   "start": "2021-03",
+   "title": "Senior Talent Acquisition Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring trends and market gaps.",
+    "Helped streamline recruitment processes.",
+    "Managed candidate pipelines for key roles."
+   ],
+   "city": "Polokwane",
+   "company": "Thulamela Talent Partners",
+   "end": "Present",
+   "start": "2023-08",
+   "title": "Senior Talent Acquisition Specialist"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Arts in Human Resources Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Human Resources Management",
+   "name": "Advanced Talent Acquisition Certification",
+   "year": 2018
+  },
+  {
+   "issuer": "University of Limpopo",
+   "name": "Postgraduate Diploma in Organisational Development",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Sourcing",
+  "Screening",
+  "Interviewing",
+  "Candidate Experience",
+  "Market Analysis",
+  "HR Strategy",
+  "Recruitment Process",
+  "Employer Branding",
+  "Job Design",
+  "Talent Mapping",
+  "ATS Systems",
+  "Performance Metrics",
+  "Workforce Planning",
+  "Compliance",
+  "Data Analytics",
+  "Stakeholder Engagement",
+  "Onboarding",
+  "Diversity & Inclusion",
+  "Change Management",
+  "HRIS",
+  "KPIs",
+  "Workforce Analytics",
+  "Recruitment KPIs",
+  "Candidate Journey",
+  "Employer Branding",
+  "Talent Development"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:20:55.835Z"
+ }
+}

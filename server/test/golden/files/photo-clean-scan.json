@@ -1,0 +1,161 @@
+{
+ "text": "‘Lindiwe Diaminl\nProfessional Nurse - Theatre\nlindiwe.dlamini@example.test | 071 555 0103 | Pretoria, South Africa\nProfile\nPerioperative nurse with seven years of theatre experience in private hospitals.\nExperience\nTheatre Nurse, Pretoria East Clinic (Apr 2019 - Present)\n• Scrub and circulating nurse for orthopaedic and general surgery lists.\n• Responsible for instrument counts and sterile-field management.\n• Trained new theatre staff on infection-control protocols.\nStaff Nurse, Mamelodi Provincial Hospital (Jan 2016 - Mar 2019)\n- Worked in the surgical ward and rotated through theatre.\nEducation\nDiploma in Nursing, University of Pretoria, 2015\nAdvanced Diploma in Perioperative Nursing, Tshwane University of Technology, 2018\nRegistration and certification\nSANC registered professional nurse\nBLS certified (current)",
+ "confidence": 0.55,
+ "record": {
+  "name": "",
+  "role": "Professional Nurse - Theatre",
+  "skills": [
+   "BLS"
+  ],
+  "experience": "10",
+  "location": "Pretoria, South Africa",
+  "email": "lindiwe.dlamini@example.test",
+  "phone": "071 555 0103",
+  "workHistory": [
+   {
+    "company": "Pretoria East Clinic",
+    "position": "Theatre Nurse",
+    "startDate": "Apr 2019",
+    "endDate": "Present",
+    "responsibilities": [
+     "Scrub and circulating nurse for orthopaedic and general surgery lists.",
+     "Responsible for instrument counts and sterile-field management.",
+     "Trained new theatre staff on infection-control protocols."
+    ]
+   },
+   {
+    "company": "Mamelodi Provincial Hospital",
+    "position": "Staff Nurse",
+    "startDate": "Jan 2016",
+    "endDate": "Mar 2019",
+    "responsibilities": [
+     "Worked in the surgical ward and rotated through theatre."
+    ]
+   }
+  ],
+  "summary": "Perioperative nurse with seven years of theatre experience in private hospitals.",
+  "education": [
+   {
+    "degree": "Diploma in Nursing",
+    "institution": "University of Pretoria",
+    "year": "2015",
+    "type": "diploma",
+    "level": "Diploma",
+    "status": "completed",
+    "statusEvidence": "2015, a year already past, is given as the year it ended"
+   },
+   {
+    "degree": "Advanced Diploma in Perioperative Nursing",
+    "institution": "Tshwane University of Technology",
+    "year": "2018",
+    "type": "diploma",
+    "level": "Advanced diploma",
+    "status": "completed",
+    "statusEvidence": "2018, a year already past, is given as the year it ended"
+   },
+   {
+    "degree": "SANC registered professional nurse",
+    "institution": "",
+    "year": "",
+    "type": "certificate",
+    "level": "Certificate",
+    "status": "not_stated",
+    "statusEvidence": "",
+    "validity": "unknown"
+   },
+   {
+    "degree": "BLS certified (current)",
+    "institution": "",
+    "year": "",
+    "type": "certificate",
+    "level": "Certificate",
+    "status": "not_stated",
+    "statusEvidence": "",
+    "validity": "current",
+    "validityEvidence": "current"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "header block",
+     "whole text"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "skills named in the text",
+    "count": 1,
+    "tried": [
+     "Skills heading",
+     "skills named in the text"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 4,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

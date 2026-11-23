@@ -1,0 +1,79 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CV panel with tabs</title>
+<style>
+:root{--page:#141a24;--card:#1c2330;--tile:#232c3b;--line:#2f3a4c;--ink:#e8edf4;--muted:#9aa7b8;--soft:#c3cdd9;--brand:#2f9ec4;--teal:#17c3b2;--amber:#f2b84b;--green:#57c98a}
+*{box-sizing:border-box}body{margin:0;background:var(--page);font:14px/1.5 -apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;color:var(--ink);padding:28px;width:1340px}
+.top{margin:0 0 18px}.top h1{margin:0 0 4px;font-size:22px}.top p{margin:0;color:var(--soft)}
+.wrap{display:flex;gap:36px;align-items:flex-start}.col{width:600px}.cap{color:var(--muted);font-size:13px;margin:0 0 8px}
+.bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.bar h2{margin:0;font-size:19px}
+.btns{display:flex;gap:8px}.btn{border:1px solid var(--line);color:var(--soft);padding:5px 11px;border-radius:9px;font-size:12.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 16px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--brand),var(--teal))}
+.who{display:flex;gap:14px;align-items:center}.av{width:52px;height:52px;border-radius:50%;background:#2f6f5a;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+h1.t{margin:0;font-size:23px}.co{color:#6cc3e3;font-size:14.5px;font-weight:600}
+.status{display:flex;justify-content:space-between;align-items:center;background:var(--tile);border-radius:10px;padding:8px 12px;margin:14px 0 0;font-size:13px}
+.status b{color:#8be0b3}.status span:last-child{color:#6cc3e3}
+.tabs{display:flex;gap:2px;margin:14px 0 14px;border-bottom:1px solid var(--line)}
+.tab{padding:8px 10px;font-size:13px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.tab b{font-weight:600;color:var(--soft)}.tab .c{font-size:11px;background:var(--tile);border-radius:999px;padding:1px 7px;margin-left:5px;color:var(--soft)}
+.tab.on{border-color:var(--teal)}.tab.on b{color:var(--ink)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;font-size:13px;margin-bottom:12px}
+.f{display:flex;gap:8px;padding:5px 0;border-bottom:1px dashed #283244}.f .k{color:var(--muted);width:92px;flex:none}.f.w{grid-column:1/-1}
+.sh{display:flex;align-items:baseline;gap:8px;margin:14px 0 8px}.sh h3{margin:0;font-size:14.5px}
+.chip{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line)}.ai{border-color:#7a5c1f;color:var(--amber)}
+.box{background:var(--tile);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.lnk{font-size:12.5px;color:#6cc3e3;margin-top:6px}
+.wn{font-size:13px;color:var(--soft)}.wn div{margin:4px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.foot .p{font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.ov{border:1px solid #2c6f8e;color:#9fe0f5;padding:6px 12px;border-radius:9px;font-size:13px}
+.role{background:#1f2735;border-radius:10px;padding:10px 12px;margin:8px 0;border-left:3px solid var(--brand)}
+.role .h{display:flex;justify-content:space-between;font-weight:600}.role .h span{color:var(--muted);font-weight:500;font-size:12.5px}
+.role .c{color:#6cc3e3;font-size:13px}.role ul{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--soft)}
+.role.fold{border-left-color:#3b4a60}.role.fold .h{font-weight:500}
+.note{margin-top:22px}.note div{display:grid;grid-template-columns:28px 1fr;gap:10px;margin:10px 0;font-size:13px;color:var(--soft)}
+.note .no{width:26px;height:26px;border-radius:50%;background:#1f3b4c;color:#9fe0f5;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}.note b{color:var(--ink)}
+</style></head><body>
+<div class="top"><h1>CV panel with the same tabs</h1><p>One panel system: jobs and CVs open the same way. An invented candidate (the test CV), so no real person is shown.</p></div>
+<div class="wrap">
+<div class="col"><p class="cap">Overview tab · opens first</p>
+<div class="bar"><h2>Candidate Details</h2><div class="btns"><span class="btn">Edit</span><span class="btn">Read again</span><span class="btn">Delete</span></div></div>
+<div class="card">
+ <div class="who"><div class="av">LK</div><div><h1 class="t">Lerato Khumalo</h1><div class="co">Head of Technology · Meridian Insurance Group</div></div></div>
+ <div class="status"><span>Status: <b>Shortlisted</b> · 1 job</span><span>Change</span></div>
+ <div class="tabs"><span class="tab on"><b>Overview</b></span><span class="tab"><b>Experience</b><span class="c">6</span></span><span class="tab"><b>Education</b><span class="c">8</span></span><span class="tab"><b>Skills</b><span class="c">24</span></span><span class="tab"><b>Notes</b><span class="c">2</span></span></div>
+ <div class="facts">
+  <div class="f"><span class="k">Location</span><span>Johannesburg, Gauteng</span></div>
+  <div class="f"><span class="k">Experience</span><span>21 years</span></div>
+  <div class="f"><span class="k">E-mail</span><span>lerato.khumalo@example.com</span></div>
+  <div class="f"><span class="k">Phone</span><span>+27 82 555 0147</span></div>
+  <div class="f w"><span class="k">Highest</span><span>MSc Computer Science, University of the Witwatersrand</span></div>
+ </div>
+ <div class="sh"><h3>Summary</h3><span class="chip ai">Written by AI from the CV</span></div>
+ <div class="box">Technology executive with 21 years in software and 12 leading engineering organisations in financial services and insurance; currently Head of Technology at an insurer of 1.4 million policyholders.</div>
+ <div class="lnk">The CV's own profile ▸</div>
+ <div class="sh"><h3>Worth noting</h3></div>
+ <div class="wn"><div>• Led a 140-application move to AWS over 26 months</div><div>• Notice period: three months</div></div>
+ <div class="foot"><span class="p"><span class="dot"></span>Read by AI · checked against the CV</span><span class="ov">View Original CV</span></div>
+</div></div>
+<div class="col"><p class="cap">Experience tab · newest first, older roles folded</p>
+<div class="bar"><h2>Candidate Details</h2><div class="btns"><span class="btn">Edit</span><span class="btn">Read again</span><span class="btn">Delete</span></div></div>
+<div class="card">
+ <div class="who"><div class="av">LK</div><div><h1 class="t">Lerato Khumalo</h1><div class="co">Head of Technology · Meridian Insurance Group</div></div></div>
+ <div class="status"><span>Status: <b>Shortlisted</b> · 1 job</span><span>Change</span></div>
+ <div class="tabs"><span class="tab"><b>Overview</b></span><span class="tab on"><b>Experience</b><span class="c">6</span></span><span class="tab"><b>Education</b><span class="c">8</span></span><span class="tab"><b>Skills</b><span class="c">24</span></span><span class="tab"><b>Notes</b><span class="c">2</span></span></div>
+ <div class="role"><div class="h">Head of Technology<span>Mar 2022 – now · 4 yrs 8 mos</span></div><div class="c">Meridian Insurance Group · Johannesburg</div>
+  <ul><li>Wrote and won board approval for a five-year technology strategy</li><li>Ran the migration of 140 applications to AWS without a customer-facing outage</li><li>Retired 11 legacy systems, saving R27 million a year</li><li>9 more</li></ul></div>
+ <div class="role"><div class="h">Director of Engineering<span>Jun 2017 – Feb 2022 · 4 yrs 9 mos</span></div><div class="c">Lumen Bank · Johannesburg</div>
+  <ul><li>Led engineering for the bank's launch</li><li>Kept the payments platform at 99.97% availability</li><li>7 more</li></ul></div>
+ <div class="role fold"><div class="h">Senior Engineering Manager<span>2014 – 2017</span></div><div class="c">Kestrel Financial Services</div></div>
+ <div class="role fold"><div class="h">Software Development Manager<span>2011 – 2013</span></div><div class="c">Northgate Retail Holdings</div></div>
+ <div class="role fold"><div class="h">2 earlier roles<span>2005 – 2011</span></div></div>
+ <div class="foot"><span class="p"><span class="dot"></span>Read by AI · checked against the CV</span><span class="ov">View Original CV</span></div>
+</div>
+<div class="note">
+ <div><span class="no">1</span><span><b>Same tabs, same feel as jobs:</b> Overview, then the detail one click away, each with its count.</span></div>
+ <div><span class="no">2</span><span><b>Status stays above the tabs,</b> so the recruiter always sees where this person stands, whatever tab is open.</span></div>
+ <div><span class="no">3</span><span><b>Notes tab</b> holds the recruiter's notepad and interview notes: the recruiter's own work, always editable.</span></div>
+ <div><span class="no">4</span><span><b>View Original CV</b> stays at the bottom of every tab, as the panel rules require. Projects sit with Experience; agency details with Overview.</span></div>
+</div></div>
+</div></body></html>

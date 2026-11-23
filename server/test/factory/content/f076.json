@@ -1,0 +1,152 @@
+{
+ "spec": {
+  "id": "f076",
+  "field": "cybersecurity",
+  "role": "Security Analyst",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "comma-titles",
+   "not-completed"
+  ],
+  "name": "Anika Mokoena",
+  "city": "Midrand"
+ },
+ "name": "Anika Mokoena",
+ "email": "anika.mokoena@example.test",
+ "phone": "051 555 1076",
+ "headline": "Mid-Level Security Analyst | Cyber Threat Detection & Incident Response | South African Cybersecurity Focus",
+ "summary": "Results-driven Security Analyst with 6 years of hands-on experience in threat detection, incident response, and compliance. Proven track record in reducing breach risks and improving security posture across mid-sized South African organisations. Specialised in SIEM, EDR, and cloud security operations.",
+ "roles": [
+  {
+   "bullets": [
+    "Deployed SIEM (Splunk) across 120+ endpoints, reducing incident response time by 40% in Q3 2023.",
+    "Conducted weekly vulnerability scans using Nessus on 300+ systems, identifying 180+ critical flaws.",
+    "Led incident response for 15+ breaches in 2023, achieving 99.8% containment within 15 minutes.",
+    "Automated log analysis with Python scripts, cutting manual review time from 8 to 2 hours per day.",
+    "Improved patch compliance from 65% to 94% across 150+ servers using automated alerts via Nagios.",
+    "Reduced phishing incidents by 60% through targeted user training and email filtering (Proofpoint).",
+    "Collaborated with legal team to draft incident response policy, adopted by all departments in 2024."
+   ],
+   "city": "Midrand",
+   "company": "NexaSecure Solutions",
+   "end": "2026-04",
+   "start": "2021-03",
+   "title": "Analyst, Cybersecurity Operations"
+  },
+  {
+   "bullets": [
+    "Set up EDR (CrowdStrike) for 200+ devices, detecting 92% of anomalous behavior in real time.",
+    "Built automated playbook for ransomware detection, reducing detection lag from 12 to 2 hours.",
+    "Conducted penetration testing on internal systems, uncovering 45 high-risk vulnerabilities.",
+    "Improved SIEM alert accuracy from 70% to 93% using rule tuning and correlation logic.",
+    "Reduced false positives by 55% through machine learning model integration in Splunk.",
+    "Led a cross-functional team to implement zero-trust principles across 3 business units.",
+    "Achieved 100% compliance with ISO 27001 audit requirements in 2024."
+   ],
+   "city": "Midrand",
+   "company": "AfricTech Systems",
+   "end": "Present",
+   "start": "2023-07",
+   "title": "Analyst, Threat Intelligence and Security Operations"
+  },
+  {
+   "bullets": [
+    "Configured firewalls (Palo Alto) for 50+ network segments, improving perimeter security by 70%.",
+    "Monitored 100+ servers via Zabbix, reducing downtime incidents by 35% in 2022.",
+    "Identified and mitigated 12 insider threats using behavioral analytics (Darktrace).",
+    "Led monthly security audits, improving compliance score from 68% to 91%.",
+    "Automated vulnerability reporting with PowerShell scripts, saving 15 hours per month.",
+    "Reduced unauthorized access attempts by 80% through improved authentication policies.",
+    "Trained 50+ staff on secure remote access protocols, reducing breach risks by 40%."
+   ],
+   "city": "Midrand",
+   "company": "Veritas Dynamics",
+   "end": "2023-06",
+   "start": "2020-08",
+   "title": "Security Analyst, Network and Endpoint"
+  },
+  {
+   "bullets": [
+    "Established SIEM (IBM QRadar) for 80+ systems, cutting detection time by 50%.",
+    "Conducted quarterly red team exercises, identifying 30+ critical gaps in security posture.",
+    "Improved incident reporting accuracy from 60% to 95% using standardized playbooks.",
+    "Reduced average incident resolution time from 4 hours to 18 minutes via process optimization.",
+    "Led security awareness campaign, increasing staff reporting of suspicious activity by 70%.",
+    "Integrated threat intelligence feeds to detect 15+ emerging threats before they impacted systems.",
+    "Achieved 100% audit readiness for internal security review in Q1 2022."
+   ],
+   "city": "Midrand",
+   "company": "KwaZulu CyberGuard",
+   "end": "2020-07",
+   "start": "2018-04",
+   "title": "Junior Security Analyst, Threat Monitoring"
+  },
+  {
+   "bullets": [
+    "Supported implementation of a cloud security framework (AWS) for 10+ SaaS applications.",
+    "Monitored AWS environments using CloudTrail and GuardDuty, detecting 20+ anomalies.",
+    "Improved cloud access control by 40% through role-based access reviews.",
+    "Reduced misconfigurations by 60% via automated policy enforcement (AWS Config).",
+    "Conducted security assessments for 5 new cloud deployments, all passed with zero critical findings.",
+    "Built automated alerts for S3 bucket exposure, reducing exposure incidents by 90%.",
+    "Collaborated with DevOps to integrate security into CI/CD pipelines (SAST)."
+   ],
+   "city": "Midrand",
+   "company": "CloudEdge Innovations",
+   "end": "2019-03",
+   "start": "2017-09",
+   "title": "Security Associate, Cloud and Infrastructure"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Information Technology",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2013
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Security",
+   "name": "Certified Cybersecurity Analyst (CCSA)",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "SIEM (Splunk, QRadar, IBM)",
+  "EDR (CrowdStrike, SentinelOne)",
+  "Vulnerability Management (Nessus, OpenVAS)",
+  "Incident Response",
+  "Threat Intelligence",
+  "Penetration Testing",
+  "ISO 27001",
+  "Zero Trust Architecture",
+  "Automated Scripting (Python, PowerShell)",
+  "Cloud Security (AWS)",
+  "Network Security",
+  "Risk Assessment"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:17:30.147Z"
+ }
+}

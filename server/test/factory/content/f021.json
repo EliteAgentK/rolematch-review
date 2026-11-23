@@ -1,0 +1,115 @@
+{
+ "spec": {
+  "id": "f021",
+  "field": "legal",
+  "role": "Legal Advisor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "career-gap"
+  ],
+  "name": "Megan Coetzee",
+  "city": "Johannesburg"
+ },
+ "name": "Megan Coetzee",
+ "email": "megan.coetzee@example.test",
+ "phone": "061 555 1021",
+ "headline": "Junior Legal Advisor with 4 years of experience in corporate compliance and contract drafting, based in Johannesburg.",
+ "summary": "Dedicated legal professional with hands-on experience in corporate legal operations, contract management, and compliance. Proven ability to deliver accurate, timely legal support in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Drafted and reviewed 50+ commercial contracts for SMEs, ensuring compliance with South African legislation and industry standards.",
+    "Assisted in preparing legal opinions on corporate governance and compliance matters for clients in the retail sector."
+   ],
+   "city": "Johannesburg",
+   "company": "Nkosi Legal Services",
+   "end": "2020-06",
+   "start": "2018-03",
+   "title": "Legal Assistant"
+  },
+  {
+   "bullets": [
+    "Supported litigation preparation by conducting legal research and drafting pleadings for civil disputes in the property and transport sectors.",
+    "Collaborated with senior lawyers to assess risk exposure in client operations and recommend mitigation strategies."
+   ],
+   "city": "Johannesburg",
+   "company": "Mzansi Legal Partners",
+   "end": "2023-08",
+   "start": "2020-07",
+   "title": "Legal Associate"
+  },
+  {
+   "bullets": [
+    "Conducted due diligence for mergers and acquisitions, focusing on regulatory compliance and contractual integrity.",
+    "Prepared compliance reports for clients under the Companies Act and the Prevention of Corruption Act."
+   ],
+   "city": "Johannesburg",
+   "company": "Sasol Legal Group",
+   "end": "2024-03",
+   "start": "2023-09",
+   "title": "Junior Legal Advisor"
+  },
+  {
+   "bullets": [
+    "Led drafting of service agreements and compliance documentation for new clients in the fintech and logistics space.",
+    "Identified and resolved legal gaps in client operations, reducing compliance risks by 30% over six months."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Legal Solutions",
+   "end": "Present",
+   "start": "2025-04",
+   "title": "Junior Legal Advisor"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Laws (LLB)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  },
+  {
+   "institution": "Wits University College of Law",
+   "qualification": "Postgraduate Certificate in Legal Practice",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2021
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Laws (LLB)",
+   "year": 2019
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Postgraduate Certificate in Legal Practice",
+   "year": 2022
+  }
+ ],
+ "skills": [
+  "Contract drafting",
+  "Legal research",
+  "Regulatory compliance",
+  "Corporate governance",
+  "Drafting legal opinions",
+  "Due diligence",
+  "Client communication"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:04:19.608Z"
+ }
+}

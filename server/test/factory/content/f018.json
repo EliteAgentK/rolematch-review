@@ -1,0 +1,116 @@
+{
+ "spec": {
+  "id": "f018",
+  "field": "sales",
+  "role": "Key Account Manager",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "buzzwords"
+  ],
+  "name": "Chantelle Patel",
+  "city": "Pretoria"
+ },
+ "name": "Chantelle Patel",
+ "email": "chantelle.patel@example.test",
+ "phone": "031 555 1018",
+ "headline": "Dynamic Key Account Executive | Results-Driven Sales Leader | Synergy-Focused Account Manager",
+ "summary": "Dynamic, results-driven professional with 20+ years of experience in executive key account management. Proven track record in driving revenue growth, enhancing client retention, and fostering synergy across sales and operations. A team player with a strong focus on performance, innovation, and client value delivery.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed key accounts for a diversified industrial client base, driving 18% YoY revenue growth through tailored service packages and proactive engagement.",
+    "Led cross-functional teams to deliver client-specific solutions, enhancing retention by 32% and improving customer satisfaction scores."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Dynamics Ltd",
+   "end": "2020-03",
+   "start": "2015-07",
+   "title": "Senior Account Manager"
+  },
+  {
+   "bullets": [
+    "Expanded market share in the logistics sector by 25% through strategic account planning and performance tracking.",
+    "Collaborated with operations and finance to align sales targets with delivery timelines, improving forecast accuracy by 40%."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Logistics Group",
+   "end": "2020-03",
+   "start": "2015-07",
+   "title": "Key Account Manager"
+  },
+  {
+   "bullets": [
+    "Spearheaded a client retention initiative that reduced churn by 28% and increased average contract value by R120,000.",
+    "Built strong relationships with enterprise clients, achieving 98% on-time delivery compliance across key accounts."
+   ],
+   "city": "Pretoria",
+   "company": "African Growth Partners",
+   "end": "2023-08",
+   "start": "2018-04",
+   "title": "Executive Key Account Manager"
+  },
+  {
+   "bullets": [
+    "Designed and implemented a client health scoring system that improved response times and reduced escalation by 35%.",
+    "Achieved R45M in annual revenue from high-value accounts through targeted outreach and value-added service delivery."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Solutions Group",
+   "end": "Present",
+   "start": "2023-08",
+   "title": "Executive Key Account Manager"
+  },
+  {
+   "bullets": [
+    "Led a regional sales initiative that increased market penetration in the Gauteng region by 19% within one year.",
+    "Trained and mentored 5 junior account managers, improving team performance and consistency in client delivery."
+   ],
+   "city": "Pretoria",
+   "company": "Savanna Business Services",
+   "end": "2023-08",
+   "start": "2012-06",
+   "title": "Key Account Manager"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Sales and Marketing)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Client Relationship Management",
+  "Revenue Growth Strategy",
+  "Sales Forecasting",
+  "Negotiation & Contracting",
+  "Market Analysis",
+  "Team Leadership",
+  "Performance Tracking",
+  "Synergy Development"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:59:45.802Z"
+ }
+}

@@ -1,0 +1,872 @@
+{
+ "note": "The operational register for the parser: enforced by test/failure-register.test.ts and reported by npm run register:report. docs/learning/ERROR_REGISTER.md holds the longer accounts and older entries. A passing regression test shows this shape no longer fails; it does not show the mistake can never recur.",
+ "statuses": [
+  "open",
+  "contained",
+  "fixed-in-candidate",
+  "fixed-live"
+ ],
+ "entries": [
+  {
+   "id": "R44",
+   "group": "wrong-owner-of-a-value",
+   "summary": "An agency's contact, or a form label, published as the candidate's",
+   "source": "21 real development CVs (private) and invented library cases",
+   "cause": "First match wins, with no idea whose details a line holds",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "b351161",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/failure-library.test.ts"
+   ],
+   "cases": "^(F-00|F-01|F-02|F-03[0-6]|C-00|C-01[0-3])",
+   "measured": "Real name wrong 6 to 0, e-mail wrong 4 to 0, phone wrong 4 to 0, against the owner's answers on the same 21 documents",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R46",
+   "group": "hidden-text-judged-from-instructions",
+   "summary": "Visible text drawn as shapes under a transparent copy was thrown away, losing a real name",
+   "source": "One real development CV (private), F-037",
+   "cause": "Whether text can be seen was decided from the file's drawing instructions alone",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "b351161",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/docmodel-hidden.test.ts"
+   ],
+   "cases": "^(F-037|C-014|C-015)$",
+   "measured": "Name recovered on the real document; 11 of 13 marked pieces on other real documents stayed out",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R47",
+   "group": "layout-mistaken-for-identity",
+   "summary": "'Curriculum Vitae' published as a person",
+   "source": "F-038",
+   "cause": "Nothing counted against a document title",
+   "affected": [
+    "prototype before candidate-1"
+   ],
+   "fix": {
+    "commit": "b351161",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/failure-library.test.ts"
+   ],
+   "cases": "^F-038$",
+   "measured": "Library case passes",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R48",
+   "group": "layout-mistaken-for-identity",
+   "summary": "Any large heading published as a person when nothing competed",
+   "source": "N-001 to N-040",
+   "cause": "Layout says where a line is, not who it is",
+   "affected": [
+    "prototype before candidate-1"
+   ],
+   "fix": {
+    "commit": "b351161",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/failure-library.test.ts",
+    "test/ordinary-words.test.ts"
+   ],
+   "cases": "^(N-|C-019|C-020)",
+   "measured": "18 of 20 headings wrong to 2 of 20; a list written afterwards and run once, 1 of 20. Reduced, not eliminated: N-010, N-013 open",
+   "status": "contained"
+  },
+  {
+   "id": "R49",
+   "group": "wrong-owner-of-a-value",
+   "summary": "An agency's name, recruiter and contact not held as their own details",
+   "source": "Owner, 2026-11-03; 8 real development agency CVs (private)",
+   "cause": "Contacts were only marked as not the candidate's",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "b351161",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-e2e.test.ts",
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": "^(A-|C-01[678])",
+   "measured": "Every value found is in the line it cites and no second reader disagrees, on 8 real documents, by machine only. No person has checked these values",
+   "status": "contained"
+  },
+  {
+   "id": "R50",
+   "group": "list-and-record-shapes",
+   "summary": "A skills list separated by ' / ' read as one item, or lost",
+   "source": "visual60-b1, E2's failed gate",
+   "cause": "Separators were a word list of characters, and columns mixed lists with other text so the wider rule failed on photos",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See cand-d2 in docs/parser/PIPELINE_READINESS.md: skill recall",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R51",
+   "group": "layout-discarded",
+   "summary": "Two columns read straight across, mixing a sidebar with the main text",
+   "source": "visual60-b1 searchable PDFs, scans and photos",
+   "cause": "Reading order was decided line by line with no idea of columns",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See cand-d2: roles, qualifications and certifications on PDF, scan and photo",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R52",
+   "group": "layout-discarded",
+   "summary": "Headings in a margin separated from what sits beside them",
+   "source": "visual60-b1 layout 4",
+   "cause": "As R51",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Layout 4 skills on the sample: 2 of 5 to all",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R53",
+   "group": "list-and-record-shapes",
+   "summary": "'Name | Issuer | Status | Year' kept as one name, and wrapped ones broken",
+   "source": "visual60-b1 courses",
+   "cause": "Certificates were split on commas only",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See cand-d2: certification issuer from none found",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R54",
+   "group": "manufactured-value",
+   "summary": "A skill given a dictionary's name the document never prints",
+   "source": "visual60-b1, 'skill precision (unsupported)'",
+   "cause": "Recognised phrases were replaced with the dictionary's form",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Text-layer documents to zero; OCR documents still count misread words as unsupported",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R55",
+   "group": "layout-discarded",
+   "summary": "A title above the name started a section and pulled the contact line into the work history",
+   "source": "visual60-b1 CV0501",
+   "cause": "Sections are found by words, whatever comes before the person's name",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Regression test passes",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R56",
+   "group": "hidden-text-judged-from-instructions",
+   "summary": "The document model's Word reader did not remove hidden text",
+   "source": "Found by reading the code before integration",
+   "cause": "A second reader was written without the first reader's protection",
+   "affected": [
+    "prototype before candidate-1"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Regression test passes",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R57",
+   "group": "list-and-record-shapes",
+   "summary": "An employment form's roles lost: employer, position and duration on separate labelled rows",
+   "source": "Real development CVs (private), date ranges against roles found",
+   "cause": "Roles are expected to carry their dates on one line",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Real documents with far fewer roles than date ranges: 7 to 4 of 21",
+   "status": "contained"
+  },
+  {
+   "id": "R58",
+   "group": "sections-judged-by-wording",
+   "summary": "'Key achievements' inside one role ended the work history, losing later roles",
+   "source": "Real development CVs (private)",
+   "cause": "Any heading ends a section",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "46802c3",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "As R57",
+   "status": "contained"
+  },
+  {
+   "id": "R59",
+   "group": "list-and-record-shapes",
+   "summary": "Table cells published as languages",
+   "source": "Real development CVs (private): 32 of 51 values named no language",
+   "cause": "Everything under the heading was kept",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "5cfb720",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Regression test passes. An unlisted language is left out",
+   "status": "contained"
+  },
+  {
+   "id": "R60",
+   "group": "list-and-record-shapes",
+   "summary": "Dates with a full stop, or stacked in a narrow column, not read as dates, losing the roles after them",
+   "source": "longform-b1 development sample",
+   "cause": "The date reader expects one form on one line",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "c489b08",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See longform runs in docs/parser/PIPELINE_READINESS.md",
+   "status": "contained"
+  },
+  {
+   "id": "R61",
+   "group": "layout-discarded",
+   "summary": "A role carried over a page break read as another role, and a later heading taken as an employer",
+   "source": "longform-b1 development sample",
+   "cause": "Pages are joined into flat text with nothing marking a continuation",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "46802c3",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See longform runs in docs/parser/PIPELINE_READINESS.md",
+   "status": "contained"
+  },
+  {
+   "id": "R62",
+   "group": "list-and-record-shapes",
+   "summary": "A qualification and institution on separate lines joined into one name",
+   "source": "longform-b1 development sample",
+   "cause": "R53's rejoining did not know the second line starts a new piece",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "c489b08",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See longform runs in docs/parser/PIPELINE_READINESS.md",
+   "status": "contained"
+  },
+  {
+   "id": "R63",
+   "group": "sections-judged-by-wording",
+   "summary": "Running text and labels after a skills list read as skills",
+   "source": "longform-b1 development sample; real development CVs (private)",
+   "cause": "Anything under the heading was kept until the next known heading",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "46802c3",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See longform runs in docs/parser/PIPELINE_READINESS.md",
+   "status": "contained"
+  },
+  {
+   "id": "R64",
+   "group": "layout-discarded",
+   "summary": "A line break inside a Word paragraph glued two lines together ('PlannerStellenbosch')",
+   "source": "longform-b1 development sample",
+   "cause": "The plain reader's Word library drops line breaks in raw text",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "c489b08",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See longform runs in docs/parser/PIPELINE_READINESS.md: location on Word",
+   "status": "contained"
+  },
+  {
+   "id": "R65",
+   "group": "sections-judged-by-wording",
+   "summary": "What a section is was decided by a list of heading wordings, so any new wording lost its section; adding wordings was patching",
+   "source": "Owner's direction, 2026-11-03: no patching. longform-b1 showed the failures; a first fix added more wordings and was removed",
+   "cause": "Headings decided sections, and a word list can never hold them all",
+   "affected": [
+    "parser 2.9.0 and earlier"
+   ],
+   "fix": {
+    "commit": "46802c3",
+    "version": "candidate-1"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "60 invented text CVs under meaningless headings: roles 145/149, skills 421/421, qualifications 75/75, certifications 69/69, languages 117/117, the same as printed. Real development CVs: documents with far fewer roles than date ranges 7 to 2 of 21",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R66",
+   "group": "layout-mistaken-for-identity",
+   "summary": "Two words stitched from separate lines deep on page 2 published as a person",
+   "source": "RC-414799, in the one acceptance run (acceptance-1), invented form F-039",
+   "cause": "Evidence such as sitting above a title or being used in the body raised a line to a name with nothing saying it was a person, and with no rival nothing stopped it",
+   "affected": [
+    "candidate-1"
+   ],
+   "fix": {
+    "commit": "a05118d",
+    "version": "candidate-2"
+   },
+   "tests": [
+    "test/failure-library.test.ts"
+   ],
+   "cases": "^F-039$",
+   "measured": "Real development CVs with answers: name wrong stays 0, right 20 to 19, and the wrong name on the acceptance CV no longer published. A person's name that is deep in a document with nothing confirming it is left blank: that cost is real.",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R67",
+   "group": "wrong-owner-of-a-value",
+   "summary": "A form label read as a value: location 'Phone:'",
+   "source": "A real CV the owner handed over for a match, 2026-11-03",
+   "cause": "Pieces of a contact row were offered as places with no check that a piece was a value at all; real CVs have no checked answers for location, so nothing caught it",
+   "affected": [
+    "parser 2.9.0 and earlier",
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "a05118d",
+    "version": "candidate-2"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Location on the owner's CV now right. Real CVs have no checked answers for location, which is why this went unseen",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R68",
+   "group": "layout-discarded",
+   "summary": "Word tables lost their rows, and a running header was read as an employer",
+   "source": "longform-b1 held-back group, lf-frozen-2",
+   "cause": "Tables became one line per cell, and repeated page headers flow into the body of a Word file",
+   "affected": [
+    "parser 2.9.0 and earlier",
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "a05118d",
+    "version": "candidate-2"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Long-form Word group: employer wrong 13 to 0, certifications 97 to 129 of 129",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R69",
+   "group": "layout-discarded",
+   "summary": "A line break in a Word cell glued label to value in job descriptions ('LocationJohannesburg')",
+   "source": "A sample job description the owner handed over, 2026-11-03",
+   "cause": "The same cause as R64, in the path R64's fix did not cover",
+   "affected": [
+    "parser 2.9.0 and earlier",
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "a05118d",
+    "version": "candidate-2"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Job description location now read",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R70",
+   "group": "matching-by-wording",
+   "summary": "Duties in the CV's own words not counted: 'Managed executive diary' did not count for Diary management",
+   "source": "A real CV and sample job the owner handed over, 2026-11-03, compared with a careful reader's judgement",
+   "cause": "Evidence needed the skill's exact name in a line",
+   "affected": [
+    "rules 2.2.0 and earlier"
+   ],
+   "fix": {
+    "commit": "8a7b320",
+    "version": "rules 2.3.0"
+   },
+   "tests": [
+    "test/match-rules-2-3.test.ts"
+   ],
+   "cases": null,
+   "measured": "Invented pairs on checked records: same-role median 54 to 56. On one same-role pair, 50 to 68. Ranking of same-role above adjacent unchanged at 1.00 on Word",
+   "status": "contained"
+  },
+  {
+   "id": "R71",
+   "group": "matching-oversight-as-use",
+   "summary": "Leading people who use a technology, or claiming familiarity, counted as using it",
+   "source": "A real CV and sample job the owner handed over, 2026-11-03, compared with a careful reader's judgement",
+   "cause": "Any line naming a skill counted as described use",
+   "affected": [
+    "rules 2.2.0 and earlier"
+   ],
+   "fix": {
+    "commit": "8a7b320",
+    "version": "rules 2.3.0"
+   },
+   "tests": [
+    "test/match-rules-2-3.test.ts"
+   ],
+   "cases": null,
+   "measured": "On the owner's sample pair: CI/CD verified to partial. Azure is still verified, see R75",
+   "status": "contained"
+  },
+  {
+   "id": "R72",
+   "group": "matching-by-wording",
+   "summary": "What a skill is built on read as absent: JavaScript despite React, PostgreSQL despite Supabase",
+   "source": "A real CV and sample job the owner handed over, 2026-11-03, compared with a careful reader's judgement",
+   "cause": "Nothing knew how technologies relate",
+   "affected": [
+    "rules 2.2.0 and earlier"
+   ],
+   "fix": {
+    "commit": "8a7b320",
+    "version": "rules 2.3.0"
+   },
+   "tests": [
+    "test/match-rules-2-3.test.ts"
+   ],
+   "cases": null,
+   "measured": "Partial credit only, and the explanation says it was implied",
+   "status": "contained"
+  },
+  {
+   "id": "R73",
+   "group": "matching-oversight-as-use",
+   "summary": "Years of managing counted as years of software development",
+   "source": "A real CV and sample job the owner handed over, 2026-11-03, compared with a careful reader's judgement",
+   "cause": "Any role whose duties held half the subject words counted",
+   "affected": [
+    "rules 2.2.0 and earlier"
+   ],
+   "fix": {
+    "commit": "8a7b320",
+    "version": "rules 2.3.0"
+   },
+   "tests": [
+    "test/match-rules-2-3.test.ts"
+   ],
+   "cases": null,
+   "measured": "On the owner's sample pair: verified 6.9 years to not demonstrated",
+   "status": "contained"
+  },
+  {
+   "id": "R74",
+   "group": "matching-job-wording",
+   "summary": "A vague job line replaced a specific one; 'will be considered' and 'not mandatory' read as mandatory",
+   "source": "A real CV and sample job the owner handed over, 2026-11-03, compared with a careful reader's judgement",
+   "cause": "Duplicates kept whichever came first, and every line under a mandatory heading counted",
+   "affected": [
+    "rules 2.2.0 and earlier"
+   ],
+   "fix": {
+    "commit": "8a7b320",
+    "version": "rules 2.3.0"
+   },
+   "tests": [
+    "test/match-rules-2-3.test.ts"
+   ],
+   "cases": null,
+   "measured": "On the owner's sample pair: the specific requirement is judged, and the sentence is no longer scored",
+   "status": "contained"
+  },
+  {
+   "id": "R75",
+   "group": "layout-discarded",
+   "summary": "A duty wrapped across lines loses its opening, so 'Lead the Centre... including' / 'Guidewire, Duck Creek, and Azure.' reads as Azure in use",
+   "source": "The owner's sample CV",
+   "cause": "A wrapped line is treated as a duty of its own when it starts with a capital",
+   "affected": [
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "96f1145",
+    "version": "candidate-3"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Regression test passes",
+   "status": "fixed-in-candidate"
+  },
+  {
+   "id": "R76",
+   "group": "certificate-validity",
+   "summary": "A certificate the CV says has expired was shown as Completed",
+   "source": "longform-b1: all 32 certification status errors in one group",
+   "cause": "There was no way to say a certificate no longer stands, and a past year reads as completed. Owner decision 2026-11-04: an expired certificate is history; it does not satisfy a requirement for a current one",
+   "affected": [
+    "parser 2.9.0 and earlier",
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "d830570",
+    "version": "candidate-4, rules 2.4.0"
+   },
+   "tests": [
+    "test/match-rules-2-4.test.ts",
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Visual pack, certificate status on Word 60/9/0 to 69/0/0, PDF 57/8/0 to 65/0/0. Expired, current and unknown are separate, and a printed date is judged against the assessment date. A stated date is still the candidate's claim",
+   "status": "contained"
+  },
+  {
+   "id": "R77",
+   "group": "scan-score-drift",
+   "summary": "One scan's match score differs from its checked record by 43 points",
+   "source": "visual60-b1, matching evaluation on cand-f2",
+   "cause": "Image cleanup damaged text at the edges of dark panels: R78",
+   "affected": [
+    "candidate-2",
+    "rules 2.3.0"
+   ],
+   "fix": {
+    "commit": "96f1145",
+    "version": "candidate-3"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Largest drift 43 to 22 on scans; 34 on photos remains",
+   "status": "contained"
+  },
+  {
+   "id": "R78",
+   "group": "preprocessing-damage",
+   "summary": "Turning a dark panel left halos across the letters at its edges, losing skills on scans and photos",
+   "source": "visual60-b1, tracing a 43-point score drift to its cause",
+   "cause": "Panels were turned in whole grid blocks and left mid-grey, and the next step smeared both",
+   "affected": [
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "96f1145",
+    "version": "candidate-3"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Scan, same-role median 54 to 60; largest drift from the checked record 43 to 22 points. One CV went from 2 skills to all 8; one photo got worse, kept open under R81",
+   "status": "contained"
+  },
+  {
+   "id": "R79",
+   "group": "sections-judged-by-wording",
+   "summary": "Skills one per line split in two; a label stuck to the title; a course or issuer taken as a heading; a table's status and year columns read away from their rows",
+   "source": "longform-b1 fresh group",
+   "cause": "Aliases counted as whole skills; a section's word in a line was enough to make it a heading; only heading text protected a table from being read as columns",
+   "affected": [
+    "candidate-2"
+   ],
+   "fix": {
+    "commit": "96f1145",
+    "version": "candidate-3"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Never-seen long-form group on Word: skills 330 of 344, certifications 129 of 129",
+   "status": "contained"
+  },
+  {
+   "id": "R81",
+   "group": "ocr-identity",
+   "summary": "Wrong e-mails and phones read from scans and photos, about half of them not sent for review",
+   "source": "visual60-b1 cand-f3: 19 of 300 documents with a wrong name, e-mail or phone, 10 flagged; longform-b1 lf-fresh-3 scans: e-mail 29 right, 6 wrong, 8 missing",
+   "cause": "Diagnosed by stage (test/candidate/contactStages.ts). Of 57 addresses not read as one word on 120 development pages: spaces inserted inside the address, or a dropped dot, with the characters right, were the largest group; the end of the address wrapped in a narrow cell; and real misreads of a letter, which a closer look at the row often read correctly. A wrong owner was not the cause of any. One page reading had nothing to check itself against",
+   "affected": [
+    "candidate-3"
+   ],
+   "fix": {
+    "commit": "d830570",
+    "version": "candidate-4"
+   },
+   "tests": [
+    "test/contact-readings.test.ts",
+    "test/ocr-contact-fixtures.test.ts"
+   ],
+   "cases": null,
+   "measured": "On the 43 people, scans: e-mail 29 right, 6 wrong, 8 missing to 32, 1, 10; phone 41, 1, 1 to 43, 0, 0. Visual pack, photos: e-mail 37, 10, 13 to 50 right, 3 wrong, 7 missing on the last full comparison; phones 57, 1, 2 to 60, 0, 0. Failed unread run lf-unseen-5 still shows 4 wrong e-mails and 2 wrong phones of 43 scans, and e-mail only 70% right, so this is contained and not solved: when every reading shares a slip, nothing here can see it",
+   "status": "contained"
+  },
+  {
+   "id": "R82",
+   "group": "pdf-skills",
+   "summary": "Skills on searchable PDFs well below Word: 273 of 344 against 330 of 344 on the same people",
+   "source": "longform-b1 lf-fresh-3",
+   "cause": "Not established",
+   "affected": [
+    "candidate-3"
+   ],
+   "fix": {
+    "commit": "d830570",
+    "version": "candidate-4"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "See R84, which holds the causes. On the 43 people PDF skills 273 to 321 of 344; unread group 329 of 344; Word on the 43 unchanged at 330",
+   "status": "contained"
+  },
+  {
+   "id": "R83",
+   "group": "test-timing-under-load",
+   "summary": "Two e-mail recovery tests failed once in a full local run: RECOVERY (invitation), and WELCOME, which uses the people that test creates",
+   "source": "Full local suite, 2026-11-03, on top of 96f1145",
+   "cause": "Not established, and the failing assertion was not kept: that run saved only the test names. Ruled out by evidence: the local auth service (no 429 and no 5xx on these paths in its log for the whole period), load alone (3 of 3 passed beside an OCR batch, and two full suites passed beside OCR runs). WELCOME depending on the earlier test means this was one failure, not two. Still possible: test file order, or a timing in the fault injection",
+   "affected": [
+    "test suite"
+   ],
+   "fix": null,
+   "tests": [],
+   "cases": null,
+   "measured": "Failure once, on 2026-11-03. Since then, on candidate-4 and candidate-5: 3 full suites in usual order and 1 shuffled passed these tests, and 3 of 3 alone beside an OCR run. Not reproduced, so not resolved. Every run now keeps its full failure text in data/test-runs, so a repeat can be understood",
+   "status": "open"
+  },
+  {
+   "id": "R84",
+   "group": "layout-discarded",
+   "summary": "PDF lost skills that Word kept",
+   "source": "longform-b1 remainder 2 (development): skills 292 of 344 on PDF, 339 on Word; 50 of the 52 lost were in the text the reader produced",
+   "cause": "The text was read; it was lost after. Four shared causes: labels in a margin read as a column of their own, apart from what they label; words bold in one place treated as headings where they are plain list items; a list's first row taken as a heading; two columns of flowing text taken for a table's rows",
+   "affected": [
+    "candidate-3 and earlier"
+   ],
+   "fix": {
+    "commit": "d830570",
+    "version": "candidate-4"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts"
+   ],
+   "cases": null,
+   "measured": "Same group: PDF 292 to 331 of 344, Word 339 to 343",
+   "status": "contained"
+  },
+  {
+   "id": "R85",
+   "group": "matching-said-not-done",
+   "summary": "A line saying the person had not done something counted as doing it",
+   "source": "Counterexamples for rules 2.3.0: 'I have not used SAP', 'Would like to learn Python', 'Worked alongside the data team, who built models in Python' were all verified at 100",
+   "cause": "Described use looked only at whether the skill was named in a line of work with enough other words. Nothing read what the line said about it. Known since R1 and held as an expected failure",
+   "affected": [
+    "rules 2.3.0 and earlier"
+   ],
+   "fix": {
+    "commit": "d830570",
+    "version": "rules 2.4.0"
+   },
+   "tests": [
+    "test/match-judgements.test.ts",
+    "test/known-failures.test.ts"
+   ],
+   "cases": null,
+   "measured": "All three not demonstrated, with the line quoted for a person to read. R1 passes. The words are a list in the ruleset, so other wordings will get through: a known weak spot",
+   "status": "contained"
+  },
+  {
+   "id": "R86",
+   "group": "wrong-owner-of-a-value",
+   "summary": "A sentence from the column beside was published as the location",
+   "source": "visual60-b1 CV0530 on PDF and scan: Filing, Supplier coordination and Excel. Currently",
+   "cause": "A row holding the person's contact details also held a line of the other column, and every piece beside a contact counted as a possible place",
+   "affected": [
+    "candidate-3 and earlier"
+   ],
+   "fix": {
+    "commit": "d830570",
+    "version": "candidate-4"
+   },
+   "tests": [
+    "test/ocr-contact-fixtures.test.ts"
+   ],
+   "cases": null,
+   "measured": "Location now Pretoria on PDF and scan; visual pack PDF location 59/1/0 to 60/0/0",
+   "status": "contained"
+  },
+  {
+   "id": "R87",
+   "group": "review-rate-misread",
+   "summary": "The fall in review was reported as an improvement without saying how much came from changed rules",
+   "source": "server/test/candidate/reviewAnalysis.ts, owner question 2026-11-04",
+   "cause": "Review rate was compared across different review rules. The old rules send every OCR document to review, so holding the rules still shows the fall on scans and photos came from changing them, while the fall on Word and PDF came from better extraction",
+   "affected": [
+    "reports up to 2026-11-03"
+   ],
+   "fix": null,
+   "tests": [],
+   "cases": null,
+   "measured": "Held still, the old review rules would send 56 of 129 documents on the 43 people, against 26 now. Word and PDF fell because extraction improved. Scans fell from all to 26 of 43 only because the rules changed, and 4 wrong core values on scans now go unflagged. Open: review on scans has to earn its fall with the failed-run criterion U8",
+   "status": "open"
+  },
+  {
+   "id": "R88",
+   "group": "my-own-rule-too-broad",
+   "summary": "What the failed unread run lf-unseen-4 found",
+   "source": "longform-b1 remainder 4, candidate-4: failed U2, U4, U6, U8",
+   "cause": "Form words beside a name made rival names, so the name was left blank; a name on the address's row was missed; a rule written for form labels stripped Senior from titles; addresses that lost their start were accepted; a misread domain had no check; OCR splitting or reordering a name its own address shows whole",
+   "affected": [
+    "candidate-4 and earlier"
+   ],
+   "fix": {
+    "commit": "74cf905",
+    "version": "candidate-5"
+   },
+   "tests": [
+    "test/candidate-pipeline.test.ts",
+    "test/contact-readings.test.ts"
+   ],
+   "cases": null,
+   "measured": "Same group, now development: PDF name 35 to 43 of 43, PDF title 41 to 43, scan title 38 to 42, wrong core values not sent for review 7 to 2",
+   "status": "contained"
+  }
+ ]
+}

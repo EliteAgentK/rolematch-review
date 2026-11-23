@@ -1,0 +1,136 @@
+{
+ "spec": {
+  "id": "f025",
+  "field": "software engineering",
+  "role": "Backend Developer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "study-in-progress"
+  ],
+  "name": "Thandiwe Ndlovu",
+  "city": "Johannesburg"
+ },
+ "name": "Thandiwe Ndlovu",
+ "email": "thandiwe.ndlovu@example.test",
+ "phone": "021 555 1025",
+ "headline": "Junior Backend Developer | AWS | Node.js | REST APIs | South African Tech Stack",
+ "summary": "Results-driven junior backend developer with 2+ years of hands-on experience in building scalable, secure, and high-performance APIs. Proven track record in real-world deployments across fintech, logistics, and education sectors. Strong foundation in cloud infrastructure and DevOps practices.",
+ "roles": [
+  {
+   "bullets": [
+    "Developed and maintained RESTful APIs in Node.js and Express for a fintech startup, handling 10,000+ API calls/day with 99.5% response time SLA.",
+    "Integrated AWS S3 and Lambda for file storage and processing, reducing storage costs by 30% and improving upload speed by 45%.",
+    "Collaborated with frontend teams to deliver a real-time dashboard using WebSockets and Socket.IO, improving user engagement by 35%.",
+    "Deployed and monitored backend services using Docker and Kubernetes on AWS EC2, achieving 99.9% service availability over 6 months."
+   ],
+   "city": "Johannesburg",
+   "company": "NexaTech Solutions",
+   "end": "2025-03",
+   "start": "2022-06",
+   "title": "Junior Backend Developer"
+  },
+  {
+   "bullets": [
+    "Built a user management backend using Python (FastAPI) and PostgreSQL, supporting 500+ active users with 99.9% uptime.",
+    "Implemented OAuth 2.0 and JWT authentication, reducing unauthorized access incidents by 80% in a government-linked project.",
+    "Automated deployment pipelines using GitHub Actions and Docker, cutting release cycles from 7 to 2 days.",
+    "Integrated logging and error tracking with Sentry and ELK stack, reducing incident detection time from 30 to 5 minutes."
+   ],
+   "city": "Johannesburg",
+   "company": "DataFlow Innovations",
+   "end": "Present",
+   "start": "2024-08",
+   "title": "Backend Developer (Junior)"
+  },
+  {
+   "bullets": [
+    "Developed a booking system backend using Express.js and MongoDB, handling 200+ daily bookings with zero data loss.",
+    "Optimized database queries using indexes and query planning, reducing average response time from 800ms to 150ms.",
+    "Set up CI/CD with Jenkins and GitLab, reducing deployment failures by 60% and improving release frequency by 40%.",
+    "Collaborated with DevOps to deploy services on AWS EC2 and RDS, achieving 99.95% availability for 3 months."
+   ],
+   "city": "Johannesburg",
+   "company": "UrbanLink Transport",
+   "end": "2024-07",
+   "start": "2022-03",
+   "title": "Backend Developer (Junior)"
+  },
+  {
+   "bullets": [
+    "Built a student portal API using Node.js and MongoDB, serving 1,000+ users daily with 99.7% uptime during exam periods.",
+    "Integrated with university LMS systems via REST APIs, improving data sync accuracy from 70% to 98%.",
+    "Designed a notification system using BullMQ and Redis, reducing user response time to alerts by 50%.",
+    "Improved API documentation using Swagger and OpenAPI, increasing onboarding time for new developers by 30%."
+   ],
+   "city": "Johannesburg",
+   "company": "UniConnect SA",
+   "end": "2023-05",
+   "start": "2021-09",
+   "title": "Backend Developer (Junior)"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "in_progress",
+   "statusWords": "expected 2027",
+   "startYear": 2021
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Software Development",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Technology",
+   "name": "AWS Certified Cloud Practitioner",
+   "year": 2025
+  }
+ ],
+ "skills": [
+  "Node.js",
+  "Express.js",
+  "FastAPI",
+  "RESTful APIs",
+  "MongoDB",
+  "PostgreSQL",
+  "Docker",
+  "Kubernetes",
+  "AWS (S3, Lambda, EC2)",
+  "TypeScript",
+  "JWT",
+  "Redis",
+  "CI/CD (GitHub Actions, Jenkins)",
+  "Prometheus",
+  "Sentry",
+  "WebSockets",
+  "Microservices"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Built a real-time inventory tracking API using Node.js and MongoDB, handling 500+ daily transactions with 99.8% uptime in a startup environment.",
+  "Developed a payment gateway integration for a SaaS platform using Express.js and Stripe, reducing checkout errors by 40% in 3 months.",
+  "Designed and deployed a microservice for user authentication with JWT and Redis, improving login speed by 60% and reducing failed attempts by 70%.",
+  "Implemented a logging and monitoring system using Winston and Prometheus, cutting incident response time from 45 to 15 minutes.",
+  "Created a scalable API for a logistics platform using NestJS and PostgreSQL, supporting 10,000+ concurrent users during peak delivery hours.",
+  "Refactored legacy backend codebase using TypeScript and Express, reducing bug reports by 50% and improving code maintainability by 65%.",
+  "Built a data sync service between ERP and inventory systems using Node.js and Kafka, reducing data discrepancies from 15% to under 2%."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:10:04.407Z"
+ }
+}

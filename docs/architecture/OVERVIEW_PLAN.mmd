@@ -1,0 +1,26 @@
+flowchart LR
+  subgraph Browser["Browser (any account)"]
+    NAV["Header: RoleMatch + organisation\nOverview | Matching Board"]
+    TOG["Live / Demo switch\n(remembered per person)"]
+    LIVE["Live view\nasks every minute"]
+    DEMO["Demo view\nsample data, labelled Demo,\nnothing leaves the browser"]
+    NAV --> TOG
+    TOG -->|Live| LIVE
+    TOG -->|Demo| DEMO
+  end
+  subgraph API["RoleMatch server (WILL BE)"]
+    EP["GET /api/overview?days=30\nsigned in, own organisation only"]
+    CACHE["One-minute cache\nper organisation"]
+    Q["Counts read under the\norganisation's own database rules (RLS)"]
+    EP --> CACHE --> Q
+  end
+  subgraph DB["Database (TODAY, nothing new stored)"]
+    T1["candidates, jobs\ncounts and new this period"]
+    T2["applications\nshortlisted, interviewing, hired"]
+    T3["matches\nper day, strongest this week"]
+    T4["documents\nread per day, could not be read"]
+    T5["audit_events\nteam activity"]
+    T6["ai_usage\nAI used this month"]
+  end
+  LIVE -->|"one request a minute"| EP
+  Q --> T1 & T2 & T3 & T4 & T5 & T6

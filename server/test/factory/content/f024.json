@@ -1,0 +1,107 @@
+{
+ "spec": {
+  "id": "f024",
+  "field": "public sector administration",
+  "role": "Administrative Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "remote-only"
+  ],
+  "name": "Ruan Sithole",
+  "city": "Midrand"
+ },
+ "name": "Ruan Sithole",
+ "email": "ruan.sithole@example.test",
+ "phone": "011 555 1024",
+ "headline": "Mid-Level Administrative Officer | Public Sector | Remote-Ready",
+ "summary": "Seeking remote administrative opportunities in public sector roles. Experienced in policy support, service delivery, and record management. Fully adaptable to virtual environments and flexible work arrangements.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed daily operations of a municipal office, including scheduling, document control, and inter-departmental coordination.",
+    "Processed 150+ public service requests monthly with 98% accuracy and on-time delivery.",
+    "Coordinated meetings and prepared agendas for senior management, ensuring timely follow-up and documentation."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2022-03",
+   "start": "2018-07",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Supported budget preparation and financial reporting for a regional department, ensuring compliance with public finance regulations.",
+    "Maintained digital and physical records of service delivery, improving retrieval time by 40%.",
+    "Acted as liaison between departments, reducing response time for inter-office queries by 30%."
+   ],
+   "city": "Pretoria",
+   "company": "Pretoria Regional Development Authority",
+   "end": "2024-08",
+   "start": "2022-04",
+   "title": "Senior Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Led workflow optimization for a public service unit, reducing processing time from 7 days to 3 days.",
+    "Developed and implemented a digital filing system, improving document access and audit readiness.",
+    "Trained 12 new staff members on administrative procedures and public service protocols."
+   ],
+   "city": "Johannesburg",
+   "company": "Johannesburg City Services",
+   "end": "2025-02",
+   "start": "2023-09",
+   "title": "Administrative Supervisor"
+  },
+  {
+   "bullets": [
+    "Managed end-to-end processing of service applications, from intake to closure, with zero compliance breaches.",
+    "Maintained accurate records for audit and performance reviews, ensuring full traceability.",
+    "Collaborated with compliance officers to align administrative processes with national policy frameworks."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Public Services Division",
+   "end": "Present",
+   "start": "2025-03",
+   "title": "Mid-Level Administrative Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Arts in Public Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Office Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Public Sector Administration",
+  "Document Management",
+  "Budget Support",
+  "Interdepartmental Coordination",
+  "Compliance & Audit Readiness",
+  "Remote Work Operations"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:08:50.434Z"
+ }
+}

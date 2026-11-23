@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RoleMatch - evidence-based candidate and job matching for recruitment teams" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <title>RoleMatch | Evidence-based candidate and job matching</title>
+    <!-- Light or dark from the first frame (public/color-mode.js), before the loading screen or the page is drawn. -->
+    <script src="/color-mode.js"></script>
+  </head>
+  <body>
+    <!-- Shown until the app's code has loaded and replaces it (owner, 9 Nov 2026: a RoleMatch loading screen, never a blank page). -->
+    <style>
+      .rm-splash { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; background: #f7fafc; font-family: system-ui, sans-serif; }
+      .rm-splash img { height: 52px; }
+      .rm-splash .dark { display: none; }
+      .rm-splash .bar { width: 180px; height: 4px; border-radius: 4px; background: rgba(0,0,0,.08); overflow: hidden; }
+      .rm-splash .bar i { display: block; height: 100%; width: 34%; border-radius: 4px; background: linear-gradient(90deg, #007BA7, #F55F3C, #FFD600, #3DB58C, #5F3FD1); animation: rm-splash 1.25s cubic-bezier(.65, 0, .35, 1) infinite; }
+      @keyframes rm-splash { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
+      html[data-theme="dark"] { background: #161a25; }   /* the frame behind everything, before the app sets its own page backgrounds */
+      html[data-theme="dark"] .rm-splash { background: #161a25; } html[data-theme="dark"] .rm-splash .light { display: none; } html[data-theme="dark"] .rm-splash .dark { display: block; } html[data-theme="dark"] .rm-splash .bar { background: rgba(255,255,255,.16); }
+      /* The logo and bar fade in only if the page takes more than a moment to arrive: a fast load shows the page straight away, never a flicker of the
+         loading screen first (owner, 11 Nov 2026: "it doesn't even last a millisecond and it disappears"). */
+      .rm-splash > * { opacity: 0; animation: rm-splash-in .3s ease .5s forwards; }
+      @keyframes rm-splash-in { to { opacity: 1; } }
+      html[data-entry="public"] .rm-splash { display: none; }   /* a public page shows nothing before itself (public/color-mode.js) */
+      @media (prefers-reduced-motion: reduce) { .rm-splash .bar i { animation: none; } .rm-splash > * { animation-duration: .01s; } }
+    </style>
+    <div id="root"><div class="rm-splash" role="status" aria-label="Loading RoleMatch"><img class="light" src="/logo-light.png" alt="RoleMatch" /><img class="dark" src="/logo-dark.png" alt="RoleMatch" /><div class="bar"><i></i></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

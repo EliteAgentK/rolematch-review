@@ -1,0 +1,137 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Ruan van der Merwe",
+  "role": "Data Analyst",
+  "skills": [
+   "SQL",
+   "Power BI",
+   "Excel",
+   "Python",
+   "Data cleaning",
+   "Statistics",
+   "Reporting",
+   "Dashboards"
+  ],
+  "experience": "7",
+  "location": "Johannesburg, South Africa",
+  "email": "ruan.vdmerwe@example.test",
+  "phone": "083 555 0102",
+  "workHistory": [
+   {
+    "company": "Highveld Wholesale",
+    "position": "Data Analyst",
+    "startDate": "Feb 2021",
+    "endDate": "Present",
+    "responsibilities": [
+     "Wrote SQL queries against a 2 TB data warehouse for weekly sales reporting.",
+     "Built 15 Power BI dashboards used by regional managers.",
+     "Automated Excel reports with Python, saving 10 hours a week."
+    ]
+   },
+   {
+    "company": "Pinnacle Freight",
+    "position": "Junior Analyst",
+    "startDate": "Jan 2019",
+    "endDate": "Jan 2021",
+    "responsibilities": [
+     "Cleaned and reconciled shipment data in SQL and Excel.",
+     "Produced monthly KPI packs for the operations director."
+    ]
+   }
+  ],
+  "summary": "Data analyst with five years of experience in retail and logistics reporting.",
+  "education": [
+   {
+    "degree": "BCom Information Systems",
+    "institution": "University of Pretoria",
+    "year": "2018",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2018, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 8,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

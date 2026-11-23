@@ -1,0 +1,29 @@
+flowchart TB
+  subgraph RM["RoleMatch (you): the console, console.rolematch.co.za"]
+    C1["Every company and portal: people, usage, spend"]
+    C2["Create a portal: company, portal name, first administrator's email; the invitation goes out"]
+    C3["Delete a portal: type its name; every record and original in it is gone; one audit line"]
+    C4["Delete any account"]
+  end
+  subgraph CO["Inside a company (one portal for now)"]
+    PA["Portal administrator"]
+    RC["Recruiter"]
+    HM["Hiring manager"]
+  end
+  subgraph ACT["What people do inside their portal"]
+    I1["Invite: administrator at any role; recruiter at recruiter or hiring manager; hiring manager at hiring manager. Every invitation recorded"]
+    I2["Change roles, remove someone from the portal (administrator)"]
+    I3["Leave the portal: the last administrator first picks who takes over"]
+    I4["Delete my account: what goes and what stays, hand over if last administrator, password, e-mailed code, type DELETE"]
+  end
+  PA --> I1 & I2 & I3 & I4
+  RC --> I1 & I3 & I4
+  HM --> I1 & I3 & I4
+  C2 -->|"first administrator accepts"| PA
+  I3 -->|"back only with a new invitation; signing in alone never re-adds"| CO
+  I4 -->|"account, name, email gone; their work stays, credited to no one"| CO
+  subgraph GONE["Removed from the customer app"]
+    G1["Open sign-up (invitations only)"]
+    G2["Organisation administrator role and Settings > People"]
+    G3["Create a portal"]
+  end

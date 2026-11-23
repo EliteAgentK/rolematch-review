@@ -1,0 +1,36 @@
+# Secret scanning rules for the pre-commit hook and CI (docs/security/SAFETY_CHECKS.md).
+# Starts from gitleaks' maintained default rules. An allowlist entry here hides findings, so each one needs a reason in a comment and a review.
+[extend]
+useDefault = true
+
+# RoleMatch-specific: the Supabase service-role key, the SMTP password, the database URL and model tokens are only ever read from the environment.
+# The default rules cover JWTs and many provider keys; this rule also catches one of ours written as a literal value. A value read from somewhere
+# (env.X, process.env.X, a function call) or a short placeholder ("postgres://x", "oldsecret") is not a secret, so values must be long and random.
+[[rules]]
+id = "rolematch-env-secret-assignment"
+description = "A RoleMatch secret written as a literal value instead of read from the environment"
+regex = '''(?i)\b(SUPABASE_SERVICE_ROLE_KEY|MAIL_SMTP_PASS|DATABASE_URL|ANTHROPIC_API_KEY|HF_TOKEN)["']?\s*[=:]\s*["']?([A-Za-z0-9+/_@:.%\-]{20,})'''
+secretGroup = 2
+entropy = 3.5
+keywords = ["supabase_service_role_key", "mail_smtp_pass", "database_url", "anthropic_api_key", "hf_token"]
+# Two exact shapes that cannot hold a secret, found on a test of the environment preflight (register R116). Each is tested in server/test/secret-scan.test.ts, beside proof that real-looking values are still stopped.
+# 1. A reference to a value, written Name.PROPERTY_NAME: this is code, not a value. 2. An address on a host name reserved by RFC 2606 and RFC 6761, which cannot exist on the internet, or the local stack's published default.
+[[rules.allowlists]]
+description = "a reference to a property, not a value; and addresses that can only be invented or the local stack's published default"
+regexTarget = "secret"
+regexes = ['''^[A-Za-z_][A-Za-z0-9_]*\.[A-Z][A-Z0-9_]+$''', '''^postgres(ql)?://[^@]+@[A-Za-z0-9.-]+\.(test|invalid)(:[0-9]+)?(/[A-Za-z0-9_]*)?$''', '''^postgres(ql)?://postgres:postgres@127\.0\.0\.1:[0-9]+/postgres$''']
+
+# A password inside a connection string (database, cache, mail or queue), under any variable name: the default rules did not catch
+# "postgres://app:<random>@host" outside our own variable names (probe, 2026-11-02). A value of 8+ characters is required, so test data such as
+# "postgres://u:p@h/db" is not reported; the well-known local defaults below are the only exceptions, each one exact.
+[[rules]]
+id = "rolematch-connection-string-password"
+description = "A password embedded in a connection string"
+regex = '''\b(?:postgres(?:ql)?|mysql|mariadb|mongodb(?:\+srv)?|rediss?|amqps?|smtps?)://[^:@\s/'"]+:([^@\s/'"]{8,})@'''
+secretGroup = 1
+keywords = ["postgres", "mysql", "mariadb", "mongodb", "redis", "amqp", "smtp"]
+[[rules.allowlists]]
+description = "the local Supabase stack's published default password and literal placeholders; exact matches only"
+regexTarget = "secret"
+# ${rand(24)} is the secret scan's own test making up a value when it runs: code, with no value in the repository.
+regexes = ['''^(postgres|password|changeme|your-password|<password>|\$\{[A-Z_]+\}|\$\{rand\([0-9]+\)\})$''']

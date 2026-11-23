@@ -1,0 +1,143 @@
+{
+ "spec": {
+  "id": "f053",
+  "field": "accounting",
+  "role": "Financial Accountant",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "study-in-progress"
+  ],
+  "name": "Naledi Mahlangu",
+  "city": "Johannesburg"
+ },
+ "name": "Naledi Mahlangu",
+ "email": "naledi.mahlangu@example.test",
+ "phone": "061 555 1053",
+ "headline": "Junior Financial Accountant | Financial Reporting | South African Accounting Standards",
+ "summary": "Dedicated junior accountant with hands-on experience in financial reporting and ledger management. Strong foundation in South African accounting practices and compliance.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped with month-end closing tasks.",
+    "Processed journal entries and reconciliations."
+   ],
+   "city": "Johannesburg",
+   "company": "Nkosi Financial Services",
+   "end": "2025-03",
+   "start": "2023-07",
+   "title": "Junior Financial Accountant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in preparing financial statements.",
+    "Updated ledger entries and maintained records."
+   ],
+   "city": "Johannesburg",
+   "company": "Mzansi Business Solutions",
+   "end": "2024-12",
+   "start": "2022-04",
+   "title": "Accounting Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Supported payroll and tax calculations.",
+    "Maintained general ledger accuracy."
+   ],
+   "city": "Johannesburg",
+   "company": "Sibonzi Accounting Group",
+   "end": "2023-03",
+   "start": "2021-08",
+   "title": "Junior Accountant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in audit documentation.",
+    "Prepared basic financial summaries."
+   ],
+   "city": "Johannesburg",
+   "company": "Amaqo Consulting",
+   "end": "2022-02",
+   "start": "2021-03",
+   "title": "Accounting Intern"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped with financial data entry.",
+    "Maintained compliance with SARS guidelines."
+   ],
+   "city": "Johannesburg",
+   "company": "Vulindlela Financials",
+   "end": "2020-12",
+   "start": "2019-06",
+   "title": "Trainee Accountant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Accounting)",
+   "status": "in_progress",
+   "statusWords": "expected 2027",
+   "startYear": 2021
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Accounting",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Chartered Accountants",
+   "name": "Certificate in Financial Accounting",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "SAP",
+  "Excel",
+  "Financial Reporting",
+  "Trial Balance",
+  "Ledger Management",
+  "Budgeting",
+  "Variance Analysis",
+  "Accounts Reconciliation",
+  "GAAP",
+  "SARS Compliance",
+  "Financial Statements",
+  "Data Entry",
+  "Audit Support",
+  "Monthly Closing",
+  "General Ledger",
+  "Tax Calculations",
+  "Financial Analysis",
+  "Bookkeeping",
+  "Accounting Standards",
+  "Financial Systems"
+ ],
+ "languages": [
+  "English",
+  "isiZulu"
+ ],
+ "projects": [
+  "Assisted in monthly financial reporting using SAP and Excel",
+  "Supported budget preparation and variance analysis",
+  "Contributed to accounts reconciliation and trial balance processes"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:40:07.768Z"
+ }
+}

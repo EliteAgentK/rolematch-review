@@ -1,0 +1,44 @@
+flowchart LR
+  subgraph OV["Overview (Live)"]
+    K1["New candidates block"]
+    K2["Open jobs block"]
+    K3["Shortlisted block"]
+    SM["Strongest match pair"]
+    TD["Department row"]
+    NA1["Waiting over 5 days"]
+    NA2["Jobs with no shortlist"]
+    NA3["Documents not read"]
+    NA4["Jobs that need a title"]
+    IT["Incoming talent: not clickable"]
+  end
+  subgraph URL["One link contract: /dashboard?focus=..."]
+    F1["focus=new&days=N"]
+    F2["focus=jobs"]
+    F3["focus=shortlisted"]
+    F4["focus=match&c=id&j=id"]
+    F5["focus=department&dept=name"]
+    F6["focus=waiting"]
+    F7["focus=no-shortlist"]
+    F8["focus=unread"]
+    F9["focus=needs-title"]
+  end
+  subgraph BOARD["Matching Board"]
+    P["boardIntent.ts: one parser, tested"]
+    PILL["'Showing: ...  Clear' pill above the lists"]
+    FIL["Filters set: status, department, added since"]
+    SAVED["Saved match opened: GET /api/matches/saved (no AI call, no credit)"]
+    SCR["Documents area scrolled into view"]
+  end
+  K1-->F1; K2-->F2; K3-->F3; SM-->F4; TD-->F5; NA1-->F6; NA2-->F7; NA3-->F8; NA4-->F9
+  F1-->P; F2-->P; F3-->P; F4-->P; F5-->P; F6-->P; F7-->P; F8-->P; F9-->P
+  P-->FIL; P-->PILL; P-->SAVED; P-->SCR
+  DEMO["Demo mode: a click says what it would open in Live; nothing opens"] -.-> OV
+  subgraph SWEEP["Existing accounts on release"]
+    W["AI worker start: records with no department, per portal"]
+    Q["model-group jobs, 25 a job, billed to the portal"]
+    D1["candidate: headline + 3 latest jobs"]
+    D2["job: title + own unit + company"]
+    MARK["placed, or marked tried: never asked twice"]
+  end
+  W-->Q; Q-->D1; Q-->D2; D1-->MARK; D2-->MARK
+  MARK-->|"Overview and board filters update by themselves"|OV

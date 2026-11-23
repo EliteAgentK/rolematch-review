@@ -1,0 +1,1324 @@
+{
+  "runs": {
+    "baseline-1": {
+      "id": "baseline-1",
+      "commit": "7121e61",
+      "parser": "2.8.0",
+      "change": "frozen baseline: the application's own document path (src/prepare.ts), as of 2026-10-28",
+      "tally": {
+        "development": {
+          "cv: published": {
+            "ok": 140,
+            "total": 165
+          },
+          "cv: name": {
+            "ok": 121,
+            "total": 140
+          },
+          "cv: email": {
+            "ok": 118,
+            "total": 140
+          },
+          "cv: phone": {
+            "ok": 129,
+            "total": 140
+          },
+          "cv: location": {
+            "ok": 78,
+            "total": 140
+          },
+          "cv: current title": {
+            "ok": 132,
+            "total": 140
+          },
+          "cv: role found": {
+            "ok": 304,
+            "total": 352
+          },
+          "cv: role employer": {
+            "ok": 292,
+            "total": 304
+          },
+          "cv: role start date": {
+            "ok": 298,
+            "total": 304
+          },
+          "cv: role end date": {
+            "ok": 302,
+            "total": 304
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 254,
+            "total": 304
+          },
+          "cv: skill recall": {
+            "ok": 201,
+            "total": 973
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 201,
+            "total": 376
+          },
+          "cv: qualification found": {
+            "ok": 124,
+            "total": 171
+          },
+          "cv: qualification completion status": {
+            "ok": 122,
+            "total": 124
+          },
+          "cv: certification found": {
+            "ok": 121,
+            "total": 157
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 7,
+            "total": 121
+          },
+          "cv: language recall": {
+            "ok": 237,
+            "total": 251
+          },
+          "jd: published": {
+            "ok": 116,
+            "total": 123
+          },
+          "jd: job title": {
+            "ok": 108,
+            "total": 116
+          },
+          "jd: job employer": {
+            "ok": 59,
+            "total": 116
+          },
+          "jd: job location": {
+            "ok": 56,
+            "total": 116
+          },
+          "jd: essential requirement recall": {
+            "ok": 654,
+            "total": 696
+          },
+          "jd: essential requirement precision": {
+            "ok": 654,
+            "total": 798
+          },
+          "jd: desirable requirement recall": {
+            "ok": 215,
+            "total": 232
+          },
+          "jd: desirable requirement precision": {
+            "ok": 215,
+            "total": 767
+          }
+        },
+        "protected": {
+          "cv: published": {
+            "ok": 112,
+            "total": 135
+          },
+          "cv: name": {
+            "ok": 109,
+            "total": 112
+          },
+          "cv: email": {
+            "ok": 98,
+            "total": 112
+          },
+          "cv: phone": {
+            "ok": 109,
+            "total": 112
+          },
+          "cv: location": {
+            "ok": 78,
+            "total": 112
+          },
+          "cv: current title": {
+            "ok": 107,
+            "total": 112
+          },
+          "cv: role found": {
+            "ok": 246,
+            "total": 270
+          },
+          "cv: role employer": {
+            "ok": 234,
+            "total": 246
+          },
+          "cv: role start date": {
+            "ok": 246,
+            "total": 246
+          },
+          "cv: role end date": {
+            "ok": 246,
+            "total": 246
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 205,
+            "total": 246
+          },
+          "cv: skill recall": {
+            "ok": 95,
+            "total": 779
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 95,
+            "total": 201
+          },
+          "cv: qualification found": {
+            "ok": 112,
+            "total": 136
+          },
+          "cv: qualification completion status": {
+            "ok": 110,
+            "total": 112
+          },
+          "cv: certification found": {
+            "ok": 113,
+            "total": 130
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 4,
+            "total": 113
+          },
+          "cv: language recall": {
+            "ok": 226,
+            "total": 232
+          },
+          "jd: published": {
+            "ok": 51,
+            "total": 57
+          },
+          "jd: job title": {
+            "ok": 45,
+            "total": 51
+          },
+          "jd: job employer": {
+            "ok": 19,
+            "total": 51
+          },
+          "jd: job location": {
+            "ok": 32,
+            "total": 51
+          },
+          "jd: essential requirement recall": {
+            "ok": 306,
+            "total": 306
+          },
+          "jd: essential requirement precision": {
+            "ok": 306,
+            "total": 327
+          },
+          "jd: desirable requirement recall": {
+            "ok": 101,
+            "total": 102
+          },
+          "jd: desirable requirement precision": {
+            "ok": 101,
+            "total": 407
+          }
+        }
+      }
+    },
+    "e1-r1": {
+      "id": "e1-r1",
+      "commit": "9272424",
+      "parser": "2.9.0",
+      "change": "E1: names printed over two or three lines",
+      "tally": {
+        "development": {
+          "cv: published": {
+            "ok": 154,
+            "total": 165
+          },
+          "cv: name": {
+            "ok": 135,
+            "total": 154
+          },
+          "cv: email": {
+            "ok": 131,
+            "total": 154
+          },
+          "cv: phone": {
+            "ok": 143,
+            "total": 154
+          },
+          "cv: location": {
+            "ok": 87,
+            "total": 154
+          },
+          "cv: current title": {
+            "ok": 145,
+            "total": 154
+          },
+          "cv: role found": {
+            "ok": 337,
+            "total": 389
+          },
+          "cv: role employer": {
+            "ok": 321,
+            "total": 337
+          },
+          "cv: role start date": {
+            "ok": 330,
+            "total": 337
+          },
+          "cv: role end date": {
+            "ok": 334,
+            "total": 337
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 279,
+            "total": 337
+          },
+          "cv: skill recall": {
+            "ok": 236,
+            "total": 1078
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 236,
+            "total": 414
+          },
+          "cv: qualification found": {
+            "ok": 144,
+            "total": 196
+          },
+          "cv: qualification completion status": {
+            "ok": 141,
+            "total": 144
+          },
+          "cv: certification found": {
+            "ok": 134,
+            "total": 171
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 7,
+            "total": 134
+          },
+          "cv: language recall": {
+            "ok": 261,
+            "total": 276
+          },
+          "jd: published": {
+            "ok": 116,
+            "total": 123
+          },
+          "jd: job title": {
+            "ok": 108,
+            "total": 116
+          },
+          "jd: job employer": {
+            "ok": 59,
+            "total": 116
+          },
+          "jd: job location": {
+            "ok": 56,
+            "total": 116
+          },
+          "jd: essential requirement recall": {
+            "ok": 654,
+            "total": 696
+          },
+          "jd: essential requirement precision": {
+            "ok": 654,
+            "total": 798
+          },
+          "jd: desirable requirement recall": {
+            "ok": 215,
+            "total": 232
+          },
+          "jd: desirable requirement precision": {
+            "ok": 215,
+            "total": 767
+          }
+        },
+        "protected": {
+          "cv: published": {
+            "ok": 119,
+            "total": 135
+          },
+          "cv: name": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: email": {
+            "ok": 105,
+            "total": 119
+          },
+          "cv: phone": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: location": {
+            "ok": 82,
+            "total": 119
+          },
+          "cv: current title": {
+            "ok": 114,
+            "total": 119
+          },
+          "cv: role found": {
+            "ok": 261,
+            "total": 288
+          },
+          "cv: role employer": {
+            "ok": 248,
+            "total": 261
+          },
+          "cv: role start date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role end date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 216,
+            "total": 261
+          },
+          "cv: skill recall": {
+            "ok": 98,
+            "total": 832
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 98,
+            "total": 218
+          },
+          "cv: qualification found": {
+            "ok": 120,
+            "total": 147
+          },
+          "cv: qualification completion status": {
+            "ok": 117,
+            "total": 120
+          },
+          "cv: certification found": {
+            "ok": 119,
+            "total": 137
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 6,
+            "total": 119
+          },
+          "cv: language recall": {
+            "ok": 239,
+            "total": 245
+          },
+          "jd: published": {
+            "ok": 51,
+            "total": 57
+          },
+          "jd: job title": {
+            "ok": 45,
+            "total": 51
+          },
+          "jd: job employer": {
+            "ok": 19,
+            "total": 51
+          },
+          "jd: job location": {
+            "ok": 32,
+            "total": 51
+          },
+          "jd: essential requirement recall": {
+            "ok": 306,
+            "total": 306
+          },
+          "jd: essential requirement precision": {
+            "ok": 306,
+            "total": 327
+          },
+          "jd: desirable requirement recall": {
+            "ok": 101,
+            "total": 102
+          },
+          "jd: desirable requirement precision": {
+            "ok": 101,
+            "total": 407
+          }
+        }
+      }
+    },
+    "e2-r1": {
+      "id": "e2-r1",
+      "commit": "6134445",
+      "parser": "2.9.0 + E2 candidate",
+      "change": "E2: \" / \" separates skill-list items",
+      "tally": {
+        "development": {
+          "cv: published": {
+            "ok": 154,
+            "total": 165
+          },
+          "cv: name": {
+            "ok": 135,
+            "total": 154
+          },
+          "cv: email": {
+            "ok": 131,
+            "total": 154
+          },
+          "cv: phone": {
+            "ok": 143,
+            "total": 154
+          },
+          "cv: location": {
+            "ok": 87,
+            "total": 154
+          },
+          "cv: current title": {
+            "ok": 145,
+            "total": 154
+          },
+          "cv: role found": {
+            "ok": 337,
+            "total": 389
+          },
+          "cv: role employer": {
+            "ok": 321,
+            "total": 337
+          },
+          "cv: role start date": {
+            "ok": 330,
+            "total": 337
+          },
+          "cv: role end date": {
+            "ok": 334,
+            "total": 337
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 279,
+            "total": 337
+          },
+          "cv: skill recall": {
+            "ok": 902,
+            "total": 1078
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 902,
+            "total": 1032
+          },
+          "cv: qualification found": {
+            "ok": 144,
+            "total": 196
+          },
+          "cv: qualification completion status": {
+            "ok": 141,
+            "total": 144
+          },
+          "cv: certification found": {
+            "ok": 134,
+            "total": 171
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 7,
+            "total": 134
+          },
+          "cv: language recall": {
+            "ok": 261,
+            "total": 276
+          },
+          "jd: published": {
+            "ok": 116,
+            "total": 123
+          },
+          "jd: job title": {
+            "ok": 108,
+            "total": 116
+          },
+          "jd: job employer": {
+            "ok": 59,
+            "total": 116
+          },
+          "jd: job location": {
+            "ok": 56,
+            "total": 116
+          },
+          "jd: essential requirement recall": {
+            "ok": 654,
+            "total": 696
+          },
+          "jd: essential requirement precision": {
+            "ok": 654,
+            "total": 798
+          },
+          "jd: desirable requirement recall": {
+            "ok": 215,
+            "total": 232
+          },
+          "jd: desirable requirement precision": {
+            "ok": 215,
+            "total": 767
+          }
+        },
+        "protected": {
+          "cv: published": {
+            "ok": 119,
+            "total": 135
+          },
+          "cv: name": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: email": {
+            "ok": 105,
+            "total": 119
+          },
+          "cv: phone": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: location": {
+            "ok": 82,
+            "total": 119
+          },
+          "cv: current title": {
+            "ok": 114,
+            "total": 119
+          },
+          "cv: role found": {
+            "ok": 261,
+            "total": 288
+          },
+          "cv: role employer": {
+            "ok": 248,
+            "total": 261
+          },
+          "cv: role start date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role end date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 216,
+            "total": 261
+          },
+          "cv: skill recall": {
+            "ok": 677,
+            "total": 832
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 677,
+            "total": 796
+          },
+          "cv: qualification found": {
+            "ok": 120,
+            "total": 147
+          },
+          "cv: qualification completion status": {
+            "ok": 117,
+            "total": 120
+          },
+          "cv: certification found": {
+            "ok": 119,
+            "total": 137
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 6,
+            "total": 119
+          },
+          "cv: language recall": {
+            "ok": 239,
+            "total": 245
+          },
+          "jd: published": {
+            "ok": 51,
+            "total": 57
+          },
+          "jd: job title": {
+            "ok": 45,
+            "total": 51
+          },
+          "jd: job employer": {
+            "ok": 19,
+            "total": 51
+          },
+          "jd: job location": {
+            "ok": 32,
+            "total": 51
+          },
+          "jd: essential requirement recall": {
+            "ok": 306,
+            "total": 306
+          },
+          "jd: essential requirement precision": {
+            "ok": 306,
+            "total": 327
+          },
+          "jd: desirable requirement recall": {
+            "ok": 101,
+            "total": 102
+          },
+          "jd: desirable requirement precision": {
+            "ok": 101,
+            "total": 407
+          }
+        }
+      }
+    },
+    "a-default-r1": {
+      "id": "a-default-r1",
+      "commit": "228852a",
+      "parser": "2.9.0",
+      "change": "A: accepted default after isolating E2 (identical to e1-r1: comparator 2.0.0, no change)",
+      "tally": {
+        "development": {
+          "cv: published": {
+            "ok": 154,
+            "total": 165
+          },
+          "cv: name": {
+            "ok": 135,
+            "total": 154
+          },
+          "cv: email": {
+            "ok": 131,
+            "total": 154
+          },
+          "cv: phone": {
+            "ok": 143,
+            "total": 154
+          },
+          "cv: location": {
+            "ok": 87,
+            "total": 154
+          },
+          "cv: current title": {
+            "ok": 145,
+            "total": 154
+          },
+          "cv: role found": {
+            "ok": 337,
+            "total": 389
+          },
+          "cv: role employer": {
+            "ok": 321,
+            "total": 337
+          },
+          "cv: role start date": {
+            "ok": 330,
+            "total": 337
+          },
+          "cv: role end date": {
+            "ok": 334,
+            "total": 337
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 279,
+            "total": 337
+          },
+          "cv: skill recall": {
+            "ok": 236,
+            "total": 1078
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 236,
+            "total": 414
+          },
+          "cv: qualification found": {
+            "ok": 144,
+            "total": 196
+          },
+          "cv: qualification completion status": {
+            "ok": 141,
+            "total": 144
+          },
+          "cv: certification found": {
+            "ok": 134,
+            "total": 171
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 7,
+            "total": 134
+          },
+          "cv: language recall": {
+            "ok": 261,
+            "total": 276
+          },
+          "jd: published": {
+            "ok": 116,
+            "total": 123
+          },
+          "jd: job title": {
+            "ok": 108,
+            "total": 116
+          },
+          "jd: job employer": {
+            "ok": 59,
+            "total": 116
+          },
+          "jd: job location": {
+            "ok": 56,
+            "total": 116
+          },
+          "jd: essential requirement recall": {
+            "ok": 654,
+            "total": 696
+          },
+          "jd: essential requirement precision": {
+            "ok": 654,
+            "total": 798
+          },
+          "jd: desirable requirement recall": {
+            "ok": 215,
+            "total": 232
+          },
+          "jd: desirable requirement precision": {
+            "ok": 215,
+            "total": 767
+          }
+        },
+        "protected": {
+          "cv: published": {
+            "ok": 119,
+            "total": 135
+          },
+          "cv: name": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: email": {
+            "ok": 105,
+            "total": 119
+          },
+          "cv: phone": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: location": {
+            "ok": 82,
+            "total": 119
+          },
+          "cv: current title": {
+            "ok": 114,
+            "total": 119
+          },
+          "cv: role found": {
+            "ok": 261,
+            "total": 288
+          },
+          "cv: role employer": {
+            "ok": 248,
+            "total": 261
+          },
+          "cv: role start date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role end date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 216,
+            "total": 261
+          },
+          "cv: skill recall": {
+            "ok": 98,
+            "total": 832
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 98,
+            "total": 218
+          },
+          "cv: qualification found": {
+            "ok": 120,
+            "total": 147
+          },
+          "cv: qualification completion status": {
+            "ok": 117,
+            "total": 120
+          },
+          "cv: certification found": {
+            "ok": 119,
+            "total": 137
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 6,
+            "total": 119
+          },
+          "cv: language recall": {
+            "ok": 239,
+            "total": 245
+          },
+          "jd: published": {
+            "ok": 51,
+            "total": 57
+          },
+          "jd: job title": {
+            "ok": 45,
+            "total": 51
+          },
+          "jd: job employer": {
+            "ok": 19,
+            "total": 51
+          },
+          "jd: job location": {
+            "ok": 32,
+            "total": 51
+          },
+          "jd: essential requirement recall": {
+            "ok": 306,
+            "total": 306
+          },
+          "jd: essential requirement precision": {
+            "ok": 306,
+            "total": 327
+          },
+          "jd: desirable requirement recall": {
+            "ok": 101,
+            "total": 102
+          },
+          "jd: desirable requirement precision": {
+            "ok": 101,
+            "total": 407
+          }
+        }
+      }
+    },
+    "b-e2-r2": {
+      "id": "b-e2-r2",
+      "commit": "228852a",
+      "parser": "2.9.0+E2",
+      "change": "B: E2 selected (identical to e2-r1)",
+      "tally": {
+        "development": {
+          "cv: published": {
+            "ok": 154,
+            "total": 165
+          },
+          "cv: name": {
+            "ok": 135,
+            "total": 154
+          },
+          "cv: email": {
+            "ok": 131,
+            "total": 154
+          },
+          "cv: phone": {
+            "ok": 143,
+            "total": 154
+          },
+          "cv: location": {
+            "ok": 87,
+            "total": 154
+          },
+          "cv: current title": {
+            "ok": 145,
+            "total": 154
+          },
+          "cv: role found": {
+            "ok": 337,
+            "total": 389
+          },
+          "cv: role employer": {
+            "ok": 321,
+            "total": 337
+          },
+          "cv: role start date": {
+            "ok": 330,
+            "total": 337
+          },
+          "cv: role end date": {
+            "ok": 334,
+            "total": 337
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 279,
+            "total": 337
+          },
+          "cv: skill recall": {
+            "ok": 902,
+            "total": 1078
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 902,
+            "total": 1032
+          },
+          "cv: qualification found": {
+            "ok": 144,
+            "total": 196
+          },
+          "cv: qualification completion status": {
+            "ok": 141,
+            "total": 144
+          },
+          "cv: certification found": {
+            "ok": 134,
+            "total": 171
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 7,
+            "total": 134
+          },
+          "cv: language recall": {
+            "ok": 261,
+            "total": 276
+          },
+          "jd: published": {
+            "ok": 116,
+            "total": 123
+          },
+          "jd: job title": {
+            "ok": 108,
+            "total": 116
+          },
+          "jd: job employer": {
+            "ok": 59,
+            "total": 116
+          },
+          "jd: job location": {
+            "ok": 56,
+            "total": 116
+          },
+          "jd: essential requirement recall": {
+            "ok": 654,
+            "total": 696
+          },
+          "jd: essential requirement precision": {
+            "ok": 654,
+            "total": 798
+          },
+          "jd: desirable requirement recall": {
+            "ok": 215,
+            "total": 232
+          },
+          "jd: desirable requirement precision": {
+            "ok": 215,
+            "total": 767
+          }
+        },
+        "protected": {
+          "cv: published": {
+            "ok": 119,
+            "total": 135
+          },
+          "cv: name": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: email": {
+            "ok": 105,
+            "total": 119
+          },
+          "cv: phone": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: location": {
+            "ok": 82,
+            "total": 119
+          },
+          "cv: current title": {
+            "ok": 114,
+            "total": 119
+          },
+          "cv: role found": {
+            "ok": 261,
+            "total": 288
+          },
+          "cv: role employer": {
+            "ok": 248,
+            "total": 261
+          },
+          "cv: role start date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role end date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 216,
+            "total": 261
+          },
+          "cv: skill recall": {
+            "ok": 677,
+            "total": 832
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 677,
+            "total": 796
+          },
+          "cv: qualification found": {
+            "ok": 120,
+            "total": 147
+          },
+          "cv: qualification completion status": {
+            "ok": 117,
+            "total": 120
+          },
+          "cv: certification found": {
+            "ok": 119,
+            "total": 137
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 6,
+            "total": 119
+          },
+          "cv: language recall": {
+            "ok": 239,
+            "total": 245
+          },
+          "jd: published": {
+            "ok": 51,
+            "total": 57
+          },
+          "jd: job title": {
+            "ok": 45,
+            "total": 51
+          },
+          "jd: job employer": {
+            "ok": 19,
+            "total": 51
+          },
+          "jd: job location": {
+            "ok": 32,
+            "total": 51
+          },
+          "jd: essential requirement recall": {
+            "ok": 306,
+            "total": 306
+          },
+          "jd: essential requirement precision": {
+            "ok": 306,
+            "total": 327
+          },
+          "jd: desirable requirement recall": {
+            "ok": 101,
+            "total": 102
+          },
+          "jd: desirable requirement precision": {
+            "ok": 101,
+            "total": 407
+          }
+        }
+      }
+    },
+    "c-e3-r1": {
+      "id": "c-e3-r1",
+      "commit": "2211e3d",
+      "parser": "2.9.0+E2+E3",
+      "change": "C: E2 and E3 selected",
+      "tally": {
+        "development": {
+          "cv: published": {
+            "ok": 154,
+            "total": 165
+          },
+          "cv: name": {
+            "ok": 135,
+            "total": 154
+          },
+          "cv: email": {
+            "ok": 131,
+            "total": 154
+          },
+          "cv: phone": {
+            "ok": 143,
+            "total": 154
+          },
+          "cv: location": {
+            "ok": 87,
+            "total": 154
+          },
+          "cv: current title": {
+            "ok": 145,
+            "total": 154
+          },
+          "cv: role found": {
+            "ok": 337,
+            "total": 389
+          },
+          "cv: role employer": {
+            "ok": 321,
+            "total": 337
+          },
+          "cv: role start date": {
+            "ok": 330,
+            "total": 337
+          },
+          "cv: role end date": {
+            "ok": 334,
+            "total": 337
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 279,
+            "total": 337
+          },
+          "cv: skill recall": {
+            "ok": 908,
+            "total": 1078
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 908,
+            "total": 1035
+          },
+          "cv: qualification found": {
+            "ok": 144,
+            "total": 196
+          },
+          "cv: qualification completion status": {
+            "ok": 141,
+            "total": 144
+          },
+          "cv: certification found": {
+            "ok": 134,
+            "total": 171
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 7,
+            "total": 134
+          },
+          "cv: language recall": {
+            "ok": 261,
+            "total": 276
+          },
+          "jd: published": {
+            "ok": 116,
+            "total": 123
+          },
+          "jd: job title": {
+            "ok": 108,
+            "total": 116
+          },
+          "jd: job employer": {
+            "ok": 59,
+            "total": 116
+          },
+          "jd: job location": {
+            "ok": 56,
+            "total": 116
+          },
+          "jd: essential requirement recall": {
+            "ok": 654,
+            "total": 696
+          },
+          "jd: essential requirement precision": {
+            "ok": 654,
+            "total": 798
+          },
+          "jd: desirable requirement recall": {
+            "ok": 215,
+            "total": 232
+          },
+          "jd: desirable requirement precision": {
+            "ok": 215,
+            "total": 767
+          }
+        },
+        "protected": {
+          "cv: published": {
+            "ok": 119,
+            "total": 135
+          },
+          "cv: name": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: email": {
+            "ok": 105,
+            "total": 119
+          },
+          "cv: phone": {
+            "ok": 116,
+            "total": 119
+          },
+          "cv: location": {
+            "ok": 82,
+            "total": 119
+          },
+          "cv: current title": {
+            "ok": 114,
+            "total": 119
+          },
+          "cv: role found": {
+            "ok": 261,
+            "total": 288
+          },
+          "cv: role employer": {
+            "ok": 248,
+            "total": 261
+          },
+          "cv: role start date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role end date": {
+            "ok": 261,
+            "total": 261
+          },
+          "cv: role duties (employer-role-duty association)": {
+            "ok": 216,
+            "total": 261
+          },
+          "cv: skill recall": {
+            "ok": 676,
+            "total": 832
+          },
+          "cv: skill precision (extra, printed)": {
+            "ok": 676,
+            "total": 788
+          },
+          "cv: qualification found": {
+            "ok": 120,
+            "total": 147
+          },
+          "cv: qualification completion status": {
+            "ok": 117,
+            "total": 120
+          },
+          "cv: certification found": {
+            "ok": 119,
+            "total": 137
+          },
+          "cv: certification name clean (no other fields joined in)": {
+            "ok": 6,
+            "total": 119
+          },
+          "cv: language recall": {
+            "ok": 239,
+            "total": 245
+          },
+          "jd: published": {
+            "ok": 51,
+            "total": 57
+          },
+          "jd: job title": {
+            "ok": 45,
+            "total": 51
+          },
+          "jd: job employer": {
+            "ok": 19,
+            "total": 51
+          },
+          "jd: job location": {
+            "ok": 32,
+            "total": 51
+          },
+          "jd: essential requirement recall": {
+            "ok": 306,
+            "total": 306
+          },
+          "jd: essential requirement precision": {
+            "ok": 306,
+            "total": 327
+          },
+          "jd: desirable requirement recall": {
+            "ok": 101,
+            "total": 102
+          },
+          "jd: desirable requirement precision": {
+            "ok": 101,
+            "total": 407
+          }
+        }
+      }
+    }
+  }
+}

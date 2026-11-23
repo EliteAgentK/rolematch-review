@@ -1,0 +1,120 @@
+{
+ "spec": {
+  "id": "f081",
+  "field": "insurance claims",
+  "role": "Claims Assessor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "study-in-progress"
+  ],
+  "name": "Tshepo Jacobs",
+  "city": "Johannesburg"
+ },
+ "name": "Tshepo Jacobs",
+ "email": "tshepo.jacobs@example.test",
+ "phone": "021 555 1081",
+ "headline": "Junior Claims Assessor | Insurance Claims Processing | South African Market Experience",
+ "summary": "Dedicated junior claims professional with 4 years of hands-on experience in assessing vehicle, property, and personal injury claims across South African markets. Proven ability to work efficiently in fast-paced environments with a focus on accuracy and compliance.",
+ "roles": [
+  {
+   "bullets": [
+    "Assessed and processed vehicle and property claims for clients in Gauteng, ensuring compliance with policy terms and internal guidelines.",
+    "Collaborated with adjusters to validate claim details and prepare initial reports for review by senior assessors."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Claims Solutions",
+   "end": "2024-03",
+   "start": "2021-07",
+   "title": "Junior Claims Assistant"
+  },
+  {
+   "bullets": [
+    "Evaluated medical and personal injury claims, applying claim criteria to determine eligibility and payout amounts.",
+    "Maintained accurate digital claim records using ClaimFlow SA, reducing processing time by 15% through improved documentation."
+   ],
+   "city": "Johannesburg",
+   "company": "Vosat Insurance Group",
+   "end": "Present",
+   "start": "2023-04",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Supported claims audits by reviewing documentation and identifying inconsistencies in claim submissions.",
+    "Trained new staff on claim intake procedures and policy interpretation for vehicle and home insurance."
+   ],
+   "city": "Johannesburg",
+   "company": "African Risk Management Services",
+   "end": "2023-03",
+   "start": "2022-06",
+   "title": "Claims Support Officer"
+  },
+  {
+   "bullets": [
+    "Processed claims for small business and household policies, ensuring timely resolution and client satisfaction.",
+    "Used risk assessment tools to identify common claim patterns and recommend process improvements."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Claims Hub",
+   "end": "2022-05",
+   "start": "2021-01",
+   "title": "Claims Intern"
+  },
+  {
+   "bullets": [
+    "Assisted in the digitization of claim records, improving data accessibility and audit readiness.",
+    "Conducted basic claim validations and supported senior assessors in initial claim reviews."
+   ],
+   "city": "Johannesburg",
+   "company": "Savvy Insurance Advisors",
+   "end": "2020-12",
+   "start": "2020-03",
+   "title": "Claims Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Insurance and Risk Management)",
+   "status": "in_progress",
+   "statusWords": "expected 2027",
+   "startYear": 2021
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Insurance and Claims Processing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Insurance Professionals",
+   "name": "Certificate in Insurance Claims Assessment",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "Claims assessment",
+  "Policy interpretation",
+  "Client communication",
+  "Digital claim systems",
+  "Risk evaluation",
+  "Report writing"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:24:21.897Z"
+ }
+}

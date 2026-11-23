@@ -1,0 +1,69 @@
+{
+  "_about": "Every model file RoleMatch has fetched: where it came from, its licence, its exact hash. Files live in server/data/models/ (git-ignored) or in Ollama. Rule: free, permissive licences only, no paid licensing (docs/architecture/AI_PHASE_PLAN.md section 0). A model is used in the platform only after it passes the promotion gate; 'smoke-tested' means it loads and behaves sensibly, nothing more.",
+  "fetched": "2026-10-22",
+  "models": [
+    {
+      "role": "embeddings (normaliser, evidence search)",
+      "id": "intfloat/multilingual-e5-small",
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small",
+      "licence": "MIT (declared in the model card)",
+      "file": "onnx/model.onnx",
+      "bytes": 470268510,
+      "sha256": "ca456c06b3a9505ddfd9131408916dd79290368331e7d76bb621f1cba6bc8665",
+      "runtime": "@huggingface/transformers (Apache-2.0) on onnxruntime-node",
+      "status": "smoke-tested",
+      "notes": "Found the K8s sentence for 'Kubernetes administration'; missed 'presentation skills'. Similarities sit in a narrow band (0.80 to 0.86), so a threshold alone will not separate good from bad matches."
+    },
+    {
+      "role": "reranker (does this sentence support this requirement)",
+      "id": "onnx-community/bge-reranker-v2-m3-ONNX",
+      "base_model": "BAAI/bge-reranker-v2-m3",
+      "source": "https://huggingface.co/onnx-community/bge-reranker-v2-m3-ONNX",
+      "licence": "Apache-2.0 (base model; the ONNX conversion's card names the base model and no other licence)",
+      "file": "onnx/model_quantized.onnx",
+      "bytes": 570727094,
+      "sha256": "912fc1215c2dbff6499700534bd8d31253af01573861abbfc43afd1fab6cce5d",
+      "runtime": "@huggingface/transformers",
+      "status": "smoke-tested; works as designed",
+      "notes": "Diagnosed 2026-10-23: the model card's own example scores 0.995 (logit 5.32 against the published 5.26), so the pipeline and the 8-bit file are fine. The low score was the abbreviation: 'Managed production K8s clusters' 0.004, the same sentence with 'Kubernetes' 0.58, an unrelated sentence 0.000. General models do not know our abbreviations, so text is canonicalised through the vocabulary (K8s -> Kubernetes) before the reranker sees it (src/ai/vocabulary.ts)."
+    },
+    {
+      "role": "language model (job reader, judgement, explanation)",
+      "id": "qwen3:4b-instruct-2507-q4_K_M",
+      "source": "Ollama library (Qwen/Qwen3-4B-Instruct-2507)",
+      "licence": "Apache-2.0 (shown by ollama show --license)",
+      "digest": "0edcdef34593",
+      "bytes": "about 2.5 GB",
+      "runtime": "Ollama (MIT) on 127.0.0.1",
+      "status": "smoke-tested",
+      "notes": "Degree-reading check, 5 requirements with written definitions: 3 of 5, about 0.8 s each; quotes always in the text; 'equivalent accepted' right 5 of 5."
+    },
+    {
+      "role": "language model (comparison)",
+      "id": "qwen3:8b",
+      "source": "Ollama library (Qwen/Qwen3-8B), already installed",
+      "licence": "Apache-2.0",
+      "digest": "500a1f067a9f",
+      "runtime": "Ollama",
+      "status": "smoke-tested",
+      "notes": "Same check: 4 of 5, about 1.4 s each. Both models read a bare 'Bachelor's degree' as completed-required, a judgement the recruiter approves."
+    }
+  ],
+  "not_yet_fetched": [
+    {
+      "id": "TechWolf/JobBERT-v3",
+      "licence": "MIT",
+      "why": "PyTorch only; needs converting"
+    },
+    {
+      "id": "jjzha/escoxlmr_skill_extraction",
+      "licence": "Apache-2.0",
+      "why": "PyTorch only; needs converting"
+    },
+    {
+      "id": "PaddlePaddle/PP-LCNet_x1_0_doc_ori",
+      "licence": "Apache-2.0",
+      "why": "Paddle format; needs paddle2onnx (Apache-2.0)"
+    }
+  ]
+}

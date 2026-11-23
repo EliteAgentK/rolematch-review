@@ -1,0 +1,156 @@
+{
+ "spec": {
+  "id": "f059",
+  "field": "recruitment",
+  "role": "Talent Acquisition Specialist",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "many-short-roles"
+  ],
+  "name": "Ayesha van der Merwe",
+  "city": "Polokwane"
+ },
+ "name": "Ayesha van der Merwe",
+ "email": "ayesha.vandermerwe@example.test",
+ "phone": "041 555 1059",
+ "headline": "Senior Talent Acquisition Specialist | South African Market Expert | End-to-End Recruitment Process",
+ "summary": "Experienced Talent Acquisition professional with 12+ years in South African recruitment. Skilled in end-to-end hiring, market insights, and compliance. Based in Polokwane with strong regional insight.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on hiring trends.",
+    "Helped manage candidate pipelines.",
+    "Coordinated with HR teams on needs."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Recruitment Solutions",
+   "end": "2026-01",
+   "start": "2024-03",
+   "title": "Talent Acquisition Associate"
+  },
+  {
+   "bullets": [
+    "Did reports on market demand.",
+    "Supported hiring for technical roles.",
+    "Maintained candidate databases."
+   ],
+   "city": "Polokwane",
+   "company": "Mokopane Human Resources Group",
+   "end": "2025-08",
+   "start": "2024-01",
+   "title": "Recruitment Coordinator"
+  },
+  {
+   "bullets": [
+    "Did reports on vacancy analysis.",
+    "Managed shortlists for key roles.",
+    "Improved candidate engagement scores."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Talent Partners",
+   "end": "2024-01",
+   "start": "2023-07",
+   "title": "Senior Recruitment Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring performance.",
+    "Collaborated with departments on needs.",
+    "Updated recruitment policies."
+   ],
+   "city": "Polokwane",
+   "company": "Bulawayo Talent Connect",
+   "end": "2022-12",
+   "start": "2021-04",
+   "title": "Talent Acquisition Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on job market shifts.",
+    "Assisted in sourcing candidates.",
+    "Maintained compliance with labour laws."
+   ],
+   "city": "Polokwane",
+   "company": "Tshwane Staffing Hub",
+   "end": "2021-03",
+   "start": "2020-09",
+   "title": "Recruitment Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on staffing trends.",
+    "Supported onboarding processes.",
+    "Built relationships with key clients."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Workforce Solutions",
+   "end": "2020-03",
+   "start": "2019-06",
+   "title": "Junior Talent Specialist"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Arts in Human Resources Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Human Resources Management",
+   "name": "Advanced Talent Acquisition Certification",
+   "year": 2019
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Postgraduate Diploma in Organisational Development",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "ATS systems",
+  "Candidate sourcing",
+  "Interview coordination",
+  "Workforce planning",
+  "Market analysis",
+  "HR compliance",
+  "Job description writing",
+  "Stakeholder engagement",
+  "Recruitment strategy",
+  "Data reporting",
+  "Team leadership",
+  "Process improvement",
+  "Employment equity",
+  "Sourcing tools",
+  "Candidate experience"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led recruitment drives for mid-level roles in public sector.",
+  "Optimised hiring workflows using ATS tools.",
+  "Improved time-to-fill by 30% through process redesign."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:46:54.920Z"
+ }
+}

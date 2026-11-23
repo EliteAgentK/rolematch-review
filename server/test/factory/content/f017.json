@@ -1,0 +1,141 @@
+{
+ "spec": {
+  "id": "f017",
+  "field": "retail management",
+  "role": "Store Manager",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "many-short-roles"
+  ],
+  "name": "Rajesh Steyn",
+  "city": "Johannesburg"
+ },
+ "name": "Rajesh Steyn",
+ "email": "rajesh.steyn@example.test",
+ "phone": "021 555 1017",
+ "headline": "Junior Store Manager | Retail Operations | Customer Experience",
+ "summary": "Dedicated junior store manager with hands-on experience in retail operations. Proven ability to manage daily store activities and support team performance in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed stock levels."
+   ],
+   "city": "Johannesburg",
+   "company": "CityBazaar Stores",
+   "end": "2021-03",
+   "start": "2020-07",
+   "title": "Store Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in daily operations.",
+    "Organised shelf displays."
+   ],
+   "city": "Johannesburg",
+   "company": "VillaMart Retail",
+   "end": "2022-08",
+   "start": "2021-04",
+   "title": "Junior Store Operator"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Supported team during peak hours.",
+    "Updated inventory logs."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson’s Corner Store",
+   "end": "2023-02",
+   "start": "2022-09",
+   "title": "Store Supervisor (Junior)"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Managed daily sales records.",
+    "Coordinated with delivery staff."
+   ],
+   "city": "Johannesburg",
+   "company": "Savanna Market Hub",
+   "end": "2024-06",
+   "start": "2023-03",
+   "title": "Junior Store Manager"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Led team meetings.",
+    "Improved customer satisfaction scores."
+   ],
+   "city": "Johannesburg",
+   "company": "UrbanBoutique Stores",
+   "end": "Present",
+   "start": "2024-07",
+   "title": "Junior Store Manager"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "National Senior Certificate",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Retail and Customer Service",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2020
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Retail Management",
+   "name": "Retail Operations Certificate",
+   "year": 2022
+  },
+  {
+   "issuer": "Johannesburg College of Business",
+   "name": "Practical Store Management Diploma",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Inventory control",
+  "Sales reporting",
+  "Team leadership",
+  "Customer service",
+  "Stock rotation",
+  "Point of sale systems",
+  "Store layout planning",
+  "Loss prevention",
+  "Daily operations",
+  "Budget tracking",
+  "POS software",
+  "Visual merchandising",
+  "Cash handling",
+  "Store audits",
+  "Vendor coordination",
+  "Customer feedback analysis"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:58:57.216Z"
+ }
+}

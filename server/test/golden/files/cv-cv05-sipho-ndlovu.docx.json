@@ -1,0 +1,112 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Sipho Ndlovu",
+  "role": "",
+  "skills": [
+   "Excel",
+   "CRM"
+  ],
+  "experience": "4",
+  "location": "Pretoria, Gauteng",
+  "email": "sipho.ndlovu@example.test",
+  "phone": "0725550105",
+  "workHistory": [
+   {
+    "company": "Tswane Wholesalers",
+    "position": "",
+    "startDate": "2013",
+    "endDate": "2017",
+    "responsibilities": []
+   }
+  ],
+  "summary": "I have worked in sales for about ten years, mostly selling groceries and cleaning products to spaza shops, small supermarkets and restaurants. At Mzansi Cash and Carry I was the top rep in my region for three years running and I looked after about 120 accounts. Before that I worked for Tswane Wholesalers from 2013 to 2017 doing the same kind of work. I use a CRM every day to log visits and I am comfortable negotiating prices and promotions. I have a code 08 licence and my own bakkie. I finished matric at Pretoria Boys in 2009. I am good at Excel and I speak English, Zulu and Sotho.",
+  "education": [],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.55,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "opening paragraph before the first heading",
+    "count": 1,
+    "tried": [
+     "Summary heading",
+     "opening paragraph before the first heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 2,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Education and Certifications headings",
+     "qualification lines outside the work history",
+     "qualification lines anywhere in the document"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "plain sentences (\"I worked for X from 2013 to 2017\")",
+    "count": 1,
+    "tried": [
+     "Experience heading",
+     "dated roles outside the other sections (no Experience heading)",
+     "plain sentences (\"I worked for X from 2013 to 2017\")"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

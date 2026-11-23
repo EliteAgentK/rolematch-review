@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "ignoreBinaries": ["supabase", "openssl", "textutil", "gitleaks"],
+  "workspaces": {
+    ".": {
+      "entry": ["scripts/**/*.{mjs,ts}", "e2e/**/*.ts"],
+      "project": ["src/**/*.{js,jsx,ts,tsx}", "scripts/**/*.{mjs,ts}", "e2e/**/*.ts"],
+      "ignoreDependencies": ["docx"]
+    },
+    "server": {
+      "entry": ["src/console/server.ts", "src/scripts/**/*.ts", "scripts/**/*.{ts,mjs}", "test/**/*.ts"],
+      "project": ["src/**/*.ts", "scripts/**/*.{ts,mjs}", "test/**/*.ts"],
+      "ignoreDependencies": ["@tesseract.js-data/afr", "@tesseract.js-data/eng", "onnxruntime-common", "@gutenye/ocr-common"]
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+ "spec": {
+  "id": "f038",
+  "field": "civil engineering",
+  "role": "Civil Engineer",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "remote-only"
+  ],
+  "name": "Priya Mabaso",
+  "city": "Pretoria"
+ },
+ "name": "Priya Mabaso",
+ "email": "priya.mabaso@example.test",
+ "phone": "071 555 1038",
+ "headline": "Looking for remote opportunities in civil engineering",
+ "summary": "Seeking remote civil engineering roles with focus on infrastructure and urban development. Experienced in project delivery and technical oversight across diverse environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Reviewed site plans."
+   ],
+   "city": "Pretoria",
+   "company": "Naledi Infrastructure Solutions",
+   "end": "2026-10",
+   "start": "2008-03",
+   "title": "Senior Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Conducted site inspections."
+   ],
+   "city": "Johannesburg",
+   "company": "Vryheid Engineering Group",
+   "end": "2015-08",
+   "start": "2005-06",
+   "title": "Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Prepared technical documents."
+   ],
+   "city": "Cape Town",
+   "company": "Dube Construction Services",
+   "end": "2008-03",
+   "start": "2002-04",
+   "title": "Junior Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Assisted in project planning."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Projects Ltd",
+   "end": "2002-04",
+   "start": "1999-07",
+   "title": "Civil Engineering Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Supported design reviews."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Build Group",
+   "end": "1999-07",
+   "start": "1996-09",
+   "title": "Engineering Trainee"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Engineering (Civil)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Postgraduate Diploma in Structural Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Civil Engineers",
+   "name": "Professional Practice and Ethics",
+   "year": 2018
+  },
+  {
+   "issuer": "National Institute of Hydrology",
+   "name": "Water Resources Management",
+   "year": 2020
+  }
+ ],
+ "skills": [
+  "Project planning",
+  "Site supervision",
+  "Technical documentation",
+  "Budget estimation",
+  "Risk assessment",
+  "CAD software",
+  "Construction management",
+  "Regulatory compliance",
+  "Team coordination",
+  "Stakeholder engagement",
+  "Design review",
+  "Quality control",
+  "Sustainability planning",
+  "Surveying",
+  "Material testing",
+  "Environmental impact analysis",
+  "Remote monitoring",
+  "Digital design tools"
+ ],
+ "languages": [
+  "English",
+  "Afrikaans",
+  "isiZulu"
+ ],
+ "projects": [
+  "Led design of urban drainage systems in Soweto, improving flood resilience.",
+  "Managed construction of a municipal bridge with strict timelines.",
+  "Coordinated infrastructure upgrades in a rural township, reducing maintenance costs."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:24:09.901Z"
+ }
+}

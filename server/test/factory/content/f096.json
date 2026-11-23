@@ -1,0 +1,161 @@
+{
+ "spec": {
+  "id": "f096",
+  "field": "public sector administration",
+  "role": "Administrative Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "overlapping-contract"
+  ],
+  "name": "Ruan Sithole",
+  "city": "Midrand"
+ },
+ "name": "Ruan Sithole",
+ "email": "ruan.sithole@example.test",
+ "phone": "011 555 1096",
+ "headline": "Mid-level Administrative Officer with 8 years of public sector experience in policy support, record management, and interdepartmental coordination.",
+ "summary": "Experienced public sector administrative professional with a strong background in service delivery, record management, and inter-agency coordination within municipal and public service environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed daily operations and workflow for the Department of Transport’s public service division (2023–Present)",
+    "Coordinated with 12 departments on service delivery timelines and reporting schedules"
+   ],
+   "city": "Midrand",
+   "company": "Tshwane Transport Services",
+   "end": "Present",
+   "start": "2023-04",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Served as administrative liaison between transport and environmental departments (2022–2023)",
+    "Prepared monthly reports on service performance and compliance"
+   ],
+   "city": "Midrand",
+   "company": "Tshwane Transport Services",
+   "end": "2023-03",
+   "start": "2022-07",
+   "title": "Senior Administrative Assistant"
+  },
+  {
+   "bullets": [
+    "Supported policy implementation and documentation for the Department of Public Works (2020–2022)",
+    "Maintained records and ensured compliance with public procurement guidelines"
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2022-06",
+   "start": "2020-03",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Managed intake and processing of public service applications (2018–2020)",
+    "Improved processing time by 30% through workflow optimisation"
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2020-02",
+   "start": "2018-05",
+   "title": "Administrative Assistant"
+  },
+  {
+   "bullets": [
+    "Provided administrative support to municipal planning committee (2017–2018)",
+    "Organised meetings and prepared agendas and minutes"
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2018-04",
+   "start": "2017-09",
+   "title": "Junior Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Supported the implementation of a digital records system at a local college (2016–2017)",
+    "Trained staff on new record-keeping protocols and digital filing systems"
+   ],
+   "city": "Midrand",
+   "company": "Midrand College of Technology",
+   "end": "2017-08",
+   "start": "2016-03",
+   "title": "Administrative Support Officer"
+  },
+  {
+   "bullets": [
+    "Managed correspondence and documentation for a public health initiative (2015–2016)",
+    "Ensured timely submission of reports to provincial health authorities"
+   ],
+   "city": "Midrand",
+   "company": "Midrand Health Services",
+   "end": "2016-02",
+   "start": "2015-04",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Delivered administrative support during a temporary service restructuring (2014–2015)",
+    "Maintained continuity of operations during staff transitions"
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2015-03",
+   "start": "2014-07",
+   "title": "Administrative Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Arts in Public Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Office Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Public Administration",
+   "name": "Public Sector Administration Certificate",
+   "year": 2019
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Certificate in Governance and Public Service",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "Public sector compliance",
+  "Record management",
+  "Inter-departmental coordination",
+  "Policy documentation",
+  "Report preparation",
+  "Digital filing systems"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Led digitisation of service records at City of Tshwane Department of Transport (2023–Present)",
+  "Coordinated inter-departmental compliance audits for Department of Public Works (2022–2024)"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:52:38.406Z"
+ }
+}

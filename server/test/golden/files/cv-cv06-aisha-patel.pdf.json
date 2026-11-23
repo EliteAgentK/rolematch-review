@@ -1,0 +1,136 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Aisha Patel",
+  "role": "Digital Marketing Manager",
+  "skills": [
+   "SEO",
+   "Google Ads",
+   "Meta Ads",
+   "Google Analytics",
+   "Email marketing",
+   "Content strategy",
+   "Team leadership"
+  ],
+  "experience": "12",
+  "location": "Cape Town, South",
+  "email": "aisha.patel@example.test",
+  "phone": "072 555 0106",
+  "workHistory": [
+   {
+    "company": "Shelf Space",
+    "position": "Head of Growth",
+    "startDate": "Jan 2019",
+    "endDate": "Present",
+    "responsibilities": [
+     "Managed Google and Meta ad budgets of R180,000 a month.",
+     "Grew organic traffic by 140% in two years through SEO and content.",
+     "Led a team of three marketers and one designer."
+    ]
+   },
+   {
+    "company": "Bluebird Media",
+    "position": "Digital Marketer",
+    "startDate": "Feb 2014",
+    "endDate": "Dec 2018",
+    "responsibilities": [
+     "Ran paid campaigns for 20 small business clients.",
+     "Reported weekly on cost per acquisition."
+    ]
+   }
+  ],
+  "summary": "Digital marketing manager with nine years of experience growing online businesses.",
+  "education": [
+   {
+    "degree": "BA Communication Science",
+    "institution": "Stellenbosch University",
+    "year": "2013",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2013, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 7,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

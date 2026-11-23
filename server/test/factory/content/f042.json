@@ -1,0 +1,122 @@
+{
+ "spec": {
+  "id": "f042",
+  "field": "sales",
+  "role": "Key Account Manager",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "career-change"
+  ],
+  "name": "Chantelle Patel",
+  "city": "Pretoria"
+ },
+ "name": "Chantelle Patel",
+ "email": "chantelle.patel@example.test",
+ "phone": "031 555 1042",
+ "headline": "Executive Key Account Manager | Sales Leadership | 20+ Years Experience | Pretoria",
+ "summary": "Results-driven sales professional with 20+ years of experience transitioning from logistics to financial services. Proven success in key account management, revenue growth, and client retention across diverse sectors.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed key accounts for a logistics firm, driving 15% revenue growth annually from 2005–2010.",
+    "Led client relationship strategies, improving retention by 22% over five years."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Logistics Solutions",
+   "end": "2010-12",
+   "start": "2005-03",
+   "title": "Senior Account Executive"
+  },
+  {
+   "bullets": [
+    "Transitioned to sales operations, overseeing regional sales performance and team development.",
+    "Improved sales cycle efficiency by 18% through process redesign and training programs."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Business Services",
+   "end": "2014-08",
+   "start": "2011-07",
+   "title": "Sales Operations Manager"
+  },
+  {
+   "bullets": [
+    "Developed and executed key account strategies for a mid-sized manufacturing client base.",
+    "Achieved 95% client satisfaction through tailored service delivery and proactive communication."
+   ],
+   "city": "Pretoria",
+   "company": "Makwetla Industrial Group",
+   "end": "2018-03",
+   "start": "2014-09",
+   "title": "Key Account Manager"
+  },
+  {
+   "bullets": [
+    "Led end-to-end sales management for high-value clients in the financial services sector.",
+    "Increased average deal size by 30% through strategic account planning and cross-selling."
+   ],
+   "city": "Pretoria",
+   "company": "African Capital Partners",
+   "end": "Present",
+   "start": "2019-04",
+   "title": "Executive Key Account Manager"
+  },
+  {
+   "bullets": [
+    "Designed client onboarding and retention frameworks, reducing churn by 14% in two years.",
+    "Collaborated with finance and operations to align sales targets with business performance."
+   ],
+   "city": "Pretoria",
+   "company": "Sekhukhune Financial Solutions",
+   "end": "2023-06",
+   "start": "2018-04",
+   "title": "Sales Strategy Consultant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Marketing)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Postgraduate Certificate in Sales Management",
+   "status": "completed",
+   "statusWords": "completed",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Client Relationship Management",
+  "Sales Strategy Development",
+  "Account Performance Analysis",
+  "Negotiation & Closing",
+  "Market Trend Analysis",
+  "Cross-functional Collaboration"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:28:15.875Z"
+ }
+}

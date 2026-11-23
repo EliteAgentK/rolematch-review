@@ -1,0 +1,159 @@
+{
+ "spec": {
+  "id": "f022",
+  "field": "customer service",
+  "role": "Contact Centre Team Leader",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations",
+   "career-change"
+  ],
+  "name": "Zanele Botha",
+  "city": "Pretoria"
+ },
+ "name": "Zanele Botha",
+ "email": "zanele.botha@example.test",
+ "phone": "071 555 1022",
+ "headline": "Executive Contact Centre Team Leader | Customer Service Operations | 18 Years Experience | Pretoria, South Africa",
+ "summary": "Results-driven executive with 18 years of experience transitioning from logistics operations to customer service leadership. Proven track record in scaling contact centres, improving service quality, and driving compliance and efficiency across diverse South African environments. Based in Pretoria with deep local operational insight.",
+ "roles": [
+  {
+   "bullets": [
+    "Led 120+ agents in a 24/7 call centre using Zendesk and Salesforce CRM; reduced average handle time from 8.2 to 5.7 mins, improving CSAT by 23% (Q1 2024–Q3 2025).",
+    "Optimised shift scheduling via Power BI dashboards, cutting agent overtime by 18% and improving team coverage by 30% (Jan 2024–Present).",
+    "Introduced a real-time sentiment analysis tool (IBM Watson) to monitor agent tone; reduced escalations by 35% in 6 months (Mar 2024–Sep 2025).",
+    "Trained 45 new agents on service protocols using LMS platform; improved first-call resolution from 68% to 89% (Apr 2024–Present).",
+    "Reduced call drop rate from 14% to 7% by refining IVR scripts and agent handover processes (Oct 2023–Mar 2024).",
+    "Collaborated with HR to implement BEE-compliant training modules; increased diversity in team by 40% (Jan 2023–Dec 2023)."
+   ],
+   "city": "Pretoria",
+   "company": "NexaCom Solutions",
+   "end": "Present",
+   "start": "2024-01",
+   "title": "Executive Contact Centre Team Leader"
+  },
+  {
+   "bullets": [
+    "Managed 80+ agents in a BEE-compliant call centre using Oracle CRM; improved first-call resolution from 62% to 81% (Q2 2021–Q4 2023).",
+    "Led KPI reporting using Power BI; delivered monthly performance reports to senior management, reducing reporting time by 50% (Jan 2021–Dec 2023).",
+    "Introduced a digital feedback loop with agents; increased engagement scores from 3.4 to 4.1/5 (Q3 2022–Q4 2023).",
+    "Reduced agent turnover by 38% through structured performance reviews and career pathing (Sep 2022–Dec 2023).",
+    "Improved compliance with IFRS reporting standards in customer data handling; reduced audit findings by 60% (Mar 2022–Dec 2023).",
+    "Led a cross-functional PM initiative to integrate CRM with internal systems; cut data sync time from 45 to 12 mins (Nov 2022–Feb 2023)."
+   ],
+   "city": "Pretoria",
+   "company": "Verve Telecom",
+   "end": "2024-01",
+   "start": "2021-03",
+   "title": "Contact Centre Supervisor"
+  },
+  {
+   "bullets": [
+    "Directed 60+ agents in a retail support centre using SAP and Zendesk; improved order accuracy from 85% to 94% (Q1 2018–Q3 2020).",
+    "Designed and implemented a shift rotation model; reduced staff fatigue and improved shift compliance by 40% (Apr 2019–Dec 2020).",
+    "Reduced customer complaints by 32% through agent coaching and script standardisation (Jan 2019–Mar 2020).",
+    "Led a KPI dashboard using Tableau; enabled real-time visibility into performance metrics for 15+ KPIs (Jun 2019–Dec 2020).",
+    "Improved agent retention by 28% through targeted recognition programs and career development plans (Oct 2019–Dec 2020).",
+    "Integrated BEE compliance into onboarding; increased representation of women and youth by 55% (Mar 2019–Dec 2020)."
+   ],
+   "city": "Pretoria",
+   "company": "TerraRetail Group",
+   "end": "2021-03",
+   "start": "2018-04",
+   "title": "Retail Support Operations Manager"
+  },
+  {
+   "bullets": [
+    "Managed 30+ field service agents using a mobile app (AppFlow) and SAP PM; reduced response time by 40% (Q2 2014–Q4 2017).",
+    "Improved service delivery accuracy from 78% to 91% via real-time GPS tracking and KPI alerts (Mar 2016–Dec 2017).",
+    "Reduced incident escalation by 30% through proactive agent alerts and digital checklists (Sep 2015–Dec 2017).",
+    "Led a team of 15 field agents; improved on-time completion rate from 65% to 88% (Jan 2015–Dec 2017).",
+    "Introduced a digital logbook system; cut paperwork by 60% and improved data capture accuracy (Apr 2015–Dec 2017).",
+    "Achieved 98% compliance with safety protocols through monthly audits and training (Jan 2015–Dec 2017)."
+   ],
+   "city": "Pretoria",
+   "company": "AstraField Services",
+   "end": "2018-04",
+   "start": "2014-05",
+   "title": "Field Service Operations Manager"
+  },
+  {
+   "bullets": [
+    "Coordinated 10+ logistics teams using MS Project and Excel; reduced delivery delays by 25% (Q1 2010–Q3 2014).",
+    "Improved route planning accuracy from 70% to 92% using GPS and route optimisation tools (Mar 2012–Dec 2014).",
+    "Reduced fuel consumption by 18% through efficient routing and driver performance tracking (Jun 2013–Dec 2014).",
+    "Led a PM initiative to digitise dispatch workflows; cut dispatch time from 45 to 18 mins (Jan 2013–Dec 2014).",
+    "Improved on-time delivery rate from 75% to 94% (Q2 2012–Q4 2014).",
+    "Achieved 100% compliance with safety and environmental standards (Jan 2012–Dec 2014)."
+   ],
+   "city": "Pretoria",
+   "company": "LogiTrack Logistics",
+   "end": "2014-05",
+   "start": "2010-06",
+   "title": "Logistics Operations Coordinator"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "BBA – Operations Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  },
+  {
+   "institution": "Nelson Mandela Metropolitan College",
+   "qualification": "National Certificate (Level 4) – Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Customer Service (SAICS)",
+   "name": "Advanced Customer Experience Management",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Business Administration (BBA) – Operations Management",
+   "year": 0
+  },
+  {
+   "issuer": "Nelson Mandela Metropolitan College",
+   "name": "National Certificate (Level 4) – Business Administration",
+   "year": 2005
+  }
+ ],
+ "skills": [
+  "CRM (Salesforce, Oracle, Zendesk)",
+  "Power BI, Tableau",
+  "KPI & Performance Dashboards",
+  "BEE Compliance",
+  "Agent Training & Development",
+  "IVR & Call Routing",
+  "PM (Project Management)",
+  "HR Operations",
+  "Customer Sentiment Analysis",
+  "SAP PM",
+  "Power BI",
+  "IVR Design",
+  "Service Level Agreements (SLAs)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:06:08.194Z"
+ }
+}

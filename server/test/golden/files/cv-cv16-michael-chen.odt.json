@@ -1,0 +1,136 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Michael Chen",
+  "role": "Accountant",
+  "skills": [
+   "Pastel",
+   "Excel",
+   "Bank reconciliations",
+   "VAT",
+   "Payroll",
+   "Management accounts",
+   "PAYE"
+  ],
+  "experience": "9",
+  "location": "Durban, South Africa",
+  "email": "michael.chen@example.test",
+  "phone": "084 555 0104",
+  "workHistory": [
+   {
+    "company": "Coastal Timber",
+    "position": "Accountant",
+    "startDate": "Jun 2020",
+    "endDate": "Present",
+    "responsibilities": [
+     "Prepare monthly management accounts and bank reconciliations in Pastel.",
+     "Handle VAT and PAYE submissions.",
+     "Support the external audit."
+    ]
+   },
+   {
+    "company": "Beachfront Cafes",
+    "position": "Bookkeeper",
+    "startDate": "Feb 2017",
+    "endDate": "May 2020",
+    "responsibilities": [
+     "Captured daily takings and supplier invoices.",
+     "Prepared payroll for 40 staff."
+    ]
+   }
+  ],
+  "summary": "Accountant with six years of experience in month-end reporting for small and mid-sized businesses.",
+  "education": [
+   {
+    "degree": "BCom Accounting",
+    "institution": "University of KwaZulu-Natal",
+    "year": "2016",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2016, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 7,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

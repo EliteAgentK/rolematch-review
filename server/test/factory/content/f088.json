@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "id": "f088",
+  "field": "nursing",
+  "role": "Professional Nurse",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "buzzwords"
+  ],
+  "name": "Sipho Nkosi",
+  "city": "Midrand"
+ },
+ "name": "Sipho Nkosi",
+ "email": "sipho.nkosi@example.test",
+ "phone": "011 555 1088",
+ "headline": "Dynamic, results-driven mid-level professional nurse | Synergy-focused clinical leader | Team player in acute and community care environments",
+ "summary": "Dynamic, results-driven mid-level professional nurse | Synergy-focused clinical leader | Team player in acute and community care environments",
+ "roles": [
+  {
+   "bullets": [
+    "Led daily shift handovers for 15+ staff in acute ward, using structured checklists, reducing errors by 30% over 6 months.",
+    "Implemented patient safety protocol using digital checklists in Medisafe system, improving compliance to 98% in 3 months.",
+    "Trained 12 new nurses on clinical procedures using simulation labs, boosting onboarding efficiency by 40%.",
+    "Reduced patient falls by 50% through targeted education and real-time monitoring using Fall Risk Tool v3.1.",
+    "Coordinated emergency response drills with 10+ staff, improving response time by 25% during simulated cardiac events.",
+    "Managed 30+ daily patient admissions using electronic medical records (EMR), ensuring 100% documentation within 30 minutes of admission."
+   ],
+   "city": "Pretoria",
+   "company": "Naledi Health Services",
+   "end": "2023-08",
+   "start": "2018-03",
+   "title": "Senior Registered Nurse (Acute Care)"
+  },
+  {
+   "bullets": [
+    "Directed community outreach programs for 500+ patients in Midrand, using mobile clinics and SMS reminders, increasing attendance by 60%.",
+    "Designed and delivered a diabetes education module for 200+ patients, improving HbA1c control from 8.2% to 7.1% in 6 months.",
+    "Collaborated with 8+ community health workers to streamline referral processes, cutting wait times by 45%.",
+    "Used data dashboards in HealthLink Pro to track chronic disease trends, identifying 3 high-risk clusters for early intervention.",
+    "Led a team of 5 nurses in home-based care, achieving 95% patient satisfaction in follow-up visits.",
+    "Reduced medication errors by 40% through barcode scanning integration in Medisafe system during home visits."
+   ],
+   "city": "Midrand",
+   "company": "Sibonzi Community Health Initiative",
+   "end": "2026-04",
+   "start": "2021-07",
+   "title": "Community Health Nurse Supervisor"
+  },
+  {
+   "bullets": [
+    "Managed a 12-bed ICU unit with 20+ daily patient admissions, maintaining 99% adherence to clinical protocols using real-time monitoring tools.",
+    "Introduced early warning score system with staff training, reducing ICU mortality by 18% over 12 months.",
+    "Led interdisciplinary rounds with 10+ specialists, improving patient discharge timelines by 22%.",
+    "Optimized ventilator management using clinical guidelines, reducing ventilator-associated events by 35%.",
+    "Achieved 100% compliance with infection control protocols through weekly audits and staff feedback loops.",
+    "Trained 8 junior nurses in critical care, improving clinical confidence scores from 5.2 to 8.1 on internal assessments."
+   ],
+   "city": "Johannesburg",
+   "company": "Amanzimtoti Medical Centre",
+   "end": "2025-03",
+   "start": "2020-09",
+   "title": "Intensive Care Unit Nurse (ICU)"
+  },
+  {
+   "bullets": [
+    "Spearheaded a ward-wide infection control initiative using audit tools, reducing hospital-acquired infections by 55% in 10 months.",
+    "Developed a patient flow chart using real-time data from HealthFlow system, cutting average bed turnover time by 30%.",
+    "Led a cross-functional team to redesign patient intake process, reducing wait times from 45 to 28 minutes.",
+    "Conducted monthly staff performance reviews using SMART goals, improving team cohesion and clinical outcomes by 38%.",
+    "Introduced a digital patient tracking tool, increasing documentation accuracy from 70% to 95% in 4 months.",
+    "Trained 15 staff on emergency response protocols, reducing response time during code blue events by 40%."
+   ],
+   "city": "Midrand",
+   "company": "Vulindlela Health Hub",
+   "end": "Present",
+   "start": "2023-11",
+   "title": "Clinical Operations Nurse"
+  },
+  {
+   "bullets": [
+    "Managed a 10-bed geriatric ward with 30+ daily patients, improving patient mobility outcomes by 40% through structured rehab plans.",
+    "Introduced fall prevention tools in GeriCare system, reducing incidents by 60% over 8 months.",
+    "Collaborated with physiotherapists and dietitians to design individualized care plans, increasing patient satisfaction by 50%.",
+    "Used electronic care plans in CareFlow system to ensure 100% adherence to daily care routines.",
+    "Led monthly quality improvement meetings with 10+ staff, driving 20% improvement in patient-reported outcomes.",
+    "Reduced pressure ulcer incidence from 12% to 3% through protocol implementation and staff training."
+   ],
+   "city": "Sandton",
+   "company": "Makwetse Senior Care Services",
+   "end": "2022-12",
+   "start": "2019-06",
+   "title": "Geriatric Care Nurse"
+  },
+  {
+   "bullets": [
+    "Supported 10+ staff in emergency department operations, ensuring 99% adherence to triage protocols using TriagePro system.",
+    "Reduced patient wait times from 40 to 22 minutes through optimized triage and workflow redesign.",
+    "Conducted 12+ emergency drills with staff, improving response time during mass incidents by 35%.",
+    "Used real-time data from EMR to identify 5 high-risk patient clusters, enabling early intervention.",
+    "Trained 6 new staff on emergency procedures, reducing onboarding errors by 50%.",
+    "Improved patient satisfaction scores from 7.1 to 8.9 on internal surveys over 6 months."
+   ],
+   "city": "Sandton",
+   "company": "KwaZulu Emergency Response Unit",
+   "end": "2019-05",
+   "start": "2017-04",
+   "title": "Emergency Department Nurse"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Nursing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Nursing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Nursing Council",
+   "name": "Registration as a Registered Nurse (RN)",
+   "year": 2019
+  },
+  {
+   "issuer": "National Institute of Health Sciences",
+   "name": "Advanced Clinical Practice in Acute Care",
+   "year": 2022
+  }
+ ],
+ "skills": [
+  "Clinical assessment",
+  "Patient safety protocols",
+  "Emergency response",
+  "Infection control",
+  "Data analysis using EMR systems",
+  "Team leadership",
+  "Community health outreach",
+  "Critical care management",
+  "Patient education",
+  "Quality improvement"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)",
+  "Afrikaans (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:35:39.486Z"
+ }
+}

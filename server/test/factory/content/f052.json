@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "id": "f052",
+  "field": "cybersecurity",
+  "role": "Security Analyst",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "remote-only",
+   "overlapping-contract"
+  ],
+  "name": "Anika Mokoena",
+  "city": "Midrand"
+ },
+ "name": "Anika Mokoena",
+ "email": "anika.mokoena@example.test",
+ "phone": "051 555 1052",
+ "headline": "Mid-Level Security Analyst | Remote-Only | 6+ Years Cybersecurity Experience",
+ "summary": "Only seeking remote roles. Experienced in threat detection, incident response, and compliance. Proven track record in reducing security incidents and improving detection accuracy across diverse environments. Based in Midrand, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Deployed SIEM (Splunk) across 120+ endpoints in a Johannesburg-based network, reducing incident response time by 40% over 6 months.",
+    "Configured firewalls (Palo Alto) and IDS (Suricata) for a data centre, cutting unauthorized access attempts by 70%.",
+    "Led vulnerability scanning using Nessus on 300+ systems, identifying 180 critical flaws; remediated 95% within 30 days.",
+    "Automated log analysis with Python scripts and ELK Stack, reducing manual review time from 12 to 2 hours per day.",
+    "Conducted penetration testing on internal systems using Kali Linux, uncovering 12 high-risk misconfigurations.",
+    "Improved patch management compliance from 60% to 98% via automated workflows in Microsoft SCCM over 4 months.",
+    "Reduced phishing incident reports by 65% through targeted user training and simulated attacks using Mimecast."
+   ],
+   "city": "Johannesburg",
+   "company": "NexaSecure Solutions",
+   "end": "2024-03",
+   "start": "2020-04",
+   "title": "Security Analyst"
+  },
+  {
+   "bullets": [
+    "Managed 200+ cloud servers (AWS) with AWS GuardDuty and CloudTrail, detecting 15+ breaches monthly and alerting teams in under 10 minutes.",
+    "Integrated CrowdStrike Falcon with existing SIEM, reducing false positives by 55% and improving detection accuracy.",
+    "Led incident response for 12 major breaches, achieving 99.9% containment within 30 minutes using established playbooks.",
+    "Built automated response workflows using AWS Lambda and SNS, reducing average incident resolution time by 35%.",
+    "Conducted quarterly risk assessments using MITRE ATT&CK framework, identifying 20+ new attack vectors.",
+    "Improved endpoint detection with CrowdStrike and YARA rules, reducing undetected threats by 60% in 6 months.",
+    "Trained 15+ staff on secure coding practices, reducing code-level vulnerabilities by 40% in new applications."
+   ],
+   "city": "Pretoria",
+   "company": "AfricTech Cyber",
+   "end": "2025-08",
+   "start": "2023-07",
+   "title": "Senior Security Analyst"
+  },
+  {
+   "bullets": [
+    "Designed and implemented a zero-trust architecture for a financial client, reducing lateral movement risk by 80%.",
+    "Deployed Zscaler and Palo Alto in a hybrid environment, blocking 95% of known threats at the gateway level.",
+    "Conducted monthly red team exercises with custom payloads, identifying 10+ critical gaps in network design.",
+    "Automated compliance reporting using Power BI and Azure Monitor, delivering audit-ready reports in under 5 minutes.",
+    "Reduced mean time to detect (MTTD) from 18 to 4 hours via improved threat intelligence feeds and correlation rules.",
+    "Led a cross-functional team to implement MFA for 1,200+ users, cutting account compromise incidents by 75%.",
+    "Improved incident documentation process using Confluence and Jira, increasing audit readiness by 60%."
+   ],
+   "city": "Cape Town",
+   "company": "Veritas Cyber Systems",
+   "end": "2025-10",
+   "start": "2024-06",
+   "title": "Cybersecurity Lead"
+  },
+  {
+   "bullets": [
+    "Conducted threat hunting using OSINT and YARA rules, identifying 30+ previously unknown malware variants in 3 months.",
+    "Built a custom SIEM dashboard in Grafana with real-time threat feeds, enabling 24/7 monitoring of 500+ logs.",
+    "Performed forensic analysis on compromised devices using FTK and Autopsy, recovering 12+ deleted files with metadata.",
+    "Reduced false alerts in SIEM by 60% through rule optimization and correlation logic using Splunk and Python.",
+    "Led a 3-person team in a 30-day incident response drill, achieving 100% success in simulating breach containment.",
+    "Improved detection of insider threats using user behavior analytics (UBA) with Microsoft Defender for Identity.",
+    "Delivered a threat intelligence report to stakeholders monthly, increasing executive awareness by 80%."
+   ],
+   "city": "Midrand",
+   "company": "SecureEdge Dynamics",
+   "end": "Present",
+   "start": "2025-11",
+   "title": "Mid-Level Security Analyst"
+  },
+  {
+   "bullets": [
+    "Performed vulnerability assessments on 50+ systems using OpenVAS and Nmap, identifying 110 critical flaws.",
+    "Configured and maintained a basic firewall and IDS setup for a small startup, reducing external threats by 50%.",
+    "Delivered a 30-day security audit report with actionable recommendations, adopted by 3 departments.",
+    "Set up email security with Mimecast, reducing phishing attempts by 45% in 4 weeks.",
+    "Trained 8 staff on password hygiene and secure browsing, improving compliance scores from 50% to 85%."
+   ],
+   "city": "Midrand",
+   "company": "QuickStart IT Services",
+   "end": "2025-09",
+   "start": "2025-05",
+   "title": "Contract Security Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Information Technology",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2013
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Security",
+   "name": "Certified Cybersecurity Analyst (CCSA)",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Diploma in Cybersecurity and Risk Management",
+   "year": 2020
+  }
+ ],
+ "skills": [
+  "SIEM (Splunk, ELK)",
+  "Endpoint Detection (CrowdStrike, YARA)",
+  "Cloud Security (AWS, Azure)",
+  "Incident Response",
+  "Vulnerability Management",
+  "Threat Intelligence",
+  "Penetration Testing",
+  "Compliance (ISO 27001, NIST)",
+  "Scripting (Python, Bash)",
+  "Log Analysis",
+  "Risk Assessment"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:39:20.855Z"
+ }
+}

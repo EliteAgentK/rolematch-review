@@ -1,0 +1,455 @@
+{
+  "batchId": "visual60-b1",
+  "assignedAt": "2026-10-28T13:45:36.302383Z",
+  "method": "groups (candidate formats; shared duty or base role; identical job requirement sets), hash-assigned before results were examined",
+  "protectedShare": 0.4,
+  "forcedDevelopment": [
+    "CV0501",
+    "CV0502",
+    "JD0151"
+  ],
+  "counts": {
+    "candidates": {
+      "development": 47,
+      "validation (formerly protected)": 13
+    },
+    "jobs": {
+      "development": 41,
+      "validation (formerly protected)": 19
+    }
+  },
+  "limitation": "The pack's careers and requirements are adapted from an earlier synthetic corpus that was not supplied, so cross-batch lineage cannot be checked; 'protected' means protected within this batch only.",
+  "roles": {
+    "CV0501": "development",
+    "CV0551": "development",
+    "CV0502": "development",
+    "CV0513": "development",
+    "CV0526": "development",
+    "CV0539": "development",
+    "CV0552": "development",
+    "CV0503": "development",
+    "CV0553": "development",
+    "CV0504": "development",
+    "CV0554": "development",
+    "CV0505": "development",
+    "CV0555": "development",
+    "CV0506": "protected",
+    "CV0556": "protected",
+    "CV0507": "development",
+    "CV0557": "development",
+    "CV0508": "development",
+    "CV0558": "development",
+    "CV0509": "development",
+    "CV0559": "development",
+    "CV0510": "development",
+    "CV0560": "development",
+    "CV0511": "protected",
+    "CV0512": "protected",
+    "CV0514": "development",
+    "CV0515": "development",
+    "CV0516": "development",
+    "CV0517": "development",
+    "CV0518": "development",
+    "CV0519": "development",
+    "CV0520": "development",
+    "CV0521": "protected",
+    "CV0522": "development",
+    "CV0523": "protected",
+    "CV0524": "development",
+    "CV0525": "development",
+    "CV0527": "development",
+    "CV0528": "development",
+    "CV0529": "protected",
+    "CV0530": "development",
+    "CV0531": "protected",
+    "CV0532": "protected",
+    "CV0533": "development",
+    "CV0534": "development",
+    "CV0535": "development",
+    "CV0536": "protected",
+    "CV0537": "protected",
+    "CV0538": "protected",
+    "CV0540": "protected",
+    "CV0541": "development",
+    "CV0542": "development",
+    "CV0543": "development",
+    "CV0544": "development",
+    "CV0545": "development",
+    "CV0546": "development",
+    "CV0547": "development",
+    "CV0548": "development",
+    "CV0549": "development",
+    "CV0550": "development",
+    "JD0151": "development",
+    "JD0152": "development",
+    "JD0175": "development",
+    "JD0153": "development",
+    "JD0183": "development",
+    "JD0154": "development",
+    "JD0155": "development",
+    "JD0178": "development",
+    "JD0156": "development",
+    "JD0186": "development",
+    "JD0157": "development",
+    "JD0158": "development",
+    "JD0181": "development",
+    "JD0159": "development",
+    "JD0189": "development",
+    "JD0160": "development",
+    "JD0161": "protected",
+    "JD0184": "protected",
+    "JD0162": "development",
+    "JD0192": "development",
+    "JD0163": "development",
+    "JD0164": "development",
+    "JD0187": "development",
+    "JD0165": "development",
+    "JD0195": "development",
+    "JD0166": "development",
+    "JD0167": "protected",
+    "JD0190": "protected",
+    "JD0168": "development",
+    "JD0198": "development",
+    "JD0169": "development",
+    "JD0170": "development",
+    "JD0193": "development",
+    "JD0171": "development",
+    "JD0201": "development",
+    "JD0172": "development",
+    "JD0173": "development",
+    "JD0196": "development",
+    "JD0174": "protected",
+    "JD0204": "protected",
+    "JD0176": "development",
+    "JD0199": "development",
+    "JD0177": "protected",
+    "JD0207": "protected",
+    "JD0179": "protected",
+    "JD0202": "protected",
+    "JD0180": "protected",
+    "JD0210": "protected",
+    "JD0182": "development",
+    "JD0205": "development",
+    "JD0185": "development",
+    "JD0208": "development",
+    "JD0188": "protected",
+    "JD0191": "development",
+    "JD0194": "protected",
+    "JD0197": "protected",
+    "JD0200": "protected",
+    "JD0203": "protected",
+    "JD0206": "protected",
+    "JD0209": "protected"
+  },
+  "groups": {
+    "cv-group:CV0501": [
+      "CV0501",
+      "CV0551"
+    ],
+    "cv-group:CV0513": [
+      "CV0502",
+      "CV0513",
+      "CV0526",
+      "CV0539",
+      "CV0552"
+    ],
+    "cv-group:CV0503": [
+      "CV0503",
+      "CV0553"
+    ],
+    "cv-group:CV0504": [
+      "CV0504",
+      "CV0554"
+    ],
+    "cv-group:CV0505": [
+      "CV0505",
+      "CV0555"
+    ],
+    "cv-group:CV0506": [
+      "CV0506",
+      "CV0556"
+    ],
+    "cv-group:CV0507": [
+      "CV0507",
+      "CV0557"
+    ],
+    "cv-group:CV0508": [
+      "CV0508",
+      "CV0558"
+    ],
+    "cv-group:CV0509": [
+      "CV0509",
+      "CV0559"
+    ],
+    "cv-group:CV0510": [
+      "CV0510",
+      "CV0560"
+    ],
+    "cv-group:CV0511": [
+      "CV0511"
+    ],
+    "cv-group:CV0512": [
+      "CV0512"
+    ],
+    "cv-group:CV0514": [
+      "CV0514"
+    ],
+    "cv-group:CV0515": [
+      "CV0515"
+    ],
+    "cv-group:CV0516": [
+      "CV0516"
+    ],
+    "cv-group:CV0517": [
+      "CV0517"
+    ],
+    "cv-group:CV0518": [
+      "CV0518"
+    ],
+    "cv-group:CV0519": [
+      "CV0519"
+    ],
+    "cv-group:CV0520": [
+      "CV0520"
+    ],
+    "cv-group:CV0521": [
+      "CV0521"
+    ],
+    "cv-group:CV0522": [
+      "CV0522"
+    ],
+    "cv-group:CV0523": [
+      "CV0523"
+    ],
+    "cv-group:CV0524": [
+      "CV0524"
+    ],
+    "cv-group:CV0525": [
+      "CV0525"
+    ],
+    "cv-group:CV0527": [
+      "CV0527"
+    ],
+    "cv-group:CV0528": [
+      "CV0528"
+    ],
+    "cv-group:CV0529": [
+      "CV0529"
+    ],
+    "cv-group:CV0530": [
+      "CV0530"
+    ],
+    "cv-group:CV0531": [
+      "CV0531"
+    ],
+    "cv-group:CV0532": [
+      "CV0532"
+    ],
+    "cv-group:CV0533": [
+      "CV0533"
+    ],
+    "cv-group:CV0534": [
+      "CV0534"
+    ],
+    "cv-group:CV0535": [
+      "CV0535"
+    ],
+    "cv-group:CV0536": [
+      "CV0536"
+    ],
+    "cv-group:CV0537": [
+      "CV0537"
+    ],
+    "cv-group:CV0538": [
+      "CV0538"
+    ],
+    "cv-group:CV0540": [
+      "CV0540"
+    ],
+    "cv-group:CV0541": [
+      "CV0541"
+    ],
+    "cv-group:CV0542": [
+      "CV0542"
+    ],
+    "cv-group:CV0543": [
+      "CV0543"
+    ],
+    "cv-group:CV0544": [
+      "CV0544"
+    ],
+    "cv-group:CV0545": [
+      "CV0545"
+    ],
+    "cv-group:CV0546": [
+      "CV0546"
+    ],
+    "cv-group:CV0547": [
+      "CV0547"
+    ],
+    "cv-group:CV0548": [
+      "CV0548"
+    ],
+    "cv-group:CV0549": [
+      "CV0549"
+    ],
+    "cv-group:CV0550": [
+      "CV0550"
+    ],
+    "jd-group:Active Directory|Microsoft 365|Ticketing|Windows#3#Diploma in Information Technology": [
+      "JD0151"
+    ],
+    "jd-group:Cost accounting|Excel|Forecasting|Power BI#3#BCom Management Accounting": [
+      "JD0152",
+      "JD0175"
+    ],
+    "jd-group:Core logging|GIS|Geological mapping|Resource modelling#3#BSc Geology": [
+      "JD0153",
+      "JD0183"
+    ],
+    "jd-group:Cycle counts|Dispatch|Excel|Stock control#3#Certificate in Warehouse Operations": [
+      "JD0154"
+    ],
+    "jd-group:Airflow|ETL|Python|SQL#3#BSc Information Technology": [
+      "JD0155",
+      "JD0178"
+    ],
+    "jd-group:Clinical assessment|Clinical registration|Patient rehabilitation|Speech therapy#3#Degree in Speech Therapy": [
+      "JD0156",
+      "JD0186"
+    ],
+    "jd-group:Diary management|Microsoft 365|Minutes|Travel coordination#3#Diploma in Office Administration": [
+      "JD0157"
+    ],
+    "jd-group:Dispatch|Excel|Tracking|Transport planning#3#Diploma in Logistics": [
+      "JD0158",
+      "JD0181"
+    ],
+    "jd-group:Cellar management|Hospitality|Wine pairing|Wine service#3#Hospitality qualification": [
+      "JD0159",
+      "JD0189"
+    ],
+    "jd-group:Contract registers|Document control|Microsoft 365|Reporting#3#Diploma in Paralegal Studies": [
+      "JD0160"
+    ],
+    "jd-group:Copywriting|Editing|Media monitoring|Stakeholder communication#3#BA Communication": [
+      "JD0161",
+      "JD0184"
+    ],
+    "jd-group:Animal surgery|Clinical diagnosis|Patient records|Veterinary practice#3#Veterinary degree": [
+      "JD0162",
+      "JD0192"
+    ],
+    "jd-group:Cash flow|Credit analysis|Excel|Financial statements#3#BCom Finance": [
+      "JD0163"
+    ],
+    "jd-group:Data validation|Emissions data|Excel|Sustainability reporting#3#BSc Environmental Management": [
+      "JD0164",
+      "JD0187"
+    ],
+    "jd-group:Actuarial exams|Prophet|Reserving|Stochastic modelling#3#Degree in Actuarial Science": [
+      "JD0165",
+      "JD0195"
+    ],
+    "jd-group:Excel|MS Project|Risk logs|Scheduling#3#Diploma in Project Management": [
+      "JD0166"
+    ],
+    "jd-group:Due diligence|Excel|Monitoring|Policy review#3#BCom Business Law": [
+      "JD0167",
+      "JD0190"
+    ],
+    "jd-group:Architectural registration|BIM|Building plans|Revit#3#Diploma in Architectural Technology": [
+      "JD0168",
+      "JD0198"
+    ],
+    "jd-group:Benefits administration|Excel|HRIS|Reconciliations#3#BCom Human Resource Management": [
+      "JD0169"
+    ],
+    "jd-group:Analytics|Backlog prioritisation|Discovery|Roadmaps#3#BCom Information Systems": [
+      "JD0170",
+      "JD0193"
+    ],
+    "jd-group:Field surveys|Marine ecology|R|Sampling#3#BSc Marine Biology": [
+      "JD0171",
+      "JD0201"
+    ],
+    "jd-group:Incident records|Inspections|Risk assessments|Training#3#Diploma in Safety Management": [
+      "JD0172"
+    ],
+    "jd-group:Contracts|Excel|HRIS|Onboarding#3#Diploma in Human Resource Management": [
+      "JD0173",
+      "JD0196"
+    ],
+    "jd-group:Commercial pilot licence|Crew resource management|Flight planning|Instrument rating#3#Commercial pilot qualification": [
+      "JD0174",
+      "JD0204"
+    ],
+    "jd-group:Document control|Excel|Quality systems|Root cause analysis#3#Diploma in Quality Management": [
+      "JD0176",
+      "JD0199"
+    ],
+    "jd-group:Crop science|Field trials|Irrigation|Soil sampling#3#BSc Agronomy": [
+      "JD0177",
+      "JD0207"
+    ],
+    "jd-group:Excel|General ledger|IFRS|Reconciliations#3#BCom Accounting": [
+      "JD0179",
+      "JD0202"
+    ],
+    "jd-group:Energy modelling|MATLAB|Research methods|Solar resource assessment#3#MSc Energy Science": [
+      "JD0180",
+      "JD0210"
+    ],
+    "jd-group:Excel|Power BI|Python|SQL#3#BSc Statistics": [
+      "JD0182",
+      "JD0205"
+    ],
+    "jd-group:Demand planning|Excel|Inventory|SAP#3#BCom Supply Chain Management": [
+      "JD0185",
+      "JD0208"
+    ],
+    "jd-group:Content|Email marketing|Google Analytics|SEO#3#BCom Marketing": [
+      "JD0188"
+    ],
+    "jd-group:AutoCAD|Excel|Quantities|Site records#3#Diploma in Civil Engineering": [
+      "JD0191"
+    ],
+    "jd-group:Excel|Power BI|Risk registers|Scenario analysis#3#BCom Risk Management": [
+      "JD0194"
+    ],
+    "jd-group:Jira|Playwright|SQL|Test planning#3#Diploma in Software Development": [
+      "JD0197"
+    ],
+    "jd-group:Excel|LMS|Reporting|Training administration#3#Diploma in Human Resource Development": [
+      "JD0200"
+    ],
+    "jd-group:Excel|Helpdesk|Maintenance planning|Vendor management#3#Diploma in Facilities Management": [
+      "JD0203"
+    ],
+    "jd-group:ITIL|Incident management|Reporting|SLAs#3#Diploma in Information Technology": [
+      "JD0206"
+    ],
+    "jd-group:Node.js|PostgreSQL|React|TypeScript#3#BSc Computer Science": [
+      "JD0209"
+    ]
+  },
+  "version": 2,
+  "supersedes": "version 1 (assigned 2026-10-28 before results)",
+  "change": "Candidates whose protected failure strings or OCR text were inspected while investigating E2 (owner request, 2026-10-28) moved to development, with their whole groups. The remaining protected candidates were seen only in aggregate (the E1 and E2 verdicts): they are a validation set for E3, NOT fresh evaluation data. Promotion evaluation needs a new batch.",
+  "movedToDevelopment": [
+    "CV0503",
+    "CV0505",
+    "CV0509",
+    "CV0510",
+    "CV0516",
+    "CV0520",
+    "CV0522",
+    "CV0524",
+    "CV0541",
+    "CV0549",
+    "CV0553",
+    "CV0555",
+    "CV0559",
+    "CV0560"
+  ]
+}

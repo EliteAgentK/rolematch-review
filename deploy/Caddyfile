@@ -1,0 +1,12 @@
+# Fetches and renews the HTTPS certificate by itself. Upload size is limited by the API (config.maxFileBytes), so it is not capped twice here.
+{$LIVE_DOMAIN} {
+	encode gzip
+	reverse_proxy api:8787 {
+		health_uri /api/health
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Robots-Tag "noindex, nofollow"
+		-Server
+	}
+}

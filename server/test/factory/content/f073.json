@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "id": "f073",
+  "field": "software engineering",
+  "role": "Backend Developer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "many-short-roles",
+   "professional-designation"
+  ],
+  "name": "Thandiwe Ndlovu",
+  "city": "Johannesburg"
+ },
+ "name": "Thandiwe Ndlovu",
+ "email": "thandiwe.ndlovu@example.test",
+ "phone": "021 555 1073",
+ "headline": "Junior Backend Developer | SANC-Registered | Full-Stack Experience in South African Tech Ecosystem",
+ "summary": "Results-driven junior backend developer with 2+ years of hands-on experience in building scalable, secure, and high-performance backend systems. Proven track record in API development, database optimization, and DevOps integration within South African tech environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Designed and deployed a microservice for user authentication using Node.js, Express, and PostgreSQL, serving 10k+ users monthly.",
+    "Reduced API response time by 35% through query optimization and indexing in PostgreSQL, improving user experience.",
+    "Integrated OAuth 2.0 with AWS Cognito, enabling secure login for 500+ users in a fintech startup.",
+    "Collaborated with frontend teams to align API contracts using OpenAPI 3.0, reducing integration errors by 60%."
+   ],
+   "city": "Johannesburg",
+   "company": "NexaTech Solutions",
+   "end": "2024-03",
+   "start": "2022-07",
+   "title": "Junior Backend Developer"
+  },
+  {
+   "bullets": [
+    "Developed a payment processing backend using Python and Flask, handling 500+ transactions daily with 99.9% reliability.",
+    "Built a logging system with Winston and MongoDB, reducing incident detection time from 4 hours to 15 minutes.",
+    "Automated error alerts via Slack and email using Python scripts, increasing team response speed by 70%.",
+    "Migrated legacy service to containerized architecture using Docker and Kubernetes, improving scalability by 4x."
+   ],
+   "city": "Johannesburg",
+   "company": "Verve Digital",
+   "end": "2023-11",
+   "start": "2022-01",
+   "title": "Backend Developer (Internship)"
+  },
+  {
+   "bullets": [
+    "Developed a student grade management system using Spring Boot and MySQL, serving 300+ users at a university.",
+    "Improved data consistency with transactional logic, reducing duplicate entries by 90%.",
+    "Integrated with a mobile app via REST APIs, increasing app engagement by 30% in 3 months.",
+    "Wrote unit and integration tests using JUnit and Mockito, achieving 95% test coverage."
+   ],
+   "city": "Johannesburg",
+   "company": "UniLink Systems",
+   "end": "2023-06",
+   "start": "2022-04",
+   "title": "Software Development Intern"
+  },
+  {
+   "bullets": [
+    "Built a real-time inventory tracking API using Python, FastAPI, and Redis, supporting 200+ concurrent users.",
+    "Reduced database load by 50% through caching strategies with Redis and efficient query design.",
+    "Deployed service on AWS EC2 with auto-scaling, handling traffic spikes during sales events.",
+    "Collaborated with DevOps to implement health checks and monitoring with Prometheus and Grafana."
+   ],
+   "city": "Johannesburg",
+   "company": "AstraLogix",
+   "end": "2024-09",
+   "start": "2023-08",
+   "title": "Junior Backend Developer"
+  },
+  {
+   "bullets": [
+    "Developed a task scheduling backend using Python and Celery, processing 10k+ jobs daily with 99.95% success rate.",
+    "Integrated with a notification service using Twilio, increasing user engagement by 25% in 6 weeks.",
+    "Improved error logging with structured JSON output, enabling faster debugging and incident resolution.",
+    "Contributed to a microservice architecture using Docker and Kubernetes, reducing deployment time by 50%."
+   ],
+   "city": "Johannesburg",
+   "company": "Klare Systems",
+   "end": "Present",
+   "start": "2025-03",
+   "title": "Junior Backend Developer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Software Development",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Technology (SAIIT)",
+   "name": "SANC Registration: Backend Development (Level 3)",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "Node.js",
+  "Python",
+  "Express",
+  "Spring Boot",
+  "Docker",
+  "Kubernetes",
+  "PostgreSQL",
+  "MongoDB",
+  "REST APIs",
+  "CI/CD",
+  "JWT",
+  "OAuth 2.0",
+  "Microservices",
+  "AWS",
+  "Redis",
+  "Prometheus",
+  "Grafana"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Built RESTful API for a student portal using Node.js and Express, handling 15k+ monthly users with 99.8% uptime.",
+  "Integrated JWT authentication and rate limiting in a university app, reducing login failures by 40%.",
+  "Developed a real-time chat service with Socket.IO, enabling 500+ concurrent users with <200ms latency.",
+  "Optimized database queries in a logistics system using MongoDB, cutting response time from 3.2s to 1.1s.",
+  "Implemented CI/CD pipeline with GitHub Actions and Docker, reducing deployment time from 45 to 12 minutes."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:13:37.043Z"
+ }
+}

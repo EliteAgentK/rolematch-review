@@ -1,0 +1,135 @@
+{
+ "spec": {
+  "id": "f030",
+  "field": "auditing",
+  "role": "Internal Auditor",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "not-completed"
+  ],
+  "name": "Pieter Maseko",
+  "city": "Pretoria"
+ },
+ "name": "Pieter Maseko",
+ "email": "pieter.maseko@example.test",
+ "phone": "071 555 1030",
+ "headline": "Executive Internal Auditor with 20+ years of experience in financial and operational auditing across public and private sectors in South Africa.",
+ "summary": "Results-driven executive internal auditor with 20 years of progressive experience in financial and operational audits across diverse sectors. Proven track record in compliance, risk mitigation, and audit efficiency improvement in South African environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Led internal audit operations for a public utility, ensuring compliance with National Treasury regulations and improving financial controls.",
+    "Conducted annual audits of R500M+ in revenue streams, identifying fraud risks and recommending process redesigns."
+   ],
+   "city": "Pretoria",
+   "company": "Naledi Holdings",
+   "end": "2024-03",
+   "start": "2015-04",
+   "title": "Senior Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Directed audit strategy for a multi-site manufacturing division, reducing audit cycle time by 25% through process automation.",
+    "Reported directly to the Audit Committee, presenting findings on financial and operational risks with actionable recommendations."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Industrial Group",
+   "end": "2024-03",
+   "start": "2012-07",
+   "title": "Head of Internal Audit"
+  },
+  {
+   "bullets": [
+    "Performed compliance audits for government-linked entities, ensuring adherence to Public Finance Management Act and audit standards.",
+    "Developed audit checklists used across 10 departments, improving consistency and audit efficiency by 30%."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Infrastructure Services",
+   "end": "2015-04",
+   "start": "2008-01",
+   "title": "Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Audited financial statements for a mid-sized retail chain, detecting discrepancies and recommending corrective actions.",
+    "Collaborated with external auditors to ensure alignment of internal and external audit findings."
+   ],
+   "city": "Pretoria",
+   "company": "KwaZulu Retail Group",
+   "end": "2012-07",
+   "start": "2005-03",
+   "title": "Internal Audit Officer"
+  },
+  {
+   "bullets": [
+    "Conducted operational audits for a logistics division, identifying inefficiencies and recommending process improvements.",
+    "Maintained audit documentation in compliance with SAICA standards and internal governance policies."
+   ],
+   "city": "Pretoria",
+   "company": "Amaqo Logistics",
+   "end": "2008-01",
+   "start": "2001-06",
+   "title": "Audit Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (Accounting)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Financial and Management Accounting",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  },
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Business Administration",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Chartered Accountants",
+   "name": "Professional Certification in Internal Auditing",
+   "year": 2018
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Master of Science in Risk Management",
+   "year": 2020
+  }
+ ],
+ "skills": [
+  "Risk assessment",
+  "Compliance auditing",
+  "Financial statement analysis",
+  "Process improvement",
+  "Audit planning and reporting",
+  "Regulatory compliance (SAICA, PFM Act)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)"
+ ],
+ "projects": [
+  "Led internal audit of R1.2 billion annual operations at Naledi Holdings, identifying R850k in cost savings and improving compliance by 40%.",
+  "Conducted risk-based audits for 12 departments at Soweto Finance, reducing process failures by 35% and enhancing reporting timelines."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:16:42.027Z"
+ }
+}

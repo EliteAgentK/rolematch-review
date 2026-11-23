@@ -1,0 +1,146 @@
+{
+ "spec": {
+  "id": "f019",
+  "field": "marketing",
+  "role": "Digital Marketing Specialist",
+  "seniority": "senior",
+  "years": 11,
+  "quality": "rich",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "professional-designation",
+   "many-short-roles"
+  ],
+  "name": "Lindiwe Khumalo",
+  "city": "Polokwane"
+ },
+ "name": "Lindiwe Khumalo",
+ "email": "lindiwe.khumalo@example.test",
+ "phone": "041 555 1019",
+ "headline": "Senior Digital Marketing Specialist | 11+ years | SAIM Certified | Polokwane",
+ "summary": "Results-driven Senior Digital Marketing Specialist with 11+ years of experience in B2B and B2C digital marketing across South African markets. Proven track record in driving measurable growth through data-informed campaigns and full-funnel digital strategies. SAIM certified and experienced in local market dynamics.",
+ "roles": [
+  {
+   "bullets": [
+    "Directed digital campaigns for a Polokwane-based agri-tech startup, driving 35% YoY growth in leads via LinkedIn Ads and Google Ads (2024-03 to Present).",
+    "Optimized SEO strategy for a local manufacturing client, improving organic traffic by 68% in 6 months using SEMrush and Ahrefs.",
+    "Managed social media for a regional retail chain, growing engagement by 52% and increasing click-through rates by 39% (2-2024).",
+    "Launched targeted email campaigns using Mailchimp, boosting open rates by 41% and conversion by 28% for a logistics client (2023-09 to 2024-02).",
+    "Built and maintained a content calendar for a local B2B service provider, increasing content shares by 74% and reducing customer acquisition cost by 22% (2023-03 to 2023-08)."
+   ],
+   "city": "Polokwane",
+   "company": "Nkosi Digital Solutions",
+   "end": "Present",
+   "start": "2024-03",
+   "title": "Senior Digital Marketing Specialist"
+  },
+  {
+   "bullets": [
+    "Designed and executed a full-funnel digital strategy for a local construction firm, increasing website conversions by 58% using Google Tag Manager and Meta Pixel.",
+    "Led social media strategy for a Polokwane-based hospitality brand, growing Instagram followers by 120% in 10 months (2022-07 to 2023-01).",
+    "Conducted A/B testing on landing pages, improving CTR by 34% and reducing bounce rate to 38% using Google Optimize and Hotjar.",
+    "Managed paid search campaigns, achieving 2.3x ROI on ad spend with a 15% CTR improvement (2022-07 to 2023-01)."
+   ],
+   "city": "Polokwane",
+   "company": "Mpho Marketing Group",
+   "end": "2023-01",
+   "start": "2022-07",
+   "title": "Digital Marketing Manager"
+  },
+  {
+   "bullets": [
+    "Launched a digital transformation initiative for a local textile business, increasing online sales by 71% in 18 months using Shopify and Facebook Ads.",
+    "Developed a customer journey map, reducing customer drop-off by 40% and improving retention by 33% (2021-04 to 2022-03).",
+    "Implemented email automation workflows, increasing open rates by 39% and reducing response time by 50% (2021-04 to 2022-03)."
+   ],
+   "city": "Polokwane",
+   "company": "Siboniso Textiles",
+   "end": "2022-03",
+   "start": "2021-04",
+   "title": "Digital Marketing Executive"
+  },
+  {
+   "bullets": [
+    "Managed digital presence for a Polokwane-based education consultancy, increasing website traffic by 89% and lead volume by 63% in 12 months (2020-06 to 2021-03).",
+    "Built and maintained a content strategy using WordPress and Canva, improving engagement by 55% and reducing cost per lead by 30%.",
+    "Conducted competitor analysis using SimilarWeb and SpyFu, identifying 3 key market gaps and informing campaign strategy."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo EduLink",
+   "end": "2021-03",
+   "start": "2020-06",
+   "title": "Digital Marketing Officer"
+  },
+  {
+   "bullets": [
+    "Executed digital campaigns for a local health services provider, increasing appointment bookings by 45% using Google Ads and WhatsApp Business API.",
+    "Set up and managed Google Analytics 4 and Facebook Pixel, achieving 92% data accuracy and improved reporting efficiency by 60%.",
+    "Improved campaign performance by 38% through real-time A/B testing and audience segmentation using Meta Ads Manager and Looker Studio."
+   ],
+   "city": "Polokwane",
+   "company": "Makwerekere Health Services",
+   "end": "2020-03",
+   "start": "2019-08",
+   "title": "Digital Marketing Assistant"
+  },
+  {
+   "bullets": [
+    "Supported digital strategy for a Polokwane-based transport company, increasing online visibility by 50% via SEO and content marketing (2018-04 to 2019-07).",
+    "Created and managed a content calendar using Notion and Trello, improving content consistency and team productivity by 40%.",
+    "Improved website performance by 42% through technical SEO and image optimization using Screaming Frog and GTmetrix."
+   ],
+   "city": "Polokwane",
+   "company": "Tshwane Transport Co.",
+   "end": "2019-07",
+   "start": "2018-04",
+   "title": "Digital Marketing Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Commerce (Marketing)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Postgraduate Diploma in Digital Marketing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Marketing (SAIM)",
+   "name": "Senior Digital Marketing Specialist (SANDMS)",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Google Analytics 4",
+  "Meta Ads Manager",
+  "HubSpot CRM",
+  "SEO & SEM",
+  "A/B Testing",
+  "Content Strategy",
+  "Email Marketing (Mailchimp)",
+  "Social Media Strategy",
+  "Data Visualization (Looker Studio)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [
+  "Led digital strategy for Polokwane-based B2B SaaS startup, increasing lead conversion by 42% in 12 months using HubSpot and Google Analytics."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:01:19.722Z"
+ }
+}

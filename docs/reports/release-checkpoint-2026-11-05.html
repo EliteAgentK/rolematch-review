@@ -1,0 +1,191 @@
+<title>RoleMatch Release Checkpoint</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, tables and the flow diagram scroll on their own at phone width. */
+:root {
+  --bg: #f6f8fa; --surface: #ffffff; --fg: #1b2530; --muted: #5a6876; --rule: #d8e0e8;
+  --accent: #1f6fa8; --good: #1d7a4c; --warn: #a8620f; --bad: #b3261e; --tint: #eaf2f9;
+  --display: "Source Serif 4", Georgia, serif; --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #10161c; --surface: #18212a; --fg: #e3e9ef; --muted: #9aa8b5; --rule: #2c3945; --accent: #6db3e6; --good: #5cc28d; --warn: #e2a45a; --bad: #f08a80; --tint: #1b2a37; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #10161c; --surface: #18212a; --fg: #e3e9ef; --muted: #9aa8b5; --rule: #2c3945; --accent: #6db3e6; --good: #5cc28d; --warn: #e2a45a; --bad: #f08a80; --tint: #1b2a37; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); }
+main { max-width: 960px; margin: 0 auto; padding-block: 32px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 36px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2rem; } h2 { font-size: 1.4rem; margin-bottom: 10px; } h3 { font-size: 1.05rem; margin: 14px 0 6px; }
+p, li { max-width: 68ch; } p { margin: 6px 0; } ul { margin: 6px 0; padding-left: 20px; }
+.eyebrow { font: 600 0.75rem/1 var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lede { color: var(--muted); }
+.verdict { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 16px 18px; }
+.scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: 0.8rem; letter-spacing: 0.03em; text-transform: uppercase; background: var(--tint); }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.lead td { font-weight: 600; }
+code, .mono { font-family: var(--mono); font-size: 0.85em; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; border: 1px solid currentColor; }
+.ok { color: var(--good); } .hold { color: var(--warn); } .no { color: var(--bad); }
+figure { margin: 0; } figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 6px; }
+svg text { fill: currentColor; font-family: var(--body); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.grid2 > div { min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; }
+</style>
+
+<main>
+<header>
+  <div class="eyebrow">Thursday 5 November 2026 · release candidate <span class="mono">206b62e</span></div>
+  <h1>RoleMatch Release Checkpoint</h1>
+  <p class="lede">The system and the local language model now read every CV together. This page covers what changed today, how it was measured on your 30 real CVs, what is still wrong, and the release decision. The CVs' contents are not shown here.</p>
+</header>
+
+<section class="verdict" id="decision">
+  <h2>Decision</h2>
+  <p id="decision-text"><strong>Release to your live address: held until the full test suite passes.</strong> Everything else that gates the release has passed on the isolated stack. The suite runs its 145 files one after another against a real database, and will not finish before 22:43. The deadline does not decide a release, so the release waits for the suite. If it passes, this version goes live tonight with the model reading every CV, after a fresh backup, and the version live now stays ready to switch back to. If it fails, live stays as it is and the failure is reported.</p>
+  <ul>
+    <li>Real CVs read better than live on every field scored: names, contact details, location, roles, education, skills, certificates, languages and agency.</li>
+    <li>The cost: more records ask a person to look. About 17 of 30 do, against 12 on live. Most of those say plainly which role or date range could not be settled.</li>
+    <li>Each CV takes about 2 to 3 minutes to read, one at a time. It stays in a visible processing state until it is done.</li>
+  </ul>
+</section>
+
+<section id="real">
+  <h2>The 30 real CVs, field by field</h2>
+  <p>Scored against answers I wrote from each CV's own text and rendered pages. A person checked name, email and phone on 21 of them. The rest are provisional, and some are themselves wrong: one CV lists English and Afrikaans, and my answer left them out. These CVs were also used to find the faults, so this is a development result, not an unseen test.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Field</th><th class="n">Live now</th><th class="n">Rules alone</th><th class="n">Model alone</th><th class="n">Together</th></tr></thead>
+    <tbody>
+      <tr class="lead"><td>Roles fully right (title, employer, start)</td><td class="n">31.3%</td><td class="n">53.1%</td><td class="n">73.5%</td><td class="n">85.0%</td></tr>
+      <tr><td>Roles found, of 147</td><td class="n">100</td><td class="n">99</td><td class="n">112</td><td class="n">135</td></tr>
+      <tr><td>Roles missing</td><td class="n">47</td><td class="n">48</td><td class="n">35</td><td class="n">12</td></tr>
+      <tr><td>Extra or duplicated roles</td><td class="n">71</td><td class="n">27</td><td class="n">11</td><td class="n">17</td></tr>
+      <tr><td>End dates right</td><td class="n">66.0%</td><td class="n">66.7%</td><td class="n">70.7%</td><td class="n">90.5%</td></tr>
+      <tr><td>Education found / of those shown, right</td><td class="n">63.5% / 20.9%</td><td class="n">71.6% / 40.8%</td><td class="n">83.8% / 81.6%</td><td class="n">78.4% / 81.7%</td></tr>
+      <tr><td>Name: right, wrong</td><td class="n">93.3%, 0</td><td class="n">93.3%, 0</td><td class="n">n/a</td><td class="n">100%, 0</td></tr>
+      <tr><td>Email: right, wrong</td><td class="n">90.0%, 1</td><td class="n">90.0%, 1</td><td class="n">n/a</td><td class="n">93.3%, 0</td></tr>
+      <tr><td>Phone: right, wrong</td><td class="n">90.0%, 1</td><td class="n">93.3%, 1</td><td class="n">n/a</td><td class="n">93.3%, 0</td></tr>
+      <tr><td>Location: right, wrong</td><td class="n">43.3%, 8</td><td class="n">53.3%, 5</td><td class="n">86.7%, 4</td><td class="n">86.7%, 4</td></tr>
+      <tr><td>Skills found</td><td class="n">67.2%</td><td class="n">68.5%</td><td class="n">91.1%</td><td class="n">91.5%</td></tr>
+      <tr><td>Certificates found</td><td class="n">58.7%</td><td class="n">38.1%</td><td class="n">82.5%</td><td class="n">92.1%</td></tr>
+      <tr><td>Languages found</td><td class="n">61.9%</td><td class="n">57.1%</td><td class="n">100%</td><td class="n">100%</td></tr>
+      <tr><td>Agency named, of 14</td><td class="n">11</td><td class="n">14</td><td class="n">n/a</td><td class="n">14, 0 wrong</td></tr>
+    </tbody>
+  </table></div>
+  <p>Skills and certificates are only scored on what was found. My answers list too few of each, so a precision figure for them would mislead. Junk that used to land in skills (letterheads, postcodes, a director's name) is gone. Duties under each role are not scored.</p>
+  <h3>Through the actual platform</h3>
+  <p>All 30 were uploaded to the isolated copy of the service, with the model on, and read by the same upload, queue, reader, model and auditor live uses. All 30 published. The roles came out 84.4% fully right, the same as the test harness on that build, so the harness measures what the platform does. Queued all at once, each took about 3 minutes while other work shared the machine. The model's own reading time is 133 seconds per CV at the median, and 511 seconds for the longest, a 24-page CV.</p>
+</section>
+
+<section id="flow">
+  <h2>How a CV is read now</h2>
+  <figure>
+    <div class="scroll" style="padding:12px">
+    <svg viewBox="0 0 900 250" width="900" role="img" aria-label="Upload, readers and OCR, evidence, model reading, code checks, targeted re-read, reconciliation, saved record, panels and matching">
+      <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.4">
+        <rect x="10" y="30" width="120" height="56" rx="6"/><rect x="160" y="30" width="140" height="56" rx="6"/><rect x="330" y="30" width="130" height="56" rx="6"/><rect x="490" y="30" width="140" height="56" rx="6"/><rect x="660" y="30" width="110" height="56" rx="6"/><rect x="790" y="30" width="100" height="56" rx="6"/>
+        <rect x="490" y="150" width="140" height="56" rx="6" stroke-dasharray="5 4"/>
+        <line x1="130" y1="58" x2="158" y2="58" marker-end="url(#a)"/><line x1="300" y1="58" x2="328" y2="58" marker-end="url(#a)"/><line x1="460" y1="58" x2="488" y2="58" marker-end="url(#a)"/><line x1="630" y1="58" x2="658" y2="58" marker-end="url(#a)"/><line x1="770" y1="58" x2="788" y2="58" marker-end="url(#a)"/>
+        <path d="M560 86 V148" marker-end="url(#a)"/><path d="M530 150 C 470 130, 420 110, 395 88" marker-end="url(#a)"/>
+      </g>
+      <g font-size="12.5" text-anchor="middle">
+        <text x="70" y="55">Upload</text><text x="70" y="72">admitted, queued</text>
+        <text x="230" y="55">Readers and OCR</text><text x="230" y="72">what the page shows</text>
+        <text x="395" y="55">Model reads</text><text x="395" y="72">cites its lines</text>
+        <text x="560" y="55">Code checks</text><text x="560" y="72">facts held together?</text>
+        <text x="715" y="55">Reconcile</text><text x="715" y="72">field by field</text>
+        <text x="840" y="55">Record</text><text x="840" y="72">panel, match</text>
+        <text x="560" y="175">Only what failed</text><text x="560" y="192">read again, as a region</text>
+        <text x="620" y="118" font-size="11.5">unresolved</text><text x="430" y="132" font-size="11.5">repaired roles</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption>The model interprets; code decides what is believed. A role whose title, employer and start date the document does not hold together goes back to the model as that part of the CV alone. Whatever stays unresolved is marked, never quietly published as fact.</figcaption>
+  </figure>
+</section>
+
+<section id="gains">
+  <h2>What the code gained, and what the model gained</h2>
+  <div class="grid2">
+    <div><h3>Code, before any model</h3><p>Fully right roles 31.3% → 53–55%.</p><ul>
+      <li>Visible bold lines (names, employers, universities) were being thrown away as "hidden". One shared check now settles visibility against the rendered page.</li>
+      <li>Dates in a narrow margin that wrap over lines now lead their job. A year alone at the top of a page is no longer taken for a page number.</li>
+      <li>Agency forms: a position above its company, "reason for leaving" not counted as a duty.</li>
+      <li>A font that stored "ti" as 9 and "ft" as B is corrected against the page. Contact details drawn as a picture are read from page one.</li></ul></div>
+    <div><h3>The model, with code checking it</h3><p>Fully right roles 53% → 85%, extras 27 → 17.</p><ul>
+      <li>Reads tables, forms and repeated summaries that rules could not.</li>
+      <li>Wrong associations it made are caught: on one CV it gave four roles the same employer; code found the facts were not together and had that part read again.</li>
+      <li>Costs: about 2 minutes per CV, one at a time, and a 4 GB model in memory on the Mac.</li>
+      <li>Planted instructions in a CV: 0 of 10 became a settled role, including 4 reworded ones. Some appear marked "uncertain" for a person to dismiss.</li></ul></div>
+  </div>
+</section>
+
+<section id="matching">
+  <h2>Matching</h2>
+  <ul>
+    <li><strong>Assessment incomplete</strong> is a real state. When the work history could not be read reliably and a requirement depends on it, there is no percentage on screen. The candidate stays visible with their strengths, after the ranked list and never ranked as weak. Uncertain roles earn no years until a person settles them.</li>
+    <li><strong>Review CV evidence</strong> shows the document's own lines beside each role in question, with the page. A person can confirm, correct or remove it. Every answer is audited with what was read before, and the person's matches run again.</li>
+    <li>Effect of reading mistakes on scores (30 real CVs × 3 jobs, distance from scores worked out with the checked roles): average 3.7 points on live, 0.9 now. Off by 10 points or more: 12 of 90 pairs on live, 4 now. 33 of 90 pairs say Assessment incomplete. That is the honest price of not guessing.</li>
+    <li>The first view is now one sentence, up to two strengths and the most important gap, with the evidence and calculation one click away.</li>
+    <li>Not built yet: transferable experience and progression are marked "not assessed" in each requirement's evidence, rather than guessed.</li>
+  </ul>
+</section>
+
+<section id="files">
+  <h2>Who owns what, in the code</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Responsibility</th><th>Files</th></tr></thead>
+    <tbody>
+      <tr><td>Sign-in, organisations, uploads, queue, publication, audit</td><td class="mono">server/src/index.ts, queue.ts, pipeline.ts, db.ts</td></tr>
+      <tr><td>What the page shows; reading order; OCR</td><td class="mono">visibility.ts, parse.ts, docmodel/, ocr.ts, imageprep.ts, roleForms.ts</td></tr>
+      <tr><td>The model reading a CV, and what is believed of it</td><td class="mono">modelReader.ts, hybridReader.ts</td></tr>
+      <tr><td>Field-by-field choice, the four evidence states</td><td class="mono">reconcile.ts, docs/parser/FIELD_METHODS.md</td></tr>
+      <tr><td>The model's second check before a panel</td><td class="mono">auditor.ts</td></tr>
+      <tr><td>Scoring and Assessment incomplete</td><td class="mono">match.ts, scoring.ts, ruleset.ts</td></tr>
+      <tr><td>Review, correction, reading again</td><td class="mono">employmentReview.ts, src/components/EmploymentReview.tsx</td></tr>
+      <tr><td>Panels, one shape for every record</td><td class="mono">src/components/ui/PanelSection.tsx, CandidateDetails.tsx</td></tr>
+      <tr><td>Measuring on real CVs</td><td class="mono">test/collection/hybridEval.ts, scoreReal.py, matchImpact.ts, e2e/hosted/real-cvs.spec.ts</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="checks">
+  <h2>Checks run on this candidate</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Check</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td>Real CVs through the isolated platform</td><td><span class="pill ok">30 of 30 published</span></td></tr>
+      <tr><td>Browser journeys: panels, visibility, review and Assessment incomplete</td><td><span class="pill ok">22 of 23, then 7 of 7</span> One visibility step failed once and passed on rerun. It is intermittent, not fixed.</td></tr>
+      <tr><td>Regression tests for today's changes</td><td><span class="pill ok">pass</span></td></tr>
+      <tr><td>Invented messy CVs, kept as regression protection</td><td><span class="pill ok">368: perfect 94%, roles never invented</span></td></tr>
+      <tr><td>Within-profession ordering (written by hand, clean records)</td><td><span class="pill ok">46 of 46</span></td></tr>
+      <tr><td>Full backend suite</td><td id="suite"><span class="pill hold">running</span></td></tr>
+      <tr><td>Backup of live before release</td><td><span class="pill ok">taken 21:48</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="wrong">
+  <h2>Still wrong</h2>
+  <ul>
+    <li>Roles: 12 of 147 missing and 17 extra. The worst are a 24-page CV listing client projects as jobs, and the one scanned CV: 2 of 12 roles fully right.</li>
+    <li>Education found fell from 84% to 78% between two runs of the model on one CV. Repeated runs do not always agree. A second look at education the rules saw and the model left out now runs, and recovered part of it.</li>
+    <li>Location: 4 wrong. Mostly a full street address shown where a town is wanted, cut short by the 50-character limit.</li>
+    <li>More records ask a person to look: about 17 of 30, up from 12. Review burden went up.</li>
+    <li>Capacity with the model on has not been load-tested. One model on one Mac reads one CV at a time.</li>
+    <li>The answers are mine, provisional, and on development CVs. Your own checks on a few panels would be the first independent measure.</li>
+    <li>The people in these CVs keep their rights under POPIA. Your clearance covers our use; their contents stay off this page, out of Git and out of logs.</li>
+  </ul>
+</section>
+
+<section id="test">
+  <h2>When you test</h2>
+  <ul>
+    <li>Upload a CV and leave it: it shows as processing until the model and the checks finish, about 2 to 3 minutes. Several at once queue.</li>
+    <li>Open a candidate: roles in question carry a label, and <em>Review CV evidence</em> shows the lines they came from.</li>
+    <li>Match against a job asking for years of experience: an unsettled history gives Assessment incomplete instead of a number.</li>
+  </ul>
+</section>
+</main>

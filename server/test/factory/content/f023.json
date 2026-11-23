@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "id": "f023",
+  "field": "telecommunications",
+  "role": "Network Engineer",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "long-academic"
+  ],
+  "name": "Kagiso Fourie",
+  "city": "Polokwane"
+ },
+ "name": "Kagiso Fourie",
+ "email": "kagiso.fourie@example.test",
+ "phone": "081 555 1023",
+ "headline": "Senior Network Engineer | 12+ Years in Telecom Networks | South African Telecoms Expertise",
+ "summary": "Experienced Senior Network Engineer with 12+ years in telecommunications network design, maintenance, and support across rural and urban environments in South Africa. Specialised in core network operations and infrastructure resilience.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on network performance.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "Vumela Telecom Solutions",
+   "end": "Present",
+   "start": "2021-03",
+   "title": "Senior Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on system uptime.",
+    "Supported remote teams during outages.",
+    "Updated network diagrams and configurations."
+   ],
+   "city": "Polokwane",
+   "company": "Mokopane Broadband",
+   "end": "2021-02",
+   "start": "2018-07",
+   "title": "Network Systems Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports on bandwidth utilisation.",
+    "Managed fibre deployment projects.",
+    "Coordinated with vendors for equipment supply."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Data Networks",
+   "end": "2018-06",
+   "start": "2015-04",
+   "title": "Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on router performance.",
+    "Installed and tested new switches.",
+    "Tracked incident response times."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Telelink",
+   "end": "2015-03",
+   "start": "2012-09",
+   "title": "Junior Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on network traffic patterns.",
+    "Assisted in troubleshooting calls drops.",
+    "Maintained backup configurations."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Connect",
+   "end": "2012-08",
+   "start": "2010-03",
+   "title": "Network Technician"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2006
+  },
+  {
+   "institution": "Cape Town Institute of Technology",
+   "qualification": "Diploma in Computer Networking",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "University of Fort Hare",
+   "qualification": "National Senior Certificate (NSC)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Telecommunications",
+   "name": "Advanced Network Architecture Certification",
+   "year": 2021
+  },
+  {
+   "issuer": "Nedbank Institute",
+   "name": "Cloud Networking & SD-WAN Specialisation",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Limpopo",
+   "name": "Postgraduate Diploma in Telecommunications Engineering",
+   "year": -1
+  },
+  {
+   "issuer": "Telecoms Academy of Southern Africa",
+   "name": "Network Security & Compliance (ISC2)",
+   "year": 2019
+  },
+  {
+   "issuer": "Cape Town Institute of Technology",
+   "name": "Cisco CCNP - Enterprise Networking",
+   "year": 2015
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Bachelor of Science in Electrical Engineering",
+   "year": 2008
+  },
+  {
+   "issuer": "University of Fort Hare",
+   "name": "Diploma in Computer Networking",
+   "year": 2006
+  }
+ ],
+ "skills": [
+  "TCP/IP protocols",
+  "MPLS routing",
+  "SD-WAN deployment",
+  "Cisco IOS configuration",
+  "Juniper Networks",
+  "Network monitoring tools",
+  "IPsec VPNs",
+  "Firewall management",
+  "Wi-Fi 6 setup",
+  "Network cabling",
+  "DNS & DHCP",
+  "OSPF & BGP",
+  "Network automation scripts",
+  "Telecom compliance",
+  "Fibre optic splicing",
+  "Packet analysis",
+  "Cloud network integration",
+  "Network security audits",
+  "IP address planning",
+  "Telecom infrastructure design"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)",
+  "Afrikaans (basic)"
+ ],
+ "projects": [
+  "Led rollout of 5G core network in Eastern Province.",
+  "Optimised MPLS backbone for rural connectivity.",
+  "Deployed SD-WAN solution for 150+ branch offices."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:07:05.548Z"
+ }
+}

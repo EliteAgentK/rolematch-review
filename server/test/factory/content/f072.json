@@ -1,0 +1,131 @@
+{
+ "spec": {
+  "id": "f072",
+  "field": "public sector administration",
+  "role": "Administrative Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "not-completed"
+  ],
+  "name": "Ruan Sithole",
+  "city": "Midrand"
+ },
+ "name": "Ruan Sithole",
+ "email": "ruan.sithole@example.test",
+ "phone": "011 555 1072",
+ "headline": "Mid-Level Administrative Officer | Public Sector Administration | 8 Years Experience",
+ "summary": "Dedicated administrative professional with 8 years of experience in public sector operations. Proven ability to manage workflows, support service delivery, and maintain compliance in fast-paced environments. Based in Midrand, with strong understanding of South African public administration systems.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed daily operations of a municipal office, including scheduling, document processing, and inter-departmental coordination.",
+    "Prepared and distributed weekly reports to senior management, ensuring timely communication of key administrative updates."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2023-08",
+   "start": "2018-03",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Coordinated logistics for departmental meetings, ensuring attendance, agenda distribution, and post-meeting follow-ups.",
+    "Maintained digital and physical records, improving retrieval time by 30% through systematic filing and categorization."
+   ],
+   "city": "Midrand",
+   "company": "City of Ekurhuleni Administration",
+   "end": "2021-12",
+   "start": "2019-07",
+   "title": "Senior Administrative Assistant"
+  },
+  {
+   "bullets": [
+    "Supported budget preparation processes by compiling expenditure data and preparing preliminary reports for review.",
+    "Assisted in drafting official correspondence and internal memos, ensuring compliance with departmental protocols."
+   ],
+   "city": "Midrand",
+   "company": "Gauteng Provincial Department of Public Service",
+   "end": "2021-03",
+   "start": "2017-09",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Managed workflow for service delivery units, reducing processing delays by 25% through improved task delegation and tracking.",
+    "Organized and maintained compliance documentation for audits, contributing to a successful inspection outcome."
+   ],
+   "city": "Midrand",
+   "company": "Soweto Public Services Division",
+   "end": "2019-06",
+   "start": "2016-04",
+   "title": "Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Supported the implementation of digital record-keeping systems, training staff on new software and data entry protocols.",
+    "Collaborated with IT and operations teams to ensure seamless integration of administrative tools into daily workflows."
+   ],
+   "city": "Midrand",
+   "company": "Nelson Mandela Metropolitan Office of Administration",
+   "end": "2018-02",
+   "start": "2015-08",
+   "title": "Junior Administrative Officer"
+  },
+  {
+   "bullets": [
+    "Processed and filed public service applications, ensuring accuracy and adherence to procedural guidelines.",
+    "Maintained a database of service requests, enabling faster response times and improved service tracking."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Regional Development Office",
+   "end": "2017-03",
+   "start": "2014-09",
+   "title": "Administrative Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Arts in Public Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Office Management",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2018
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Public Administration",
+   "name": "Public Sector Administration Certificate",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "Document Management",
+  "Public Sector Compliance",
+  "Meeting Coordination",
+  "Report Preparation",
+  "Data Entry & Analysis",
+  "Interdepartmental Communication"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:12:05.966Z"
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "spec": {
+  "id": "f014",
+  "field": "civil engineering",
+  "role": "Civil Engineer",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "career-change"
+  ],
+  "name": "Priya Mabaso",
+  "city": "Pretoria"
+ },
+ "name": "Priya Mabaso",
+ "email": "priya.mabaso@example.test",
+ "phone": "071 555 1014",
+ "headline": "Senior Civil Engineer | Infrastructure Development | Project Delivery",
+ "summary": "Experienced civil engineer with 19 years in construction and infrastructure roles. Transitioned from operations to design and project leadership. Strong in site delivery and technical oversight. Adaptable to diverse project environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Reviewed site plans for compliance."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Construction Group",
+   "end": "2008-03",
+   "start": "1999-06",
+   "title": "Site Supervisor (Construction)"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Assisted in daily operations."
+   ],
+   "city": "Cape Town",
+   "company": "Dube Engineering Solutions",
+   "end": "2012-09",
+   "start": "2008-04",
+   "title": "Operations Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Supported team in planning activities."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Infrastructure Ltd",
+   "end": "2016-05",
+   "start": "2012-10",
+   "title": "Project Coordinator"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Conducted site inspections and safety checks."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Engineering Services",
+   "end": "Present",
+   "start": "2016-06",
+   "title": "Senior Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed design documentation and submissions."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Build & Develop",
+   "end": "2024-08",
+   "start": "2020-01",
+   "title": "Design Engineer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Engineering (Civil)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Construction Technology",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Postgraduate Certificate in Structural Design",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Civil Engineers",
+   "name": "Professional Practice and Ethics",
+   "year": 2018
+  },
+  {
+   "issuer": "National Institute of Construction Management",
+   "name": "Project Management in Infrastructure",
+   "year": 2020
+  }
+ ],
+ "skills": [
+  "CAD software",
+  "BIM modeling",
+  "Project planning",
+  "Site supervision",
+  "Risk assessment",
+  "Budget estimation",
+  "Stakeholder coordination",
+  "Quality control",
+  "Sustainability planning",
+  "Regulatory compliance",
+  "Construction safety",
+  "Technical documentation",
+  "Team leadership",
+  "Design review",
+  "Site inspection",
+  "Infrastructure planning",
+  "Public works",
+  "Urban development",
+  "Environmental impact assessment"
+ ],
+ "languages": [
+  "English",
+  "Afrikaans",
+  "isiZulu"
+ ],
+ "projects": [
+  "Led design of urban drainage systems in Soweto.",
+  "Managed site operations for a new road expansion.",
+  "Coordinated with municipal departments on public infrastructure upgrades."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:54:22.184Z"
+ }
+}

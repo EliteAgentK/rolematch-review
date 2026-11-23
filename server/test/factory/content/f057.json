@@ -1,0 +1,119 @@
+{
+ "spec": {
+  "id": "f057",
+  "field": "insurance claims",
+  "role": "Claims Assessor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "prose-history"
+  ],
+  "name": "Tshepo Jacobs",
+  "city": "Johannesburg"
+ },
+ "name": "Tshepo Jacobs",
+ "email": "tshepo.jacobs@example.test",
+ "phone": "021 555 1057",
+ "headline": "Junior Claims Assessor | Insurance Claims Evaluation | Risk Assessment | Client Communication",
+ "summary": "Dedicated junior claims professional with 4 years of hands-on experience in evaluating insurance claims across personal and commercial sectors. Proven ability to assess claims accurately, identify inconsistencies, and support efficient claim processing in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Assessed vehicle and property claims for accuracy, ensuring compliance with policy terms and regulatory standards.",
+    "Collaborated with adjusters to validate claim details and resolve discrepancies in documentation.",
+    "Processed over 150 claims monthly with 98% accuracy rate, reducing claim processing time by 15%."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Insurance Solutions",
+   "end": "2024-03",
+   "start": "2021-04",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Evaluated personal and commercial claims, including medical, fire, and theft incidents.",
+    "Maintained digital claim records using internal systems, ensuring data integrity and audit readiness.",
+    "Identified claim fraud patterns through trend analysis, contributing to a 10% reduction in invalid claims."
+   ],
+   "city": "Johannesburg",
+   "company": "Vosat Insurance Group",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Supported claims teams in initial intake and documentation verification for motor and home insurance.",
+    "Trained new staff on claim assessment protocols and policy interpretation procedures.",
+    "Improved claim intake efficiency by 20% through streamlined documentation workflows."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Claims Services",
+   "end": "2021-03",
+   "start": "2019-07",
+   "title": "Claims Assistant"
+  },
+  {
+   "bullets": [
+    "Managed small-scale claims for rural clients, ensuring timely and accurate reporting.",
+    "Coordinated with field agents to gather claim evidence and verify claim validity.",
+    "Improved rural claim response time from 7 to 3 days through process optimization."
+   ],
+   "city": "Johannesburg",
+   "company": "African Rural Insurance",
+   "end": "2019-06",
+   "start": "2018-03",
+   "title": "Claims Support Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Insurance and Risk Management)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Insurance Professionals",
+   "name": "Certificate in Insurance Claims Assessment",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Diploma in Risk Management and Insurance",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "Claims assessment",
+  "Policy interpretation",
+  "Documentation verification",
+  "Fraud detection",
+  "Client communication",
+  "Data entry and record management",
+  "Regulatory compliance"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:44:42.504Z"
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "spec": {
+  "id": "f090",
+  "field": "sales",
+  "role": "Key Account Manager",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "comma-titles"
+  ],
+  "name": "Chantelle Patel",
+  "city": "Pretoria"
+ },
+ "name": "Chantelle Patel",
+ "email": "chantelle.patel@example.test",
+ "phone": "031 555 1090",
+ "headline": "Executive Key Account Manager | 20+ Years in Sales Leadership | Pretoria-based | Client Growth & Retention Specialist",
+ "summary": "Results-driven Executive Key Account Manager with 20+ years of experience in sales leadership, client retention, and revenue optimization across diverse sectors. Proven track record in driving growth and managing high-value accounts in South African markets.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed key accounts for a portfolio of 15+ enterprise clients across industrial and infrastructure sectors, driving revenue growth by 28% annually from 2018 to 2023.",
+    "Led client relationship strategy, improving retention rates from 72% to 91% over five years through tailored service delivery and proactive engagement."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Dynamics Ltd",
+   "end": "2023-12",
+   "start": "2018-04",
+   "title": "Executive Key Account Manager, Enterprise Sales"
+  },
+  {
+   "bullets": [
+    "Spearheaded sales operations for a high-value B2B portfolio, achieving 120% of annual targets in 2022 and 2023.",
+    "Developed and implemented a client health scoring model that reduced churn by 35% and improved forecast accuracy by 22%."
+   ],
+   "city": "Pretoria",
+   "company": "Vosatex Solutions Group",
+   "end": "2021-08",
+   "start": "2015-03",
+   "title": "Senior Account Manager, Strategic Sales"
+  },
+  {
+   "bullets": [
+    "Directed sales performance for a portfolio of government and private sector clients, consistently exceeding KPIs by 15–30% annually.",
+    "Collaborated with cross-functional teams to deliver integrated service packages, increasing average deal size by 25% over three years."
+   ],
+   "city": "Pretoria",
+   "company": "Africor Holdings",
+   "end": "2013-11",
+   "start": "2009-07",
+   "title": "Account Manager, Key Client Operations"
+  },
+  {
+   "bullets": [
+    "Built and managed a client-facing sales team of 8, improving team performance through coaching and process optimization.",
+    "Introduced a digital engagement platform that increased client response times by 40% and reduced follow-up costs by 18%."
+   ],
+   "city": "Pretoria",
+   "company": "Makwetex Industries",
+   "end": "2010-02",
+   "start": "2005-09",
+   "title": "Sales Operations Manager, Client Development"
+  },
+  {
+   "bullets": [
+    "Led sales strategy for a regional industrial client base, growing revenue by 34% over four years with minimal market expansion.",
+    "Conducted quarterly client reviews and market analysis, identifying new opportunities that contributed to 18% of annual revenue."
+   ],
+   "city": "Pretoria",
+   "company": "KwaZulu Enterprise Systems",
+   "end": "2008-06",
+   "start": "2003-01",
+   "title": "Key Account Manager, Industrial Sales"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Sales and Marketing)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Client Relationship Management",
+  "Sales Strategy Development",
+  "Revenue Growth Planning",
+  "Market Analysis",
+  "Cross-functional Team Leadership",
+  "Negotiation & Contract Management",
+  "Performance Forecasting"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:37:02.304Z"
+ }
+}

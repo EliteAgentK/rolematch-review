@@ -1,0 +1,144 @@
+{
+ "spec": {
+  "id": "f050",
+  "field": "data and analytics",
+  "role": "Data Analyst",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations"
+  ],
+  "name": "Nomvula Pillay",
+  "city": "Pretoria"
+ },
+ "name": "Nomvula Pillay",
+ "email": "nomvula.pillay@example.test",
+ "phone": "031 555 1050",
+ "headline": "Executive Data Analyst | 19+ years in data & analytics | SQL, K8s, IFRS, BEE, PM, HR, CRM",
+ "summary": "Results-driven Executive Data Analyst with 19+ years in data & analytics. Expertise in SQL, K8s, IFRS, BEE, PM, HR and CRM. Proven track record in report delivery, data integrity and compliance. Based in Pretoria.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed SQL & Power BI reports for finance team",
+    "Supported PM initiatives with data validation",
+    "Collated IFRS compliance data for audits"
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Data Solutions",
+   "end": "2026-10",
+   "start": "2020-03",
+   "title": "Senior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Developed BEE compliance dashboards for HR",
+    "Maintained CRM data integrity",
+    "Delivered monthly KPIs to leadership"
+   ],
+   "city": "Pretoria",
+   "company": "Vosatex Group",
+   "end": "Present",
+   "start": "2018-07",
+   "title": "Data & Analytics Manager"
+  },
+  {
+   "bullets": [
+    "Did reports for operations team",
+    "Helped customers with data queries",
+    "Updated K8s config for data jobs"
+   ],
+   "city": "Pretoria",
+   "company": "Makwetech Systems",
+   "end": "2018-06",
+   "start": "2015-04",
+   "title": "Data Analyst"
+  },
+  {
+   "bullets": [
+    "Generated SQL outputs for budgeting",
+    "Assisted in HR data migration",
+    "Reviewed CRM data for accuracy"
+   ],
+   "city": "Pretoria",
+   "company": "Africor Data Services",
+   "end": "2013-12",
+   "start": "2011-08",
+   "title": "Junior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did data cleaning for PM projects",
+    "Supported IFRS reporting tasks",
+    "Maintained BEE data logs"
+   ],
+   "city": "Pretoria",
+   "company": "Tshwane Analytics Ltd",
+   "end": "2011-07",
+   "start": "2008-03",
+   "title": "Data Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "BSc (Hons) Statistics",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Information Systems",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Data Science",
+   "name": "Advanced Data Analytics Certification",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Diploma in Business Analytics",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "SQL",
+  "Power BI",
+  "K8s",
+  "IFRS",
+  "BEE",
+  "PM",
+  "HR",
+  "CRM",
+  "Data validation",
+  "Dashboard design",
+  "Data governance",
+  "ETL processes",
+  "Data migration",
+  "Statistical analysis",
+  "Data compliance",
+  "Report automation"
+ ],
+ "languages": [
+  "English",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led K8s cluster setup for internal data pipelines",
+  "Optimised SQL queries to reduce report load by 40%",
+  "Built CRM dashboards for HR team monitoring"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:36:35.150Z"
+ }
+}

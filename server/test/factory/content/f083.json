@@ -1,0 +1,149 @@
+{
+ "spec": {
+  "id": "f083",
+  "field": "recruitment",
+  "role": "Talent Acquisition Specialist",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "personal-details"
+  ],
+  "name": "Ayesha van der Merwe",
+  "city": "Polokwane"
+ },
+ "name": "Ayesha van der Merwe",
+ "email": "ayesha.vandermerwe@example.test",
+ "phone": "041 555 1083",
+ "headline": "Senior Talent Acquisition Specialist | 12+ Years in Recruitment | South African Market Expertise",
+ "summary": "Experienced Talent Acquisition professional with 12+ years in South African recruitment. Skilled in end-to-end hiring, market analysis, and team leadership. Strong local market insight and process optimisation experience.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on recruitment performance and pipeline health.",
+    "Helped identify key talent gaps in operations and engineering.",
+    "Managed vendor contracts for recruitment services."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Talent Solutions",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Senior Talent Acquisition Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring trends and market demand.",
+    "Helped build candidate pipelines for technical roles.",
+    "Coordinated with departments to assess staffing needs."
+   ],
+   "city": "Polokwane",
+   "company": "Mpho Recruitment Group",
+   "end": "2020-03",
+   "start": "2016-07",
+   "title": "Talent Acquisition Manager"
+  },
+  {
+   "bullets": [
+    "Did reports on candidate sourcing and engagement.",
+    "Helped design job descriptions for engineering and admin roles.",
+    "Managed recruitment budget and vendor selection."
+   ],
+   "city": "Polokwane",
+   "company": "Sibonelo HR Services",
+   "end": "2016-07",
+   "start": "2012-04",
+   "title": "Recruitment Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring outcomes and turnover rates.",
+    "Helped develop recruitment KPIs for performance tracking.",
+    "Supported onboarding processes for new hires."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Staffing Partners",
+   "end": "2012-04",
+   "start": "2009-08",
+   "title": "Recruitment Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on job market trends and vacancies.",
+    "Helped source candidates through social media and networks.",
+    "Assisted in building recruitment databases."
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Human Resources Hub",
+   "end": "2009-08",
+   "start": "2007-03",
+   "title": "Junior Recruitment Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Arts in Human Resource Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Human Resources Management",
+   "name": "Advanced Talent Acquisition Certification",
+   "year": 2018
+  },
+  {
+   "issuer": "University of Limpopo",
+   "name": "Bachelor of Arts in Human Resource Management",
+   "year": 2009
+  }
+ ],
+ "skills": [
+  "Sourcing",
+  "Screening",
+  "Interviewing",
+  "Candidate Engagement",
+  "Job Descriptions",
+  "Talent Strategy",
+  "HR Compliance",
+  "Recruitment Analytics",
+  "Vendor Management",
+  "Market Research",
+  "Workflows",
+  "KPIs",
+  "Onboarding",
+  "Stakeholder Collaboration",
+  "Data Entry",
+  "Report Writing",
+  "Process Improvement",
+  "Team Leadership",
+  "Digital Tools",
+  "ATS Systems",
+  "Candidate Experience"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led end-to-end recruitment processes for mid to senior roles in manufacturing and logistics sectors.",
+  "Optimised hiring workflows, reducing time-to-fill by 30% across key departments.",
+  "Collaborated with HR leaders to align talent strategies with business goals."
+ ],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:27:28.880Z"
+ }
+}

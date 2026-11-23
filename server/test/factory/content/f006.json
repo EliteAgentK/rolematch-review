@@ -1,0 +1,129 @@
+{
+ "spec": {
+  "id": "f006",
+  "field": "auditing",
+  "role": "Internal Auditor",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "comma-titles"
+  ],
+  "name": "Pieter Maseko",
+  "city": "Pretoria"
+ },
+ "name": "Pieter Maseko",
+ "email": "pieter.maseko@example.test",
+ "phone": "071 555 1006",
+ "headline": "Executive Internal Auditor with 20+ years of experience in financial and operational auditing across diverse South African industries.",
+ "summary": "Results-driven executive internal auditor with 20 years of progressive experience in financial and operational auditing, specializing in risk-based audit strategies and compliance in South African corporate environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Led internal audit operations for a multi-site manufacturing division, ensuring compliance with SARS and ISO 9001 standards.",
+    "Conducted risk assessments and process evaluations, reducing operational exposure by 32% over three years."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Dynamics Ltd",
+   "end": "2026-01",
+   "start": "2020-03",
+   "title": "Senior Auditor, Internal Audit"
+  },
+  {
+   "bullets": [
+    "Directed audit planning and execution for R1.2 billion annual revenue operations, improving audit efficiency by 40%.",
+    "Developed audit frameworks aligned with SAICA standards and corporate governance policies."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Holdings Group",
+   "end": "Present",
+   "start": "2018-07",
+   "title": "Director, Internal Audit"
+  },
+  {
+   "bullets": [
+    "Managed audit cycles for finance, procurement, and supply chain functions across five business units.",
+    "Identified and reported 18 critical control weaknesses, resulting in R2.8 million in cost savings."
+   ],
+   "city": "Pretoria",
+   "company": "African Infrastructure Partners",
+   "end": "2018-06",
+   "start": "2014-04",
+   "title": "Manager, Internal Audit"
+  },
+  {
+   "bullets": [
+    "Performed financial and compliance audits for a public utility, ensuring adherence to national audit regulations.",
+    "Reported directly to the Board on audit findings and risk mitigation strategies."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Energy Services",
+   "end": "2014-03",
+   "start": "2010-08",
+   "title": "Auditor, Internal Audit"
+  },
+  {
+   "bullets": [
+    "Supported audit function development in a growing SME portfolio, establishing audit checklists and reporting templates.",
+    "Collaborated with external auditors to ensure consistency and reduce audit cycle time by 25%."
+   ],
+   "city": "Pretoria",
+   "company": "Savanna Business Solutions",
+   "end": "2010-07",
+   "start": "2007-02",
+   "title": "Analyst, Group Finance"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Accounting)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Postgraduate Diploma in Risk Management",
+   "status": "completed",
+   "statusWords": "completed",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "Institute of Internal Auditors, South Africa",
+   "name": "Certified Internal Auditor (CIA)",
+   "year": 2010
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Commerce (Accounting)",
+   "year": 2005
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Postgraduate Diploma in Risk Management",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Internal audit process design",
+  "Risk assessment and mitigation",
+  "Compliance with SAICA and SARS standards",
+  "Financial statement review",
+  "Audit reporting and governance"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:38:51.825Z"
+ }
+}

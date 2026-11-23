@@ -1,0 +1,156 @@
+{
+ "spec": {
+  "id": "f060",
+  "field": "supply chain",
+  "role": "Procurement Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "buzzwords"
+  ],
+  "name": "Lerato Naidoo",
+  "city": "Midrand"
+ },
+ "name": "Lerato Naidoo",
+ "email": "lerato.naidoo@example.test",
+ "phone": "051 555 1060",
+ "headline": "Dynamic, results-driven Procurement Officer with 8+ years of supply chain experience. Proven in cost optimization, supplier relationship management, and end-to-end procurement execution. Team player with strong synergy in cross-functional environments.",
+ "summary": "Dynamic, results-driven Procurement Officer with 8+ years of supply chain experience. Proven in cost optimization, supplier relationship management, and end-to-end procurement execution. Team player with strong synergy in cross-functional environments. Adept at driving efficiency, compliance, and strategic sourcing in complex supply chains.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed end-to-end procurement for R12M+ annual spend, reducing costs by 14% through supplier benchmarking and contract renegotiation.",
+    "Led supplier onboarding and compliance audits, improving delivery consistency by 28% across key logistics partners."
+   ],
+   "city": "Pretoria",
+   "company": "Nkosi Logistics Solutions",
+   "end": "2024-03",
+   "start": "2020-05",
+   "title": "Senior Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Streamlined procurement workflows using SAP Ariba, cutting processing time by 30% and improving visibility across supply chain stages.",
+    "Collaborated with finance and operations to align procurement with quarterly business goals, enhancing cross-departmental synergy."
+   ],
+   "city": "Midrand",
+   "company": "Vulindlela Industrial Group",
+   "end": "Present",
+   "start": "2022-08",
+   "title": "Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Developed and executed supplier scorecards, driving quality improvements and reducing defect rates by 22% in key product lines.",
+    "Conducted market research for emerging suppliers, identifying 3 new vendors with improved lead times and cost efficiency."
+   ],
+   "city": "Johannesburg",
+   "company": "Amaqo Manufacturing Ltd",
+   "end": "2022-07",
+   "start": "2018-04",
+   "title": "Procurement Assistant"
+  },
+  {
+   "bullets": [
+    "Coordinated tender processes for R500K+ equipment procurement, ensuring compliance with national procurement regulations and timelines.",
+    "Maintained accurate inventory records and supplier databases, supporting real-time decision-making and audit readiness."
+   ],
+   "city": "Cape Town",
+   "company": "Dube Supply Chain Services",
+   "end": "2018-03",
+   "start": "2015-07",
+   "title": "Procurement Executive"
+  },
+  {
+   "bullets": [
+    "Supported procurement strategy development for new product launches, ensuring timely sourcing and cost control.",
+    "Facilitated supplier training sessions to improve compliance and delivery performance across regional operations."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Industrial Partners",
+   "end": "2015-06",
+   "start": "2013-09",
+   "title": "Procurement Coordinator"
+  },
+  {
+   "bullets": [
+    "Performed vendor evaluations and risk assessments, contributing to a 10% reduction in supply chain disruptions.",
+    "Maintained procurement documentation in line with ISO 9001 standards, ensuring audit readiness and process consistency."
+   ],
+   "city": "Bloemfontein",
+   "company": "Mzansi Materials Group",
+   "end": "2013-08",
+   "start": "2011-03",
+   "title": "Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Assisted in drafting procurement policies and procedures, aligning with company risk management frameworks.",
+    "Supported budget planning and forecasting for departmental spend, improving financial accuracy by 18%."
+   ],
+   "city": "Port Elizabeth",
+   "company": "Sekhukhune Supply Chain",
+   "end": "2011-02",
+   "start": "2009-06",
+   "title": "Procurement Assistant"
+  },
+  {
+   "bullets": [
+    "Performed basic requisition processing and inventory tracking for small-scale operations, ensuring timely delivery of materials.",
+    "Built strong relationships with local suppliers, improving responsiveness and reliability in regional supply chains."
+   ],
+   "city": "Nelspruit",
+   "company": "Limpopo Distribution Hub",
+   "end": "2009-05",
+   "start": "2008-03",
+   "title": "Procurement Trainee"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (BCom) – Supply Chain Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Logistics and Supply Chain Operations",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Procurement and Logistics",
+   "name": "Certified Procurement Professional (CPP)",
+   "year": 2022
+  }
+ ],
+ "skills": [
+  "SAP Ariba",
+  "Supplier Relationship Management",
+  "Cost Optimization",
+  "Tender Management",
+  "Risk Assessment",
+  "Compliance & Audit Readiness",
+  "Market Research",
+  "Inventory Control",
+  "Cross-functional Collaboration"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:48:13.265Z"
+ }
+}

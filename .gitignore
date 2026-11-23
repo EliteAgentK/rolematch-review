@@ -1,0 +1,46 @@
+node_modules/
+dist/
+.pnpm-store/
+pnpm-lock.yaml
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.old
+
+# Private planning documents are not published with the public application.
+/*.docx
+/build_*.py
+
+# Local server data: database, private originals, dev credentials
+server/data/
+server/node_modules/
+server/.env
+
+# Generated messy-CV test files (rebuilt by test/messy/build.ts)
+server/test/messy/files/
+server/test/messy/report.json
+
+# Playwright run state (signed-in browser state for a throw-away organisation)
+e2e/.auth.json
+e2e/.seed.json
+test-results/
+
+# Local working output (reports, scratch files)
+output/
+
+# Real, consented scans and phone photos used to measure OCR accuracy (personal data: never committed)
+sample-documents/real/
+
+# rendered by npm run factory:render from test/factory/content (regenerable)
+sample-documents/factory/
+
+# pixel capture recordings and screenshots (local; e2e/visual.spec.ts)
+e2e/visual-data/
+e2e/browsers-results/
+e2e/browsers-report/
+.e2e-run/
+
+# Load test results (load/run.sh): numbers from a run, kept on the Mac only
+load/results/

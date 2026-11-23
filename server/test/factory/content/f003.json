@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "id": "f003",
+  "field": "cloud infrastructure",
+  "role": "Cloud Engineer",
+  "seniority": "senior",
+  "years": 13,
+  "quality": "average",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "many-short-roles"
+  ],
+  "name": "Michael Govender",
+  "city": "Polokwane"
+ },
+ "name": "Michael Govender",
+ "email": "michael.govender@example.test",
+ "phone": "041 555 1003",
+ "headline": "Senior Cloud Engineer | 13+ Years in Cloud Infrastructure | AWS & Azure Expertise",
+ "summary": "Results-driven Senior Cloud Engineer with 13+ years of experience in designing, deploying, and managing cloud infrastructure across public and private sectors in South Africa. Proven track record in AWS and Azure environments, cost optimization, and operational resilience.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed AWS and Azure environments for a municipal service, ensuring 99.99% uptime and compliance with NIST standards.",
+    "Led cloud cost optimization initiatives, reducing monthly spend by 28% through resource automation and tagging."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Digital Solutions",
+   "end": "2026-03",
+   "start": "2022-04",
+   "title": "Senior Cloud Engineer"
+  },
+  {
+   "bullets": [
+    "Architected and deployed a multi-region cloud infrastructure for a regional health service, supporting 100+ concurrent users with zero downtime.",
+    "Integrated CI/CD pipelines using Terraform and Jenkins, reducing deployment time from 4 hours to under 15 minutes."
+   ],
+   "city": "Polokwane",
+   "company": "Mokopane Tech Systems",
+   "end": "2025-08",
+   "start": "2024-01",
+   "title": "Cloud Infrastructure Lead"
+  },
+  {
+   "bullets": [
+    "Spearheaded migration of legacy systems to AWS, achieving full operational readiness within 6 months and zero data loss.",
+    "Implemented security best practices, including IAM policies and VPC segmentation, improving audit compliance by 30%."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Cloud Services",
+   "end": "2024-06",
+   "start": "2023-07",
+   "title": "Cloud Systems Engineer"
+  },
+  {
+   "bullets": [
+    "Maintained and scaled Azure cloud environments for a logistics firm, supporting 500+ devices with real-time monitoring.",
+    "Automated backup and recovery workflows using Azure Automation, cutting recovery time from 2 hours to 10 minutes."
+   ],
+   "city": "Polokwane",
+   "company": "Valekra Systems",
+   "end": "2023-03",
+   "start": "2022-09",
+   "title": "Cloud Operations Specialist"
+  },
+  {
+   "bullets": [
+    "Deployed and managed a private cloud environment using OpenStack for a local education institution, improving access to learning tools.",
+    "Collaborated with IT staff to train on cloud tools, increasing internal adoption by 70% within 3 months."
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Academic IT",
+   "end": "2021-12",
+   "start": "2021-04",
+   "title": "Cloud Support Engineer"
+  },
+  {
+   "bullets": [
+    "Provided on-call support for cloud infrastructure, resolving 95% of incidents within SLA timeframes.",
+    "Conducted regular audits and performance reviews, identifying and resolving 12 critical bottlenecks in cloud operations."
+   ],
+   "city": "Polokwane",
+   "company": "KwaZulu Cloud Solutions",
+   "end": "2020-11",
+   "start": "2019-03",
+   "title": "Cloud Systems Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Network Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2006
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Cloud Academy",
+   "name": "AWS Certified Cloud Practitioner",
+   "year": 2020
+  },
+  {
+   "issuer": "CloudSouth Institute",
+   "name": "Azure Advanced Infrastructure Certification",
+   "year": 0
+  },
+  {
+   "issuer": "University of Limpopo",
+   "name": "Postgraduate Diploma in IT Infrastructure",
+   "year": 2018
+  }
+ ],
+ "skills": [
+  "AWS (EC2, S3, IAM, VPC)",
+  "Azure (Virtual Machines, Storage, Networking)",
+  "Terraform, Ansible, Kubernetes",
+  "Cloud Security, Compliance (NIST, ISO 27001)",
+  "CI/CD, DevOps, Infrastructure as Code",
+  "Cloud Cost Optimization",
+  "Disaster Recovery & Backup"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [
+  "Designed and deployed hybrid cloud architecture for a provincial government service, reducing latency by 40% and improving uptime to 99.99%.",
+  "Led migration of legacy on-prem systems to AWS, achieving 95% operational efficiency and cutting costs by R1.2M annually."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:35:45.812Z"
+ }
+}

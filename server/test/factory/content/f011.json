@@ -1,0 +1,156 @@
+{
+ "spec": {
+  "id": "f011",
+  "field": "recruitment",
+  "role": "Talent Acquisition Specialist",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "study-in-progress"
+  ],
+  "name": "Ayesha van der Merwe",
+  "city": "Polokwane"
+ },
+ "name": "Ayesha van der Merwe",
+ "email": "ayesha.vandermerwe@example.test",
+ "phone": "041 555 1011",
+ "headline": "Senior Talent Acquisition Specialist | South African Recruitment Expert | 12+ Years Experience",
+ "summary": "Experienced Talent Acquisition professional with 12+ years in recruitment, focused on building effective hiring strategies and improving time-to-fill across diverse industries in South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on recruitment performance and pipeline health.",
+    "Helped identify key talent gaps in departments.",
+    "Managed vendor contracts and compliance for hiring partners."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Talent Solutions",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Senior Talent Acquisition Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring metrics and candidate engagement.",
+    "Helped build talent pipelines for technical and leadership roles.",
+    "Coordinated with departments to assess staffing needs."
+   ],
+   "city": "Polok-1",
+   "company": "Mzansi People Solutions",
+   "end": "2020-02",
+   "start": "2017-06",
+   "title": "Talent Acquisition Manager"
+  },
+  {
+   "bullets": [
+    "Did reports on recruitment KPIs and process efficiency.",
+    "Helped design job descriptions and screening frameworks.",
+    "Supported onboarding of new hires through structured processes."
+   ],
+   "city": "Polokwane",
+   "company": "Vulindlela HR Services",
+   "end": "2017-05",
+   "start": "2014-08",
+   "title": "Talent Acquisition Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on candidate sourcing and outreach efforts.",
+    "Helped manage recruitment budgets and vendor selection.",
+    "Supported internal mobility initiatives for employee development."
+   ],
+   "city": "Polokwane",
+   "company": "Sibonelo Recruitment Group",
+   "end": "2014-07",
+   "start": "2012-04",
+   "title": "Recruitment Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports on hiring trends and market demand.",
+    "Helped develop job profiles for key positions.",
+    "Assisted in candidate screening and shortlisting."
+   ],
+   "city": "Polokwane",
+   "company": "KwaZulu Talent Hub",
+   "end": "2012-03",
+   "start": "2010-09",
+   "title": "Junior Recruitment Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on recruitment activities and team performance.",
+    "Helped coordinate hiring for temporary and contract roles.",
+    "Maintained candidate databases and compliance records."
+   ],
+   "city": "Polokwane",
+   "company": "Talana Staffing Solutions",
+   "end": "2010-08",
+   "start": "2008-03",
+   "title": "Recruitment Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Arts in Human Resource Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "in_progress",
+   "statusWords": "expected 2027",
+   "startYear": 2010
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Human Resources Management",
+   "name": "Certified Talent Acquisition Professional (CTAP)",
+   "year": 2023
+  },
+  {
+   "issuer": "National Skills Authority",
+   "name": "Advanced Recruitment Practitioner Certification",
+   "year": 2022
+  }
+ ],
+ "skills": [
+  "Sourcing",
+  "Job Design",
+  "Screening",
+  "Interview Coordination",
+  "Candidate Engagement",
+  "Hiring Process Design",
+  "Vendor Management",
+  "KPI Reporting",
+  "Compliance",
+  "Talent Strategy",
+  "Onboarding Support",
+  "Market Research",
+  "Recruitment Analytics",
+  "Workflows Optimization",
+  "Stakeholder Collaboration"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led end-to-end recruitment processes for mid to senior roles.",
+  "Optimized hiring workflows to reduce time-to-fill by 30%.",
+  "Collaborated with HR leaders to align talent strategies with business goals."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:49:04.679Z"
+ }
+}

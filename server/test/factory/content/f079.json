@@ -1,0 +1,179 @@
+{
+ "spec": {
+  "id": "f079",
+  "field": "actuarial science",
+  "role": "Actuarial Analyst",
+  "seniority": "senior",
+  "years": 11,
+  "quality": "rich",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "long-academic",
+   "personal-details"
+  ],
+  "name": "Johan Hendricks",
+  "city": "Polokwane"
+ },
+ "name": "Johan Hendricks",
+ "email": "johan.hendricks@example.test",
+ "phone": "081 555 1079",
+ "headline": "Senior Actuarial Analyst | Risk Modelling & Financial Forecasting | 11 Years Experience",
+ "summary": "Senior Actuarial Analyst with 11 years of experience in life, health, and motor insurance. Expertise in risk modelling, forecasting, and data analytics. Proven track record in improving accuracy, reducing errors, and driving operational efficiency in South African insurance environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Led actuarial analysis for motor insurance portfolios at Nkandla Insurance (2021–Present), managing 120,000 policies with 95% accuracy in risk assessment using SAS and R.",
+    "Developed claim frequency models using Python and R, reducing underwriting errors by 25% in 2023.",
+    "Presented actuarial findings to senior management quarterly, improving decision-making speed by 30%.",
+    "Integrated real-time claims data into valuation systems, reducing processing delays by 40%."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Insurance",
+   "end": "Present",
+   "start": "2021-03",
+   "title": "Senior Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Managed mortality and morbidity models for life insurance at Mzansi Life (2017–2021), serving 80,000 policyholders with 98% model consistency.",
+    "Built valuation tools in Excel and VBA, reducing manual calculations by 60% and improving audit readiness.",
+    "Conducted annual mortality reviews, improving forecast accuracy by 15% over 4 years.",
+    "Collaborated with underwriters to adjust pricing, increasing policy uptake by 12% in 2020."
+   ],
+   "city": "Polokwane",
+   "company": "Mzansi Life",
+   "end": "2021-12",
+   "start": "2017-07",
+   "title": "Actuarial Analyst"
+  },
+  {
+   "bullets": [
+    "Developed pension liability models for public sector funds using R and SQL, supporting 15,000 employees with 99% data integrity.",
+    "Built risk dashboards in Tableau, enabling real-time monitoring of fund performance.",
+    "Conducted scenario analysis for inflation and interest rate shocks, identifying 8% exposure risk under 2025 projections.",
+    "Improved pension valuation accuracy by 20% through model recalibration and data validation."
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Pension Services",
+   "end": "2017-06",
+   "start": "2014-04",
+   "title": "Actuarial Specialist"
+  },
+  {
+   "bullets": [
+    "Supported actuarial operations at Soweto Risk Solutions, managing 50,000 policies with R and SAS, improving claim prediction accuracy by 19%.",
+    "Designed a claims reserving model using GLM, reducing reserve errors by 28% in 2016.",
+    "Led training sessions for junior actuaries on mortality and claim data analysis, increasing team output by 35%.",
+    "Automated reporting workflows using Excel macros, reducing manual effort by 50%."
+   ],
+   "city": "Polokwane",
+   "company": "Soweto Risk Solutions",
+   "end": "2014-03",
+   "start": "2011-08",
+   "title": "Actuarial Associate"
+  },
+  {
+   "bullets": [
+    "Conducted actuarial audits for a regional health insurance scheme, identifying 14% underestimation in claim liabilities.",
+    "Built health risk models using R and SPSS, improving prediction accuracy by 24%.",
+    "Presented findings to stakeholders, leading to revised underwriting guidelines.",
+    "Improved data quality by implementing validation rules in SAS, reducing errors by 38%."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Health Insurance",
+   "end": "2011-07",
+   "start": "2009-03",
+   "title": "Actuarial Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Fort Hare",
+   "qualification": "Bachelor of Science in Actuarial Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2007
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Master of Science in Actuarial Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Postgraduate Diploma in Insurance Risk Modelling",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2013
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Actuaries",
+   "name": "Professional Actuarial Qualification (PAQ) – Level 3",
+   "year": 2018
+  },
+  {
+   "issuer": "Actuarial Society of South Africa",
+   "name": "Advanced Risk Modelling Certificate",
+   "year": 2020
+  },
+  {
+   "issuer": "University of Cape Town",
+   "name": "Postgraduate Diploma in Financial Risk Management",
+   "year": -1
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Certificate in Data Analytics for Actuaries",
+   "year": 2021
+  },
+  {
+   "issuer": "Nelson Mandela Metropolitan College",
+   "name": "Advanced Statistics for Insurance Applications",
+   "year": 2015
+  }
+ ],
+ "skills": [
+  "SAS",
+  "R",
+  "Python",
+  "SQL",
+  "Power BI",
+  "Tableau",
+  "Monte Carlo Simulations",
+  "GLM Modelling",
+  "Mortality & Claim Forecasting",
+  "Pension Valuation",
+  "Risk Modelling",
+  "Data Validation",
+  "Stress Testing"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [
+  "Developed mortality models using SAS and R for life insurance portfolios, improving forecast accuracy by 18% over 3 years.",
+  "Built predictive models for claim frequency using Python and GLM, reducing underestimation errors by 22% in 2023.",
+  "Led implementation of a new pricing model for motor insurance in Polokwane, increasing premium accuracy by 30%.",
+  "Automated valuation reports using Power BI and SQL, cutting report generation time from 48 to 12 hours weekly.",
+  "Designed a fraud detection algorithm using logistic regression and anomaly detection, reducing false positives by 40%.",
+  "Conducted stress testing on pension fund liabilities using Monte Carlo simulations in R, identifying 12% exposure risk under 2025 scenarios.",
+  "Collaborated with underwriting teams to refine exposure models, improving loss ratio by 0.7% annually from 2021–2025."
+ ],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:22:16.384Z"
+ }
+}

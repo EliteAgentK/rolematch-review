@@ -1,0 +1,190 @@
+# Safety checks and tests on every pull request and on pushes to the main lines of work (docs/security/SAFETY_CHECKS.md).
+# Security posture: read-only token, no secrets used anywhere in this workflow, third-party actions pinned to reviewed commits,
+# pull_request (never pull_request_target), and checkout without persisted credentials. Tests use a disposable local Supabase stack
+# started inside the runner: never the shared development project, customer data, real mail or deployment secrets.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master, "rolematch/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true   # a newer push to the same branch or pull request replaces the older run
+
+env:
+  GITLEAKS_VERSION: "8.30.1"
+  GITLEAKS_SHA256: "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"   # gitleaks_8.30.1_linux_x64.tar.gz, from the release's checksums file
+
+jobs:
+  safety:
+    name: Safety checks (secrets, licences, vulnerabilities)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with: { fetch-depth: 0, persist-credentials: false }   # full history, so the changed commits can be scanned
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with: { node-version: "24" }
+      - name: Install gitleaks (pinned version, checksum verified)
+        run: |
+          curl -sSfL -o /tmp/gitleaks.tgz "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  /tmp/gitleaks.tgz" | sha256sum --check --strict
+          tar -xzf /tmp/gitleaks.tgz -C /tmp gitleaks && sudo install /tmp/gitleaks /usr/local/bin/gitleaks && gitleaks version
+      - name: Scanner self-test (finds generated secrets, ignores placeholders, never reports a failed scan as clean)
+        run: node --test scripts/safety/*.test.mjs
+      - name: Secret scan of the commits in this change
+        env:
+          EVENT: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.sha }}
+        run: |
+          # Incremental: only the new commits. A new branch, a forced push or a manual run has no reliable "before", so the whole history is scanned instead.
+          if [ "$EVENT" = "pull_request" ]; then node scripts/safety/secretScan.mjs --range "${PR_BASE}..${PR_HEAD}"
+          elif [ "$EVENT" = "push" ] && [ -n "$PUSH_BEFORE" ] && [ "$PUSH_BEFORE" != "0000000000000000000000000000000000000000" ] && git cat-file -e "${PUSH_BEFORE}^{commit}" 2>/dev/null; then node scripts/safety/secretScan.mjs --range "${PUSH_BEFORE}..${PUSH_AFTER}"
+          else node scripts/safety/secretScan.mjs --history; fi
+      - name: Licence policy (permissive only; exceptions need a reason, owner, scope and review date)
+        run: node scripts/safety/licenceCheck.mjs
+      - name: Known vulnerabilities in production dependencies (an audit that cannot complete fails)
+        run: node server/scripts/auditCheck.mjs
+
+  website:
+    name: Website (types, unit tests, build)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with: { node-version: "24", cache: npm, cache-dependency-path: package-lock.json }
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  leftovers:
+    name: No leftovers (unused files, exports, packages and styles)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with: { node-version: "24", cache: npm, cache-dependency-path: "package-lock.json\nserver/package-lock.json" }
+      - run: npm ci --no-audit --no-fund && npm --prefix server ci --no-audit --no-fund --ignore-scripts
+      - run: npm run check:leftovers
+
+  server:
+    name: Server (types and tests on a disposable local Supabase)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with: { node-version: "24", cache: npm, cache-dependency-path: server/package-lock.json }
+      - uses: supabase/setup-cli@689adcfb80d947100a1eab127289b97d1fb07b13   # v3.2.0
+        with: { version: "2.121.0" }   # the version used locally
+      - run: npm ci --no-audit --no-fund
+        working-directory: server
+      - run: npx tsc --noEmit -p .
+        working-directory: server
+      - name: A throw-away token signing key for this run only (the local key file is never committed)
+        run: echo '[]' > supabase/signing_keys.json && supabase gen signing-key --algorithm ES256 --append > /dev/null
+      - name: Build the website (the server serves it, and a test scans it for secrets)
+        run: npm ci --no-audit --no-fund && npm run build
+      - name: Start the disposable Supabase stack (only the parts the tests use)
+        run: supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+      - name: Tests (the runner checks every address is on this machine before running)
+        working-directory: server
+        env:
+          ROLEMATCH_ENV_FILE: /dev/null   # no settings file: nothing but this workflow's environment
+          NODE_ENV: test
+        run: npm run test:local
+      - name: Parser evaluation gate (failure library against its accepted baselines; reports, switches nothing on)
+        if: ${{ !cancelled() }}   # a failing test elsewhere must not hide the gate's result
+        working-directory: server
+        env:
+          ROLEMATCH_ENV_FILE: /dev/null
+          NODE_ENV: test
+          SUPABASE_URL: http://127.0.0.1:54321
+          SUPABASE_SERVICE_ROLE_KEY: not-used
+          DATABASE_URL: postgres://x
+        run: npm run parser:gate
+      - name: Stop the stack
+        if: always()
+        run: supabase stop --no-backup
+
+  image:
+    name: Image (builds, starts as production, runs the whole product)
+    # The server's own processor. Expensive in free minutes, so it runs on master or when asked for a release candidate.
+    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1   # v7.1.0
+        with: { node-version: "24", cache: npm, cache-dependency-path: server/package-lock.json }
+      - uses: supabase/setup-cli@689adcfb80d947100a1eab127289b97d1fb07b13   # v3.2.0
+        with: { version: "2.121.0" }
+      - run: docker build -t rolematch:check .
+      - name: Nothing private entered the image
+        run: |
+          # The website's public folder holds one invented demo file under data/ (profile page), which is served to anyone; server data and tests must never be here.
+          docker run --rm --entrypoint sh rolematch:check -c '! find /app -path "*/node_modules" -prune -o \( -name ".env*" -o -name "*.docx" -o -name "*.pem" -o -path "/app/server/test/*" -o -path "/app/server/data/*" -o -path "/data/*" \) -print | grep .'
+      - name: A throw-away token signing key for this run only
+        run: echo '[]' > supabase/signing_keys.json && supabase gen signing-key --algorithm ES256 --append > /dev/null
+      - name: Start the disposable Supabase stack
+        run: supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+      - name: The tools the check runs from
+        run: npm ci --no-audit --no-fund
+        working-directory: server
+      - name: Run the image as production, mail going to a simulated host
+        run: |
+          supabase status -o env > /tmp/stack.env
+          . /tmp/stack.env
+          cat > /tmp/image.env <<EOF
+          SUPABASE_URL=$API_URL
+          DATABASE_URL=$DB_URL
+          SUPABASE_SERVICE_ROLE_KEY=${SERVICE_ROLE_KEY:-$SECRET_KEY}
+          PUBLIC_APP_URL=https://live.rolematch.invalid
+          SIGNUP_MODE=invite
+          CANDIDATE_PIPELINE=all
+          REVIEW_ALL_SCANS=true
+          ALLOWED_ORIGINS=http://127.0.0.1:8787
+          MAIL_TRANSPORT=smtp
+          MAIL_SEND_MODE=live
+          MAIL_SMTP_HOST=127.0.0.1
+          MAIL_SMTP_PORT=2525
+          MAIL_SMTP_SECURITY=none
+          EOF
+          docker run --rm --network host --env-file /tmp/image.env rolematch:check node src/scripts/migrate.js
+          docker run --rm --network host --env-file /tmp/image.env rolematch:check node src/scripts/createUser.js "Check Organisation" check@example.test "Check Person" "a-long-enough-password-1"
+          docker run -d --name api --network host --env-file /tmp/image.env -e ROLE=api rolematch:check
+          docker run -d --name worker --network host --env-file /tmp/image.env rolematch:check node src/worker.js
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:8787/api/health && break; sleep 2; done
+      - name: The whole product, over HTTP
+        working-directory: server
+        env:
+          ROLEMATCH_ENV_FILE: /dev/null
+          CHECK_BASE: http://127.0.0.1:8787
+          CHECK_EMAIL: check@example.test
+          CHECK_PASSWORD: a-long-enough-password-1
+          CHECK_INVITE_TO: invited@example.test
+          CHECK_FAKE_SMTP_PORT: "2525"
+          CHECK_PUBLIC_URL: https://live.rolematch.invalid
+        run: node --import tsx test/live/productCheck.ts
+      - name: What the containers said
+        if: ${{ !cancelled() }}
+        run: docker logs api 2>&1 | tail -40; docker logs worker 2>&1 | tail -40
+      - name: Stop the stack
+        if: always()
+        run: docker rm -f api worker; supabase stop --no-backup

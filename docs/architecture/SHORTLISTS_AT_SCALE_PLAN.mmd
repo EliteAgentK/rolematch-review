@@ -1,0 +1,19 @@
+flowchart TB
+  subgraph TODAY["TODAY (from the code, 10 Nov 2026)"]
+    direction TB
+    T1["Matching zone: choose a role"] --> T2["Who to match (MatchChooser): every candidate, a search box and tick boxes; no filter for status, job or department"]
+    T2 --> T3["The browser asks for one full match per person (Dashboard.tsx runShortlistMatch, 4 at a time); the page must stay open"]
+    T3 --> T4["Each new pair: one Sonnet match with deep thinking (about R1); 5,000 CVs = about R5,000 for one role"]
+    T4 --> T5["Results window, sorted (reviewOrder.ts); Shortlist and Not suitable per person"]
+    T5 --> T6["A person's status is per job (applications); the role panel has View shortlist; the candidate list's Status filter means any job"]
+  end
+  subgraph WILL["WILL BE"]
+    direction TB
+    W1["Matching zone: choose a role"] --> W2["Who to match: All, Shortlisted for this role, Not yet matched with this role, a status for this role, a department; Select all shown"]
+    W2 --> W3["One request; the server queues the work, inside the portal; the page can close; the board hears progress (pass section I)"]
+    W3 --> W5["Every candidate chosen: the same full Sonnet match as today, evidence graded strong, medium or weak; recorded matches reused, never run again"]
+    W5 --> W6["The top 50: compared head to head, must-have by must-have, by the same model; level where they are level; why each is above the next"]
+    W6 --> W7["Ranked results; how many new matches a run makes is shown before it starts; Shortlist and Not suitable per person"]
+    W7 --> W8["Role panel: a Shortlisted tab opening the same ranked view; candidate list: Status for the selected role; Overview and Needs attention count the same records"]
+  end
+  TODAY ~~~ WILL

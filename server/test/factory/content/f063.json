@@ -1,0 +1,160 @@
+{
+ "spec": {
+  "id": "f063",
+  "field": "electrical trades",
+  "role": "Electrician",
+  "seniority": "senior",
+  "years": 13,
+  "quality": "average",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "career-gap"
+  ],
+  "name": "Karabo Dlamini",
+  "city": "Polokwane"
+ },
+ "name": "Karabo Dlamini",
+ "email": "karabo.dlamini@example.test",
+ "phone": "081 555 1063",
+ "headline": "Senior Electrician | 13 Years Experience | Industrial & Commercial Electrical Systems",
+ "summary": "Experienced Senior Electrician with 13 years of hands-on experience in industrial, commercial, and public infrastructure electrical work. Proven track record in safety compliance, system maintenance, and team supervision across diverse environments in South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed electrical installations for industrial facilities in Limpopo, ensuring compliance with SANS 2040 and SANS 2041 standards.",
+    "Supervised team of 4 electricians on site, maintaining safety and quality of workmanship."
+   ],
+   "city": "Polokwane",
+   "company": "Makwetse Electrical Solutions",
+   "end": "2013-06",
+   "start": "2010-03",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Performed high-voltage switchgear maintenance and troubleshooting for mining operations in the North West province.",
+    "Coordinated with engineering teams to resolve power outages during peak production hours."
+   ],
+   "city": "Soweto",
+   "company": "Nkosi Power Systems",
+   "end": "2012-03",
+   "start": "2009-07",
+   "title": "Electrician Supervisor"
+  },
+  {
+   "bullets": [
+    "Installed and commissioned electrical systems for commercial buildings, including HVAC and fire alarm integration.",
+    "Conducted site audits and ensured compliance with national electrical safety regulations."
+   ],
+   "city": "Polokwane",
+   "company": "Tshwane Electrical Services",
+   "end": "2008-05",
+   "start": "2007-01",
+   "title": "Electrician"
+  },
+  {
+   "bullets": [
+    "Maintained and repaired electrical infrastructure in public housing projects, improving energy efficiency by 15%.",
+    "Trained junior electricians in safe work practices and use of diagnostic tools."
+   ],
+   "city": "Polokwane",
+   "company": "Bulawayo Power & Maintenance",
+   "end": "2005-08",
+   "start": "2003-04",
+   "title": "Electrician"
+  },
+  {
+   "bullets": [
+    "Executed electrical works for a large-scale industrial complex, including motor control circuits and grounding systems.",
+    "Prepared technical reports and maintenance logs for audit and compliance purposes."
+   ],
+   "city": "Polokwane",
+   "company": "Limpopo Electrical Works",
+   "end": "2002-12",
+   "start": "2001-09",
+   "title": "Electrician"
+  },
+  {
+   "bullets": [
+    "Supported electrical installations in rural clinics, ensuring reliable power supply and safety compliance.",
+    "Collaborated with health officials to meet power infrastructure requirements for medical equipment."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Power Services",
+   "end": "2000-03",
+   "start": "1998-06",
+   "title": "Electrician"
+  },
+  {
+   "bullets": [
+    "Installed and maintained electrical systems in schools and community centers, adhering to safety and accessibility standards.",
+    "Identified and resolved recurring faults in distribution panels, reducing downtime by 25%."
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Electrical Services",
+   "end": "1997-09",
+   "start": "1995-03",
+   "title": "Electrician"
+  },
+  {
+   "bullets": [
+    "Provided on-site electrical support for municipal infrastructure projects, including street lighting and public buildings.",
+    "Conducted regular inspections and preventive maintenance to ensure system longevity."
+   ],
+   "city": "Polokwane",
+   "company": "Mokhotlong Electrical Contractors",
+   "end": "Present",
+   "start": "1994-01",
+   "title": "Senior Electrician"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Engineering (Electrical)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "National Diploma in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Electrical Engineering",
+   "name": "Advanced Electrical Installation and Maintenance Certification",
+   "year": 2018
+  },
+  {
+   "issuer": "Nelspruit College of Technology",
+   "name": "National Certificate: Electrical Installation (Level 4)",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Electrical system design",
+  "Fault diagnosis and repair",
+  "Safety compliance (SANS standards)",
+  "Team leadership",
+  "Industrial and commercial installations"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Designed and implemented low-voltage lighting systems for a 500-unit residential development in Polokwane.",
+  "Led electrical upgrades for a municipal water treatment plant, improving system reliability by 30%."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:54:49.266Z"
+ }
+}

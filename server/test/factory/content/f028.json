@@ -1,0 +1,172 @@
+{
+ "spec": {
+  "id": "f028",
+  "field": "cybersecurity",
+  "role": "Security Analyst",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "career-change",
+   "abbreviations"
+  ],
+  "name": "Anika Mokoena",
+  "city": "Midrand"
+ },
+ "name": "Anika Mokoena",
+ "email": "anika.mokoena@example.test",
+ "phone": "051 555 1028",
+ "headline": "Mid-Level Cybersecurity Analyst | Threat Detection & Incident Response | K8s, SIEM, SQL, Splunk, ELK",
+ "summary": "Results-driven cybersecurity professional with 6 years of progressive experience transitioning from IT systems to cyber operations. Proven track record in threat detection, incident response, and secure infrastructure deployment in South African environments. Strong technical foundation in K8s, SIEM, and database security with measurable outcomes in performance, compliance, and risk reduction.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed SIEM (Splunk) for 300+ endpoints, reducing alert fatigue by 50% through rule optimization and correlation logic.",
+    "Automated incident triage using Python scripts and SQL queries, cutting mean time to respond (MTTR) from 45 to 22 minutes.",
+    "Led security operations for a mid-sized logistics firm with 150 employees and 200+ devices, achieving 99.9% uptime in 2023.",
+    "Conducted monthly vulnerability scans using Nessus and Wazuh, identifying 120+ issues and reducing high-risk items by 65%."
+   ],
+   "city": "Midrand",
+   "company": "Nkosi Security Solutions",
+   "end": "2023-06",
+   "start": "2018-03",
+   "title": "Security Operations Specialist"
+  },
+  {
+   "bullets": [
+    "Migrated legacy systems to K8s clusters using Kubernetes and Helm, improving containerized app performance by 30% and reducing downtime by 40%.",
+    "Designed and implemented a cloud access security policy (CASB) for AWS and Azure, reducing unauthorized access attempts by 80%.",
+    "Integrated SIEM with identity systems using SQL and API calls, enabling real-time user activity monitoring across 500+ users.",
+    "Led a cross-functional team to deploy endpoint detection and response (EDR) across 100+ devices, reducing malware incidents by 75%."
+   ],
+   "city": "Midrand",
+   "company": "African Tech Dynamics",
+   "end": "Present",
+   "start": "2023-07",
+   "title": "Mid-Level Cybersecurity Analyst"
+  },
+  {
+   "bullets": [
+    "Managed HR data security for 500+ employees using SQL and access controls, ensuring compliance with BEE and data privacy regulations.",
+    "Built a CRM security audit framework using Python and SQL, identifying 15+ data exposure risks and recommending fixes.",
+    "Conducted quarterly risk assessments for PM projects, aligning security with project timelines and reducing breaches by 30%.",
+    "Improved access governance by implementing role-based permissions in Active Directory, reducing insider threats by 45%."
+   ],
+   "city": "Johannesburg",
+   "company": "Vulcan Group Holdings",
+   "end": "2022-12",
+   "start": "2019-08",
+   "title": "IT Security Officer"
+  },
+  {
+   "bullets": [
+    "Supported ERP system migration from SAP to Oracle, ensuring data integrity and security during transition using SQL and backup scripts.",
+    "Performed system audits for financial reporting systems, ensuring compliance with IFRS and internal controls.",
+    "Led a team of 3 in a digital transformation project, improving system uptime from 95% to 99.8%.",
+    "Identified and resolved 12 critical SQL injection vulnerabilities in legacy applications, preventing potential data loss."
+   ],
+   "city": "Pretoria",
+   "company": "Makwerekere Enterprises",
+   "end": "2019-07",
+   "start": "2016-04",
+   "title": "Systems Analyst"
+  },
+  {
+   "bullets": [
+    "Maintained and supported a CRM system for 200+ users, ensuring 99.5% availability and zero downtime during peak periods.",
+    "Developed automated backup scripts using PowerShell and SQL, reducing recovery time from 4 hours to 15 minutes.",
+    "Conducted user training sessions on data handling and security protocols, increasing compliance awareness by 60%.",
+    "Improved system performance by 25% through database optimization using SQL Server Management Studio and indexing."
+   ],
+   "city": "Cape Town",
+   "company": "Oceanic Business Services",
+   "end": "2016-03",
+   "start": "2014-09",
+   "title": "CRM Systems Support Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Information Systems",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Information Systems",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  },
+  {
+   "institution": "Midrand College of Technology",
+   "qualification": "Certificate in IT Support and Operations",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Information Security",
+   "name": "Certified Cybersecurity Analyst (CCSA)",
+   "year": 2022
+  },
+  {
+   "issuer": "NCSA (National Cybersecurity Academy)",
+   "name": "Advanced Threat Detection & Response (ATDR)",
+   "year": 2
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Certificate in Cyber Risk Management",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Splunk",
+  "ELK Stack",
+  "Kubernetes (K8s)",
+  "SIEM",
+  "SQL",
+  "Nessus",
+  "Wazuh",
+  "Ansible",
+  "Burp Suite",
+  "OWASP ZAP",
+  "MITRE ATT&CK",
+  "Zero Trust",
+  "IAM",
+  "Incident Response",
+  "Vulnerability Management",
+  "Cloud Security",
+  "Access Control",
+  "Penetration Testing",
+  "Risk Assessment",
+  "BEE Compliance",
+  "IFRS",
+  "PM Integration"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed automated log correlation pipeline using Splunk and Python, reducing incident response time by 40% across 120+ servers in a financial services environment.",
+  "Built real-time threat monitoring dashboard with ELK stack and Grafana, improving visibility into 500+ endpoints and reducing false positives by 35%.",
+  "Conducted vulnerability assessments on 150+ K8s clusters using Nessus and Wazuh, identifying 180+ critical misconfigurations and reducing exposure by 60%.",
+  "Led incident response for 30+ breaches in 2023, using SIEM alerts and MITRE ATT&CK framework, achieving 98% containment within SLA.",
+  "Automated patch compliance checks via Ansible and SQL queries, ensuring 100% compliance across 200+ systems in a government client environment.",
+  "Deployed Zero Trust architecture in a public sector network, integrating IAM, firewall policies, and K8s RBAC, reducing lateral movement risk by 70%.",
+  "Performed penetration testing on cloud infrastructure using Burp Suite and OWASP ZAP, uncovering 45+ critical flaws and recommending 100% remediation."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:15:11.783Z"
+ }
+}

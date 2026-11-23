@@ -1,0 +1,132 @@
+{
+ "spec": {
+  "id": "f077",
+  "field": "accounting",
+  "role": "Financial Accountant",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "career-gap"
+  ],
+  "name": "Naledi Mahlangu",
+  "city": "Johannesburg"
+ },
+ "name": "Naledi Mahlangu",
+ "email": "naledi.mahlangu@example.test",
+ "phone": "061 555 1077",
+ "headline": "Junior Financial Accountant | South African Accounting Standards | Financial Reporting",
+ "summary": "Dedicated junior financial professional with 3 years of hands-on experience in accounting operations. Strong foundation in financial reporting and ledger management. Committed to accuracy and compliance in financial processes.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped with monthly closing.",
+    "Updated ledger entries."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Financial Services",
+   "end": "2021-03",
+   "start": "2019-06",
+   "title": "Financial Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped with budgeting processes.",
+    "Processed invoices and payments."
+   ],
+   "city": "Johannesburg",
+   "company": "Vosatla Group",
+   "end": "2023-08",
+   "start": "2022-04",
+   "title": "Junior Accountant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in financial statement preparation.",
+    "Maintained general ledger records."
+   ],
+   "city": "Johannesburg",
+   "company": "Makwetla Holdings",
+   "end": "2024-01",
+   "start": "2024-01",
+   "title": "Junior Financial Accountant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Supported financial analysis tasks.",
+    "Collaborated on variance reports."
+   ],
+   "city": "Johannesburg",
+   "company": "Sibonzi Business Solutions",
+   "end": "Present",
+   "start": "2025-07",
+   "title": "Junior Financial Accountant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Accounting)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Accounting Principles",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Chartered Accountants",
+   "name": "Diploma in Accounting Principles",
+   "year": 2020
+  },
+  {
+   "issuer": "National Institute of Financial Management",
+   "name": "Certificate in Financial Reporting",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Financial reporting",
+  "Ledger maintenance",
+  "Budgeting",
+  "Trial balance preparation",
+  "Accounting software (SAP, QuickBooks)",
+  "Excel (advanced)",
+  "Internal controls",
+  "GAAP compliance",
+  "Variance analysis",
+  "Audit support",
+  "Financial statement preparation",
+  "Data entry",
+  "Record keeping",
+  "Monthly closing",
+  "Financial data analysis"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led monthly financial reports for departmental budgets.",
+  "Assisted in preparing closing entries and trial balances.",
+  "Supported audit documentation for internal reviews."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:19:17.534Z"
+ }
+}

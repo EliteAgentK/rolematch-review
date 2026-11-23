@@ -1,0 +1,118 @@
+{
+ "CV0501": {
+  "name": "Nokuthula Madonsela",
+  "email": "nokuthulamadonsela.501@candidate.example",
+  "phone": "+27 00 501 8537",
+  "location": "Pretoria",
+  "title": "IT Support Analyst",
+  "skills": [
+   "Ticketing",
+   "Troubleshooting",
+   "Windows",
+   "Networking",
+   "Microsoft 365",
+   "Active Directory",
+   "Process improvement",
+   "Microsoft Teams"
+  ]
+ },
+ "CV0530": {
+  "name": "Mandisa Steyn",
+  "email": "mandisasteyn.530@candidate.example",
+  "phone": "+27 00 530 9610",
+  "location": "Pretoria",
+  "title": "Senior Office Administrator",
+  "skills": [
+   "Filing",
+   "Supplier coordination",
+   "Excel",
+   "Invoicing",
+   "Reception",
+   "Document control",
+   "Problem solving",
+   "Customer service"
+  ]
+ },
+ "CV0554": {
+  "name": "Shanice Davids",
+  "email": "shanicedavids.554@candidate.example",
+  "phone": "+27 00 554 0498",
+  "location": "Durban",
+  "title": "Warehouse Supervisor",
+  "skills": [
+   "Dispatch",
+   "WMS",
+   "Excel",
+   "Team coordination",
+   "Microsoft Teams",
+   "Presentation skills"
+  ]
+ },
+ "CV0525": {
+  "name": "Tebello Chauke",
+  "email": "tebellochauke.525@candidate.example",
+  "phone": "+27 00 525 9425",
+  "location": "Durban",
+  "title": "Junior Management Accountant",
+  "skills": [
+   "SAP",
+   "Budgeting",
+   "Power BI",
+   "Cost accounting",
+   "Forecasting",
+   "Excel",
+   "Customer service"
+  ]
+ },
+ "CV0519": {
+  "name": "Ricardo Ntuli",
+  "email": "ricardontuli.519@candidate.example",
+  "phone": "+27 00 519 9203",
+  "location": "Cape Town",
+  "title": "Senior Employee Benefits Analyst",
+  "skills": [
+   "Excel",
+   "Vendor liaison",
+   "HRIS",
+   "Reporting",
+   "Benefits administration",
+   "Reconciliations",
+   "Microsoft Teams",
+   "Presentation skills"
+  ]
+ },
+ "CV0502": {
+  "name": "Anathi Ramos",
+  "email": "anathiramos.502@candidate.example",
+  "phone": "+27 00 502 8574",
+  "location": "Rustenburg",
+  "title": "Senior Financial Accountant",
+  "skills": [
+   "General ledger",
+   "Month end",
+   "Reconciliations",
+   "Excel",
+   "IFRS",
+   "Sage",
+   "Stakeholder communication",
+   "Document control"
+  ]
+ },
+ "CV0503": {
+  "name": "Lesedi Manyathi",
+  "email": "lesedimanyathi.503@candidate.example",
+  "phone": "+27 00 503 8611",
+  "location": "Gqeberha",
+  "title": "Senior Company Secretariat Assistant",
+  "skills": [
+   "Attention to detail",
+   "Board packs",
+   "Records management",
+   "Minutes",
+   "Governance calendars",
+   "Microsoft 365",
+   "Data quality",
+   "Process improvement"
+  ]
+ }
+}

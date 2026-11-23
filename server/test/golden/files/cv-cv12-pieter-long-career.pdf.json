@@ -1,0 +1,977 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Pieter Lekota",
+  "role": "Operations Executive",
+  "skills": [
+   "Project management",
+   "Contract management",
+   "Budget control",
+   "Stakeholder reporting",
+   "Health and safety",
+   "Procurement"
+  ],
+  "experience": "30",
+  "location": "Pretoria, South Africa",
+  "email": "pieter.lekota@example.test",
+  "phone": "082 555 0111",
+  "workHistory": [
+   {
+    "company": "Karoo Mining",
+    "position": "Project Engineer",
+    "startDate": "Jan 1995",
+    "endDate": "Jun 1995",
+    "responsibilities": [
+     "Delivered project 1.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 1.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 1.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 1.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 1.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 1.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 1.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Cape Harbour Logistics",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 1995",
+    "endDate": "Dec 1995",
+    "responsibilities": [
+     "Delivered project 2.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 2.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 2.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 2.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 2.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Highveld Steel",
+    "position": "Operations Manager",
+    "startDate": "Jan 1996",
+    "endDate": "Jun 1996",
+    "responsibilities": [
+     "Delivered project 3.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 3.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 3.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 3.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 3.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 3.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 3.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Limpopo Agri",
+    "position": "Contracts Manager",
+    "startDate": "Jul 1996",
+    "endDate": "Dec 1996",
+    "responsibilities": [
+     "Delivered project 4.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 4.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 4.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 4.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 4.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 4.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 4.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Durban Freight",
+    "position": "Plant Manager",
+    "startDate": "Jan 1997",
+    "endDate": "Jun 1997",
+    "responsibilities": [
+     "Delivered project 5.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 5.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 5.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 5.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 5.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Tshwane Municipality",
+    "position": "Regional Manager",
+    "startDate": "Jul 1997",
+    "endDate": "Dec 1997",
+    "responsibilities": [
+     "Delivered project 6.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 6.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 6.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 6.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 6.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 6.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 6.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Gauteng Rail",
+    "position": "Project Engineer",
+    "startDate": "Jan 1998",
+    "endDate": "Jun 1998",
+    "responsibilities": [
+     "Delivered project 7.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 7.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 7.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 7.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 7.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 7.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 7.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed"
+    ]
+   },
+   {
+    "company": "Boland Wines",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 1998",
+    "endDate": "Dec 1998",
+    "responsibilities": [
+     "Delivered project 8.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 8.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 8.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 8.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 8.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 8.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Free State Grain",
+    "position": "Operations Manager",
+    "startDate": "Jan 1999",
+    "endDate": "Jun 1999",
+    "responsibilities": [
+     "Delivered project 9.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 9.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 9.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 9.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 9.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 9.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 9.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Namaqua Energy",
+    "position": "Contracts Manager",
+    "startDate": "Jul 1999",
+    "endDate": "Dec 1999",
+    "responsibilities": [
+     "Delivered project 10.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 10.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 10.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 10.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 10.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Karoo Mining",
+    "position": "Plant Manager",
+    "startDate": "Jan 2000",
+    "endDate": "Jun 2000",
+    "responsibilities": [
+     "Delivered project 11.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 11.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 11.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 11.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 11.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 11.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 11.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Cape Harbour Logistics",
+    "position": "Regional Manager",
+    "startDate": "Jul 2000",
+    "endDate": "Dec 2000",
+    "responsibilities": [
+     "Delivered project 12.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 12.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 12.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 12.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 12.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 12.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 12.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Highveld Steel",
+    "position": "Project Engineer",
+    "startDate": "Jan 2001",
+    "endDate": "Jun 2001",
+    "responsibilities": [
+     "Delivered project 13.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 13.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 13.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 13.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 13.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Limpopo Agri",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2001",
+    "endDate": "Dec 2001",
+    "responsibilities": [
+     "Delivered project 14.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 14.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 14.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 14.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 14.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 14.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 14.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Durban Freight",
+    "position": "Operations Manager",
+    "startDate": "Jan 2002",
+    "endDate": "Jun 2002",
+    "responsibilities": [
+     "Delivered project 15.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 15.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 15.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 15.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 15.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 15.6: coordinated contractors, kept the programme and budget under review,"
+    ]
+   },
+   {
+    "company": "Tshwane Municipality",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2002",
+    "endDate": "Dec 2002",
+    "responsibilities": [
+     "Delivered project 16.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 16.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 16.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 16.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 16.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 16.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 16.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Gauteng Rail",
+    "position": "Plant Manager",
+    "startDate": "Jan 2003",
+    "endDate": "Jun 2003",
+    "responsibilities": [
+     "Delivered project 17.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 17.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 17.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 17.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 17.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 17.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 17.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Boland Wines",
+    "position": "Regional Manager",
+    "startDate": "Jul 2003",
+    "endDate": "Dec 2003",
+    "responsibilities": [
+     "Delivered project 18.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 18.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 18.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 18.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 18.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Free State Grain",
+    "position": "Project Engineer",
+    "startDate": "Jan 2004",
+    "endDate": "Jun 2004",
+    "responsibilities": [
+     "Delivered project 19.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 19.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 19.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 19.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 19.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 19.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 19.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Namaqua Energy",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2004",
+    "endDate": "Dec 2004",
+    "responsibilities": [
+     "Delivered project 20.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 20.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 20.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 20.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 20.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 20.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 20.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed"
+    ]
+   },
+   {
+    "company": "Karoo Mining",
+    "position": "Operations Manager",
+    "startDate": "Jan 2005",
+    "endDate": "Jun 2005",
+    "responsibilities": [
+     "Delivered project 21.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 21.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 21.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 21.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 21.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 21.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Cape Harbour Logistics",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2005",
+    "endDate": "Dec 2005",
+    "responsibilities": [
+     "Delivered project 22.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 22.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 22.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 22.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 22.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 22.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 22.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Highveld Steel",
+    "position": "Plant Manager",
+    "startDate": "Jan 2006",
+    "endDate": "Jun 2006",
+    "responsibilities": [
+     "Delivered project 23.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 23.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 23.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 23.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 23.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Limpopo Agri",
+    "position": "Regional Manager",
+    "startDate": "Jul 2006",
+    "endDate": "Dec 2006",
+    "responsibilities": [
+     "Delivered project 24.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 24.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 24.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 24.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 24.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 24.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 24.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Durban Freight",
+    "position": "Project Engineer",
+    "startDate": "Jan 2007",
+    "endDate": "Jun 2007",
+    "responsibilities": [
+     "Delivered project 25.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 25.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 25.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 25.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 25.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 25.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 25.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Tshwane Municipality",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2007",
+    "endDate": "Dec 2007",
+    "responsibilities": [
+     "Delivered project 26.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 26.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 26.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 26.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 26.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Gauteng Rail",
+    "position": "Operations Manager",
+    "startDate": "Jan 2008",
+    "endDate": "Jun 2008",
+    "responsibilities": [
+     "Delivered project 27.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 27.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 27.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 27.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 27.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 27.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 27.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Boland Wines",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2008",
+    "endDate": "Dec 2008",
+    "responsibilities": [
+     "Delivered project 28.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 28.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 28.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 28.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 28.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 28.6: coordinated contractors, kept the programme and budget under review,"
+    ]
+   },
+   {
+    "company": "Free State Grain",
+    "position": "Plant Manager",
+    "startDate": "Jan 2009",
+    "endDate": "Jun 2009",
+    "responsibilities": [
+     "Delivered project 29.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 29.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 29.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 29.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 29.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 29.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 29.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Namaqua Energy",
+    "position": "Regional Manager",
+    "startDate": "Jul 2009",
+    "endDate": "Dec 2009",
+    "responsibilities": [
+     "Delivered project 30.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 30.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 30.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 30.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 30.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 30.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 30.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Karoo Mining",
+    "position": "Project Engineer",
+    "startDate": "Jan 2010",
+    "endDate": "Jun 2010",
+    "responsibilities": [
+     "Delivered project 31.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 31.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 31.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 31.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 31.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Cape Harbour Logistics",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2010",
+    "endDate": "Dec 2010",
+    "responsibilities": [
+     "Delivered project 32.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 32.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 32.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 32.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 32.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 32.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 32.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Highveld Steel",
+    "position": "Operations Manager",
+    "startDate": "Jan 2011",
+    "endDate": "Jun 2011",
+    "responsibilities": [
+     "Delivered project 33.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 33.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 33.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 33.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 33.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 33.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 33.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed"
+    ]
+   },
+   {
+    "company": "Limpopo Agri",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2011",
+    "endDate": "Dec 2011",
+    "responsibilities": [
+     "Delivered project 34.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 34.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 34.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 34.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 34.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 34.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Durban Freight",
+    "position": "Plant Manager",
+    "startDate": "Jan 2012",
+    "endDate": "Jun 2012",
+    "responsibilities": [
+     "Delivered project 35.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 35.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 35.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 35.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 35.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 35.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 35.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Tshwane Municipality",
+    "position": "Regional Manager",
+    "startDate": "Jul 2012",
+    "endDate": "Dec 2012",
+    "responsibilities": [
+     "Delivered project 36.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 36.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 36.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 36.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 36.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Gauteng Rail",
+    "position": "Project Engineer",
+    "startDate": "Jan 2013",
+    "endDate": "Jun 2013",
+    "responsibilities": [
+     "Delivered project 37.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 37.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 37.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 37.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 37.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 37.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 37.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Boland Wines",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2013",
+    "endDate": "Dec 2013",
+    "responsibilities": [
+     "Delivered project 38.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 38.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 38.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 38.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 38.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 38.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 38.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Free State Grain",
+    "position": "Operations Manager",
+    "startDate": "Jan 2014",
+    "endDate": "Jun 2014",
+    "responsibilities": [
+     "Delivered project 39.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 39.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 39.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 39.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 39.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Namaqua Energy",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2014",
+    "endDate": "Dec 2014",
+    "responsibilities": [
+     "Delivered project 40.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 40.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 40.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 40.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 40.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 40.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 40.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Karoo Mining",
+    "position": "Plant Manager",
+    "startDate": "Jan 2015",
+    "endDate": "Jun 2015",
+    "responsibilities": [
+     "Delivered project 41.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 41.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 41.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 41.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 41.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 41.6: coordinated contractors, kept the programme and budget under review,"
+    ]
+   },
+   {
+    "company": "Cape Harbour Logistics",
+    "position": "Regional Manager",
+    "startDate": "Jul 2015",
+    "endDate": "Dec 2015",
+    "responsibilities": [
+     "Delivered project 42.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 42.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 42.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 42.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 42.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 42.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 42.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Highveld Steel",
+    "position": "Project Engineer",
+    "startDate": "Jan 2016",
+    "endDate": "Jun 2016",
+    "responsibilities": [
+     "Delivered project 43.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 43.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 43.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 43.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 43.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 43.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 43.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Limpopo Agri",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2016",
+    "endDate": "Dec 2016",
+    "responsibilities": [
+     "Delivered project 44.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 44.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 44.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 44.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 44.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Durban Freight",
+    "position": "Operations Manager",
+    "startDate": "Jan 2017",
+    "endDate": "Jun 2017",
+    "responsibilities": [
+     "Delivered project 45.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 45.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 45.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 45.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 45.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 45.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 45.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Tshwane Municipality",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2017",
+    "endDate": "Dec 2017",
+    "responsibilities": [
+     "Delivered project 46.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 46.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 46.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 46.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 46.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 46.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 46.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed"
+    ]
+   },
+   {
+    "company": "Gauteng Rail",
+    "position": "Plant Manager",
+    "startDate": "Jan 2018",
+    "endDate": "Jun 2018",
+    "responsibilities": [
+     "Delivered project 47.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 47.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 47.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 47.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 47.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 47.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Boland Wines",
+    "position": "Regional Manager",
+    "startDate": "Jul 2018",
+    "endDate": "Dec 2018",
+    "responsibilities": [
+     "Delivered project 48.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 48.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 48.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 48.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 48.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 48.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 48.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Free State Grain",
+    "position": "Project Engineer",
+    "startDate": "Jan 2019",
+    "endDate": "Jun 2019",
+    "responsibilities": [
+     "Delivered project 49.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 49.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 49.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 49.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 49.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Namaqua Energy",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2019",
+    "endDate": "Dec 2019",
+    "responsibilities": [
+     "Delivered project 50.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 50.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 50.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 50.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 50.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 50.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 50.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Karoo Mining",
+    "position": "Operations Manager",
+    "startDate": "Jan 2020",
+    "endDate": "Jun 2020",
+    "responsibilities": [
+     "Delivered project 51.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 51.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 51.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 51.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 51.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 51.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 51.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Cape Harbour Logistics",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2020",
+    "endDate": "Dec 2020",
+    "responsibilities": [
+     "Delivered project 52.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 52.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 52.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 52.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 52.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Highveld Steel",
+    "position": "Plant Manager",
+    "startDate": "Jan 2021",
+    "endDate": "Jun 2021",
+    "responsibilities": [
+     "Delivered project 53.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 53.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 53.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 53.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 53.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 53.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 53.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Limpopo Agri",
+    "position": "Regional Manager",
+    "startDate": "Jul 2021",
+    "endDate": "Dec 2021",
+    "responsibilities": [
+     "Delivered project 54.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 54.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 54.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 54.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 54.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 54.6: coordinated contractors, kept the programme and budget under review,"
+    ]
+   },
+   {
+    "company": "Durban Freight",
+    "position": "Project Engineer",
+    "startDate": "Jan 2022",
+    "endDate": "Jun 2022",
+    "responsibilities": [
+     "Delivered project 55.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 55.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 55.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 55.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 55.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 55.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 55.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Tshwane Municipality",
+    "position": "Senior Project Engineer",
+    "startDate": "Jul 2022",
+    "endDate": "Dec 2022",
+    "responsibilities": [
+     "Delivered project 56.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 56.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 56.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 56.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 56.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 56.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 56.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Gauteng Rail",
+    "position": "Operations Manager",
+    "startDate": "Jan 2023",
+    "endDate": "Jun 2023",
+    "responsibilities": [
+     "Delivered project 57.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 57.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 57.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 57.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 57.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Boland Wines",
+    "position": "Contracts Manager",
+    "startDate": "Jul 2023",
+    "endDate": "Dec 2023",
+    "responsibilities": [
+     "Delivered project 58.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 58.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 58.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 58.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 58.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 58.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 58.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   },
+   {
+    "company": "Free State Grain",
+    "position": "Plant Manager",
+    "startDate": "Jan 2024",
+    "endDate": "Jun 2024",
+    "responsibilities": [
+     "Delivered project 59.1: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 59.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 59.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 59.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 59.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 59.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 59.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed"
+    ]
+   },
+   {
+    "company": "Namaqua Energy",
+    "position": "Regional Manager",
+    "startDate": "Jul 2024",
+    "endDate": "Dec 2024",
+    "responsibilities": [
+     "Delivered project 60.2: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 60.3: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 60.4: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 60.5: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 60.6: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines.",
+     "Delivered project 60.7: coordinated contractors, kept the programme and budget under review, reported weekly to the executive committee and resolved site safety findings within agreed deadlines."
+    ]
+   }
+  ],
+  "summary": "Operations executive with three decades of experience delivering large infrastructure and logistics programmes across mining, rail, energy and agriculture.",
+  "education": [
+   {
+    "degree": "BEng Civil Engineering",
+    "institution": "University of Pretoria",
+    "year": "1994",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "1994, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 6,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 60,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Kevin Naidoo",
+  "role": "Junior DevOps Engineer",
+  "skills": [
+   "AWS",
+   "Docker",
+   "Kubernetes",
+   "Terraform",
+   "Linux",
+   "Bash",
+   "Python",
+   "GitHub Actions",
+   "GitHub"
+  ],
+  "experience": "1",
+  "location": "Johannesburg, South Africa",
+  "email": "kevin.naidoo@example.test",
+  "phone": "078 555 0109",
+  "workHistory": [
+   {
+    "company": "Orbit Systems",
+    "position": "Junior DevOps Engineer",
+    "startDate": "Jul 2025",
+    "endDate": "Present",
+    "responsibilities": [
+     "Maintain CI pipelines in GitHub Actions.",
+     "Deploy services to AWS under the guidance of senior engineers.",
+     "Write Bash scripts to automate server housekeeping."
+    ]
+   }
+  ],
+  "summary": "Recent graduate with a year and a half of experience in a platform team. Keen to grow in cloud engineering.",
+  "education": [
+   {
+    "degree": "BSc Information Technology",
+    "institution": "University of Johannesburg",
+    "year": "2024",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2024, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 9,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 1,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

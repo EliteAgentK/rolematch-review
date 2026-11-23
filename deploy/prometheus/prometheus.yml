@@ -1,0 +1,23 @@
+# Prometheus on the PC (docs/ops/TRENDS_AND_LOAD.md). Installed by deploy/pc/prometheus.sh, which puts the API's port in place of __API_PORT__.
+# Both targets and Prometheus itself listen on 127.0.0.1 only. The operator token is read from a root-made file given to this container alone.
+global:
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  evaluation_interval: 30s
+
+rule_files:
+  - /etc/prometheus/rules.yml
+
+scrape_configs:
+  # RoleMatch's own numbers (server/src/metrics.ts): counts, ages, durations and states, nothing personal.
+  - job_name: rolematch
+    metrics_path: /api/ops/metrics
+    authorization:
+      type: Bearer
+      credentials_file: /etc/prometheus/ops-token
+    static_configs:
+      - targets: ["127.0.0.1:__API_PORT__"]
+  # The PC itself: disk, memory and processors (node-exporter, deploy/pc/prometheus.sh).
+  - job_name: pc
+    static_configs:
+      - targets: ["127.0.0.1:9100"]

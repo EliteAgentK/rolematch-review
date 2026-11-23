@@ -1,0 +1,150 @@
+{
+ "spec": {
+  "id": "f074",
+  "field": "data and analytics",
+  "role": "Data Analyst",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "buzzwords"
+  ],
+  "name": "Nomvula Pillay",
+  "city": "Pretoria"
+ },
+ "name": "Nomvula Pillay",
+ "email": "nomvula.pillay@example.test",
+ "phone": "031 555 1074",
+ "headline": "Dynamic Executive Data Analyst | Results-Driven | Team Player | Data & Analytics Synergy",
+ "summary": "Results-driven executive with 19 years of dynamic data experience. Proven synergy in data analytics, team collaboration, and strategic decision support. Adept at transforming raw data into actionable insights for business growth.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Managed data workflows.",
+    "Supported team with data insights."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Data Solutions",
+   "end": "2026-10",
+   "start": "2018-03",
+   "title": "Senior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Collaborated on data strategy.",
+    "Improved data visibility for leadership."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Analytics Group",
+   "end": "Present",
+   "start": "2015-07",
+   "title": "Executive Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Maintained data integrity.",
+    "Assisted in KPI monitoring."
+   ],
+   "city": "Pretoria",
+   "company": "African Insight Systems",
+   "end": "2018-02",
+   "start": "2012-04",
+   "title": "Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Performed data audits.",
+    "Contributed to data governance."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Data Services",
+   "end": "2012-03",
+   "start": "2008-06",
+   "title": "Junior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Supported data collection.",
+    "Helped with data visualisation."
+   ],
+   "city": "Pretoria",
+   "company": "DataFlow Pretoria",
+   "end": "2008-05",
+   "start": "2005-09",
+   "title": "Data Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Statistics",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Information Technology",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Data Science",
+   "name": "Advanced Data Analytics Certification",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Certificate in Business Analytics",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "SQL",
+  "Excel (advanced)",
+  "Power BI",
+  "Python (basic)",
+  "Tableau",
+  "Data cleaning",
+  "Statistical analysis",
+  "Data modelling",
+  "Data validation",
+  "Dashboard design",
+  "Data governance",
+  "KPI tracking",
+  "Data integration",
+  "ETL processes",
+  "Data quality",
+  "Business intelligence",
+  "Data storytelling",
+  "Data architecture",
+  "Data strategy",
+  "Data compliance",
+  "Data security"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [
+  "Developed real-time dashboards for operational performance tracking.",
+  "Optimised data pipelines to reduce processing time by 30%.",
+  "Led cross-functional data initiatives to improve decision-making synergy."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:14:38.523Z"
+ }
+}

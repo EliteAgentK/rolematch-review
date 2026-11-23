@@ -1,0 +1,126 @@
+{
+ "spec": {
+  "id": "f045",
+  "field": "legal",
+  "role": "Legal Advisor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "many-short-roles"
+  ],
+  "name": "Megan Coetzee",
+  "city": "Johannesburg"
+ },
+ "name": "Megan Coetzee",
+ "email": "megan.coetzee@example.test",
+ "phone": "061 555 1045",
+ "headline": "Junior Legal Advisor with 4 years of experience in corporate compliance, contract review, and regulatory affairs in South African law.",
+ "summary": "Dedicated legal professional with hands-on experience in corporate and compliance law, focused on practical legal solutions for SMEs and startups in South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Reviewed and drafted 50+ commercial contracts for SMEs, ensuring compliance with the Companies Act and Consumer Protection Act.",
+    "Assisted in preparing compliance reports for regulatory bodies, improving audit readiness by 30%."
+   ],
+   "city": "Johannesburg",
+   "company": "Nkosi Legal Services",
+   "end": "2023-04",
+   "start": "2022-07",
+   "title": "Legal Assistant"
+  },
+  {
+   "bullets": [
+    "Conducted due diligence on startup ventures, identifying legal risks and drafting risk mitigation clauses.",
+    "Supported legal team in drafting terms of service and privacy policies aligned with the POPIA framework."
+   ],
+   "city": "Johannesburg",
+   "company": "African Innovation Hub",
+   "end": "2023-09",
+   "start": "2023-01",
+   "title": "Junior Legal Advisor"
+  },
+  {
+   "bullets": [
+    "Prepared and filed applications for business registrations under the Companies Act, reducing processing time by 25%.",
+    "Collaborated with finance and operations to ensure legal alignment of internal policies and procedures."
+   ],
+   "city": "Johannesburg",
+   "company": "Savanna Business Solutions",
+   "end": "2024-03",
+   "start": "2023-05",
+   "title": "Legal Coordinator"
+  },
+  {
+   "bullets": [
+    "Reviewed and advised on employment contracts, ensuring adherence to the Labour Relations Act and basic conditions.",
+    "Identified and resolved 12+ compliance issues in workplace policies, reducing legal exposure."
+   ],
+   "city": "Johannesburg",
+   "company": "Mzansi HR Partners",
+   "end": "2025-08",
+   "start": "2024-07",
+   "title": "Junior Legal Advisor"
+  },
+  {
+   "bullets": [
+    "Drafted and managed regulatory submissions for environmental compliance, aligning with the National Environmental Management Act.",
+    "Supported legal team in preparing responses to government inquiries on corporate governance."
+   ],
+   "city": "Johannesburg",
+   "company": "Verdant Compliance Group",
+   "end": "Present",
+   "start": "2025-10",
+   "title": "Junior Legal Advisor"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Laws (LLB)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Wits College of Law",
+   "qualification": "Postgraduate Certificate in Legal Practice",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2021
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Laws (LLB)",
+   "year": 2020
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Postgraduate Certificate in Legal Practice",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Contract drafting",
+  "Regulatory compliance",
+  "Corporate governance",
+  "Legal research",
+  "Drafting policy documents",
+  "Due diligence",
+  "POPIA and Labour Relations Act application"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:31:38.936Z"
+ }
+}

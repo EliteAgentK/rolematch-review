@@ -1,0 +1,169 @@
+{
+ "spec": {
+  "id": "f044",
+  "field": "project management",
+  "role": "Project Manager",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "not-completed"
+  ],
+  "name": "Elize Molefe",
+  "city": "Midrand"
+ },
+ "name": "Elize Molefe",
+ "email": "elize.molefe@example.test",
+ "phone": "051 555 1044",
+ "headline": "Mid-level Project Manager | South African Project Delivery | Agile & Waterfall Experience",
+ "summary": "Experienced Project Manager with 7 years in diverse project environments. Skilled in delivery, planning, and team coordination. Strong in both technical and client-facing project execution.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with delivery timelines.",
+    "Managed daily operations and team coordination."
+   ],
+   "city": "Midrand",
+   "company": "TechNova Solutions",
+   "end": "Present",
+   "start": "2023-04",
+   "title": "Project Lead"
+  },
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with delivery timelines.",
+    "Managed daily operations and team coordination."
+   ],
+   "city": "Johannesburg",
+   "company": "BuildRight Group",
+   "end": "2023-04",
+   "start": "2021-03",
+   "title": "Project Manager"
+  },
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with delivery timelines.",
+    "Managed daily operations and team coordination."
+   ],
+   "city": "Pretoria",
+   "company": "UrbanLink Infrastructure",
+   "end": "2021-03",
+   "start": "2019-07",
+   "title": "Senior Project Coordinator"
+  },
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with delivery timelines.",
+    "Managed daily operations and team coordination."
+   ],
+   "city": "Cape Town",
+   "company": "MetroBuild Services",
+   "end": "2019-07",
+   "start": "2017-02",
+   "title": "Project Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with delivery timelines.",
+    "Managed daily operations and team coordination."
+   ],
+   "city": "Durban",
+   "company": "GreenPath Development",
+   "end": "2017-02",
+   "start": "2015-09",
+   "title": "Project Support Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with delivery timelines.",
+    "Managed daily operations and team coordination."
+   ],
+   "city": "Sandton",
+   "company": "FutureBuild Projects",
+   "end": "2015-09",
+   "start": "2014-03",
+   "title": "Project Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Project Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Construction Project Management",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "Project Management Institute (PMI)",
+   "name": "PMP Certification",
+   "year": 2022
+  },
+  {
+   "issuer": "South African Institute of Management",
+   "name": "Advanced Project Leadership Certificate",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "Agile Methodologies",
+  "Waterfall Processes",
+  "Risk Assessment",
+  "Budget Planning",
+  "Stakeholder Engagement",
+  "Team Leadership",
+  "Scope Management",
+  "Schedule Development",
+  "Change Control",
+  "Project Documentation",
+  "Communication Tools",
+  "MS Project",
+  "Jira",
+  "Confluence",
+  "PowerPoint",
+  "Excel",
+  "Team Motivation",
+  "Conflict Resolution",
+  "Process Improvement",
+  "Vendor Coordination",
+  "Quality Assurance",
+  "Performance Tracking",
+  "Client Reporting",
+  "Time Management",
+  "Problem Solving"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "2023-04 to Present: Project Lead, TechNova Solutions – Midrand, Gauteng",
+  "2021-03 to 2023-04: Project Manager, BuildRight Group – Johannesburg",
+  "2019-07 to 2021-03: Senior Project Coordinator, UrbanLink Infrastructure – Pretoria",
+  "2017-02 to 2019-07: Project Assistant, MetroBuild Services – Cape Town",
+  "2015-09 to 2017-02: Project Support Officer, GreenPath Development – Durban",
+  "2014-03 to 2015-09: Project Intern, FutureBuild Projects – Sandton"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:30:22.918Z"
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "spec": {
+  "id": "f043",
+  "field": "marketing",
+  "role": "Digital Marketing Specialist",
+  "seniority": "senior",
+  "years": 11,
+  "quality": "rich",
+  "layout": "table",
+  "format": "docx",
+  "quirks": [
+   "prose-history",
+   "career-gap"
+  ],
+  "name": "Lindiwe Khumalo",
+  "city": "Polokwane"
+ },
+ "name": "Lindiwe Khumalo",
+ "email": "lindiwe.khumalo@example.test",
+ "phone": "041 555 1043",
+ "headline": "Senior Digital Marketing Specialist | 11 Years Experience | Data-Driven Campaigns | South African Market Expertise",
+ "summary": "Results-driven Senior Digital Marketing Specialist with 11 years of experience in South African markets. Proven track record in driving measurable growth through data-informed campaigns, automation, and audience targeting. Expertise in B2B and B2C digital strategies across diverse industries.",
+ "roles": [
+  {
+   "bullets": [
+    "Led end-to-end digital campaigns for 15+ products, using Google Ads, Meta Business Suite, and HubSpot, increasing conversion by 42% in Q3 2020.",
+    "Optimized SEO strategy across 12 product pages, improving organic traffic by 68% in 6 months using SEMrush and Ahrefs.",
+    "Managed social media content calendar for 3 brands, growing engagement by 55% on Instagram and Facebook via targeted content planning.",
+    "Built and maintained a CRM system in HubSpot, reducing customer acquisition cost by 23% through better lead scoring and segmentation.",
+    "Conducted A/B testing on email campaigns using Mailchimp, improving open rates by 34% and click-through rates by 28%.",
+    "Analyzed 500+ customer journey touchpoints using Google Analytics, identifying drop-off points and reducing bounce rate by 31%."
+   ],
+   "city": "Polokwane",
+   "company": "Nkandla Digital Solutions",
+   "end": "2020-06",
+   "start": "2015-03",
+   "title": "Digital Marketing Manager"
+  },
+  {
+   "bullets": [
+    "Directed digital strategy for a B2B SaaS platform, driving 3.2M in new leads annually using LinkedIn Ads and targeted content.",
+    "Launched a content marketing initiative with 12 blog posts/month, increasing website traffic by 110% in 10 months using Google Analytics and SEMrush.",
+    "Automated lead nurturing workflows in HubSpot, cutting response time by 40% and improving conversion from lead to sale by 29%.",
+    "Collaborated with sales to align messaging, resulting in a 38% increase in deal velocity and a 15% rise in average deal size.",
+    "Improved email deliverability by 45% through spam filter analysis and list hygiene, reducing unsubscribes by 33%.",
+    "Led a cross-functional team of 5, managing a $200K annual digital budget with a 12% ROI on all campaigns."
+   ],
+   "city": "Polokwane",
+   "company": "Vulindlela Tech Innovations",
+   "end": "2023-08",
+   "start": "2020-07",
+   "title": "Senior Digital Marketing Specialist"
+  },
+  {
+   "bullets": [
+    "Designed and executed a full-funnel digital campaign for a local agricultural brand, increasing sales by 78% in 90 days using TikTok and Facebook Ads.",
+    "Developed a mobile-first content strategy, growing app downloads by 140% in 3 months through targeted geo-fencing and push notifications.",
+    "Integrated Google Tag Manager with Shopify, reducing page load time by 35% and improving conversion by 22%.",
+    "Conducted competitor benchmarking using SimilarWeb and SpyFu, identifying 3 key market gaps and launching 3 new product lines.",
+    "Improved social media ROI by 50% through audience segmentation and dynamic ad creative testing using Meta Ads Manager.",
+    "Reduced ad spend waste by 30% through real-time performance monitoring and automated budget reallocation in Google Ads."
+   ],
+   "city": "Polokwane",
+   "company": "Mokhotlong AgriTech",
+   "end": "2024-03",
+   "start": "2023-09",
+   "title": "Digital Marketing Lead"
+  },
+  {
+   "bullets": [
+    "Directed digital transformation for a mid-sized retail chain, implementing a unified marketing platform across 12 stores using Marketo and Salesforce.",
+    "Launched a loyalty program with digital activation, increasing repeat purchases by 52% and customer lifetime value by 39%.",
+    "Built a data-driven content calendar using HubSpot and Google Analytics, increasing engagement by 61% across all channels.",
+    "Reduced customer acquisition cost by 37% through targeted retargeting and dynamic product ads in Google Display Network.",
+    "Improved cross-channel campaign performance by 44% through unified tracking and attribution modeling using Google Analytics 4.",
+    "Led a team of 3 marketers in a 6-month digital growth initiative, achieving 180% YoY growth in online sales."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Retail Group",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Senior Digital Marketing Specialist"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Marketing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "Diploma in Digital Media",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2006
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "University of Limpopo",
+   "name": "Digital Marketing Management",
+   "year": 2018
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Advanced Data Analytics for Marketing",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Google Analytics 4",
+  "Meta Business Suite",
+  "HubSpot CRM",
+  "Google Ads",
+  "SEO & SEM",
+  "A/B Testing",
+  "Content Strategy",
+  "Data Analytics",
+  "Social Media Advertising",
+  "Email Marketing Automation"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (proficient)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:29:23.929Z"
+ }
+}

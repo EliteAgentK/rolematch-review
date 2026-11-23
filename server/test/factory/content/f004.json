@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "id": "f004",
+  "field": "cybersecurity",
+  "role": "Security Analyst",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "buzzwords"
+  ],
+  "name": "Anika Mokoena",
+  "city": "Midrand"
+ },
+ "name": "Anika Mokoena",
+ "email": "anika.mokoena@example.test",
+ "phone": "051 555 1004",
+ "headline": "Dynamic, synergy-focused, results-driven Security Analyst | Team player | Proven in enterprise-scale threat detection and incident response",
+ "summary": "Dynamic, synergy-focused, results-driven Security Analyst | Team player | Proven in enterprise-scale threat detection and incident response",
+ "roles": [
+  {
+   "bullets": [
+    "Deployed SIEM (Splunk) across 120+ endpoints, reducing incident response time by 40% in 2023.",
+    "Conducted weekly vulnerability scans using Nessus on 300+ systems, identifying 180+ critical flaws.",
+    "Led incident response for 15+ breaches, achieving 99.8% containment within 15 minutes via SOAR workflows.",
+    "Automated log analysis with Python scripts, cutting manual review time from 8 hours to 1.5 hours per day.",
+    "Improved detection accuracy by 35% using custom rules in Splunk, reducing false positives by 60%.",
+    "Trained 12 team members on threat hunting techniques, increasing team detection capability by 50%."
+   ],
+   "city": "Midrand",
+   "company": "Nkosi CyberGuard Solutions",
+   "end": "2024-03",
+   "start": "2020-07",
+   "title": "Security Analyst"
+  },
+  {
+   "bullets": [
+    "Integrated CrowdStrike Falcon into enterprise environment, monitoring 500+ devices with 99.9% uptime.",
+    "Reduced phishing incidents by 70% through targeted email security policies and user training.",
+    "Built automated patch management workflow using Ansible, reducing patch cycles from 14 to 3 days.",
+    "Identified and mitigated a zero-day exploit in production, preventing Ransomware exposure.",
+    "Led quarterly penetration testing for 3 key business units, uncovering 22 critical vulnerabilities.",
+    "Improved endpoint detection accuracy by 45% via behavioral analytics in CrowdStrike."
+   ],
+   "city": "Midrand",
+   "company": "African CyberShield Ltd",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Mid-Level Security Analyst"
+  },
+  {
+   "bullets": [
+    "Configured and managed firewalls (Palo Alto) for 15+ sites, reducing unauthorized access by 90%.",
+    "Performed weekly forensic analysis on 50+ logs, identifying 12+ suspicious activities with 100% accuracy.",
+    "Automated compliance reporting using Power BI, delivering audit-ready reports in under 5 minutes.",
+    "Reduced mean time to detect (MTTD) from 12 hours to 45 minutes via real-time alert tuning.",
+    "Collaborated with IT to implement secure remote access, cutting remote breach incidents by 80%.",
+    "Conducted tabletop exercises for 4 major incidents, improving team coordination by 60%."
+   ],
+   "city": "Midrand",
+   "company": "TechSavvy Systems",
+   "end": "2024-03",
+   "start": "2019-05",
+   "title": "Security Operations Specialist"
+  },
+  {
+   "bullets": [
+    "Set up and managed a SIEM (QRadar) for a municipal network, monitoring 200+ devices in real time.",
+    "Reduced alert fatigue by 55% through rule optimization and correlation logic in QRadar.",
+    "Led a cross-functional team to implement a security awareness program, increasing user compliance by 70%.",
+    "Identified a lateral movement pattern in logs, preventing a potential data exfiltration.",
+    "Improved incident documentation process, reducing audit gaps from 15 to 2 days.",
+    "Conducted monthly risk assessments for 5 departments, identifying 30+ risks with mitigation plans."
+   ],
+   "city": "Midrand",
+   "company": "CityLink Infrastructure",
+   "end": "2020-06",
+   "start": "2017-08",
+   "title": "Junior Security Analyst"
+  },
+  {
+   "bullets": [
+    "Performed vulnerability assessments using OpenVAS on 100+ systems, identifying 85+ high-risk items.",
+    "Built a custom dashboard in Grafana to visualize threat trends across 50+ systems.",
+    "Reduced system downtime due to security incidents by 60% through proactive monitoring.",
+    "Conducted monthly security audits, improving compliance with ISO 27001 by 90%.",
+    "Trained 5 new hires on security protocols, reducing onboarding errors by 40%.",
+    "Improved patch management accuracy by 80% through automated workflows in Jenkins."
+   ],
+   "city": "Midrand",
+   "company": "Innovatech Solutions",
+   "end": "2019-04",
+   "start": "2016-03",
+   "title": "Security Associate"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Computer Science",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2015
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Network and Cybersecurity",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2013
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Cybersecurity",
+   "name": "Certified Cybersecurity Analyst (CCSA)",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Diploma in Information Security",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "SIEM (Splunk, QRadar, CrowdStrike)",
+  "Vulnerability Assessment (Nessus, OpenVAS)",
+  "Incident Response & Forensics",
+  "Automated Scripting (Python, Bash)",
+  "Compliance (ISO 27001, NIST)",
+  "Threat Hunting",
+  "SOAR Workflow Design",
+  "Network Security",
+  "Risk Assessment"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:37:03.420Z"
+ }
+}

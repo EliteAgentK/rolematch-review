@@ -1,0 +1,186 @@
+{
+ "spec": {
+  "id": "f026",
+  "field": "data and analytics",
+  "role": "Data Analyst",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "overlapping-contract"
+  ],
+  "name": "Nomvula Pillay",
+  "city": "Pretoria"
+ },
+ "name": "Nomvula Pillay",
+ "email": "nomvula.pillay@example.test",
+ "phone": "031 555 1026",
+ "headline": "Executive Data Analyst | 19+ years in data transformation and insight delivery",
+ "summary": "Results-driven data professional with 19 years of experience in data analysis, reporting, and insight delivery across diverse sectors. Strong background in data systems and business applications.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Managed data workflows.",
+    "Supported team with data queries."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Data Solutions",
+   "end": "2024-03",
+   "start": "2020-04",
+   "title": "Senior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Maintained data integrity."
+   ],
+   "city": "Pretoria",
+   "company": "DataFlow Dynamics",
+   "end": "2022-08",
+   "start": "2018-05",
+   "title": "Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Improved data visibility.",
+    "Collaborated on KPIs."
+   ],
+   "city": "Pretoria",
+   "company": "Vista Analytics Group",
+   "end": "2016-12",
+   "start": "2014-07",
+   "title": "Data Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Built dashboards for stakeholders.",
+    "Used data to support decisions."
+   ],
+   "city": "Pretoria",
+   "company": "TechBridge Solutions",
+   "end": "2012-09",
+   "start": "2010-03",
+   "title": "Junior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted with data collection.",
+    "Performed data cleaning tasks."
+   ],
+   "city": "Pretoria",
+   "company": "DataEdge Consultants",
+   "end": "2008-06",
+   "start": "2005-01",
+   "title": "Data Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Supported data projects.",
+    "Used Excel and Access for analysis."
+   ],
+   "city": "Pretoria",
+   "company": "Pretoria Data Services",
+   "end": "2003-11",
+   "start": "2001-04",
+   "title": "Data Officer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Managed data access protocols.",
+    "Worked on data governance tasks."
+   ],
+   "city": "Pretoria",
+   "company": "African Insight Analytics",
+   "end": "2000-07",
+   "start": "1998-02",
+   "title": "Data Coordinator"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Conducted data audits.",
+    "Delivered insights to management."
+   ],
+   "city": "Pretoria",
+   "company": "DataNova Ltd",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Executive Data Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "BSc (Hons) Statistics",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2002
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Information Technology",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2000
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Data Science",
+   "name": "Advanced Data Analytics Certification",
+   "year": 2020
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Diploma in Business Analytics",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "SQL",
+  "Python",
+  "Excel",
+  "Power BI",
+  "Tableau",
+  "Data cleaning",
+  "Data visualization",
+  "Statistical analysis",
+  "Data governance",
+  "KPI development",
+  "Data pipelines",
+  "ETL processes",
+  "Data quality",
+  "Business intelligence",
+  "Data modelling",
+  "Data security",
+  "Data integration",
+  "Data warehousing",
+  "Dashboard design",
+  "Data validation",
+  "Data architecture"
+ ],
+ "languages": [
+  "English",
+  "Afrikaans",
+  "isiZulu"
+ ],
+ "projects": [
+  "Led data pipeline upgrades for real-time reporting systems",
+  "Optimised dashboard performance using SQL and Python",
+  "Improved data accuracy by 30% through validation protocols"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:11:01.922Z"
+ }
+}

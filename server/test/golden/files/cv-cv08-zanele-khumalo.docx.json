@@ -1,0 +1,148 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Zanele Khumalo",
+  "role": "HR Generalist",
+  "skills": [
+   "Labour law",
+   "CCMA",
+   "Employee relations",
+   "Recruitment",
+   "Performance management",
+   "Onboarding",
+   "Compliance"
+  ],
+  "experience": "11",
+  "location": "Johannesburg, South Africa",
+  "email": "zanele.khumalo@example.test",
+  "phone": "073 555 0108",
+  "workHistory": [
+   {
+    "company": "Rand Auto Parts",
+    "position": "HR Manager",
+    "startDate": "2019",
+    "endDate": "Present",
+    "responsibilities": [
+     "Advise 12 line managers on discipline and grievances.",
+     "Represented the company at the CCMA in over 25 cases.",
+     "Introduced a quarterly performance review process."
+    ]
+   },
+   {
+    "company": "Gold Reef Services",
+    "position": "HR Officer",
+    "startDate": "2015",
+    "endDate": "2019",
+    "responsibilities": [
+     "Handled recruitment, onboarding and employee records.",
+     "Assisted with labour law compliance and disciplinary hearings."
+    ]
+   }
+  ],
+  "summary": "",
+  "education": [
+   {
+    "degree": "BA Industrial Psychology",
+    "institution": "University of Johannesburg",
+    "year": "2014",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2014, a year already past, is given as the year it ended"
+   },
+   {
+    "degree": "Certificate in Labour Relations",
+    "institution": "",
+    "year": "2018",
+    "type": "certificate",
+    "level": "Certificate",
+    "status": "completed",
+    "statusEvidence": "2018, a year already past, is given as the year it ended",
+    "validity": "unknown"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.55,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Summary heading",
+     "opening paragraph before the first heading",
+     "sentences anywhere (no headings in this CV)"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 7,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 2,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

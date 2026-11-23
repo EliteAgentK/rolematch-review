@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Every 5 minutes the Mac copies the changes in RoleMatch's encrypted database backup store from the PC (deploy/mac/collectDbRepo.sh).
+     Install: deploy/mac/install-agents.sh (copies the script out of ~/Documents, which background jobs may not read)
+     Remove:                      launchctl unload ~/Library/LaunchAgents/com.rolematch.db-repo-collect.plist && rm ~/Library/LaunchAgents/com.rolematch.db-repo-collect.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.rolematch.db-repo-collect</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/modizy/Documents/ChatGPT/Talent Hub/deploy/mac/collectDbRepo.sh</string>
+  </array>
+  <key>StartInterval</key><integer>300</integer>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/Users/modizy/RoleMatchBackups/db-repo-collect.log</string>
+  <key>StandardErrorPath</key><string>/Users/modizy/RoleMatchBackups/db-repo-collect.log</string>
+</dict>
+</plist>

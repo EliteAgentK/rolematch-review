@@ -1,0 +1,133 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Johan Pretorius",
+  "role": "Elektrisiën / Electrician",
+  "skills": [
+   "Wireman's licence",
+   "Code 08 rybewys",
+   "PLC programmering",
+   "Fault finding"
+  ],
+  "experience": "14",
+  "location": "Gqeberha, Oos-Kaap",
+  "email": "johan.pretorius@example.test",
+  "phone": "076 555 0107",
+  "workHistory": [
+   {
+    "company": "Algoa Industrial Services",
+    "position": "Elektrisiën",
+    "startDate": "Jan 2016",
+    "endDate": "Present",
+    "responsibilities": [
+     "Installasie en onderhoud van verdeelborde.",
+     "Foutopsporing op industriële masjinerie en PLC beheerpanele.",
+     "Uitreiking van sertifikate van nakoming."
+    ]
+   },
+   {
+    "company": "Kouga Contractors",
+    "position": "Leerling-elektrisiën",
+    "startDate": "Jan 2012",
+    "endDate": "Dec 2015",
+    "responsibilities": [
+     "Kabeltrek en bedrading op bouprojekte."
+    ]
+   }
+  ],
+  "summary": "Gekwalifiseerde elektrisiën met twaalf jaar ondervinding in kommersiële en industriële installasies.",
+  "education": [
+   {
+    "degree": "Ambagstoets (Trade test)",
+    "institution": "Hoërskool Despatch",
+    "year": "2015",
+    "type": "certificate",
+    "level": "Trade certificate",
+    "status": "completed",
+    "statusEvidence": "2015, a year already past, is given as the year it ended",
+    "validity": "unknown"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 4,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

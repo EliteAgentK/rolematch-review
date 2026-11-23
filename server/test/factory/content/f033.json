@@ -1,0 +1,120 @@
+{
+ "spec": {
+  "id": "f033",
+  "field": "insurance claims",
+  "role": "Claims Assessor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "professional-designation"
+  ],
+  "name": "Tshepo Jacobs",
+  "city": "Johannesburg"
+ },
+ "name": "Tshepo Jacobs",
+ "email": "tshepo.jacobs@example.test",
+ "phone": "021 555 1033",
+ "headline": "Junior Claims Assessor | Claims Investigation & Documentation | South African Insurance Sector",
+ "summary": "Dedicated junior claims professional with 4 years of hands-on experience in assessing and processing insurance claims across motor, property, and personal lines. Proven ability to manage high-volume claims with accuracy and compliance.",
+ "roles": [
+  {
+   "bullets": [
+    "Assessed and processed 150+ vehicle and property claims monthly, ensuring compliance with policy terms and underwriting guidelines.",
+    "Collated claim documentation, verified evidence, and prepared reports for senior assessors within 24 hours of submission."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Insurance Solutions",
+   "end": "2024-03",
+   "start": "2021-07",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Reduced claim processing time by 18% through standardised documentation workflows and improved data entry accuracy.",
+    "Identified inconsistencies in claim submissions, leading to a 12% reduction in fraudulent claims referrals."
+   ],
+   "city": "Johannesburg",
+   "company": "Vosat Insurance Group",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Junior Claims Assessor"
+  },
+  {
+   "bullets": [
+    "Conducted initial investigations on personal and motor claims, including damage assessment and third-party verification.",
+    "Maintained accurate digital claim records using ClaimFlow SA, ensuring audit readiness and compliance with NPA standards."
+   ],
+   "city": "Johannesburg",
+   "company": "Africar Assurance Ltd",
+   "end": "2021-06",
+   "start": "2019-03",
+   "title": "Claims Assistant"
+  },
+  {
+   "bullets": [
+    "Supported claims teams in processing high-volume claims during peak seasons, maintaining 99% accuracy in documentation.",
+    "Trained two new staff members on claim intake procedures and policy interpretation protocols."
+   ],
+   "city": "Johannesburg",
+   "company": "Makwetu Insurance Services",
+   "end": "2019-02",
+   "start": "2017-08",
+   "title": "Claims Support Officer"
+  },
+  {
+   "bullets": [
+    "Assisted in compiling claim data for quarterly performance reviews, identifying trends in claim types and causes.",
+    "Prepared summary reports for management on claim volume and resolution timelines."
+   ],
+   "city": "Johannesburg",
+   "company": "Sekhukhune Risk Management",
+   "end": "2017-07",
+   "start": "2016-09",
+   "title": "Claims Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Commerce (Insurance and Risk Management)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Insurance and Claims Processing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Insurance Professionals",
+   "name": "Certified Junior Claims Assessor (CJCA)",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "Claims investigation",
+  "Policy interpretation",
+  "Documentation and reporting",
+  "Data entry and compliance",
+  "Fraud detection basics",
+  "Digital claim systems (ClaimFlow SA, ClaimPro)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:19:01.205Z"
+ }
+}

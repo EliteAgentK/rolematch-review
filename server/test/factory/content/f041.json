@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "id": "f041",
+  "field": "retail management",
+  "role": "Store Manager",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "personal-details"
+  ],
+  "name": "Rajesh Steyn",
+  "city": "Johannesburg"
+ },
+ "name": "Rajesh Steyn",
+ "email": "rajesh.steyn@example.test",
+ "phone": "021 555 1041",
+ "headline": "Junior Store Manager | Retail Operations | Customer Experience",
+ "summary": "Dedicated junior store manager with 3 years of hands-on retail experience. Proven ability to manage daily operations, assist customers, and support team performance in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed daily store operations."
+   ],
+   "city": "Johannesburg",
+   "company": "CityBazaar Retail",
+   "end": "2024-03",
+   "start": "2022-07",
+   "title": "Store Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Assisted in daily store operations."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelsons Corner Store",
+   "end": "2023-09",
+   "start": "2022-01",
+   "title": "Junior Store Operator"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Supported team in daily tasks."
+   ],
+   "city": "Johannesburg",
+   "company": "VillaMart Stores",
+   "end": "Present",
+   "start": "2023-10",
+   "title": "Junior Store Manager"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Maintained store cleanliness."
+   ],
+   "city": "Johannesburg",
+   "company": "Makwetla Convenience",
+   "end": "2022-06",
+   "start": "2021-04",
+   "title": "Store Associate"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Assisted with stock checks."
+   ],
+   "city": "Johannesburg",
+   "company": "Savanna Market Outlets",
+   "end": "2021-03",
+   "start": "2020-08",
+   "title": "Retail Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (Retail Management)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African National Department of Education",
+   "name": "National Senior Certificate",
+   "year": 2018
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Diploma in Retail Operations",
+   "year": 2022
+  },
+  {
+   "issuer": "Cape Town College of Technology",
+   "name": "Certificate in Customer Service Excellence",
+   "year": -1
+  }
+ ],
+ "skills": [
+  "Inventory management",
+  "Team leadership",
+  "Sales performance",
+  "Customer service",
+  "Store operations",
+  "Stock control",
+  "Point of sale systems",
+  "Loss prevention",
+  "Daily reporting",
+  "Store layout",
+  "Budgeting",
+  "POS software",
+  "Team motivation",
+  "Sales targets",
+  "Customer retention",
+  "Store audits",
+  "Visual merchandising",
+  "Sales forecasting",
+  "Retail compliance",
+  "Stock rotation",
+  "Store safety",
+  "Customer feedback",
+  "Team coordination",
+  "Operational efficiency",
+  "Retail planning"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led inventory audits at local outlets.",
+  "Improved stock rotation processes.",
+  "Reduced out-of-stock incidents by 20%."
+ ],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:27:04.181Z"
+ }
+}

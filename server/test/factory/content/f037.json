@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "id": "f037",
+  "field": "mining engineering",
+  "role": "Mine Planning Engineer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "long-academic",
+   "personal-details"
+  ],
+  "name": "Bongani Adams",
+  "city": "Johannesburg"
+ },
+ "name": "Bongani Adams",
+ "email": "bongani.adams@example.test",
+ "phone": "061 555 1037",
+ "headline": "Junior Mine Planning Engineer | Resource Estimation | Mine Design | Geostatistics | South African Mining Environment",
+ "summary": "Junior Mine Planning Engineer with 2 years of hands-on experience in mine design, resource estimation, and 3D modeling. Proven ability to deliver accurate, cost-effective mine plans using industry-standard tools. Strong foundation in geostatistics and sustainable mining practices. Based in Johannesburg, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Built 3D mine plans in MineSight for a platinum project in the Bushveld, scaled to 100m x 100m blocks, improving extraction planning accuracy by 15%.",
+    "Used GOCAD to create a block model for a chromite deposit, achieving 95% consistency with drill data across 120 drill holes.",
+    "Collaborated with geologists to validate resource boundaries using Surfer and QGIS, reducing estimation errors by 22%.",
+    "Generated haul road and access routes in AutoCAD, reducing vehicle travel time by 14% in a 15km mine site.",
+    "Prepared mine plan updates monthly for a gold operation, reducing planning cycle time from 30 to 18 days using MineSight templates.",
+    "Conducted a mine plan review for a new underground operation, identifying 3 design flaws that reduced risk exposure by 30%."
+   ],
+   "city": "Johannesburg",
+   "company": "Amanzi Mining Solutions",
+   "end": "2024-08",
+   "start": "2022-03",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Developed a mine plan for a nickel project using MineSight, scaled to 50m x 50m blocks, increasing ore recovery by 11% in first quarter.",
+    "Integrated drilling data into a 3D model using GOCAD and Python, reducing manual input by 45% and improving data integrity.",
+    "Created a surface mining layout with optimized waste disposal zones using AutoCAD and GIS, cutting environmental impact by 20%.",
+    "Built a mine schedule in Excel with Gantt charts, improving project timeline visibility for stakeholders by 35%.",
+    "Conducted a feasibility analysis for a new open-cut mine, identifying a 15% cost saving through revised slope design.",
+    "Presented mine plan updates to senior engineers using MineSight visualizations, increasing team alignment by 40%."
+   ],
+   "city": "Johannesburg",
+   "company": "Vulcan Mining Group",
+   "end": "Present",
+   "start": "2024-09",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Supported mine planning for a coal operation using Surfer and QGIS, improving grade estimation accuracy by 18%.",
+    "Built a preliminary mine layout for a new project using GOCAD, reducing initial design time by 25%.",
+    "Validated drill data against block model outputs using statistical tools in Excel, achieving 94% consistency.",
+    "Assisted in preparing a mine plan for a feasibility study, contributing to a R5.2M budget saving through design optimization."
+   ],
+   "city": "Pretoria",
+   "company": "Klipschmidt Engineering",
+   "end": "2022-02",
+   "start": "2021-07",
+   "title": "Mine Planning Assistant"
+  },
+  {
+   "bullets": [
+    "Created a 3D mine model for a small-scale copper operation using GOCAD, scaled to 25m x 25m blocks, achieving 90% data match with field logs.",
+    "Used Surfer to generate contour maps for a mine site, improving surface design accuracy by 28%.",
+    "Prepared a basic mine plan for a student project, used in a university case study to demonstrate practical mine design principles."
+   ],
+   "city": "Durban",
+   "company": "Nelson Mining Consultants",
+   "end": "2021-06",
+   "start": "2020-09",
+   "title": "Mining Engineering Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "BEng (Hons) Mining Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Diploma in Mine Surveying and Geomatics",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Certificate in Sustainable Mining Practices",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Mining and Metallurgy (SAIMM)",
+   "name": "Advanced Mine Planning and Design Certificate",
+   "year": 2023
+  },
+  {
+   "issuer": "University of the Witwatersrand",
+   "name": "Certified in Geostatistical Interpolation for Resource Estimation",
+   "year": -1
+  },
+  {
+   "issuer": "Cape Town Institute of Technology",
+   "name": "Safety in Mining Operations Short Course",
+   "year": 2022
+  },
+  {
+   "issuer": "National Institute of Occupational Safety and Health (NIOSH)",
+   "name": "Mine Site Risk Assessment and Mitigation",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "MineSight",
+  "GOCAD",
+  "Surfer",
+  "AutoCAD",
+  "QGIS",
+  "Excel (Gantt, statistical analysis)",
+  "Geostatistics",
+  "Block modeling",
+  "Resource estimation",
+  "Mine planning",
+  "Haul road design",
+  "Mine schedule development",
+  "Drill data integration",
+  "Mine safety compliance"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed a 3D mine layout for a gold deposit in the Witwatersrand Basin using Surfer and MineSight, improving extraction efficiency by 12% over 6 months.",
+  "Built a block model for a copper project using GOCAD, achieving 98% accuracy in grade estimation through geostatistical validation.",
+  "Optimized haul road routing in a coal mine using AutoCAD and GIS, reducing transport costs by R120,000 annually.",
+  "Designed a surface mining plan for a lignite site using MineSight, cutting waste rock volume by 18% and increasing ore recovery by 10%.",
+  "Conducted a feasibility study for a new underground mine using MineSight and Excel, identifying a 20% reduction in capital expenditure through revised design.",
+  "Performed resource estimation using Kriging in Surfer, improving grade prediction accuracy from 78% to 92% in a nickel project.",
+  "Integrated drilling data into a mine plan using GOCAD and Python scripts, reducing data entry time by 40% and improving model consistency."
+ ],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:23:35.511Z"
+ }
+}

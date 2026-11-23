@@ -1,0 +1,131 @@
+{
+ "spec": {
+  "id": "f039",
+  "field": "electrical trades",
+  "role": "Electrician",
+  "seniority": "senior",
+  "years": 13,
+  "quality": "average",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "study-in-progress"
+  ],
+  "name": "Karabo Dlamini",
+  "city": "Polokwane"
+ },
+ "name": "Karabo Dlamini",
+ "email": "karabo.dlamini@example.test",
+ "phone": "081 555 1039",
+ "headline": "Senior Electrician | 13 Years Experience | Polokwane | Specialised in Industrial & Commercial Electrical Systems",
+ "summary": "Experienced Senior Electrician with 13 years of hands-on experience in industrial, commercial, and rural electrical projects. Proven track record in system installation, maintenance, and safety compliance. Currently pursuing a Bachelor of Science in Electrical Engineering at the University of Limpopo.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed electrical installations for a 50MW solar farm in Limpopo, ensuring compliance with SANS 2040 standards.",
+    "Supervised a team of 6 electricians in industrial maintenance operations, reducing downtime by 25%."
+   ],
+   "city": "Polokwane",
+   "company": "Mokolo Electrical Solutions",
+   "end": "2024-03",
+   "start": "2018-06",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Led electrical retrofit projects for commercial buildings, including load balancing and circuit reconfiguration.",
+    "Coordinated with architects and engineers to integrate electrical systems into building designs."
+   ],
+   "city": "Polokwane",
+   "company": "Nkosi Electrical Services",
+   "end": "2024-03",
+   "start": "2015-04",
+   "title": "Lead Electrician"
+  },
+  {
+   "bullets": [
+    "Maintained and repaired high-voltage systems in a manufacturing plant, ensuring uninterrupted operations.",
+    "Conducted electrical safety training for 50+ staff members annually."
+   ],
+   "city": "Polok-1",
+   "company": "Tshwane Power & Maintenance",
+   "end": "2024-03",
+   "start": "2012-08",
+   "title": "Electrician Supervisor"
+  },
+  {
+   "bullets": [
+    "Installed and commissioned electrical systems for new industrial facilities, including motor control circuits and grounding systems.",
+    "Performed site inspections and compliance checks for all electrical installations."
+   ],
+   "city": "Polokwane",
+   "company": "Bulawayo Electrical Works",
+   "end": "2024-03",
+   "start": "2010-01",
+   "title": "Electrician"
+  },
+  {
+   "bullets": [
+    "Supported electrical infrastructure projects in rural areas, improving access to power in underserved communities.",
+    "Collaborated with local authorities on grid extension and distribution upgrades."
+   ],
+   "city": "Polokwane",
+   "company": "Sekhukhune Power Development",
+   "end": "Present",
+   "start": "2009-05",
+   "title": "Field Electrician"
+  }
+ ],
+ "education": [
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "National Diploma in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Electrical Engineering",
+   "status": "in_progress",
+   "statusWords": "in progress, expected 2027",
+   "startYear": 2021
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Electrical Engineering",
+   "name": "Advanced Electrical Installation and Maintenance",
+   "year": 2020
+  },
+  {
+   "issuer": "National Skills Authority",
+   "name": "Level 6 Electrical Engineering (Electrical Installation)",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "High-voltage systems",
+  "Industrial electrical installations",
+  "Electrical safety compliance",
+  "Preventive maintenance",
+  "Team leadership",
+  "SANS 2040 standards",
+  "Circuit design and troubleshooting"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Tswana (conversational)"
+ ],
+ "projects": [
+  "Installed and maintained 150+ industrial electrical systems in mining and manufacturing facilities across Limpopo and Mpumalanga.",
+  "Led electrical upgrades for a municipal water treatment plant, improving system reliability by 30%.",
+  "Conducted safety audits and compliance checks for 20+ commercial buildings in Polokwane and Nelspruit.",
+  "Performed preventive maintenance on high-voltage switchgear and distribution panels in industrial settings."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:24:51.210Z"
+ }
+}

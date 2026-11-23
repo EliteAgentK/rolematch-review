@@ -1,0 +1,76 @@
+# The live environment on one free ARM server, 2 processors and 12 GB: docs/ops/LIVE_ENVIRONMENT.md. Supabase holds the database, sign-in and CV storage; everything else runs here.
+# Settings and secrets live only in /etc/rolematch/live.env on the server, readable by root. RELEASE is the commit being run, set by deploy/release.sh.
+# People come first: api has the largest share of the processors whenever they are contended, reading documents next, the AI worker last, and each has its own memory ceiling, so a hard scan or a
+# long answer slows only itself. Memory adds up to 10.8 GB, leaving about 1.2 GB for the system.
+# Every RoleMatch process runs as an ordinary user, with no extra kernel rights, a read-only system, and writing only to its data folder and a temporary one.
+x-locked-down: &locked-down
+  security_opt: ["no-new-privileges:true"]
+  cap_drop: [ALL]
+  read_only: true
+  tmpfs: ["/tmp:size=1g"]
+  pids_limit: 512
+
+services:
+  web:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      LIVE_DOMAIN: ${LIVE_DOMAIN:?set LIVE_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on: [api]
+    mem_limit: 128m
+
+  api:
+    <<: *locked-down
+    image: rolematch:${RELEASE:?set RELEASE}
+    restart: unless-stopped
+    env_file: /etc/rolematch/live.env
+    environment: { ROLE: api, AI_KEY_IN_AI_WORKER: "1" }
+    volumes: ["rolematch-data:/data"]
+    mem_limit: 1200m
+    cpu_shares: 4096
+    stop_grace_period: 40s
+
+  # Reads documents and sends mail. One document at a time: OCR peaks at about 1.7 GB.
+  worker:
+    <<: *locked-down
+    image: rolematch:${RELEASE:?set RELEASE}
+    restart: unless-stopped
+    command: ["node", "src/worker.js"]
+    env_file: /etc/rolematch/live.env
+    environment: { WORKER_JOBS: documents, WORKER_CONCURRENCY: "1", PER_ORG_CONCURRENCY: "1", AI_KEY_IN_AI_WORKER: "1" }
+    volumes: ["rolematch-data:/data"]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8790/health').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
+    mem_limit: 3g
+    cpus: 1.6
+    cpu_shares: 1024
+    stop_grace_period: 2m
+
+  # Takes only AI work: Claude's reading of each CV and its check of each match, many at once (it waits on the network, not the processors).
+  # The only container given the Anthropic key (/etc/rolematch/ai.env); the others are told one exists, so they queue work for it.
+  ai-worker:
+    <<: *locked-down
+    image: rolematch:${RELEASE:?set RELEASE}
+    restart: unless-stopped
+    command: ["node", "src/worker.js"]
+    env_file: [/etc/rolematch/live.env, /etc/rolematch/ai.env]
+    environment: { WORKER_JOBS: model, WORKER_CONCURRENCY: "40", AI_PER_ORG_CONCURRENCY: "20", WORKER_HEALTH_PORT: "18797" }
+    volumes: ["rolematch-data:/data"]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:18797/health').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
+    mem_limit: 512m
+    cpu_shares: 256
+    stop_grace_period: 20s
+
+volumes:
+  caddy-data:
+  caddy-config:
+  rolematch-data:

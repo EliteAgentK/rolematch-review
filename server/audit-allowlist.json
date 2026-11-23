@@ -1,0 +1,14 @@
+{
+  "note": "Advisories we have investigated and accepted for now. Anything NOT listed here fails `npm run audit:check`. Each entry needs a reason, an owner, a scope and a review date; review it when reviewBy passes or a fixed version appears. Never add an entry only to make the check pass.",
+  "accepted": [
+    {
+      "advisory": "GHSA-hp3w-g68c-fv3c",
+      "package": "sprintf-js",
+      "via": "mammoth > argparse > sprintf-js",
+      "reviewBy": "2027-01-20",
+      "reason": "Needs an attacker-controlled sprintf FORMAT string. sprintf-js is only used by argparse, which mammoth requires only in its command-line script (bin/mammoth), never in the library our code imports. Verified by test/audit.test.ts: processing a .docx loads neither module and our source never imports them. No patched sprintf-js exists yet (1.1.3 is the latest). npm's suggested fix downgrades mammoth to a 2015 release with far older, worse dependencies, so it is rejected.",
+      "owner": "project owner",
+      "scope": "server production dependency, via mammoth; only its command-line script uses the vulnerable module"
+    }
+  ]
+}

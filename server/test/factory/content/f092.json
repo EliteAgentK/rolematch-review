@@ -1,0 +1,152 @@
+{
+ "spec": {
+  "id": "f092",
+  "field": "project management",
+  "role": "Project Manager",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations"
+  ],
+  "name": "Elize Molefe",
+  "city": "Midrand"
+ },
+ "name": "Elize Molefe",
+ "email": "elize.molefe@example.test",
+ "phone": "051 555 1092",
+ "headline": "Mid-Level Project Manager | PM | K8s | SQL | CRM | BEE | HR | IFRS",
+ "summary": "Experienced Project Manager with 7 years of hands-on experience in IT, HR, and financial systems projects. Skilled in managing complex projects from concept to delivery with strong attention to compliance and operational efficiency.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed project timelines and budgets using MS Project and Jira.",
+    "Did reports to senior management on project progress and risks.",
+    "Helped customers with project delivery and issue resolution."
+   ],
+   "city": "Midrand",
+   "company": "Nkosi Tech Solutions",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Project Manager"
+  },
+  {
+   "bullets": [
+    "Led implementation of cloud-based systems using K8s and SQL.",
+    "Did reports on project KPIs and performance metrics.",
+    "Helped clients with system integration and training."
+   ],
+   "city": "Midrand",
+   "company": "AmaTech Systems",
+   "end": "2024-08",
+   "start": "2018-06",
+   "title": "Senior Project Coordinator"
+  },
+  {
+   "bullets": [
+    "Coordinated HR project workflows and employee onboarding processes.",
+    "Did reports on staff deployment and training outcomes.",
+    "Helped departments with process digitisation and system adoption."
+   ],
+   "city": "Midrand",
+   "company": "Vulindlela Group",
+   "end": "2020-02",
+   "start": "2015-04",
+   "title": "Project Coordinator"
+  },
+  {
+   "bullets": [
+    "Managed financial reporting systems using SQL and IFRS standards.",
+    "Did reports on compliance and audit findings.",
+    "Helped finance teams with data migration and system setup."
+   ],
+   "city": "Midrand",
+   "company": "Mzansi Data Services",
+   "end": "2018-03",
+   "start": "2012-07",
+   "title": "Project Analyst"
+  },
+  {
+   "bullets": [
+    "Supported CRM system deployment and user adoption.",
+    "Did reports on customer feedback and system performance.",
+    "Helped teams with data entry and process mapping."
+   ],
+   "city": "Midrand",
+   "company": "Sibonzi Consulting",
+   "end": "2015-03",
+   "start": "2010-09",
+   "title": "Project Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (BCom) in Business Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Project Management",
+   "name": "Project Management Professional (PMP) Certification",
+   "year": 2021
+  },
+  {
+   "issuer": "NQF Level 5",
+   "name": "Advanced Project Management (APM)",
+   "year": 2020
+  },
+  {
+   "issuer": "SAQA",
+   "name": "Digital Transformation in PM (DTPM)",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Project Planning",
+  "Risk Management",
+  "Budgeting",
+  "Stakeholder Engagement",
+  "K8s",
+  "SQL",
+  "CRM",
+  "HR Process Automation",
+  "IFRS",
+  "BEE Compliance",
+  "PM Tools (MS Project, Jira)",
+  "Documentation",
+  "Team Coordination",
+  "Data Migration",
+  "Process Improvement"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Managed end-to-end delivery of IT infrastructure projects using K8s and SQL, ensuring on-time completion and BEE compliance.",
+  "Led cross-functional teams in CRM system rollouts, improving client engagement by 30%.",
+  "Coordinated HR process automation, reducing processing time by 25%.",
+  "Delivered financial reporting systems aligned with IFRS standards, improving audit readiness.",
+  "Supported project governance using PM tools and risk registers, ensuring compliance with internal policies.",
+  "Facilitated stakeholder meetings and KPI tracking, maintaining alignment with project objectives.",
+  "Maintained project documentation and audit trails, ensuring traceability and accountability."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:43:28.207Z"
+ }
+}

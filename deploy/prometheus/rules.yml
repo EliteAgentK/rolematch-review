@@ -1,0 +1,68 @@
+# What Prometheus watches over time (docs/ops/TRENDS_AND_LOAD.md). The monitor (server/src/scripts/monitor.ts) reads the alerts that fire, each minute,
+# and tells the owner the way it tells him everything else: one e-mail, a Console alert, a reminder each hour, and "back to normal" when it clears.
+# Labels: severity is the Console's (urgent or today). Annotations: title, meaning and action are what the owner reads, in plain words.
+# Checked by promtool before deploy/pc/prometheus.sh installs it.
+groups:
+  - name: rolematch-trends
+    rules:
+      - alert: DiskFilling
+        expr: predict_linear(node_filesystem_avail_bytes{job="pc",mountpoint="/"}[6h], 14 * 24 * 3600) < 0
+        for: 1h
+        labels: { severity: today }
+        annotations:
+          title: The PC's disk will be full within two weeks
+          meaning: At the rate the disk has filled over the last six hours, it runs out of space within 14 days. When it is full, live stops saving.
+          action: Look at what is growing (backups in /srv/rolematch/backups, Docker images, logs) and clear or move it.
+
+      - alert: DiskLow
+        expr: node_filesystem_avail_bytes{job="pc",mountpoint="/"} / node_filesystem_size_bytes{job="pc",mountpoint="/"} < 0.10
+        for: 15m
+        labels: { severity: urgent }
+        annotations:
+          title: The PC's disk is almost full
+          meaning: Less than a tenth of the disk is free.
+          action: Clear old backups or Docker images now (docker image prune), before live stops saving.
+
+      - alert: MemoryLow
+        expr: node_memory_MemAvailable_bytes{job="pc"} / node_memory_MemTotal_bytes{job="pc"} < 0.10
+        for: 15m
+        labels: { severity: today }
+        annotations:
+          title: The PC is short of memory
+          meaning: Less than a tenth of the memory given to Linux has been free for a quarter of an hour. Pages slow down, and a container may be stopped.
+          action: See which container uses the most (docker stats --no-stream) and whether one keeps growing.
+
+      - alert: SlowerThanLastWeek
+        expr: |
+          (
+            histogram_quantile(0.95, sum by (le) (rate(rolematch_http_request_duration_seconds_bucket[1h])))
+              > 2 * histogram_quantile(0.95, sum by (le) (rate(rolematch_http_request_duration_seconds_bucket[1h] offset 7d)))
+          )
+          and histogram_quantile(0.95, sum by (le) (rate(rolematch_http_request_duration_seconds_bucket[1h]))) > 0.5
+          and sum(increase(rolematch_http_responses_total[1h])) > 100
+        for: 30m
+        labels: { severity: today }
+        annotations:
+          title: Pages are answering twice as slowly as last week
+          meaning: Over the last hour the slowest 5% of answers took more than twice as long as at the same hour a week ago.
+          action: Open Trends in the Console to see when it started, and compare with the releases in deploys.log.
+
+      - alert: ErrorsRising
+        expr: |
+          sum(increase(rolematch_http_responses_total{class="5xx"}[1h])) >= 20
+          and sum(increase(rolematch_http_responses_total{class="5xx"}[1h])) / sum(increase(rolematch_http_responses_total[1h])) > 0.01
+        for: 15m
+        labels: { severity: today }
+        annotations:
+          title: More requests are failing than usual
+          meaning: Over the last hour more than 1% of requests (at least 20) failed on the server.
+          action: Look at the API's log for the failing requests (docker logs rm-api --since 1h | grep '"level":"error"').
+
+      - alert: NumbersMissing
+        expr: up == 0
+        for: 5m
+        labels: { severity: today }
+        annotations:
+          title: Trends cannot read some of their numbers
+          meaning: Prometheus could not read RoleMatch's numbers or the PC's for five minutes, so the graphs have a gap.
+          action: Check rm-api and rm-node-exporter are running on the PC (docker ps).

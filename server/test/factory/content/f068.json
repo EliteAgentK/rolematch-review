@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "id": "f068",
+  "field": "project management",
+  "role": "Project Manager",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "overlapping-contract"
+  ],
+  "name": "Elize Molefe",
+  "city": "Midrand"
+ },
+ "name": "Elize Molefe",
+ "email": "elize.molefe@example.test",
+ "phone": "051 555 1068",
+ "headline": "Mid-level Project Manager | South African Project Delivery | Agile & Waterfall Experience",
+ "summary": "Mid-level project manager with 7 years of experience in construction and infrastructure projects across South Africa. Proven ability to manage timelines, budgets, and team performance in dynamic environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed project timelines and deliverables."
+   ],
+   "city": "Midrand",
+   "company": "Nelson Dynamics Solutions",
+   "end": "2024-03",
+   "start": "2020-05",
+   "title": "Project Manager"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Coordinated team activities and project workflows."
+   ],
+   "city": "Midrand",
+   "company": "Vulindlela Infrastructure Group",
+   "end": "Present",
+   "start": "2024-04",
+   "title": "Senior Project Manager"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Supported project planning and execution."
+   ],
+   "city": "Midrand",
+   "company": "KwaZulu-Project Services",
+   "end": "2024-03",
+   "start": "2022-08",
+   "title": "Project Coordinator"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed small-scale construction projects."
+   ],
+   "city": "Midrand",
+   "company": "African Build Solutions",
+   "end": "2022-07",
+   "start": "2020-01",
+   "title": "Junior Project Manager"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Assisted in project planning and execution."
+   ],
+   "city": "Midrand",
+   "company": "Sasol Projects Division",
+   "end": "2020-01",
+   "start": "2018-06",
+   "title": "Project Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Supported team in daily operations and planning."
+   ],
+   "city": "Midrand",
+   "company": "Mzansi Development Group",
+   "end": "2018-05",
+   "start": "2016-03",
+   "title": "Project Support Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Science in Engineering (Project Management)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Construction Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Project Management",
+   "name": "Project Management Professional (PMP) Certification",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Advanced Project Leadership Certificate",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Agile Project Management",
+  "Waterfall Methodology",
+  "Risk Assessment",
+  "Budget Planning",
+  "Stakeholder Communication",
+  "Team Leadership",
+  "Project Documentation",
+  "Jira",
+  "MS Project",
+  "Gantt Charts",
+  "Scope Management",
+  "Change Control",
+  "Procurement Coordination",
+  "Contract Management",
+  "Regulatory Compliance",
+  "Scheduling",
+  "Reporting",
+  "Client Engagement",
+  "Issue Resolution",
+  "Performance Monitoring"
+ ],
+ "languages": [
+  "English",
+  "isiZulu",
+  "Afrikaans"
+ ],
+ "projects": [
+  "Led delivery of a municipal infrastructure upgrade project from concept to handover, managing timelines and stakeholder expectations.",
+  "Managed a multi-phase construction project with a budget of R12M, ensuring on-time completion and within scope.",
+  "Coordinated a cross-functional team to deliver a public transport improvement initiative, aligning with municipal goals.",
+  "Did reports. Helped customers. Ensured smooth operations during project transitions.",
+  "Supported team in daily planning, risk assessments, and progress tracking using Jira and MS Project.",
+  "Maintained project documentation and compliance with local regulations and safety standards.",
+  "Conducted weekly status meetings and presented updates to senior management and clients."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:03:21.286Z"
+ }
+}

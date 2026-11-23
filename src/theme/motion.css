@@ -1,0 +1,61 @@
+/* RoleMatch motion: unhurried, clean, the same feel everywhere. Panels that come out of a button hinge down from their top edge; their contents arrive one
+ * after another; closing reverses. Timings follow the reference the owner chose (hollard.co.za's menus, as built for Aurum). Nothing moves when the person
+ * has asked their device for reduced motion: every rule sits inside prefers-reduced-motion: no-preference.
+ * Use: className="rm-hinge" on a Chakra Menu/Popover/HoverCard content (Chakra sets data-state open/closed and waits for the closing animation);
+ * className="rm-hinge-open" / "rm-hinge-closing" on our own pop-out panels (see usePresence); className="rm-reveal" on a panel that appears in place. */
+:root {
+  --rm-panel: .56s;                       /* a panel hinging open */
+  --rm-panel-out: .38s;                   /* closing is a little quicker, never abrupt */
+  --rm-item: .5s;                         /* each item arriving */
+  --rm-io: cubic-bezier(.65, 0, .35, 1);  /* in-out: the hinge */
+  --rm-out: cubic-bezier(.16, 1, .3, 1);  /* out: things settling */
+}
+
+@keyframes rm-hinge-in {
+  from { opacity: 0; transform: perspective(1400px) rotateX(-90deg); }
+  45% { opacity: 1; }
+  to { opacity: 1; transform: perspective(1400px) rotateX(0deg); }
+}
+@keyframes rm-hinge-out {
+  from { opacity: 1; transform: perspective(1400px) rotateX(0deg); }
+  to { opacity: 0; transform: perspective(1400px) rotateX(-90deg); }
+}
+@keyframes rm-item-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes rm-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Chakra content (menus, popovers, hover cards): replaces the library's quick slide with the hinge */
+  .rm-hinge { transform-origin: var(--transform-origin, top center); }
+  .rm-hinge[data-state="open"] { animation: rm-hinge-in var(--rm-panel) var(--rm-io) both !important; }
+  .rm-hinge[data-state="closed"] { animation: rm-hinge-out var(--rm-panel-out) var(--rm-io) both !important; }
+
+  /* Our own pop-out panels */
+  .rm-hinge-open { transform-origin: top right; animation: rm-hinge-in var(--rm-panel) var(--rm-io) both; }
+  .rm-hinge-closing { transform-origin: top right; animation: rm-hinge-out var(--rm-panel-out) var(--rm-io) both; pointer-events: none; }
+
+  /* Panels that appear in place: a soft fade, then their parts in sequence */
+  .rm-reveal { animation: rm-fade-in .32s ease both; }
+
+  /* Contents arriving one after another, after the panel has started to open */
+  :is(.rm-hinge[data-state="open"], .rm-hinge-open, .rm-reveal) > * { animation: rm-item-in var(--rm-item) var(--rm-out) both; animation-delay: .2s; }
+  :is(.rm-hinge[data-state="open"], .rm-hinge-open, .rm-reveal) > :nth-child(2) { animation-delay: .26s; }
+  :is(.rm-hinge[data-state="open"], .rm-hinge-open, .rm-reveal) > :nth-child(3) { animation-delay: .32s; }
+  :is(.rm-hinge[data-state="open"], .rm-hinge-open, .rm-reveal) > :nth-child(4) { animation-delay: .38s; }
+  :is(.rm-hinge[data-state="open"], .rm-hinge-open, .rm-reveal) > :nth-child(5) { animation-delay: .44s; }
+  :is(.rm-hinge[data-state="open"], .rm-hinge-open, .rm-reveal) > :nth-child(n+6) { animation-delay: .5s; }
+}
+
+/* Between the Overview and the Matching Board (src/utils/viewTransition.ts; owner, 10 Nov 2026: "purposeful, corporate level, nothing tacky"): the old
+   page fades out quickly, the new one fades in and rises 10 px into place, and the header, named below, does not move at all. */
+::view-transition-old(root){animation:rm-page-out .16s cubic-bezier(.4,0,1,1) both}
+::view-transition-new(root){animation:rm-page-in .32s cubic-bezier(.16,1,.3,1) both}
+::view-transition-group(rm-header){animation-duration:0s}
+@keyframes rm-page-out{to{opacity:0}}
+@keyframes rm-page-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}

@@ -1,0 +1,139 @@
+{
+ "spec": {
+  "id": "f036",
+  "field": "supply chain",
+  "role": "Procurement Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations"
+  ],
+  "name": "Lerato Naidoo",
+  "city": "Midrand"
+ },
+ "name": "Lerato Naidoo",
+ "email": "lerato.naidoo@example.test",
+ "phone": "051 555 1036",
+ "headline": "Mid-level Procurement Officer | Supply Chain | BEE Compliant | K8s & SQL | PM & HR Support",
+ "summary": "Results-driven Procurement Officer with 8 years of experience in supply chain operations. Proven track record in cost reduction, compliance, and vendor management. Skilled in digital procurement tools and BEE-aligned processes.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed end-to-end procurement for R12M+ annual spend; reduced costs by 14% via vendor renegotiation and K8s-based supplier performance tracking.",
+    "Led BEE-compliant sourcing for 15+ projects; ensured compliance with NQF and SABS standards.",
+    "Collaborated with PM and HR to align procurement timelines with project and staffing cycles.",
+    "Utilized SQL to extract and analyze supplier data; improved reporting accuracy by 30%."
+   ],
+   "city": "Midrand",
+   "company": "Nkosi Logistics Solutions",
+   "end": "2024-03",
+   "start": "2020-04",
+   "title": "Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Sourced and evaluated 50+ suppliers; implemented a digital tendering system using CRM tools to cut processing time by 40%.",
+    "Developed and maintained supplier scorecards; applied IFRS 13 principles for financial valuation of contracts.",
+    "Coordinated with finance and operations to ensure timely delivery of goods; improved on-time delivery by 22%.",
+    "Conducted risk assessments for supply chain disruptions; supported contingency planning for PM-driven projects."
+   ],
+   "city": "Midrand",
+   "company": "AmaBhunga Supply Chain Group",
+   "end": "Present",
+   "start": "2022-07",
+   "title": "Senior Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Managed procurement for R8M annual budget; ensured full compliance with BEE and labour laws.",
+    "Streamlined vendor onboarding using digital workflows; reduced cycle time from 14 to 6 days.",
+    "Maintained inventory records using SQL queries; improved stock accuracy to 98%.",
+    "Supported HR in staff deployment by aligning procurement with staffing plans."
+   ],
+   "city": "Midrand",
+   "company": "Mzansi Industrial Services",
+   "end": "2022-06",
+   "start": "2018-03",
+   "title": "Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Assisted in tender evaluation for construction materials; applied PM principles to schedule and budget control.",
+    "Prepared procurement documentation for government tenders; ensured compliance with public procurement regulations.",
+    "Maintained supplier databases; updated records monthly using CRM tools.",
+    "Supported internal audits with procurement records; passed all compliance checks."
+   ],
+   "city": "Midrand",
+   "company": "Sasol Logistics Division",
+   "end": "2018-02",
+   "start": "2015-08",
+   "title": "Procurement Assistant"
+  },
+  {
+   "bullets": [
+    "Supported procurement of office supplies and equipment; managed vendor contracts and renewals.",
+    "Maintained records in compliance with HR and audit requirements.",
+    "Participated in monthly supplier performance reviews; contributed to cost-saving initiatives.",
+    "Used basic SQL to generate reports on inventory turnover and usage."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Business Hub",
+   "end": "2015-07",
+   "start": "2013-04",
+   "title": "Procurement Executive"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (BCom) – Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Procurement and Logistics",
+   "name": "Certified Procurement Professional (CPP)",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Certificate in Supply Chain Management",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "K8s",
+  "SQL",
+  "IFRS",
+  "BEE",
+  "PM",
+  "HR",
+  "CRM",
+  "Tender Management",
+  "Supplier Risk Assessment",
+  "Inventory Control"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:22:28.328Z"
+ }
+}

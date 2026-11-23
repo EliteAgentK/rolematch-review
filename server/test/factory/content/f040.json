@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "id": "f040",
+  "field": "nursing",
+  "role": "Professional Nurse",
+  "seniority": "mid",
+  "years": 6,
+  "quality": "rich",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "overlapping-contract",
+   "remote-only"
+  ],
+  "name": "Sipho Nkosi",
+  "city": "Midrand"
+ },
+ "name": "Sipho Nkosi",
+ "email": "sipho.nkosi@example.test",
+ "phone": "011 555 1040",
+ "headline": "Mid-Level Nurse seeking remote work opportunities",
+ "summary": "Mid-level professional nurse with 6 years of clinical experience, currently based in Midrand. Seeking remote work opportunities with flexible, digital-first healthcare providers. Strong background in both in-person and virtual care delivery.",
+ "roles": [
+  {
+   "bullets": [
+    "Led daily shift management for 12-bed ward, using electronic health records (EHR) to reduce patient wait times by 30% over 6 months.",
+    "Trained 15 new staff on infection control protocols using the National Health Department’s guidelines, improving compliance to 98%.",
+    "Reduced medication errors by 40% through implementation of barcode scanning in dispensing, using Medisafe Pro system.",
+    "Improved patient satisfaction scores from 72% to 89% via structured feedback loops and care pathway reviews.",
+    "Coordinated emergency response drills for 30+ patients monthly, reducing response time by 25% during peak hours.",
+    "Managed 100+ patient records monthly using EHR system, ensuring 100% compliance with data privacy regulations (POPIA)."
+   ],
+   "city": "Johannesburg",
+   "company": "MediCare Health Services",
+   "end": "2024-03",
+   "start": "2019-04",
+   "title": "Senior Clinical Nurse"
+  },
+  {
+   "bullets": [
+    "Directed ICU care for 20+ patients daily, using real-time monitoring tools to reduce sepsis onset by 22%.",
+    "Introduced a daily handover checklist, cutting communication errors by 50% and improving team coordination.",
+    "Conducted 12 monthly audits of clinical protocols, identifying and resolving 18 critical gaps in care delivery.",
+    "Reduced ICU patient mortality by 15% through early intervention tracking and rapid response protocols.",
+    "Trained 8 junior nurses in critical care, improving their performance scores from 58% to 84% in competency assessments.",
+    "Used data dashboards to track patient outcomes, enabling 30% faster identification of deterioration trends."
+   ],
+   "city": "Pretoria",
+   "company": "Pretoria Central Hospital",
+   "end": "2024-09",
+   "start": "2021-07",
+   "title": "Intensive Care Nurse"
+  },
+  {
+   "bullets": [
+    "Managed a 15-bed pediatric ward, using pediatric EHR tools to improve documentation accuracy by 45%.",
+    "Led a quality improvement project reducing pediatric sepsis rates by 35% through early warning system deployment.",
+    "Conducted weekly patient safety audits, resulting in 100% compliance with hospital safety standards.",
+    "Improved parent engagement by 40% through digital feedback tools and weekly telehealth check-ins.",
+    "Reduced pediatric medication errors by 50% using a digital double-check system in the dispensing process.",
+    "Trained 10 staff on pediatric emergency protocols, increasing response time consistency by 30%."
+   ],
+   "city": "Sandton",
+   "company": "ChildCare Health Group",
+   "end": "2025-06",
+   "start": "2022-03",
+   "title": "Pediatric Clinical Nurse"
+  },
+  {
+   "bullets": [
+    "Provided remote clinical support to 50+ patients via telehealth platform, increasing access to care by 60% in rural areas.",
+    "Delivered virtual health education sessions to 200+ patients, improving adherence to treatment plans by 35%.",
+    "Used telehealth tools to monitor chronic conditions, reducing hospital readmissions by 28% in 6 months.",
+    "Coordinated with 3 regional clinics to share clinical data, improving continuity of care for 1,200+ patients.",
+    "Designed a digital patient tracker for hypertension, increasing patient follow-up rates from 40% to 85%.",
+    "Achieved 95% patient satisfaction in virtual care sessions through structured feedback and usability testing."
+   ],
+   "city": "Midrand",
+   "company": "NexaHealth Remote Services",
+   "end": "Present",
+   "start": "2023-08",
+   "title": "Remote Clinical Nurse Specialist"
+  },
+  {
+   "bullets": [
+    "Delivered on-call clinical support for 10+ emergency cases daily via mobile app, reducing response time by 40%.",
+    "Supported 30+ urgent care patients through telehealth, improving access to care in underserved areas.",
+    "Used real-time data tools to assess patient trends, enabling early intervention for 15+ high-risk cases.",
+    "Maintained 100% compliance with remote care protocols during peak demand periods.",
+    "Improved patient retention by 30% through consistent virtual check-ins and care planning.",
+    "Reduced emergency call volume by 20% through early triage and patient education via digital tools."
+   ],
+   "city": "Midrand",
+   "company": "QuickCare Health Solutions",
+   "end": "2024-09",
+   "start": "2023-05",
+   "title": "On-Call Remote Nurse"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Nursing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  },
+  {
+   "institution": "Midrand College of Health Sciences",
+   "qualification": "Diploma in Clinical Nursing",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Nursing Council",
+   "name": "Registration as a Registered Nurse (RN)",
+   "year": 2019
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Science in Nursing (BScN)",
+   "year": 2018
+  },
+  {
+   "issuer": "Nursing Education Institute of South Africa",
+   "name": "Advanced Clinical Practice in Maternal & Child Health",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "Clinical assessment",
+  "Emergency care",
+  "Telehealth platforms",
+  "Electronic Health Records (EHR)",
+  "Patient safety audits",
+  "Data analysis",
+  "Infection control",
+  "Care pathway design"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (conversational)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:25:51.552Z"
+ }
+}

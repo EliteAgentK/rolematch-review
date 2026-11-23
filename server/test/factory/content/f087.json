@@ -1,0 +1,161 @@
+{
+ "spec": {
+  "id": "f087",
+  "field": "electrical trades",
+  "role": "Electrician",
+  "seniority": "senior",
+  "years": 13,
+  "quality": "average",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "many-short-roles"
+  ],
+  "name": "Karabo Dlamini",
+  "city": "Polokwane"
+ },
+ "name": "Karabo Dlamini",
+ "email": "karabo.dlamini@example.test",
+ "phone": "081 555 1087",
+ "headline": "Senior Electrician | 13 Years Experience | Power Systems & Industrial Installations | Polokwane",
+ "summary": "Experienced Senior Electrician with 13 years in diverse electrical environments. Specialised in industrial, municipal, and community infrastructure. Proven track record in safety, efficiency, and compliance with national standards.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed electrical systems for a 500-unit residential complex in Polokwane, 2013–2015",
+    "Conducted routine inspections and preventive maintenance on all electrical infrastructure"
+   ],
+   "city": "Polokwane",
+   "company": "KwaZulu-Eswatini Power & Services (KZEPS)",
+   "end": "2015-12",
+   "start": "2013-04",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Installed and commissioned high-voltage switchgear for a mining operations site, 2015–2016",
+    "Coordinated with safety officers to ensure compliance with SANS 10142 standards"
+   ],
+   "city": "Limpopo",
+   "company": "Makwanyane Industrial Solutions",
+   "end": "2016-08",
+   "start": "2015-07",
+   "title": "Lead Electrician"
+  },
+  {
+   "bullets": [
+    "Maintained and repaired electrical systems in a municipal water treatment plant, 2016–2017",
+    "Reduced downtime by 30% through predictive maintenance strategies"
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Municipal Services",
+   "end": "2017-11",
+   "start": "2016-03",
+   "title": "Electrician Supervisor"
+  },
+  {
+   "bullets": [
+    "Provided on-site electrical support for a temporary construction project in Nelspruit, 2017–2018",
+    "Installed temporary power systems and managed safety protocols during site operations"
+   ],
+   "city": "Nelspruit",
+   "company": "Tshwane Construction & Engineering",
+   "end": "2018-05",
+   "start": "2017-09",
+   "title": "Field Electrician"
+  },
+  {
+   "bullets": [
+    "Supported emergency electrical response for a hospital in Mafikeng, 2018–2019",
+    "Ensured uninterrupted power supply during critical medical operations"
+   ],
+   "city": "Mafikeng",
+   "company": "Mafikeng Emergency Services Ltd",
+   "end": "2019-03",
+   "start": "2018-06",
+   "title": "Emergency Electrician"
+  },
+  {
+   "bullets": [
+    "Managed electrical infrastructure for a new industrial park in Thaba-Tseka, 2019–2021",
+    "Designed and implemented energy-efficient lighting and control systems"
+   ],
+   "city": "Thaba-Tseka",
+   "company": "Thaba-Tseka Industrial Development Group",
+   "end": "2021-10",
+   "start": "2019-01",
+   "title": "Senior Electrical Engineer"
+  },
+  {
+   "bullets": [
+    "Led electrical upgrades for a commercial complex in Polokwane, 2021–2023",
+    "Integrated smart metering and monitoring systems into existing infrastructure"
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Energy & Infrastructure",
+   "end": "2023-09",
+   "start": "2021-04",
+   "title": "Senior Electrician"
+  },
+  {
+   "bullets": [
+    "Delivered full electrical design and installation for a new community health centre, 2023–Present",
+    "Ensured compliance with national safety and accessibility standards"
+   ],
+   "city": "Polokwane",
+   "company": "Polokwane Community Projects Ltd",
+   "end": "Present",
+   "start": "2023-03",
+   "title": "Senior Electrician"
+  }
+ ],
+ "education": [
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "National Diploma in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Electrical Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "National Electrotechnical Certification Board (NECB)",
+   "name": "Level 6 Electrical Installation and Maintenance",
+   "year": 2018
+  },
+  {
+   "issuer": "South African Institute of Electrical Engineering (SAIEE)",
+   "name": "Advanced Power Systems and Distribution",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "Electrical system design",
+  "Industrial power systems",
+  "Safety compliance (SANS 10142)",
+  "Emergency power restoration",
+  "Smart metering systems",
+  "Preventive maintenance"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Tswana (conversational)"
+ ],
+ "projects": [
+  "Designed and implemented 120kW solar microgrid for rural clinic in Limpopo, 2023–2024",
+  "Led emergency power restoration for industrial facility after storm damage, 2024"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:32:24.890Z"
+ }
+}

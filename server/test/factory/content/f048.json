@@ -1,0 +1,160 @@
+{
+ "spec": {
+  "id": "f048",
+  "field": "public sector administration",
+  "role": "Administrative Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "comma-titles"
+  ],
+  "name": "Ruan Sithole",
+  "city": "Midrand"
+ },
+ "name": "Ruan Sithole",
+ "email": "ruan.sithole@example.test",
+ "phone": "011 555 1048",
+ "headline": "Mid-level Administrative Officer with 8 years of public sector experience in policy support, record management, and interdepartmental coordination.",
+ "summary": "Dedicated administrative professional with 8 years of experience in public sector operations, focused on efficiency, compliance, and service delivery within municipal and provincial governance structures.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed daily operations of administrative units in a provincial department, ensuring compliance with internal and legislative frameworks.",
+    "Coordinated interdepartmental meetings and prepared agendas, minutes, and follow-up reports for senior management."
+   ],
+   "city": "Pretoria",
+   "company": "Midrand Municipal Services, Department of Public Works",
+   "end": "2024-03",
+   "start": "2020-04",
+   "title": "Administrative Officer, Public Works Operations"
+  },
+  {
+   "bullets": [
+    "Streamlined document processing workflows, reducing processing time by 30% through digital filing system implementation.",
+    "Maintained accurate records of public service delivery, supporting audits and performance evaluations."
+   ],
+   "city": "Midrand",
+   "company": "City of Johannesburg, Department of Community Services",
+   "end": "2024-03",
+   "start": "2018-07",
+   "title": "Administrative Officer, Community Services Coordination"
+  },
+  {
+   "bullets": [
+    "Supported policy development by compiling data, drafting reports, and managing correspondence between departments.",
+    "Acted as liaison between field offices and central administration, improving response times by 25%."
+   ],
+   "city": "Sandton",
+   "company": "Gauteng Provincial Department of Transport",
+   "end": "2022-06",
+   "start": "2016-01",
+   "title": "Administrative Officer, Policy Support Unit"
+  },
+  {
+   "bullets": [
+    "Managed procurement documentation and compliance for small-scale equipment purchases, ensuring adherence to public procurement rules.",
+    "Prepared and submitted monthly reports on service delivery metrics to oversight committees."
+   ],
+   "city": "Midrand",
+   "company": "Soweto Development Authority",
+   "end": "2021-08",
+   "start": "2014-03",
+   "title": "Administrative Officer, Procurement and Compliance"
+  },
+  {
+   "bullets": [
+    "Maintained public records and ensured secure access to sensitive documents in line with data protection regulations.",
+    "Assisted in the preparation of annual performance reports for departmental review."
+   ],
+   "city": "Johannesburg",
+   "company": "National Department of Public Service and Administration",
+   "end": "2017-05",
+   "start": "2013-09",
+   "title": "Administrative Officer, Records and Compliance"
+  },
+  {
+   "bullets": [
+    "Organized and managed staff schedules, leave requests, and internal communications for a team of 15 administrative staff.",
+    "Developed standard operating procedures for routine administrative tasks, improving team efficiency."
+   ],
+   "city": "Midrand",
+   "company": "Nelson Mandela Metropolitan Office of the Mayor",
+   "end": "2013-08",
+   "start": "2011-02",
+   "title": "Administrative Officer, Operations Support"
+  },
+  {
+   "bullets": [
+    "Supported the implementation of digital transformation initiatives in administrative workflows, including system training and user guides.",
+    "Collaborated with IT and finance units to ensure seamless integration of new administrative tools."
+   ],
+   "city": "Midrand",
+   "company": "eGovernance South Africa Initiative",
+   "end": "2012-04",
+   "start": "2011-01",
+   "title": "Administrative Officer, Digital Transformation Unit"
+  },
+  {
+   "bullets": [
+    "Provided administrative support to senior officials, including drafting correspondence, managing calendars, and preparing presentations.",
+    "Maintained a central database of departmental contacts and project timelines for efficient coordination."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Local Municipality Administration",
+   "end": "Present",
+   "start": "2009-06",
+   "title": "Administrative Officer, Municipal Operations"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Arts in Public Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Public Administration",
+   "name": "Certificate in Public Sector Administration",
+   "year": 2019
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Diploma in Office Management",
+   "year": 2015
+  }
+ ],
+ "skills": [
+  "Public sector compliance",
+  "Document management",
+  "Interdepartmental coordination",
+  "Policy support",
+  "Data compilation",
+  "Report preparation",
+  "Procurement processes",
+  "Digital record systems"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:34:45.492Z"
+ }
+}

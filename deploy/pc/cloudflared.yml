@@ -1,0 +1,18 @@
+# The named tunnel's settings (docs/ops/NAMED_TUNNEL_PLAN.md). deploy/pc/tunnel.sh fills in the two __ values from the PC's own files and installs
+# the result as /etc/rolematch/cloudflared.yml. The tunnel's secret is /etc/rolematch/tunnel.json on the PC only, never in Git.
+# The console's port must match CONSOLE_PORT in deploy/mac/run.sh (deploy-names.test.ts checks).
+tunnel: __TUNNEL_ID__
+credentials-file: /etc/cloudflared/tunnel.json
+metrics: 127.0.0.1:20242
+no-autoupdate: true
+ingress:
+  - hostname: app.rolematch.co.za
+    service: http://127.0.0.1:__API_PORT__
+  # The console signs in with its password and then a code e-mailed to the owner (18_CONSOLE_V0.md, slice 2), so it can face the internet without
+  # Cloudflare Access, which the owner parked on 8 Nov; Access can still be added in front of it later as a third wall.
+  - hostname: console.rolematch.co.za
+    service: http://127.0.0.1:18790
+  # The copy beside live, for the owner to try before the switch (docs/architecture/DESIGN_JOHANNESBURG_MOVE.md); its API's port is PORT in next.env.
+  - hostname: next.rolematch.co.za
+    service: http://127.0.0.1:18792
+  - service: http_status:404

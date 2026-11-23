@@ -1,0 +1,140 @@
+{
+ "spec": {
+  "id": "f078",
+  "field": "auditing",
+  "role": "Internal Auditor",
+  "seniority": "executive",
+  "years": 20,
+  "quality": "average",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations"
+  ],
+  "name": "Pieter Maseko",
+  "city": "Pretoria"
+ },
+ "name": "Pieter Maseko",
+ "email": "pieter.maseko@example.test",
+ "phone": "071 555 1078",
+ "headline": "Senior Executive Internal Auditor | 20+ Years in Audit & Risk Governance | BEE & IFRS Compliance | Pretoria-based",
+ "summary": "Results-driven internal auditor with 20+ years of experience in financial, operational, and compliance audits. Proven track record in IFRS, BEE, and digital audit environments. Based in Pretoria with strong institutional and public sector exposure.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed internal audit operations for R3.5B portfolio; delivered 98% compliance with IFRS 17 and SA GAAP standards.",
+    "Led audit of procurement processes; reduced fraud risk by 40% through SQL-based transaction analysis and HR policy reviews."
+   ],
+   "city": "Pretoria",
+   "company": "Naledi Holdings Ltd",
+   "end": "2024-03",
+   "start": "2018-04",
+   "title": "Director, Internal Audit"
+  },
+  {
+   "bullets": [
+    "Directed audit of financial reporting controls; achieved 100% audit coverage for all key financial statements.",
+    "Implemented risk-based audit plan using K8s and CRM data; improved reporting cycle by 30%."
+   ],
+   "city": "Pretoria",
+   "company": "Vulindlela Group",
+   "end": "Present",
+   "start": "2020-07",
+   "title": "Senior Executive Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Spearheaded audit of IT infrastructure; identified critical vulnerabilities in K8s clusters and database access logs.",
+    "Collaborated with PM and HR teams to assess compliance with BEE and diversity targets in project staffing."
+   ],
+   "city": "Pretoria",
+   "company": "Amaqala Infrastructure",
+   "end": "2018-03",
+   "start": "2015-06",
+   "title": "Internal Audit Manager"
+  },
+  {
+   "bullets": [
+    "Conducted compliance audits for public sector clients; ensured adherence to NIPFA and IFRS standards.",
+    "Reported directly to CFO; managed audit schedule and stakeholder communication using CRM tools."
+   ],
+   "city": "Pretoria",
+   "company": "Sibonelo Public Services",
+   "end": "2015-05",
+   "start": "2012-08",
+   "title": "Internal Auditor"
+  },
+  {
+   "bullets": [
+    "Performed field audits across 10 departments; used SQL to extract and validate financial data from legacy systems.",
+    "Developed audit checklists aligned with SA GAAP and IFRS 9; improved audit efficiency by 25%."
+   ],
+   "city": "Pretoria",
+   "company": "Mpho Enterprises",
+   "end": "2012-07",
+   "start": "2009-03",
+   "title": "Audit Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "BCom (Auditing & Finance)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1998
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 1996
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Chartered Accountants",
+   "name": "Professional Certificate in Internal Auditing",
+   "year": 2005
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "MBA in Risk Management and Governance",
+   "year": 2010
+  },
+  {
+   "issuer": "National Institute of Public Finance and Administration",
+   "name": "BEE Compliance & Inclusion Certification",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "IFRS",
+  "SA GAAP",
+  "SQL",
+  "K8s",
+  "BEE",
+  "PM",
+  "HR",
+  "CRM",
+  "Risk Assessment",
+  "Audit Framework Design",
+  "Compliance Monitoring"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [
+  "Led internal audit of R1.2B annual budget cycle; identified R800K cost savings via process re-engineering using SQL and PM tools.",
+  "Conducted BEE compliance reviews across 12 departments; ensured alignment with NIPFA 2023 guidelines and equity targets.",
+  "Designed audit framework for digital transformation projects; integrated K8s monitoring and CRM data for real-time risk tracking."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:20:19.830Z"
+ }
+}

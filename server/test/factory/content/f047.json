@@ -1,0 +1,155 @@
+{
+ "spec": {
+  "id": "f047",
+  "field": "telecommunications",
+  "role": "Network Engineer",
+  "seniority": "senior",
+  "years": 12,
+  "quality": "poor",
+  "layout": "word-header",
+  "format": "docx",
+  "quirks": [
+   "professional-designation"
+  ],
+  "name": "Kagiso Fourie",
+  "city": "Polokwane"
+ },
+ "name": "Kagiso Fourie",
+ "email": "kagiso.fourie@example.test",
+ "phone": "081 555 1047",
+ "headline": "Senior Network Engineer | Telecommunications Infrastructure | 12+ Years Experience",
+ "summary": "Experienced Senior Network Engineer with 12+ years in telecommunications network design, deployment, and support. Proven track record in rural and enterprise network environments. Strong focus on reliability and scalability of telecom infrastructure.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on network performance and outages.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "NexLink Telecommunications",
+   "end": "2024-03",
+   "start": "2020-04",
+   "title": "Senior Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on network performance and outages.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "VistaNet Solutions",
+   "end": "Present",
+   "start": "2021-07",
+   "title": "Lead Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on network performance and outages.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "TelCom Africa",
+   "end": "2019-12",
+   "start": "2016-08",
+   "title": "Network Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports on network performance and outages.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "NetWave Systems",
+   "end": "2015-06",
+   "start": "2013-03",
+   "title": "Network Technician"
+  },
+  {
+   "bullets": [
+    "Did reports on network performance and outages.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "OptiNet Services",
+   "end": "2012-09",
+   "start": "2010-01",
+   "title": "Network Support Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on network performance and outages.",
+    "Helped customers with connectivity issues.",
+    "Maintained network logs and documentation."
+   ],
+   "city": "Polokwane",
+   "company": "DataLink Tech",
+   "end": "2009-05",
+   "start": "2007-06",
+   "title": "Junior Network Engineer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Limpopo",
+   "qualification": "Bachelor of Science in Telecommunications Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2005
+  },
+  {
+   "institution": "Polokwane College of Technology",
+   "qualification": "Diploma in Network Systems",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Telecommunications (SAIT)",
+   "name": "Pr.Eng (Professional Engineer)",
+   "year": 2018
+  }
+ ],
+ "skills": [
+  "TCP/IP",
+  "IP routing",
+  "SD-WAN",
+  "Network monitoring",
+  "Cisco IOS",
+  "Juniper Networks",
+  "Wi-Fi 6",
+  "Network security",
+  "DNS configuration",
+  "Firewall management",
+  "Network troubleshooting",
+  "Telecom protocols",
+  "BGP",
+  "OSPF",
+  "Network automation",
+  "Packet analysis",
+  "IP address planning",
+  "Telecom infrastructure",
+  "Cloud networking",
+  "Network performance optimization"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Led rollout of 4G LTE network in rural areas of Limpopo.",
+  "Optimized core network performance, reducing latency by 30%.",
+  "Deployed SD-WAN solution for enterprise clients across North West."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:33:54.748Z"
+ }
+}

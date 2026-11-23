@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "id": "f080",
+  "field": "banking credit",
+  "role": "Credit Risk Analyst",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "remote-only"
+  ],
+  "name": "Fatima Smith",
+  "city": "Midrand"
+ },
+ "name": "Fatima Smith",
+ "email": "fatima.smith@example.test",
+ "phone": "011 555 1080",
+ "headline": "Mid-level Credit Risk Analyst | Seeking remote opportunities",
+ "summary": "Seeking remote credit risk roles with a focus on SME and retail lending. Experienced in risk analysis, reporting, and compliance. Available for flexible, remote work arrangements.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on credit exposures and portfolio performance.",
+    "Helped assess loan applications for compliance and risk.",
+    "Reviewed credit decisions to ensure consistency with policies."
+   ],
+   "city": "Midrand",
+   "company": "Nelson Financial Group",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Credit Risk Analyst"
+  },
+  {
+   "bullets": [
+    "Did credit risk assessments for retail and SME lending.",
+    "Supported credit officers with documentation and due diligence.",
+    "Updated risk dashboards for management review."
+   ],
+   "city": "Midrand",
+   "company": "Vosat Bank",
+   "end": "2024-08",
+   "start": "2018-07",
+   "title": "Credit Risk Associate"
+  },
+  {
+   "bullets": [
+    "Did credit file reviews and quality checks.",
+    "Assisted in preparing monthly risk reports for senior management.",
+    "Identified trends in default rates and flagged anomalies."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Credit Solutions",
+   "end": "2020-02",
+   "start": "2016-04",
+   "title": "Junior Credit Risk Officer"
+  },
+  {
+   "bullets": [
+    "Did loan application screening and risk profiling.",
+    "Helped maintain credit data integrity and audit trails.",
+    "Collaborated on risk policy updates and training sessions."
+   ],
+   "city": "Cape Town",
+   "company": "African Horizon Financial",
+   "end": "2018-03",
+   "start": "2014-09",
+   "title": "Credit Analyst (Entry Level)"
+  },
+  {
+   "bullets": [
+    "Did basic credit evaluations for personal and business loans.",
+    "Supported team with data entry and file organization.",
+    "Maintained records for regulatory compliance checks."
+   ],
+   "city": "Pretoria",
+   "company": "Savvy Finance Ltd",
+   "end": "2016-03",
+   "start": "2013-05",
+   "title": "Credit Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (Finance)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2014
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Banking and Financial Services",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Banking and Financial Services",
+   "name": "Credit Risk Management Certificate",
+   "year": 2020
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Advanced Diploma in Financial Analysis",
+   "year": 2018
+  }
+ ],
+ "skills": [
+  "Credit risk assessment",
+  "Loan portfolio analysis",
+  "Risk modeling",
+  "Regulatory compliance",
+  "Data validation",
+  "Financial reporting",
+  "Stress testing",
+  "Delinquency analysis",
+  "Credit scoring",
+  "Dashboard development",
+  "Policy interpretation",
+  "SME lending",
+  "Due diligence",
+  "Statistical analysis",
+  "Excel (advanced)",
+  "Power BI",
+  "Risk mitigation",
+  "Credit documentation",
+  "Portfolio monitoring",
+  "Financial forecasting"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed credit scoring models for SME lending portfolios.",
+  "Conducted loan portfolio stress testing under regulatory guidelines.",
+  "Analyzed delinquency trends and advised on risk mitigation strategies."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:23:20.249Z"
+ }
+}

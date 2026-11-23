@@ -1,0 +1,3 @@
+#!/bin/sh
+# pgBackRest with the repository key read from the mounted secret at each call, so the key is never in the server's environment, an image or a log.
+PGBACKREST_REPO1_CIPHER_PASS="$(cat /run/secrets/backup-key)" exec pgbackrest "$@"

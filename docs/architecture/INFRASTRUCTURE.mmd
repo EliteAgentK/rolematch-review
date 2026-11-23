@@ -1,0 +1,73 @@
+%% RoleMatch infrastructure as it runs live, checked against the machines on 10 November 2026 (release 3db9bba).
+%% Solid arrows: live traffic. Dashed arrows: backups, monitoring and keep-alive.
+%% Yellow: built, waiting for an administrator to install it. Grey: on the PC but not used by live.
+flowchart TB
+  users["Recruiters<br/>web browser"]
+  owner["Owner<br/>console"]
+
+  subgraph cf["Cloudflare, free plan"]
+    edge["HTTPS, DDoS protection, firewall<br/>app.rolematch.co.za · console.rolematch.co.za"]
+  end
+
+  subgraph dell["Dell PC, South Africa · Windows 11"]
+    direction TB
+    subgraph wsl["Linux (WSL 'RoleMatch') · Docker containers · release 3db9bba"]
+      direction TB
+      tunnel["rm-tunnel-named<br/>Cloudflare tunnel, outbound only:<br/>no open ports on the PC"]
+      subgraph app["RoleMatch application · Node.js / TypeScript"]
+        direction LR
+        api["rm-api<br/>web API: sign-in checks,<br/>company separation, audit"]
+        console["rm-console<br/>owner's console"]
+        worker["rm-worker<br/>document reader:<br/>PDF, Word, OCR, rules"]
+        aiworker["rm-ai-worker<br/>Claude reading and matching:<br/>metered per company, monthly cap"]
+        monitor["rm-monitor<br/>health checks and alerts"]
+      end
+      cron["Scheduled jobs<br/>backup 01:30 · daily check 06:00<br/>status and heartbeat every minute"]
+      backups[("Encrypted backups<br/>14 nights kept")]
+      owndb[("rm-db: own PostgreSQL<br/>paused, not used by live")]
+      teststack["Local Supabase<br/>test copy, closed to the network"]
+    end
+    subgraph win["Windows"]
+      direction LR
+      watchdog["RoleMatch Watchdog<br/>restarts WSL, then the PC"]
+      keepwin["RoleMatch KeepAlive<br/>holds Linux open"]
+    end
+  end
+
+  subgraph supa["Supabase Pro · Ireland (EU)"]
+    direction LR
+    pg[("PostgreSQL<br/>records, queue, audit<br/>row rules per company and portal")]
+    auth["Auth<br/>accounts and sign-in"]
+    storage[("Storage<br/>original CVs and jobs, private")]
+  end
+
+  claude["Anthropic Claude API<br/>Sonnet: matching · Haiku: reading"]
+  smtp["Mail host (SMTP)<br/>info@rolematch.co.za"]
+
+  subgraph mac["Mac, office"]
+    direction LR
+    collect["Backup collector<br/>second copy each night"]
+    keepmac["PC keep-alive"]
+  end
+
+  users -->|HTTPS| edge
+  owner -->|HTTPS| edge
+  edge <-->|tunnel| tunnel
+  tunnel --> api
+  tunnel --> console
+  app -->|"SQL, sign-in, private files"| supa
+  aiworker -->|"HTTPS, one document per call"| claude
+  app -->|"codes, invitations, alerts"| smtp
+
+  cron -.->|"nightly dump"| supa
+  cron -.-> backups
+  backups -.->|"nightly copy"| collect
+  cron -.->|"heartbeat"| watchdog
+  watchdog -.->|"checks health"| api
+  keepwin -.-> wsl
+  keepmac -.-> wsl
+
+  classDef notlive fill:#eeeeee,stroke:#999999,color:#555555,stroke-dasharray:4 3
+  classDef pending fill:#fff4d6,stroke:#c99a2e,color:#5a4200
+  class owndb,teststack notlive
+  class watchdog,keepwin pending

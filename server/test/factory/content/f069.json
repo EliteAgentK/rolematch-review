@@ -1,0 +1,120 @@
+{
+ "spec": {
+  "id": "f069",
+  "field": "legal",
+  "role": "Legal Advisor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "personal-details"
+  ],
+  "name": "Megan Coetzee",
+  "city": "Johannesburg"
+ },
+ "name": "Megan Coetzee",
+ "email": "megan.coetzee@example.test",
+ "phone": "061 555 1069",
+ "headline": "Junior Legal Advisor | Contract & Compliance Support | South African Commercial Law",
+ "summary": "Recent LLB graduate with hands-on experience in commercial law, contract drafting, and compliance. Proven ability to support legal teams in fast-paced environments with a strong foundation in South African legislation.",
+ "roles": [
+  {
+   "bullets": [
+    "Supported drafting of commercial contracts for SMEs, ensuring compliance with the National Credit Act and Consumer Protection Act.",
+    "Conducted legal research on emerging regulatory trends in South African corporate governance and compliance."
+   ],
+   "city": "Johannesburg",
+   "company": "Nkosi Legal Services",
+   "end": "2023-08",
+   "start": "2021-03",
+   "title": "Legal Assistant"
+  },
+  {
+   "bullets": [
+    "Assisted in preparing compliance reports for clients in the financial services sector, aligning with FSCA guidelines.",
+    "Reviewed and advised on draft terms of service and service agreements for digital platforms."
+   ],
+   "city": "Johannesburg",
+   "company": "Mzansi Business Solutions",
+   "end": "Present",
+   "start": "2023-09",
+   "title": "Junior Legal Advisor"
+  },
+  {
+   "bullets": [
+    "Prepared legal memos on consumer rights and dispute resolution under the National Credit Act.",
+    "Collaborated with senior lawyers to assess risk in client contracts and identify potential breaches."
+   ],
+   "city": "Johannesburg",
+   "company": "Sibonzi Legal Group",
+   "end": "2023-02",
+   "start": "2022-07",
+   "title": "Legal Intern"
+  },
+  {
+   "bullets": [
+    "Supported litigation preparation for small claims, including document drafting and evidence collection.",
+    "Maintained case files and ensured adherence to procedural timelines in the High Court."
+   ],
+   "city": "Johannesburg",
+   "company": "Dlamini & Co. Advocates",
+   "end": "2021-02",
+   "start": "2019-06",
+   "title": "Legal Assistant"
+  },
+  {
+   "bullets": [
+    "Conducted due diligence on startup ventures, focusing on intellectual property and regulatory compliance.",
+    "Prepared initial legal opinions for early-stage business formation documents."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Innovation Hub",
+   "end": "2020-04",
+   "start": "2019-03",
+   "title": "Legal Researcher"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Bachelor of Laws (LLB)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Wits University College of Law",
+   "qualification": "Diploma in Legal Studies",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Contract drafting",
+  "Legal research",
+  "Regulatory compliance",
+  "Commercial law",
+  "Client advisory",
+  "Case file management"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [
+  "Date of birth: 1 January 1990",
+  "Gender: (stated)",
+  "Marital status: Single",
+  "Nationality: South African",
+  "Driver's licence: Code B"
+ ],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:06:02.391Z"
+ }
+}

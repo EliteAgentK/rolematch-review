@@ -1,0 +1,19 @@
+# Exact findings accepted after review (docs/security/SAFETY_CHECKS.md, "Reviewed exceptions"). One fingerprint = one commit, file, rule and line.
+# Never add a fingerprint to make a scan pass without a review entry in that document.
+#
+# S1 (2026-11-02): password of a throw-away local Postgres container that server/test/auth-expiry.test.ts created for itself, in history only.
+# Not a credential to any real system. The test now generates the password at run time (no literal remains in the working tree).
+773d161185e8c4796f29844f4cf1859760471b6d:server/test/auth-expiry.test.ts:rolematch-connection-string-password:52
+
+# S2 to S4 (2026-11-20, independent audit): history only, each line read with its values masked. None is a credential to anything.
+# S2: research scripts that ran with the AI key set empty and the database pointed at nothing (user none, port 1).
+570b773279966ebf691d1f2ce00ecd55c1d40f73:research/jobs/ocr6_read.py:rolematch-env-secret-assignment:5
+782a6cdf1405442cafb3ada0d412ba05722b7835:research/jobs/bla_ocr_read.py:rolematch-env-secret-assignment:13
+# S3: paths of answer-key files for invented test jobs ("hasKey", "jobKey"); the word "key" is the whole finding.
+df20f9eb68e60adf4efdb3f90059a9c116b0e295:research/jobs/pv3_tools.ts:generic-api-key:39
+daab10f6ae0cf1e65b07808525b727d848d48f1a:research/jobs/blc_tools.ts:generic-api-key:26
+daab10f6ae0cf1e65b07808525b727d848d48f1a:research/jobs/pv2_tools.ts:generic-api-key:39
+d0b7f41b2ff32364d204dd3c406708d0f230b72f:research/jobs/blc_tools.ts:generic-api-key:26
+d0b7f41b2ff32364d204dd3c406708d0f230b72f:research/jobs/blc_tools.ts:generic-api-key:81
+# S4: the fake secret generated on purpose to show that CI's scan catches one, on a branch never merged (commit "CI demonstration").
+ca0ede8c11765c0df5ebdf54704b16d60d224655:ci-demo-secret.ts:rolematch-env-secret-assignment:1

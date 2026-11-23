@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "id": "f020",
+  "field": "project management",
+  "role": "Project Manager",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "comma-titles"
+  ],
+  "name": "Elize Molefe",
+  "city": "Midrand"
+ },
+ "name": "Elize Molefe",
+ "email": "elize.molefe@example.test",
+ "phone": "051 555 1020",
+ "headline": "Mid-level Project Manager with 7 years of experience in delivering complex projects across public and private sectors in South Africa",
+ "summary": "Experienced project professional with a strong background in managing public and private sector projects. Proven ability to deliver results under tight timelines and complex environments. Adept at team leadership and cross-functional collaboration.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on project progress to stakeholders.",
+    "Helped customers with project timelines and deliverables.",
+    "Coordinated team activities and ensured on-time completion."
+   ],
+   "city": "Midrand",
+   "company": "Naledi Infrastructure Solutions",
+   "end": "Present",
+   "start": "2020-03",
+   "title": "Manager, Project Delivery"
+  },
+  {
+   "bullets": [
+    "Did reports on urban development milestones.",
+    "Helped community groups with project planning and feedback.",
+    "Supported implementation of infrastructure upgrades."
+   ],
+   "city": "Soweto",
+   "company": "Soweto Growth Initiative",
+   "end": "2020-03",
+   "start": "2019-06",
+   "title": "Project Coordinator, Urban Development"
+  },
+  {
+   "bullets": [
+    "Did reports on transport operations and project status.",
+    "Helped manage budgets and schedule adjustments.",
+    "Assisted in planning and monitoring of public transport projects."
+   ],
+   "city": "Pietermaritzburg",
+   "company": "KwaZulu-Natal Transport Authority",
+   "end": "2019-06",
+   "start": "2017-09",
+   "title": "Analyst, Project Operations"
+  },
+  {
+   "bullets": [
+    "Did reports on municipal project progress.",
+    "Helped with public service delivery planning.",
+    "Supported maintenance and improvement initiatives."
+   ],
+   "city": "Midrand",
+   "company": "Midrand Municipal Services",
+   "end": "2017-09",
+   "start": "2015-04",
+   "title": "Project Assistant, Public Works"
+  },
+  {
+   "bullets": [
+    "Did reports on construction planning and site activities.",
+    "Helped manage design and scheduling processes.",
+    "Coordinated with contractors and stakeholders."
+   ],
+   "city": "Pretoria",
+   "company": "Veldt Development Group",
+   "end": "2015-04",
+   "start": "2013-07",
+   "title": "Team Lead, Construction Planning"
+  },
+  {
+   "bullets": [
+    "Did reports on facilities management activities.",
+    "Helped with project planning and resource allocation.",
+    "Supported team in executing maintenance projects."
+   ],
+   "city": "Johannesburg",
+   "company": "Parkview Estates",
+   "end": "2013-07",
+   "start": "2012-01",
+   "title": "Assistant Project Manager, Facilities Management"
+  },
+  {
+   "bullets": [
+    "Did reports on ICT project implementation.",
+    "Helped with system rollout and user training.",
+    "Supported digital transformation initiatives."
+   ],
+   "city": "Cape Town",
+   "company": "eSolutions SA",
+   "end": "2012-01",
+   "start": "2010-08",
+   "title": "Project Support Officer, ICT Implementation"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (BCom) in Business Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2006
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Project Management",
+   "name": "Project Management Professional (PMP) Certification",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Certified in Business Process Management",
+   "year": 2019
+  }
+ ],
+ "skills": [
+  "Project planning and scheduling",
+  "Budget forecasting and control",
+  "Stakeholder communication",
+  "Risk assessment and mitigation",
+  "Team coordination",
+  "Change management",
+  "Procurement coordination",
+  "Reporting and documentation",
+  "Agile methodologies",
+  "MS Project, MS Excel, PowerPoint, Teams"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Manager, Project Delivery, Naledi Infrastructure Solutions – 2020-03 to Present",
+  "Project Coordinator, Urban Development, Soweto Growth Initiative – 2019-06 to 2020-03",
+  "Analyst, Project Operations, KwaZulu-Natal Transport Authority – 2017-09 to 2019-06",
+  "Project Assistant, Public Works, Midrand Municipal Services – 2015-04 to 2017-09",
+  "Team Lead, Construction Planning, Veldt Development Group – 2013-07 to 2015-04",
+  "Assistant Project Manager, Facilities Management, Parkview Estates – 2012-01 to 2013-07",
+  "Project Support Officer, ICT Implementation, eSolutions SA – 2010-08 to 2012-01"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:03:34.594Z"
+ }
+}

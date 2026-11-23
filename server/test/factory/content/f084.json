@@ -1,0 +1,126 @@
+{
+ "spec": {
+  "id": "f084",
+  "field": "supply chain",
+  "role": "Procurement Officer",
+  "seniority": "mid",
+  "years": 8,
+  "quality": "average",
+  "layout": "scan",
+  "format": "pdf",
+  "quirks": [
+   "career-change"
+  ],
+  "name": "Lerato Naidoo",
+  "city": "Midrand"
+ },
+ "name": "Lerato Naidoo",
+ "email": "lerato.naidoo@example.test",
+ "phone": "051 555 1084",
+ "headline": "Mid-level Procurement Officer with 8 years of supply chain experience, transitioning from operations to procurement in 2017.",
+ "summary": "Results-driven procurement professional with 8 years of experience in supply chain operations and procurement. Transitioned from operations to procurement in 2017, now focused on strategic sourcing and supplier performance.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed end-to-end procurement for 15+ suppliers across industrial and construction sectors, reducing lead times by 18% between 2019–2021.",
+    "Coordinated supplier onboarding, compliance audits, and contract renewals with zero breaches in 2020–2021."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Dynamics Ltd",
+   "end": "2021-12",
+   "start": "2019-04",
+   "title": "Operations Supervisor"
+  },
+  {
+   "bullets": [
+    "Transitioned from operations to procurement in 2017, leading a shift to formal procurement processes and supplier evaluation frameworks.",
+    "Improved supplier performance tracking using digital tools, increasing on-time delivery rates by 22% in 2018."
+   ],
+   "city": "Johannesburg",
+   "company": "Vosatex Industries",
+   "end": "2021-03",
+   "start": "2017-07",
+   "title": "Procurement Assistant"
+  },
+  {
+   "bullets": [
+    "Led tender evaluations for R12M+ annual spend, ensuring compliance with public procurement regulations and cost efficiency.",
+    "Developed a supplier scorecard system adopted by three departments, improving accountability and performance visibility."
+   ],
+   "city": "Midrand",
+   "company": "Africor Supply Chain Solutions",
+   "end": "Present",
+   "start": "2021-04",
+   "title": "Mid-Level Procurement Officer"
+  },
+  {
+   "bullets": [
+    "Managed inventory and logistics for a regional distribution network, reducing stockouts by 30% through improved forecasting.",
+    "Collaborated with logistics partners to streamline delivery schedules, improving on-time delivery performance by 25%."
+   ],
+   "city": "Sandton",
+   "company": "KwaZulu Logistics Group",
+   "end": "2021-03",
+   "start": "2015-08",
+   "title": "Logistics Coordinator"
+  },
+  {
+   "bullets": [
+    "Supported procurement of office equipment and services, ensuring budget adherence and timely delivery.",
+    "Maintained supplier databases and conducted quarterly performance reviews to support cost control."
+   ],
+   "city": "Cape Town",
+   "company": "Oceanic Services Group",
+   "end": "2015-07",
+   "start": "2013-03",
+   "title": "Procurement Executive (Junior)"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Commerce (BCom) – Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Operations",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Procurement and Logistics",
+   "name": "Certified Procurement Professional (CPP)",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Diploma in Supply Chain Management",
+   "year": 2018
+  }
+ ],
+ "skills": [
+  "Supplier relationship management",
+  "Tender evaluation",
+  "Cost analysis",
+  "Contract negotiation",
+  "Inventory control",
+  "Regulatory compliance",
+  "MS Excel, SAP, Oracle Procurement"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:28:25.751Z"
+ }
+}

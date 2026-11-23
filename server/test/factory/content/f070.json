@@ -1,0 +1,147 @@
+{
+ "spec": {
+  "id": "f070",
+  "field": "customer service",
+  "role": "Contact Centre Team Leader",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "career-change",
+   "abbreviations"
+  ],
+  "name": "Zanele Botha",
+  "city": "Pretoria"
+ },
+ "name": "Zanele Botha",
+ "email": "zanele.botha@example.test",
+ "phone": "071 555 1070",
+ "headline": "Executive Contact Centre Team Leader | Customer Service Operations | 18 Years Experience | Pretoria, South Africa",
+ "summary": "Results-driven operations leader with 18 years of progressive experience transitioning from logistics to customer service. Proven track record in scaling contact centres, improving CSAT, reducing costs, and driving compliance. Based in Pretoria with deep understanding of South African operational and regulatory environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Led 120-agent team in a 24/7 contact centre using Zendesk and Salesforce CRM; reduced average handle time from 8.2 to 5.7 mins, improving CSAT by 23% (Q1 2024–Q3 2025).",
+    "Optimised shift scheduling via Power BI dashboards, cutting agent overtime by 18% and improving team coverage by 30% (Jan 2024–Present).",
+    "Introduced AI-powered chatbot for Tier 1 queries (built on Dialogflow), handling 40% of common issues, reducing live agent load by 35% (Mar 2024–Present).",
+    "Reduced first-call resolution time from 14 to 9 minutes by redesigning scripts and training modules using LMS (LearnDash), improving CSAT by 19% (Apr 2024–Present)."
+   ],
+   "city": "Pretoria",
+   "company": "NexaConnect Solutions",
+   "end": "Present",
+   "start": "2024-03",
+   "title": "Executive Contact Centre Team Leader"
+  },
+  {
+   "bullets": [
+    "Managed 80-agent team in a BEE-compliant contact centre using Oracle CRM; achieved 98% compliance with BEE standards and reduced call drop rate by 41% (2022–2024).",
+    "Led process re-engineering of complaint handling, cutting resolution time from 48 to 27 hours, improving customer retention by 28% (2022–2024).",
+    "Trained 45 new agents using a blended learning model (LMS + on-the-job), reducing onboarding time from 3 weeks to 12 days (2023–2024).",
+    "Improved agent performance via KPI dashboards (Power BI), increasing average performance score from 6.2 to 8.1 out of 10 (2023–2024)."
+   ],
+   "city": "Pretoria",
+   "company": "Verve Telecom",
+   "end": "2024-02",
+   "start": "2022-04",
+   "title": "Contact Centre Supervisor"
+  },
+  {
+   "bullets": [
+    "Directed operations of a 60-agent call centre using SAP CRM and KPI tracking tools; improved first-call resolution by 34% and reduced escalations by 29% (2018–2022).",
+    "Designed and implemented a shift rotation model that improved agent retention by 40% and reduced absenteeism by 33% (2019–2021).",
+    "Led compliance audits for IFRS reporting processes, ensuring 100% accuracy in financial data entry and audit readiness (2020–2021).",
+    "Reduced call volume spikes by 22% through predictive analytics (using Python scripts), improving system stability and agent workload balance (2020–2021)."
+   ],
+   "city": "Johannesburg",
+   "company": "Astra Finance Group",
+   "end": "2018-08",
+   "start": "2015-07",
+   "title": "Operations Manager"
+  },
+  {
+   "bullets": [
+    "Managed a 30-agent IT support team using ServiceNow and Jira; reduced ticket resolution time from 48 to 24 hours, improving user satisfaction by 31% (2012–2015).",
+    "Led incident response protocols, cutting critical incident response time from 12 to 4 hours, improving system uptime by 18% (2013–2015).",
+    "Improved knowledge base accuracy by 45% through structured content tagging and user feedback loops (2014–2015).",
+    "Reduced agent errors by 38% via standard operating procedures (SOPs) and real-time monitoring (using Splunk)."
+   ],
+   "city": "Cape Town",
+   "company": "TechNova Systems",
+   "end": "2012-06",
+   "start": "2008-03",
+   "title": "IT Support Team Lead"
+  },
+  {
+   "bullets": [
+    "Coordinated logistics and inventory for a regional distribution network using SAP and Excel; improved stock accuracy from 72% to 94% (2005–2008).",
+    "Reduced delivery delays by 30% through route optimisation using Google Maps API and Excel macros (2006–2008).",
+    "Led warehouse staff training, improving inventory handling efficiency by 25% and reducing damage rates by 40% (2007–2008).",
+    "Improved reporting accuracy by 50% through standardised data entry forms and KPI tracking (2005–2008)."
+   ],
+   "city": "Durban",
+   "company": "Portside Logistics",
+   "end": "2005-09",
+   "start": "2001-04",
+   "title": "Logistics Operations Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "BBA – Operations Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  },
+  {
+   "institution": "Nelson Mandela Metropolitan College",
+   "qualification": "National Certificate (Level 4) – Business Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Customer Service (SAICS)",
+   "name": "Advanced Customer Experience Management",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Bachelor of Business Administration (BBA) – Operations Management",
+   "year": 0
+  },
+  {
+   "issuer": "Nelson Mandela Metropolitan College",
+   "name": "National Certificate (Level 4) – Business Administration",
+   "year": 2005
+  }
+ ],
+ "skills": [
+  "CRM (Salesforce, Oracle, SAP)",
+  "Power BI, Excel (advanced)",
+  "KPI & Performance Dashboards",
+  "BEE Compliance",
+  "Customer Retention Strategies",
+  "AI Chatbot Development (Dialogflow)",
+  "LMS & E-Learning Platforms",
+  "ServiceNow, Jira",
+  "Process Improvement (Lean, Six Sigma)",
+  "Incident Management",
+  "Team Leadership & Training"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (basic)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:07:58.759Z"
+ }
+}

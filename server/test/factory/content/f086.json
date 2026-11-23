@@ -1,0 +1,153 @@
+{
+ "spec": {
+  "id": "f086",
+  "field": "civil engineering",
+  "role": "Civil Engineer",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "sidebar",
+  "format": "pdf",
+  "quirks": [
+   "not-completed"
+  ],
+  "name": "Priya Mabaso",
+  "city": "Pretoria"
+ },
+ "name": "Priya Mabaso",
+ "email": "priya.mabaso@example.test",
+ "phone": "071 555 1086",
+ "headline": "Senior Civil Engineer | Infrastructure Projects | Project Delivery",
+ "summary": "Experienced civil engineer with 19 years in infrastructure and construction. Strong background in design, supervision, and project delivery across urban and rural environments. Based in Pretoria, South Africa.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Reviewed site plans."
+   ],
+   "city": "Pretoria",
+   "company": "Naledi Infrastructure Solutions",
+   "end": "2020-03",
+   "start": "2016-07",
+   "title": "Senior Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Coordinated design reviews."
+   ],
+   "city": "Johannesburg",
+   "company": "Vryheid Construction Group",
+   "end": "2018-12",
+   "start": "2014-04",
+   "title": "Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed site inspections."
+   ],
+   "city": "Cape Town",
+   "company": "Dube Engineering Services",
+   "end": "2016-03",
+   "start": "2012-08",
+   "title": "Site Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Conducted field assessments."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Projects Ltd",
+   "end": "2014-02",
+   "start": "2010-06",
+   "title": "Junior Civil Engineer"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Oversaw design documentation."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Build Group",
+   "end": "Present",
+   "start": "2008-09",
+   "title": "Lead Civil Engineer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Engineering (Civil)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2002
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Structural Design",
+   "status": "in_progress",
+   "statusWords": "did not complete",
+   "startYear": 2004
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Postgraduate Certificate in Infrastructure Planning",
+   "status": "completed",
+   "statusWords": "completed",
+   "startYear": 2015
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Civil Engineers",
+   "name": "Professional Practice in Civil Engineering",
+   "year": 2018
+  },
+  {
+   "issuer": "National Institute of Construction Management",
+   "name": "Project Management for Infrastructure",
+   "year": 2020
+  }
+ ],
+ "skills": [
+  "Project planning",
+  "Site supervision",
+  "Design review",
+  "Budget estimation",
+  "Risk assessment",
+  "Technical documentation",
+  "Stakeholder engagement",
+  "Construction compliance",
+  "CAD software",
+  "BIM integration",
+  "Sustainability planning",
+  "Regulatory adherence",
+  "Team leadership",
+  "Quality control",
+  "Site safety protocols"
+ ],
+ "languages": [
+  "English",
+  "Afrikaans",
+  "isiZulu"
+ ],
+ "projects": [
+  "Led design of urban road upgrades in Soweto.",
+  "Managed construction of water treatment plant in Ekurhuleni.",
+  "Coordinated bridge rehabilitation in Pretoria.",
+  "Supervised site operations for a new housing development.",
+  "Reviewed technical reports for public transport infrastructure."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:31:05.582Z"
+ }
+}

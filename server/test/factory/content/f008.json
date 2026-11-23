@@ -1,0 +1,155 @@
+{
+ "spec": {
+  "id": "f008",
+  "field": "banking credit",
+  "role": "Credit Risk Analyst",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "abbreviations"
+  ],
+  "name": "Fatima Smith",
+  "city": "Midrand"
+ },
+ "name": "Fatima Smith",
+ "email": "fatima.smith@example.test",
+ "phone": "011 555 1008",
+ "headline": "Mid-level Credit Risk Analyst | South African Banking Sector | BEE Compliant | IFRS 9 & Basel III Experience",
+ "summary": "Experienced mid-level credit risk professional with 7 years in South African banking. Skilled in credit risk analysis, regulatory compliance, and data reporting. Strong background in IFRS 9, BEE, and NCR standards. Proven ability to deliver risk reports and support policy development.",
+ "roles": [
+  {
+   "bullets": [
+    "Managed credit risk assessments for retail and SME loans.",
+    "Reviewed loan applications using IFRS 9 and BEE guidelines.",
+    "Prepared monthly credit risk reports for senior management."
+   ],
+   "city": "Midrand",
+   "company": "Nelson Financial Group",
+   "end": "2024-03",
+   "start": "2020-04",
+   "title": "Credit Risk Analyst"
+  },
+  {
+   "bullets": [
+    "Assisted in credit scoring model validation using SQL and PM tools.",
+    "Conducted due diligence on client financials and compliance records.",
+    "Updated risk exposure tables in CRM system for real-time tracking."
+   ],
+   "city": "Midrand",
+   "company": "Vosat Holdings",
+   "end": "Present",
+   "start": "2022-07",
+   "title": "Mid-Level Credit Risk Analyst"
+  },
+  {
+   "bullets": [
+    "Performed credit quality reviews on portfolio segments.",
+    "Identified trends in delinquency using BEE-aligned data.",
+    "Collated risk data for quarterly regulatory submissions."
+   ],
+   "city": "Midrand",
+   "company": "KwaZulu Credit Solutions",
+   "end": "2020-03",
+   "start": "2018-05",
+   "title": "Credit Risk Associate"
+  },
+  {
+   "bullets": [
+    "Supported HR-driven credit policy updates for branch teams.",
+    "Maintained credit documentation in compliance with NCR rules.",
+    "Monitored credit limits and flagged anomalies in real-time."
+   ],
+   "city": "Midrand",
+   "company": "African Trust Bank",
+   "end": "2018-04",
+   "start": "2016-08",
+   "title": "Credit Risk Officer"
+  },
+  {
+   "bullets": [
+    "Did reports on loan performance and risk exposure.",
+    "Helped customers with credit applications and documentation.",
+    "Updated credit files in HR and CRM systems."
+   ],
+   "city": "Midrand",
+   "company": "Mzansi Financial Services",
+   "end": "2016-07",
+   "start": "2014-09",
+   "title": "Credit Assistant"
+  },
+  {
+   "bullets": [
+    "Reviewed credit applications and assessed risk profiles.",
+    "Collated data for credit portfolio analysis.",
+    "Assisted in preparing monthly credit risk summaries."
+   ],
+   "city": "Midrand",
+   "company": "Sasol Credit Division",
+   "end": "2014-08",
+   "start": "2012-03",
+   "title": "Junior Credit Analyst"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Banking and Finance)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2008
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Banking and Financial Services",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Banking and Finance",
+   "name": "Certified Credit Risk Analyst (CCRA)",
+   "year": 2019
+  },
+  {
+   "issuer": "National Credit Regulator",
+   "name": "NCR Level 3 Credit Risk Compliance",
+   "year": 2021
+  }
+ ],
+ "skills": [
+  "IFRS 9",
+  "Basel III",
+  "SQL",
+  "Power BI",
+  "CRM systems",
+  "K8s",
+  "BEE compliance",
+  "Risk scoring",
+  "Loan portfolio analysis",
+  "NCR regulations",
+  "PM tools",
+  "HR data integration",
+  "Credit reporting",
+  "Regulatory compliance",
+  "Data validation"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed K8s-based monitoring for credit exposure dashboards",
+  "Built SQL queries to extract loan performance data from legacy systems",
+  "Automated monthly risk reports using Power BI and CRM data feeds"
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:42:12.227Z"
+ }
+}

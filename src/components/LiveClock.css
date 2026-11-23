@@ -1,0 +1,42 @@
+/* The live clock beside the light and dark switch (src/components/LiveClock.tsx). Glass in both modes, the RoleMatch blue to teal in its ring. */
+.rmc {
+  --rmc-bg: rgba(255, 255, 255, .72); --rmc-line: rgba(16, 42, 77, .12); --rmc-ink: #0F2137; --rmc-soft: #5D7189;
+  --rmc-a: #007BA7; --rmc-b: #17C3B2; --rmc-track: rgba(16, 42, 77, .10);
+  position: relative; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px 0 9px; border-radius: 999px;
+  background: var(--rmc-bg); border: 1px solid var(--rmc-line); color: var(--rmc-ink); overflow: hidden; white-space: nowrap; cursor: default;
+  box-shadow: 0 6px 18px -12px rgba(16, 42, 77, .35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  font-family: Outfit, Sora, system-ui, sans-serif; transition: border-color .4s var(--rm-out, ease), box-shadow .4s var(--rm-out, ease);
+}
+[data-theme="dark"] .rmc {
+  --rmc-bg: rgba(255, 255, 255, .05); --rmc-line: rgba(255, 255, 255, .12); --rmc-ink: #EAF1FA; --rmc-soft: #9FB0C6;
+  --rmc-a: #5CC0FF; --rmc-b: #43E5C0; --rmc-track: rgba(255, 255, 255, .12);
+  box-shadow: 0 8px 24px -14px rgba(0, 0, 0, .8), inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+.rmc:hover { border-color: color-mix(in srgb, var(--rmc-b) 55%, transparent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--rmc-b) 14%, transparent), 0 8px 22px -14px var(--rmc-b); }
+.rmc-ring { width: 18px; height: 18px; flex: none; transform: rotate(-90deg); }
+.rmc-ring circle { fill: none; stroke-width: 2.4; }
+.rmc-ring .t { stroke: var(--rmc-track); }
+.rmc-ring .s { stroke-linecap: round; stroke-dasharray: 44 44; stroke-dashoffset: 44; }
+.rmc-time { display: inline-flex; align-items: center; font-size: 15px; font-weight: 600; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
+.rmc-digit { display: inline-block; height: 1.2em; line-height: 1.2em; width: .6em; overflow: hidden; text-align: center; }
+.rmc-strip { display: flex; flex-direction: column; will-change: transform; }
+.rmc-strip span { display: block; height: 1.2em; }
+.rmc-colon { padding: 0 1px; line-height: 1.2em; }
+.rmc-period { margin-left: 4px; font-size: 10.5px; font-weight: 600; color: var(--rmc-soft); text-transform: uppercase; }
+.rmc-date { padding-left: 9px; border-left: 1px solid var(--rmc-line); font: 500 11.5px Sora, system-ui, sans-serif; color: var(--rmc-soft); }
+.rmc-sheen { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .rmc { animation: rmc-in .7s var(--rm-out, ease) both; }
+  .rmc-ring .s { animation: rmc-sweep 60s linear infinite; }
+  .rmc-strip { transition: transform .75s var(--rm-out, ease); }
+  .rmc-strip.snap { transition: none; }
+  .rmc-colon { animation: rmc-breathe 2s ease-in-out infinite; }
+  .rmc-sheen { opacity: 1; background: linear-gradient(105deg, transparent 30%, color-mix(in srgb, var(--rmc-b) 28%, transparent) 50%, transparent 70%); transform: translateX(-130%); animation: rmc-sheen 1.3s var(--rm-io, ease-in-out) .1s both; }
+}
+@media (prefers-reduced-motion: reduce) { .rmc-ring .s { stroke-dashoffset: 0; opacity: .5; } }
+@keyframes rmc-in { from { opacity: 0; transform: translateY(-4px) scale(.96); } to { opacity: 1; transform: none; } }
+@keyframes rmc-sweep { from { stroke-dashoffset: 44; } to { stroke-dashoffset: 0; } }
+@keyframes rmc-breathe { 50% { opacity: .3; } }
+@keyframes rmc-sheen { to { transform: translateX(130%); } }
+@media (max-width: 767px) { .rmc-date { display: none; } .rmc { padding: 0 10px 0 8px; } }

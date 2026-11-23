@@ -1,0 +1,132 @@
+{
+ "readingIssues": [],
+ "record": {
+  "name": "Nomsa Dube",
+  "role": "Marketing Coordinator",
+  "skills": [
+   "Social media",
+   "Event planning",
+   "Budgeting",
+   "Canva",
+   "Excel"
+  ],
+  "experience": "6",
+  "location": "Durban, South Africa",
+  "email": "nomsa.dube@example.test",
+  "phone": "081 555 0113",
+  "workHistory": [
+   {
+    "company": "Sunrise Retail",
+    "position": "Marketing Coordinator",
+    "startDate": "Feb 2022",
+    "endDate": "Present",
+    "responsibilities": [
+     "Planned 24 in-store events a year and grew social media followers by 60%.",
+     "Managed a R400,000 annual campaign budget."
+    ]
+   },
+   {
+    "company": "Bayview Stores",
+    "position": "Marketing Assistant",
+    "startDate": "Jan 2020",
+    "endDate": "Jan 2022",
+    "responsibilities": [
+     "Produced weekly newsletters and supported store launches."
+    ]
+   }
+  ],
+  "summary": "Marketing coordinator with four years of experience running events and social media for retail brands.",
+  "education": [
+   {
+    "degree": "BCom Marketing",
+    "institution": "University of KwaZulu-Natal",
+    "year": "2019",
+    "type": "degree",
+    "level": "Bachelor's degree",
+    "status": "completed",
+    "statusEvidence": "2019, a year already past, is given as the year it ended"
+   }
+  ],
+  "projects": [],
+  "worthNoting": [],
+  "certifications": [],
+  "languages": [],
+  "recruiterNotes": ""
+ },
+ "confidence": 0.6,
+ "meta": {
+  "method": "rules",
+  "schemaVersion": "extract-1.0.0",
+  "parserVersion": "2.16.0",
+  "warnings": [
+   "Read by the built-in RoleMatch parser (no AI service). It handles standard CV layouts; unusual layouts may be missed, so check the record against the original CV."
+  ],
+  "droppedUnsupported": [],
+  "asOf": "2026-10-21",
+  "sections": [
+   {
+    "step": "identity",
+    "status": "found",
+    "via": "header block",
+    "count": 4,
+    "tried": [
+     "header block"
+    ]
+   },
+   {
+    "step": "summary",
+    "status": "found",
+    "via": "Summary heading",
+    "count": 1,
+    "tried": [
+     "Summary heading"
+    ]
+   },
+   {
+    "step": "skills",
+    "status": "found",
+    "via": "Skills heading",
+    "count": 5,
+    "tried": [
+     "Skills heading"
+    ]
+   },
+   {
+    "step": "education",
+    "status": "found",
+    "via": "Education and Certifications headings",
+    "count": 1,
+    "tried": [
+     "Education and Certifications headings"
+    ]
+   },
+   {
+    "step": "experience",
+    "status": "found",
+    "via": "Experience heading",
+    "count": 2,
+    "tried": [
+     "Experience heading"
+    ]
+   },
+   {
+    "step": "projects",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Projects heading"
+    ]
+   },
+   {
+    "step": "notable",
+    "status": "not_found",
+    "via": "",
+    "count": 0,
+    "tried": [
+     "Worth noting headings"
+    ]
+   }
+  ]
+ }
+}

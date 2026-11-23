@@ -1,0 +1,129 @@
+{
+ "spec": {
+  "id": "f093",
+  "field": "legal",
+  "role": "Legal Advisor",
+  "seniority": "junior",
+  "years": 4,
+  "quality": "average",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "long-academic"
+  ],
+  "name": "Megan Coetzee",
+  "city": "Johannesburg"
+ },
+ "name": "Megan Coetzee",
+ "email": "megan.coetzee@example.test",
+ "phone": "061 555 1093",
+ "headline": "Junior Legal Advisor with 4 years of experience in commercial and corporate law, specializing in contract drafting and compliance.",
+ "summary": "Dedicated legal professional with hands-on experience in commercial law, contract management, and regulatory compliance. Proven ability to deliver accurate, timely legal support in fast-paced environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Supported legal team in drafting and reviewing contracts for retail and manufacturing clients in Johannesburg.",
+    "Prepared compliance reports for regulatory bodies, ensuring adherence to the Companies Act and Consumer Protection Act."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson & Co. Legal Services",
+   "end": "2023-06",
+   "start": "2021-03",
+   "title": "Legal Assistant"
+  },
+  {
+   "bullets": [
+    "Assisted in litigation support, including document preparation and witness coordination for civil disputes.",
+    "Conducted due diligence for three M&A transactions, identifying key legal risks and contributing to successful negotiations."
+   ],
+   "city": "Johannesburg",
+   "company": "Veritas Legal Group",
+   "end": "Present",
+   "start": "2023-07",
+   "title": "Junior Legal Advisor"
+  },
+  {
+   "bullets": [
+    "Managed client intake and initial legal assessments, reducing response time by 25% through improved workflow.",
+    "Collaborated with finance and operations teams to resolve contractual disputes involving supply chain agreements."
+   ],
+   "city": "Johannesburg",
+   "company": "African Growth Partners",
+   "end": "2023-06",
+   "start": "2021-03",
+   "title": "Legal Operations Associate"
+  },
+  {
+   "bullets": [
+    "Prepared legal briefs for regulatory submissions to the Department of Trade, Finance and Industry.",
+    "Supported compliance initiatives under the National Credit Act and the Prevention of Organised Crime Act."
+   ],
+   "city": "Johannesburg",
+   "company": "KwaZulu Legal Solutions",
+   "end": "2021-02",
+   "start": "2019-08",
+   "title": "Legal Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Bachelor of Laws (LLB)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2017
+  },
+  {
+   "institution": "University of Johannesburg",
+   "qualification": "Diploma in Legal Practice",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Certificate in Legal Administration",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Legal Practice",
+   "name": "Certificate in Legal Research and Drafting",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Postgraduate Diploma in Commercial Law",
+   "year": 2023
+  },
+  {
+   "issuer": "Law Society of South Africa",
+   "name": "Practical Legal Skills Workshop",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "Contract drafting and negotiation",
+  "Regulatory compliance",
+  "Legal research and analysis",
+  "Client communication",
+  "Due diligence",
+  "Drafting legal notices and correspondence"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Drafted 50+ commercial agreements for SMEs in Gauteng, improving contract clarity and reducing disputes by 30%.",
+  "Conducted compliance audits for 15 clients, identifying 12 regulatory gaps and recommending corrective actions."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T12:44:46.860Z"
+ }
+}

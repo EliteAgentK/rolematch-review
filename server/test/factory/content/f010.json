@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "id": "f010",
+  "field": "human resources",
+  "role": "HR Business Partner",
+  "seniority": "executive",
+  "years": 18,
+  "quality": "rich",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "remote-only",
+   "overlapping-contract"
+  ],
+  "name": "Yusuf Zulu",
+  "city": "Pretoria"
+ },
+ "name": "Yusuf Zulu",
+ "email": "yusuf.zulu@example.test",
+ "phone": "031 555 1010",
+ "headline": "Executive HR Business Partner | Remote-Only | 18 Years Experience | South African HR Strategy & Talent Development",
+ "summary": "Only seeking remote work opportunities. Proven track record in executive HR leadership, talent strategy, and workforce transformation across diverse South African organisations. Fully remote-ready with experience in digital HR systems and agile HR operations.",
+ "roles": [
+  {
+   "bullets": [
+    "Led end-to-end talent strategy for 1,200+ employees at Nkosi Dynamics, using SAP SuccessFactors; improved retention by 28% in 18 months.",
+    "Designed and implemented a performance review system using Oracle HCM; reduced appraisal cycle time by 40% and increased feedback quality by 35%.",
+    "Launched a skills gap analysis for 800+ staff using People Analytics tools; identified 15 key development areas, driving 30% upskilling ROI.",
+    "Managed a R12M annual HR budget with 98% compliance; reduced operational costs by R850k through process automation using Workday.",
+    "Spearheaded DEI policy rollout across 3 divisions; increased employee engagement scores from 3.2 to 4.6 on internal surveys.",
+    "Partnered with finance to align HR planning with 5-year business strategy; improved workforce forecasting accuracy by 42%."
+   ],
+   "city": "Pretoria",
+   "company": "Nkosi Dynamics",
+   "end": "2024-03",
+   "start": "2019-04",
+   "title": "Executive HR Business Partner"
+  },
+  {
+   "bullets": [
+    "Developed a remote workforce policy for 1,500+ employees; improved remote work productivity by 22% via structured onboarding and tool integration.",
+    "Introduced AI-powered recruitment pipeline using HireVue and Pymetrics; cut time-to-hire from 60 to 32 days, increasing candidate quality by 18%.",
+    "Led a transformation of HR operations using BambooHR and Tableau; reduced reporting time by 50% and improved data visibility for leadership.",
+    "Conducted annual workforce planning for 2,000+ staff; aligned staffing with business goals, reducing headcount overruns by 33%.",
+    "Facilitated leadership development for 40+ managers using a blended learning model; improved team performance by 27% in Q4 2023.",
+    "Collaborated with operations to redesign shift scheduling; reduced absenteeism by 19% and improved staff satisfaction scores by 24%."
+   ],
+   "city": "Pretoria",
+   "company": "Vulindlela Solutions",
+   "end": "2023-08",
+   "start": "2020-05",
+   "title": "HR Business Partner"
+  },
+  {
+   "bullets": [
+    "Managed HR operations for 900+ employees at Sibonzi Group; implemented a digital onboarding system using Workday, reducing onboarding time by 55%.",
+    "Led compliance audits for 12 departments; achieved 100% compliance with Labour Relations Act and SARS regulations.",
+    "Introduced a real-time employee feedback tool (SurveyMonkey + Power BI); increased engagement scores from 3.1 to 4.3 in 12 months.",
+    "Developed a succession planning framework for 15 key roles; successfully identified and onboarded 3 future leaders.",
+    "Reduced HR-related claims by 41% through proactive risk management and policy updates.",
+    "Led a cross-functional team to implement a new performance management system; improved manager-employee feedback loops by 38%."
+   ],
+   "city": "Pretoria",
+   "company": "Sibonzi Group",
+   "end": "2018-12",
+   "start": "2015-03",
+   "title": "HR Operations Manager"
+  },
+  {
+   "bullets": [
+    "Built and managed a talent acquisition team for 700+ roles; increased hiring accuracy by 30% using LinkedIn Recruiter and AI screening tools.",
+    "Designed a learning & development roadmap for 1,000+ staff; delivered 12+ training programs with 94% completion and 89% satisfaction.",
+    "Introduced a digital HR portal using BambooHR; cut HR service requests by 45% and improved response time to 12 hours.",
+    "Led a compliance review for 10+ departments; reduced audit findings by 60% and improved policy adherence by 52%.",
+    "Developed a mentorship program for 200+ new hires; improved retention of new staff by 37% within first 12 months.",
+    "Partnered with operations to align HR planning with quarterly goals; improved workforce alignment by 40%."
+   ],
+   "city": "Pretoria",
+   "company": "Mpho Enterprises",
+   "end": "2017-09",
+   "start": "2012-07",
+   "title": "HR Specialist"
+  },
+  {
+   "bullets": [
+    "Supported HR strategy for 300+ employees at Tshwane College of Business; improved staff satisfaction by 29% through targeted engagement initiatives.",
+    "Conducted employee wellbeing audits using Qualtrics; identified key stress points and recommended interventions, reducing burnout by 21%.",
+    "Led a digital transformation of HR records using Microsoft Dynamics; reduced manual data entry by 70% and improved accuracy to 99%.",
+    "Developed a performance management framework; increased manager effectiveness scores by 34% in internal evaluations.",
+    "Collaborated with academic staff to design a graduate employment program; increased graduate placement rates by 38%."
+   ],
+   "city": "Pretoria",
+   "company": "Tshwane College of Business",
+   "end": "2015-02",
+   "start": "2010-08",
+   "title": "HR Coordinator"
+  },
+  {
+   "bullets": [
+    "Delivered HR support for 120+ staff at KwaZulu HR Services; improved employee satisfaction by 24% through targeted communication and feedback loops.",
+    "Implemented a leave management system using HRIS; reduced leave-related errors by 50% and improved compliance by 44%.",
+    "Conducted annual staff surveys; identified key concerns and recommended changes adopted by leadership.",
+    "Led a training initiative for 50+ staff on workplace safety; reduced incident reports by 31% in one year.",
+    "Supported the rollout of a new employee recognition program; increased participation by 65% and engagement by 28%."
+   ],
+   "city": "Pretoria",
+   "company": "KwaZulu HR Services",
+   "end": "2014-06",
+   "start": "2008-03",
+   "title": "HR Officer"
+  },
+  {
+   "bullets": [
+    "Managed HR operations for 50+ staff at Pretoria HR Solutions; improved onboarding efficiency by 40% using digital checklists and templates.",
+    "Conducted monthly compliance checks; maintained 100% audit readiness for all departments.",
+    "Developed a staff communication plan; increased internal communication frequency by 50% and improved response times by 35%.",
+    "Supported the implementation of a new HR policy framework; achieved 95% staff awareness and 90% compliance within 3 months.",
+    "Led a staff engagement initiative; increased satisfaction scores from 3.0 to 3.7 in 6 months."
+   ],
+   "city": "Pretoria",
+   "company": "Pretoria HR Solutions",
+   "end": "2012-01",
+   "start": "2005-04",
+   "title": "HR Assistant"
+  },
+  {
+   "bullets": [
+    "Served as interim HR Business Partner at Vuma Group (2024-01 to 2024-03); managed 800+ staff, delivered emergency restructuring, and maintained compliance during transition.",
+    "Led a rapid HR response to a sudden workforce reduction; managed 150+ staff redeployment with 98% retention and zero legal claims.",
+    "Coordinated with legal and finance to implement a temporary restructuring plan; reduced operational costs by 12% in 3 months."
+   ],
+   "city": "Pretoria",
+   "company": "Vuma Group",
+   "end": "2024-03",
+   "start": "2024-01",
+   "title": "Interim HR Business Partner"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Arts in Human Resource Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2003
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Industrial Relations",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2001
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Human Resources Management",
+   "name": "Advanced HR Strategy & Leadership",
+   "year": 2021
+  },
+  {
+   "issuer": "University of Pretoria",
+   "name": "Master of Business Administration (HR Specialisation)",
+   "year": 0
+  }
+ ],
+ "skills": [
+  "HR Strategy & Planning",
+  "Talent Development",
+  "Performance Management",
+  "Compliance & Risk",
+  "Workforce Analytics",
+  "Change Management",
+  "Remote Work Operations",
+  "People Analytics Tools (SAP, Workday, BambooHR, Tableau)"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (proficient)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:45:46.341Z"
+ }
+}

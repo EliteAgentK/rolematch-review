@@ -1,0 +1,130 @@
+{
+ "spec": {
+  "id": "f032",
+  "field": "banking credit",
+  "role": "Credit Risk Analyst",
+  "seniority": "mid",
+  "years": 7,
+  "quality": "poor",
+  "layout": "header-band",
+  "format": "pdf",
+  "quirks": [
+   "buzzwords"
+  ],
+  "name": "Fatima Smith",
+  "city": "Midrand"
+ },
+ "name": "Fatima Smith",
+ "email": "fatima.smith@example.test",
+ "phone": "011 555 1032",
+ "headline": "Dynamic Credit Risk Analyst | Results-Driven | Team Player | Synergy Focused",
+ "summary": "Results-driven professional with dynamic experience in credit risk analysis. Proven track record in team synergy and delivering actionable insights. Adept at navigating complex financial environments with a focus on risk mitigation and data-driven decision making.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports on loan performance and delinquency trends.",
+    "Assisted in credit scoring model validation.",
+    "Reviewed loan applications for compliance and risk exposure."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson Financial Group",
+   "end": "2021-03",
+   "start": "2018-06",
+   "title": "Credit Analyst"
+  },
+  {
+   "bullets": [
+    "Helped assess client creditworthiness using internal risk tools.",
+    "Contributed to portfolio risk monitoring dashboards.",
+    "Collaborated on credit policy updates with senior risk teams."
+   ],
+   "city": "Cape Town",
+   "company": "African Capital Solutions",
+   "end": "2023-08",
+   "start": "2021-04",
+   "title": "Credit Risk Associate"
+  },
+  {
+   "bullets": [
+    "Did credit risk assessments for SME lending portfolios.",
+    "Supported credit limit reviews and exposure analysis.",
+    "Identified risk patterns in customer repayment data."
+   ],
+   "city": "Pretoria",
+   "company": "Vodacom Financial Services",
+   "end": "2024-02",
+   "start": "2023-09",
+   "title": "Mid-Level Credit Risk Analyst"
+  },
+  {
+   "bullets": [
+    "Reviewed loan applications and flagged high-risk cases.",
+    "Participated in stress testing and scenario analysis sessions.",
+    "Improved data accuracy in credit risk reporting by 15%."
+   ],
+   "city": "Midrand",
+   "company": "Savvy Bank Group",
+   "end": "Present",
+   "start": "2024-03",
+   "title": "Credit Risk Analyst"
+  },
+  {
+   "bullets": [
+    "Did preliminary credit checks on new clients.",
+    "Updated risk exposure tables monthly.",
+    "Maintained compliance with internal credit guidelines."
+   ],
+   "city": "Durban",
+   "company": "KwaZulu Financial Partners",
+   "end": "2021-03",
+   "start": "2016-07",
+   "title": "Junior Credit Officer"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Commerce (Finance)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2010
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Banking and Financial Services",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2012
+  }
+ ],
+ "certifications": [],
+ "skills": [
+  "Credit risk assessment",
+  "Loan portfolio analysis",
+  "Delinquency reporting",
+  "Risk modeling tools",
+  "Data validation",
+  "Compliance monitoring",
+  "SME lending",
+  "Credit scoring",
+  "Financial statement analysis",
+  "Stress testing",
+  "Dashboard development",
+  "Risk mitigation strategies",
+  "Internal controls",
+  "Regulatory reporting",
+  "Customer due diligence",
+  "Financial forecasting",
+  "Credit policy implementation"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:18:23.656Z"
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "id": "f065",
+  "field": "retail management",
+  "role": "Store Manager",
+  "seniority": "junior",
+  "years": 3,
+  "quality": "poor",
+  "layout": "classic",
+  "format": "docx",
+  "quirks": [
+   "long-academic"
+  ],
+  "name": "Rajesh Steyn",
+  "city": "Johannesburg"
+ },
+ "name": "Rajesh Steyn",
+ "email": "rajesh.steyn@example.test",
+ "phone": "021 555 1065",
+ "headline": "Junior Store Manager | Retail Operations | Customer Experience | Inventory Control",
+ "summary": "Dedicated junior store manager with 3 years of hands-on retail experience. Proven in daily operations, stock handling, and team support. Strong foundation in retail principles and compliance.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed daily store operations."
+   ],
+   "city": "Johannesburg",
+   "company": "Urban Bazaar Retail",
+   "end": "Present",
+   "start": "2023-04",
+   "title": "Junior Store Manager"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in stock checks.",
+    "Supported team during peak hours."
+   ],
+   "city": "Johannesburg",
+   "company": "Makati Market Stores",
+   "end": "2023-04",
+   "start": "2022-07",
+   "title": "Store Assistant"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Handled cash register duties.",
+    "Maintained store cleanliness."
+   ],
+   "city": "Johannesburg",
+   "company": "Vista Corner Store",
+   "end": "2022-07",
+   "start": "2021-03",
+   "title": "Cashier & Store Support"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Organised product displays.",
+    "Updated store records weekly."
+   ],
+   "city": "Johannesburg",
+   "company": "City Link Outlets",
+   "end": "2021-03",
+   "start": "2020-09",
+   "title": "Store Operative"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in inventory sorting.",
+    "Followed safety protocols daily."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelson’s Corner Store",
+   "end": "2020-09",
+   "start": "2019-06",
+   "title": "Store Intern"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "National Senior Certificate (NSC)",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2016
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Retail Management",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "Certificate in Consumer Behaviour",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Retail Management",
+   "name": "Certificate in Retail Operations and Customer Service",
+   "year": 2022
+  },
+  {
+   "issuer": "University of Johannesburg",
+   "name": "Diploma in Business Administration (Retail Stream)",
+   "year": 2021
+  },
+  {
+   "issuer": "Nelson Mandela Metropolitan College",
+   "name": "Short Course: Inventory Control and Stock Management",
+   "year": 2020
+  },
+  {
+   "issuer": "Cape Town Institute of Management",
+   "name": "Certified in Store Operations and Loss Prevention",
+   "year": 2019
+  }
+ ],
+ "skills": [
+  "Inventory control",
+  "Stock reconciliation",
+  "Customer service",
+  "Point of sale systems",
+  "Team leadership",
+  "Loss prevention",
+  "Store audits",
+  "Sales reporting",
+  "POS software",
+  "Store layout",
+  "Budgeting",
+  "Sales forecasting",
+  "Retail compliance",
+  "Visual merchandising",
+  "Data entry",
+  "Team motivation",
+  "Daily operations",
+  "Customer feedback",
+  "Store safety",
+  "Sales targets"
+ ],
+ "languages": [
+  "English (fluent)",
+  "Afrikaans (basic)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Led daily store audits to ensure stock accuracy.",
+  "Improved customer satisfaction scores by 15%.",
+  "Reduced stock discrepancies through better tracking."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:59:05.595Z"
+ }
+}

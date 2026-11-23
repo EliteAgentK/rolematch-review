@@ -1,0 +1,143 @@
+{
+ "spec": {
+  "id": "f061",
+  "field": "mining engineering",
+  "role": "Mine Planning Engineer",
+  "seniority": "junior",
+  "years": 2,
+  "quality": "rich",
+  "layout": "ats-plain",
+  "format": "docx",
+  "quirks": [
+   "professional-designation",
+   "many-short-roles"
+  ],
+  "name": "Bongani Adams",
+  "city": "Johannesburg"
+ },
+ "name": "Bongani Adams",
+ "email": "bongani.adams@example.test",
+ "phone": "061 555 1061",
+ "headline": "Junior Mine Planning Engineer | SANC-Registered | Hands-on Mine Design & Optimization",
+ "summary": "Results-driven junior mine planning engineer with 2 years of hands-on experience in mine design, haul road optimization, and production modeling. SANC-registered with proven track record in improving extraction efficiency, reducing costs, and enhancing operational accuracy.",
+ "roles": [
+  {
+   "bullets": [
+    "Designed mine layouts in MinePlan Pro for a 500,000-tonne operation, improving extraction efficiency by 14% in Q1 2023.",
+    "Created haul road networks using AutoCAD Civil 3D for a 120km mine, reducing transport delays by 10% and fuel costs by 8%.",
+    "Built a production simulation model in Excel with VBA for a copper mine, improving output forecasts by 22%.",
+    "Conducted grade control analysis on 8,000 drill samples using GeoStat Pro, reducing overbreak by 20% in field operations."
+   ],
+   "city": "Johannesburg",
+   "company": "Klipspruit Mining Solutions",
+   "end": "2023-06",
+   "start": "2022-03",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Developed a 3D mine plan in MinePlan Pro for a new nickel project, increasing resource recovery by 11%.",
+    "Built a haulage optimization model using Python and Pandas, reducing idle time by 15% in daily operations.",
+    "Collaborated with geologists to integrate geological data into MinePlan, improving plan accuracy by 25%.",
+    "Produced monthly mine reports using Power BI, reducing reporting time by 30% and improving stakeholder visibility."
+   ],
+   "city": "Johannesburg",
+   "company": "Amanzimtoti Minerals Group",
+   "end": "2024-02",
+   "start": "2023-07",
+   "title": "Mine Planning Analyst"
+  },
+  {
+   "bullets": [
+    "Designed a backfill system in MinePlan Pro for a tailings facility, improving structural stability by 35%.",
+    "Conducted slope stability analysis using RocPlane and SLOPE/W on 150m high walls, reducing failure risk by 40%.",
+    "Built a real-time production dashboard in Power BI, enabling daily performance tracking with 98% data accuracy.",
+    "Performed feasibility studies for a new underground operation using QGIS and Python, identifying 3 viable zones with 15% higher recoveries."
+   ],
+   "city": "Johannesburg",
+   "company": "Sibonzi Mining Development",
+   "end": "2024-09",
+   "start": "2024-03",
+   "title": "Junior Mine Design Engineer"
+  },
+  {
+   "bullets": [
+    "Optimized ore flow in a 200,000-tonne operation using MinePlan Pro, reducing processing time by 13%.",
+    "Developed a grade control model in Excel with VBA, improving recovery accuracy from 72% to 91%.",
+    "Created a 3D geological model in Leapfrog and Surfer, improving resource estimation by 19%.",
+    "Built a haul road routing system in AutoCAD Civil 3D, cutting transport time by 12% and fuel use by 9%."
+   ],
+   "city": "Johannesburg",
+   "company": "Nelsons Gold Operations",
+   "end": "Present",
+   "start": "2025-04",
+   "title": "Junior Mine Planning Engineer"
+  },
+  {
+   "bullets": [
+    "Produced a feasibility study for a new open-cut mine using QGIS and Python, identifying 3 viable zones with 15% higher recoveries.",
+    "Built a production simulation model in Excel with VBA, improving forecast accuracy by 22%.",
+    "Conducted grade control analysis on 12,000 drill samples using GeoStat Pro, reducing overbreak by 23%.",
+    "Designed a haul road network in AutoCAD Civil 3D, reducing transport time by 10% and fuel use by 8%."
+   ],
+   "city": "Johannesburg",
+   "company": "Makwetse Mining Projects",
+   "end": "2025-03",
+   "start": "2024-10",
+   "title": "Mine Planning Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of the Witwatersrand",
+   "qualification": "BEng (Hons) Mining Engineering",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2018
+  },
+  {
+   "institution": "Cape Town College of Technology",
+   "qualification": "Diploma in Mine Planning and Design",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2019
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Council for the Engineering Professions (SANC)",
+   "name": "Pr.Eng (Professional Engineer)",
+   "year": 2024
+  }
+ ],
+ "skills": [
+  "MinePlan Pro",
+  "AutoCAD Civil 3D",
+  "QGIS",
+  "Excel (VBA)",
+  "GeoStat Pro",
+  "Leapfrog",
+  "Power BI",
+  "Slope Stability Analysis",
+  "Resource Estimation",
+  "Production Modeling"
+ ],
+ "languages": [
+  "English (fluent)",
+  "isiZulu (conversational)"
+ ],
+ "projects": [
+  "Developed 3D mine plans using MinePlan Pro for a 1.2M tonne annual operation, reducing drilling costs by 18% over 6 months.",
+  "Optimized haul road layouts in a 150km mine using AutoCAD Civil 3D, cutting transport time by 12% and fuel use by 9%.",
+  "Built a real-time production model in Excel with VBA for a gold mine, improving forecast accuracy from 72% to 91%.",
+  "Conducted grade control analysis using GeoStat Pro on 12,000 drillhole samples, reducing overbreak by 23% in ore extraction.",
+  "Designed a backfill system in MinePlan Pro for a tailings facility, increasing stability by 35% and reducing slope failures by 40%.",
+  "Performed feasibility studies for a new open-cut operation using QGIS and Python scripts, identifying 3 viable zones with 15% higher recoveries.",
+  "Collaborated with geologists to create a 3D geological model in Surfer and Leapfrog, improving resource estimation by 19%."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T11:51:24.785Z"
+ }
+}

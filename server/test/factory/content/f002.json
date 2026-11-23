@@ -1,0 +1,144 @@
+{
+ "spec": {
+  "id": "f002",
+  "field": "data and analytics",
+  "role": "Data Analyst",
+  "seniority": "executive",
+  "years": 19,
+  "quality": "poor",
+  "layout": "date-column",
+  "format": "pdf",
+  "quirks": [
+   "not-completed"
+  ],
+  "name": "Nomvula Pillay",
+  "city": "Pretoria"
+ },
+ "name": "Nomvula Pillay",
+ "email": "nomvula.pillay@example.test",
+ "phone": "031 555 1002",
+ "headline": "Executive Data Analyst | 19+ Years in Data & Analytics | South African Market Expert",
+ "summary": "Experienced Data Analyst with 19 years in data and analytics. Skilled in reporting, data pipelines, and business insights. Strong in South African market data environments.",
+ "roles": [
+  {
+   "bullets": [
+    "Did reports.",
+    "Helped customers.",
+    "Managed data pipelines."
+   ],
+   "city": "Pretoria",
+   "company": "Nelson Data Solutions",
+   "end": "2024-03",
+   "start": "2018-06",
+   "title": "Senior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Improved data accuracy.",
+    "Collaborated on KPIs."
+   ],
+   "city": "Pretoria",
+   "company": "Vryheid Analytics Group",
+   "end": "Present",
+   "start": "2015-04",
+   "title": "Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Supported decision-making.",
+    "Maintained data quality."
+   ],
+   "city": "Pretoria",
+   "company": "Mzansi Insights Ltd",
+   "end": "2013-12",
+   "start": "2011-08",
+   "title": "Data Specialist"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Tracked performance metrics.",
+    "Used SQL and Excel."
+   ],
+   "city": "Pretoria",
+   "company": "Sasol Data Services",
+   "end": "2010-05",
+   "start": "2008-03",
+   "title": "Junior Data Analyst"
+  },
+  {
+   "bullets": [
+    "Did reports.",
+    "Assisted in data collection.",
+    "Performed basic analysis."
+   ],
+   "city": "Pretoria",
+   "company": "DataLink Pretoria",
+   "end": "2007-09",
+   "start": "2005-07",
+   "title": "Data Assistant"
+  }
+ ],
+ "education": [
+  {
+   "institution": "University of Pretoria",
+   "qualification": "Bachelor of Science in Information Systems",
+   "status": "completed",
+   "statusWords": "graduated",
+   "startYear": 2002
+  },
+  {
+   "institution": "Tshwane University of Technology",
+   "qualification": "Diploma in Business Analytics",
+   "status": "not_completed",
+   "statusWords": "did not complete",
+   "startYear": 2005
+  }
+ ],
+ "certifications": [
+  {
+   "issuer": "South African Institute of Data Science",
+   "name": "Advanced Data Analytics Certification",
+   "year": 2023
+  }
+ ],
+ "skills": [
+  "SQL",
+  "Excel",
+  "Power BI",
+  "Tableau",
+  "Python",
+  "Data Visualization",
+  "Statistical Analysis",
+  "Data Cleaning",
+  "ETL Processes",
+  "Data Governance",
+  "KPI Development",
+  "Business Intelligence",
+  "Data Modeling",
+  "Data Warehousing",
+  "Data Quality",
+  "Dashboard Design",
+  "Data Strategy",
+  "Data Integration",
+  "Data Security",
+  "Big Data Tools"
+ ],
+ "languages": [
+  "English",
+  "Afrikaans",
+  "isiZulu"
+ ],
+ "projects": [
+  "Built dashboards for sales performance.",
+  "Analyzed customer behavior trends.",
+  "Optimized reporting workflows."
+ ],
+ "personal": [],
+ "written": {
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "at": "2026-10-27T10:34:35.779Z"
+ }
+}
