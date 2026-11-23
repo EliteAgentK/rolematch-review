@@ -1,7 +1,9 @@
 import { afterAll, beforeAll, expect, test } from "vitest";
 import { makeWorld, type World } from "./portalKit";
+import { opsHeaders } from "./helpers";
 
-// R113. Past what can be finished, the service says busy at once, keeps answering health checks, and has nothing left to work through afterwards.
+// R113. Past what can be finished, the service says busy at once, keeps answering health checks and the metrics Prometheus reads (so a busy hour is
+// a line on the Trends page, not a gap), and has nothing left to work through afterwards.
 let w: World;
 beforeAll(async () => { w = await makeWorld(8995, 1, { SIGNUP_REQUIRE_CODE: "false", MAX_IN_FLIGHT: "5", RATE_OVERRIDES: JSON.stringify({ api_portal: 100000, api_org: 100000, status_user: 100000, status_portal: 100000 }) }); }, 240000);
 afterAll(async () => { await w?.stop(); }, 120000);
@@ -9,8 +11,8 @@ afterAll(async () => { await w?.stop(); }, 120000);
 test("over the limit: refused at once and clearly; health still answers; afterwards everything works", async () => {
   const u = w.users[0];
   const crowd = Promise.all(Array.from({ length: 60 }, (_, i) => u.get(i % 2 ? "/api/candidates" : "/api/portal/members")));
-  const health = await Promise.all(["/api/ready", "/api/health"].map((p) => fetch(w.base + p).then((r) => r.status)));
-  expect(health).toEqual([200, 200]);
+  const health = await Promise.all([...["/api/ready", "/api/health"].map((p) => fetch(w.base + p).then((r) => r.status)), fetch(`${w.base}/api/ops/metrics`, { headers: opsHeaders }).then((r) => r.status)]);
+  expect(health).toEqual([200, 200, 200]);
   const results = await crowd, busy = results.filter((r) => r.status === 503), fine = results.filter((r) => r.status === 200);
   expect(busy.length).toBeGreaterThan(0);
   expect(fine.length).toBeGreaterThan(0);

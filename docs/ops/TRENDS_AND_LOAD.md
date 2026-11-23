@@ -78,7 +78,25 @@ What each pretend recruiter does, with a person's pauses: signs in once, then ov
 
 **Trial on the Mac, 23 Nov 2026** (6 recruiters, 1 minute, the Mac's own test database; it proves the script, not the PC's capacity): no request failed; pages answered in 11 ms typically and 31 ms for the slowest 5%; 7 of 7 CVs read, the slowest in 3 s. It found two faults in the test itself, both fixed: k6 forgets sign-ins between rounds unless told (`noCookiesReset`), and the set-up made colleagues in separate companies when it made them at once.
 
-**First run on the PC, 23 Nov 2026** (release 2499b86, smoke, 2 companies of 3 recruiters): signed in, opened the lists, uploaded a CV, read in 3.6 s, nothing failed; `down` then left no container, volume, account or schema. The full steps run has not been run yet.
+**First full run on the PC, 23 Nov 2026** (k6 from the Mac, 10 companies of 10 recruiters, the AI off):
+
+| Recruiters at once | Requests | Failed | Pages, typical | Pages, slowest 5% | CVs read | Slowest CV (95%) |
+|---|---|---|---|---|---|---|
+| 10 | 407 | 0.5% | 40 ms | 109 ms | 24 of 24 | 3 s |
+| 25 | 1,000 | 0.1% | 39 ms | 132 ms | 63 of 63 | 3 s |
+| 50 | 2,143 | 0.1% | 43 ms | 139 ms | 110 of 110 | 3 s |
+| 100 | 4,200 | 0.2% | 40 ms | 135 ms | 218 of 218 | 3 s |
+| **100, after the fix below** | **4,217** | **0%** | **37 ms** | **108 ms** | **238 of 238** | **3.2 s** |
+
+The PC itself, from Prometheus over the whole session: processors 6% busy in a typical minute, 12.7% at the busiest; memory at most 40% of what Linux is given. Live had no server errors throughout.
+
+What the runs found:
+1. **Saves lost between the server and what sits in front of it (fixed, 0e691f0).** About 1% of note saves never reached the server. The server closed an idle connection after 5 seconds while the client could still reuse it for longer; a request sent at that moment was lost. Reads were retried by the client unseen; saves were not. Live has the same shape: Cloudflare's tunnel keeps idle connections 90 seconds. The server now keeps them 95 seconds. Proved: 100 recruiters, 4,217 requests, none failed.
+2. **Many sign-ins in the same instant.** With 50 people pressing "sign in" at the very same moment: 30 signed in, 10 were told "too many failed attempts" (one address may have 30 sign-ins counted at once, since they are counted before the password is checked; the message wrongly says "failed"), and 10 were told "very busy, try again in a few seconds" (one server takes 40 requests at once and refuses the rest at once rather than slowing everyone, by design, R113). Arrivals spread over half a minute, as people really arrive, saw none of this. Not changed yet: the owner decides whether one office address should be allowed more than 30 sign-ins at the very same moment.
+3. **The metrics were refused when the server was busy** (fixed, 0e691f0): they now always answer, like the health check, so a busy hour shows on the Trends page as a line, not a gap.
+4. **In the test itself:** the crowd now arrives over 30 seconds (all at once is the spike shape's job).
+
+What this does not cover: the AI was off, so reading a CV took about 3 seconds here; with the AI on it takes 10 to 45 seconds per CV and depends on Anthropic's service, not the PC. One server process was tested; the server's limits (40 requests at once, 5 database connections) were live's.
 
 ## Proof
 

@@ -3,6 +3,7 @@
 #   deploy/pc/load-target.sh up <commit>
 # then here:
 #   load/run.sh            steps: 10, 25, 50, then 100 recruiters at once, 3 minutes each, stopping at the first step that misses the pass marks
+#                          (STEPS="50 100" load/run.sh for chosen steps only)
 #   load/run.sh smoke      one recruiter, once: does it work at all
 #   load/run.sh spike      a rush of 100 in 30 seconds          (SPIKE=200 load/run.sh spike for more)
 #   load/run.sh steady     30 new journeys a minute for 5 minutes (RATE=60 load/run.sh steady for more)
@@ -28,7 +29,7 @@ one() { local shape="$1" label="$2"; shift 2
   RAN+=("$label")
   k6 run --quiet -e PROFILE="$shape" -e ACCOUNTS="$TMP/accounts.json" -e BASE="http://127.0.0.1:$PORT" "$@" --summary-export "results/${STAMP}_${label}.json" journey.js; }
 case "$SHAPE" in
-  steps) for n in 10 25 50 100; do
+  steps) for n in ${STEPS:-10 25 50 100}; do
            if ! one hold "steps-$n" -e VUS="$n"; then echo "Stopped at $n recruiters at once: the pass marks were missed (or the watchdog stopped the target to protect live)."; break; fi
          done ;;
   smoke|spike|steady|hold) one "$SHAPE" "$SHAPE" || true ;;

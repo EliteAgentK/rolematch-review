@@ -976,7 +976,7 @@ export const server = await serve({
 let inHand = 0;
 /** Whether the visitor reached Cloudflare over plain http, as Cloudflare's own headers say. No header (a check from this machine) is not plain http. */
 const overPlainHttp = (h: Headers) => (h.get("x-forwarded-proto") ?? "").split(",")[0].trim().toLowerCase() === "http" || /"scheme"\s*:\s*"http"/i.test(h.get("cf-visitor") ?? "");
-const NEVER_REFUSED = /^\/api\/(?:ready|health|ops\/health)/;
+const NEVER_REFUSED = /^\/api\/(?:ready|health|ops\/health|ops\/metrics)/;   // the watchers: a busy server must still say how it is (Trends, 23 Nov 2026)
 async function respond(req: Request, ip: string): Promise<Response> {
     const url = new URL(req.url);
     const requestId = newId();

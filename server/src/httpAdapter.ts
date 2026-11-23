@@ -14,7 +14,10 @@ export interface Served { port: number; stop: () => Promise<void> }
 export function serve(opts: ServeOptions): Promise<Served> {
   const limitFor = (method: string, path: string) => (typeof opts.maxBodyBytes === "function" ? opts.maxBodyBytes(method, path) : opts.maxBodyBytes ?? Infinity);
   // Slow or oversized requests are cut off, so a few patient attackers cannot hold every connection open.
-  const http: Server = createServer({ headersTimeout: 30_000, requestTimeout: 120_000, keepAliveTimeout: 5_000, maxHeaderSize: 16 * 1024 }, async (nreq, nres) => {
+  // An idle connection is kept longer than anything in front of it keeps one (Cloudflare's tunnel keeps them 90 s): with Node's 5 s, the tunnel could
+  // send a request down a connection the server was closing that moment, and the request was lost. k6 found it on 23 Nov 2026: about 1% of saves, never
+  // reaching the server, while reads were silently retried by the client (docs/ops/TRENDS_AND_LOAD.md).
+  const http: Server = createServer({ headersTimeout: 30_000, requestTimeout: 120_000, keepAliveTimeout: 95_000, maxHeaderSize: 16 * 1024 }, async (nreq, nres) => {
     try {
       const max = limitFor(nreq.method ?? "GET", (nreq.url ?? "/").split("?")[0]);
       const declared = Number(nreq.headers["content-length"] ?? 0);
