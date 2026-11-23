@@ -1,52 +1,89 @@
 # RoleMatch
 
-RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job descriptions, the platform reads each one into a structured record with evidence, and a recruiter can then compare a candidate with a job. It **recommends for human review** and never silently rejects, shortlists, interviews or hires anyone.
+RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job descriptions, the platform reads each one into a structured record tied to the lines it came from, and a recruiter can ask how well a candidate fits a job. It **recommends for human review**: it never rejects, shortlists, interviews or hires anyone by itself.
 
 ![RoleMatch logo](public/logo-light.png)
 
-## Where things stand
+## Where things stand (23 November 2026)
 
-Under active development, **not yet a production system**. What exists today: sign-up with an emailed code, private encrypted document storage, a durable processing queue, CVs and job descriptions read into structured records with every value tied to the lines it came from, matching of one candidate against one job only when a recruiter selects Match, optimistic-concurrency edits within the organisation's edit policy, and an append-only audit log.
+**In development, live for testing, not yet a production system.** It runs at https://app.rolematch.co.za for the owner and invited testers; no paying customer uses it yet.
 
-**AI.** Reading and matching use a hosted AI service (Anthropic), called with RoleMatch's own key, metered per portal against a monthly allowance per company and a platform budget, both reserved call by call ([`docs/architecture/ADR-005-claude-in-the-platform.md`](docs/architecture/ADR-005-claude-in-the-platform.md)). The AI alone judges a candidate against a job; there is no scoring formula ([`docs/architecture/ADR-006-ai-only-matching.md`](docs/architecture/ADR-006-ai-only-matching.md)). Code checks every answer: values must be found in the document, cited evidence must exist, and a score its own evidence does not support is refused. Those checks prove an answer is grounded and well formed, not that the AI judged correctly: the match percentage is the AI's judgement within those bounds, not a measured probability. Scanned pages are turned into text on our own machine (Tesseract) before anything is read. With the AI switched off, a rule-based reader stands in and says so.
+**What a recruiter can do today**
+- Sign up (an e-mailed code confirms the address), sign in with a password or a passkey, reset a forgotten password. Sessions last 8 hours.
+- Work in a company's portals (departments), with three roles: administrator, recruiter and hiring manager (who sees only candidates on a shortlist). Administrators invite people by e-mail.
+- Upload CVs and job descriptions one at a time or in batches (PDF, Word .docx and .doc, OpenDocument, Rich Text, plain text, and scans or photos as JPEG, PNG, TIFF, BMP or GIF). Each waits in a visible processing list and reaches the board only when fully read. The original stays private and opens from the candidate's panel as **View Original CV**.
+- Read each candidate's and job's panel: every value comes from the document, with where it was found. Duplicates are flagged. Corrections are allowed only as far as the company's edit policy (Settings) permits; each one is audited with who, from what, to what.
+- Keep a note on each candidate and a workflow status **per job** (by default Not yet reviewed, Shortlisted, Interviewed, Hired and Not suitable; Reviewed, Awaiting interview, Interviewing and Archived can be switched on in Settings), and see each job's shortlist.
+- Match one candidate against one job only by pressing **Match**. The first finished match of a pair is kept as recorded; it is never re-run or charged again.
+- See the company's Overview and the history of what was done.
 
-**Where it runs, for now.** While RoleMatch is in development, the live service runs on one PC (Docker under WSL 2) with its own PostgreSQL, sign-in service and encrypted file vault, reached through a Cloudflare tunnel; it is backed up nightly with a weekly restore drill ([`docs/ops/LIVE_ON_PC.md`](docs/ops/LIVE_ON_PC.md)). One machine is not high availability: a power or network cut there takes the service down. Production moves to a cloud server in South Africa when the first corporate customer signs ([`docs/architecture/PLAN_AZURE_PRODUCTION.md`](docs/architecture/PLAN_AZURE_PRODUCTION.md)); the code is built to move (standard PostgreSQL, settings per machine, the file vault behind one interface). Live uses no Supabase hosting. Development and the test suites run PostgreSQL, the same open-source sign-in service and storage on the developer's own machine through the Supabase command-line tool, which is why the schema folder is `supabase/migrations/`.
+**How documents are read and matched**
+- Every file is turned into text on our own server: native text where the file has it, OCR (Tesseract, run locally) for scanned pages and photos.
+- The AI (Anthropic's API, called with RoleMatch's key) reads that text into the record and judges a match. There is no scoring formula: the score is the AI's ([`docs/architecture/ADR-006-ai-only-matching.md`](docs/architecture/ADR-006-ai-only-matching.md)). Rules supply only facts, such as where the candidate is and dated years of experience.
+- Code checks every answer: values must be found in the document, cited evidence must exist, and a score its own evidence does not support is refused. That proves an answer is grounded, not that the judgement is right: the percentage is the AI's judgement within those checks, not a measured probability.
+- Each AI call is billed to one portal, against a monthly allowance per company and a platform cap, reserved before the call ([`docs/architecture/ADR-005-claude-in-the-platform.md`](docs/architecture/ADR-005-claude-in-the-platform.md)). The text sent is processed by Anthropic outside South Africa.
+- With the AI switched off, a rule-based reader stands in and the record says so; matches then have no score.
 
-**Not there yet**, candidly: no malware scanner on uploaded files; reading accuracy has been measured on invented documents and on real ones supplied with permission (30 real CVs, measured repeatedly, and 39 real job descriptions), never independently; there is no labelled set of candidates and jobs with known right answers to measure matching against; the marketing pages (Home, Features, Pricing, Contact) make claims that are not yet proven. The wider list is in [`docs/product/OPERATING_MODEL.md`](docs/product/OPERATING_MODEL.md) (section 12) and [`docs/architecture/PRODUCTION_READINESS.md`](docs/architecture/PRODUCTION_READINESS.md).
+**Companies kept apart.** A company's requests run in the database under a role that sees only that company's rows (row-level security), and tests try every route across two companies. Platform-wide work (the queue, sign-in, rate limits) runs under one login that can see every company; narrowing it is planned, not done.
+
+**Where it runs, for now.** While RoleMatch is in development, everything runs on one PC (Docker under WSL 2): its own PostgreSQL, the open-source sign-in service it was built on, an encrypted file vault, and a Cloudflare tunnel to the internet ([`docs/ops/LIVE_ON_PC.md`](docs/ops/LIVE_ON_PC.md)). No Supabase hosting is used. One machine is not high availability: a power or network cut there takes the service down. Production moves to a cloud server in South Africa when the first corporate customer signs ([`docs/architecture/PLAN_AZURE_PRODUCTION.md`](docs/architecture/PLAN_AZURE_PRODUCTION.md)); the code is built to move (standard PostgreSQL, settings per machine, the vault behind one interface).
+
+**How it is looked after**
+- Backups: encrypted dumps and the file vault every night (14 kept), copied off the PC to a second machine; the database's change log archived every minute; a restore drill every Monday.
+- Watching: every minute a monitor checks the public address and the service's health and tells the owner by e-mail and in the owner's console; a daily check e-mails everything else at 06:00. Prometheus keeps 90 days of numbers (speed, errors, queues, disk, memory) shown as Trends in the console, with warnings for slow drift. See [`docs/ops/MONITORING.md`](docs/ops/MONITORING.md) and [`docs/ops/TRENDS_AND_LOAD.md`](docs/ops/TRENDS_AND_LOAD.md).
+- The owner's console (platform figures, alerts, portals, people; never what is inside a company's records) is reachable from the internet behind its own password and an e-mailed code.
+- Releases are built on the PC from a commit, take a backup first, then apply migrations; each is logged with the way back.
+
+**Testing.** About 1,350 server tests against a local database, and 158 browser tests (Playwright) across engines, sizes and light and dark modes, all run on the developer's machine before each release. A load test (k6) runs pretend recruiters against a copy on the same PC; it has passed a first one-person run, and the full crowd run has not been done yet. GitHub Actions does not run at present: the GitHub account's billing must be fixed first.
+
+**Not there yet**, candidly:
+- No malware scanner on uploaded files.
+- Reading has been measured on invented documents and on real ones supplied with permission (30 real CVs, measured repeatedly, and 39 real job descriptions), never independently. OCR has been measured on invented scans only.
+- There is no labelled set of candidates and jobs with known right answers to measure matching against.
+- No privacy notice, terms or cookie page yet; the legal work is planned.
+- The marketing pages (Home, Features, Pricing, Contact) make claims that are not yet proven.
+- Routine updates (Docker, Node.js, the tunnel, the Supabase tool) are held until the owner resumes them.
+
+The wider list: [`docs/product/OPERATING_MODEL.md`](docs/product/OPERATING_MODEL.md) (section 12) and [`docs/architecture/PRODUCTION_READINESS.md`](docs/architecture/PRODUCTION_READINESS.md).
 
 ## Repository map
 
 | Path | What is in it |
 |---|---|
-| [`src/`](src) | The web app (React, Vite, Chakra UI). Holds no secrets and no data of its own; everything comes from `/api`. |
-| [`server/`](server) | The backend (Node.js 24, TypeScript): sign-in, storage, queue, reader, matching, audit. See [`server/README.md`](server/README.md). |
-| [`supabase/migrations/`](supabase/migrations) | The database schema, applied in order with `npm run migrate` (from `server/`). |
-| [`docs/`](docs) | Everything written down: product, architecture, parser, research, security. Start at [`docs/README.md`](docs/README.md). |
+| [`src/`](src) | The website (React, Vite, Chakra UI). Holds no secrets and no data of its own; everything comes from `/api`. |
+| [`server/`](server) | The backend (Node.js 24, TypeScript): sign-in, the file vault, the queue, reading, matching, audit, the owner's console and the monitor. See [`server/README.md`](server/README.md). |
+| [`supabase/`](supabase) | The database schema ([`migrations/`](supabase/migrations), applied in order with `npm run migrate`) and the local stack's settings. The name is the tool's that runs the local stack; see [`supabase/README.md`](supabase/README.md). |
+| [`deploy/`](deploy) | Everything that runs live: release, backup, restore, daily check, Prometheus, the load target. |
+| [`load/`](load) | The load test (k6): one recruiter's journey under several crowd shapes. |
+| [`docs/`](docs) | Everything written down: product, architecture, operations, parser, research, security. Start at [`docs/README.md`](docs/README.md). |
 | [`e2e/`](e2e) | Browser tests (Playwright). |
-| [`sample-documents/`](sample-documents) | Invented CVs and job descriptions used for tests and demos. Real CVs never go in the repository. |
-| [`scripts/`](scripts) | Small build tools (brand assets, the operating-model page). |
+| [`sample-documents/`](sample-documents) | Invented CVs and job descriptions for tests and demos. Real CVs never go in the repository. |
+| [`scripts/`](scripts) | Build and safety tools (brand assets, secret scan, licence check, leftovers check). |
 | [`public/`](public), [`design/`](design) | Static assets and brand files. |
 | [`CLAUDE.md`](CLAUDE.md) | Engineering handoff: how to work in this repository and the non-negotiable product behaviour. |
 
 ## Run it locally
 
-Needs [Node.js](https://nodejs.org) 24 LTS, Docker and the Supabase command-line tool, which runs the database and sign-in service on your machine (setup in `server/README.md`).
+Needs [Node.js](https://nodejs.org) 24 LTS, Docker (Colima on a Mac) and the Supabase command-line tool, which runs PostgreSQL, the sign-in service and storage on your machine. The one-time setup (signing key, which services to start) is in [`server/README.md`](server/README.md), "Testing against a local database".
 
 ```bash
-cd server && npm install        # then create server/.env from .env.example
-npm run migrate                 # apply the database schema
+supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+cd server && npm install            # then create server/.env from .env.example, with the addresses `supabase status` prints
+npm run migrate                     # apply the database schema
 npm run create-user "My Organisation" you@example.com "Your Name" "a-long-password"
 cd .. && npm install && npm run build
-cd server && npm run start      # open http://localhost:8787
+cd server && npm run start          # open http://localhost:8787
 ```
 
-For front-end work: `npm run dev` (with the server running), then open <http://localhost:5173>.
+For website work: `npm run dev` (with the server running), then open <http://localhost:5173>.
 
 ## Checks before every change
 
 ```bash
-npm run typecheck && npm run build && npm test     # front end
-cd server && npm run typecheck && npm test         # back end
+npm run typecheck && npm run build             # website
+cd server && npm run typecheck && npm run test:local   # server, against the local stack
+cd .. && npm run check:leftovers               # no unused files, exports, packages or styles
+bash e2e/run-local.sh                          # browser tests
 ```
 
-Do not commit secrets, original CVs, `server/data/`, private planning documents or generated output. The `.gitignore` already excludes them.
+`npm test` in `server/` refuses to run unless the database is on your machine. Do not commit secrets, original CVs, `server/data/`, private planning documents or generated output; the `.gitignore` already excludes them, and `npm run setup:hooks` adds a secret scan before every commit.
