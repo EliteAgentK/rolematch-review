@@ -16,7 +16,7 @@ Start with the operating model if you want to know **what the platform does**; s
 | [`architecture/AI_PHASE_PLAN.md`](architecture/AI_PHASE_PLAN.md) | The AI phase: agents that work only through our tools, the chosen models per role (licences checked), what is rejected and why, the shared vocabulary, and the order of work. |
 | [`architecture/ML_ARCHITECTURE.md`](architecture/ML_ARCHITECTURE.md) | Where machine learning could plug in, how it stays safe, the worker contract and APIs, phases and the gate before anything goes live. |
 | [`architecture/PRODUCTION_READINESS.md`](architecture/PRODUCTION_READINESS.md) | What must be true before real organisations use it. |
-| [`architecture/RESILIENCE.md`](architecture/RESILIENCE.md) | Staying up when Supabase is down: what is done (sign-in checked on our own server) and the plan. |
+| [`architecture/RESILIENCE.md`](architecture/RESILIENCE.md) | Staying up when the database or sign-in service is down: what is done (sign-in checked on our own server) and the plan. |
 | [`architecture/ADR-003-self-hosting.md`](architecture/ADR-003-self-hosting.md) | Proposed: our own PostgreSQL on two South African servers, with costs and the decisions needed. |
 | [`architecture/MATCHING_MODEL.md`](architecture/MATCHING_MODEL.md) | How a match is scored: the mathematics, its proved properties, the configuration, how it will be validated, and what is not covered yet. |
 | [`architecture/POINTS_CATALOGUE.md`](architecture/POINTS_CATALOGUE.md) | Every criterion the platform judges, only shows, or must never use (102 points in 8 families), each with its evidence, rule and guard against double counting and unfairness. Generated from `server/src/points.ts`. |

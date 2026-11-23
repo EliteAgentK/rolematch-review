@@ -4,12 +4,12 @@ TypeScript on [Node.js](https://nodejs.org) 24 LTS (run with `tsx`). One process
 
 ## Run
 
-Needs a Supabase project (Postgres + Auth + a private Storage bucket named `originals`). Run `supabase/migrations/001_init.sql` once in the Supabase SQL editor; later migrations are applied by `npm run migrate`.
+Needs Docker and the local stack (below, "Testing against a local database"): the Supabase command-line tool runs PostgreSQL, the sign-in service and storage on your own machine. Live uses no Supabase hosting: for now it runs its own PostgreSQL, the same open-source sign-in service and an encrypted file vault on one PC (`docs/ops/LIVE_ON_PC.md`), until production moves to a cloud server in South Africa (`docs/architecture/PLAN_AZURE_PRODUCTION.md`). The schema is applied by `npm run migrate`, here and on live.
 
 ```bash
 cd server
 npm install
-cp .env.example .env          # fill in SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY (secret key) and DATABASE_URL (Session pooler)
+cp .env.example .env          # SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY and DATABASE_URL from `supabase status` (live gives the same names its own services)
 npm run migrate               # applies any new migrations
 npm run create-user "My Organisation" you@example.com "Your Name" "a-long-password-12+"
 npm run start                 # http://localhost:8787  (build the frontend first: from the repo root, npm run build)
@@ -23,7 +23,7 @@ Frontend development with hot reload: `npx vite` in the repo root (port 5173, pr
 
 ## Why many people can use it at once
 
-Nothing in a request waits on a slow task. Uploading returns immediately (`202`); a durable queue (a Postgres table claimed with `FOR UPDATE SKIP LOCKED`, survives restarts) runs the pipeline in the background with a worker limit, a per-organisation limit, a cap on simultaneous AI calls, retries with backoff, and idempotent handlers. `npm run test` runs against the real Supabase project in a throwaway schema with temporary users, and cleans up after itself. It includes a test that uploads 12 documents against an AI that takes 2 s per call: they finish in about 11 s (serial needs 24 s or more) while other requests stay responsive. The 11 s is mostly network time to a database in another region; running the server next to the database removes most of it.
+Nothing in a request waits on a slow task. Uploading returns immediately (`202`); a durable queue (a Postgres table claimed with `FOR UPDATE SKIP LOCKED`, survives restarts) runs the pipeline in the background with a worker limit, a per-organisation limit, a cap on simultaneous AI calls, retries with backoff, and idempotent handlers. `npm run test:local` runs against the local stack in a throwaway schema with temporary users, and cleans up after itself. It includes a test that uploads 12 documents against an AI that takes 2 s per call: they finish in about 11 s (serial needs 24 s or more) while other requests stay responsive. The 11 s is mostly network time to a database in another region; running the server next to the database removes most of it.
 
 Reading documents can run in processes of its own (since 2026-10-27), so heavy OCR never slows the website and each side can be scaled separately:
 
@@ -51,7 +51,7 @@ How the platform works end to end is in `docs/product/OPERATING_MODEL.md`; the r
 |---|---|
 | `npm run typecheck` | Type-checks the whole server. |
 | `npm test` | Runs every test against the database and storage already set in the environment; refused unless both are on this machine (`server/.env` points at live). Use `npm run test:local`. |
-| `npm run test:local` | Runs every test against a local Supabase stack on this machine instead (about 2 minutes instead of 10 to 15; no dependence on the hosted project). Setup below. |
+| `npm run test:local` | Runs every test against the local stack on this machine. Setup below. |
 | `npm run rehearse:outage` | Rehearses a real database outage on the local stack: a live copy, the main database switched off and on, RoleMatch staying readable with saving paused, and returning to normal by itself. Prints the timings. |
 | `npm run copy:refresh` / `npm run copy:watch` | Takes a copy of the main database into the local copy database, once or every `COPY_REFRESH_MINUTES` (5). With `READ_FALLBACK_DATABASE_URL` pointing at it, RoleMatch reads it only while the main database is unreachable. Needs Colima. The copy's address for `READ_FALLBACK_DATABASE_URL` is `postgresql://postgres:postgres@127.0.0.1:54401/postgres` (a local container's default password, not a secret). |
 | `npm run stress` | Generates CVs in many layouts and measures how well each format is read (`stress:show`, `stress:items`, `stress:headings`, `stress:rotate`, `stress:quality` dig into one question). |
@@ -63,8 +63,8 @@ How the platform works end to end is in `docs/product/OPERATING_MODEL.md`; the r
 
 ## Testing against a local database
 
-The hosted dev project is in Ireland and on Supabase's free plan, so the database tests are slow there and fail when Supabase has an outage. A local
-stack runs the same parts (PostgreSQL, sign-in, storage) on this machine. Everything used is free and permissively licensed: Colima (MIT) runs the
+The tests run against a local stack: the same parts as live (PostgreSQL, the sign-in service, storage) on this machine, so they are fast and depend on
+no provider. Everything used is free and permissively licensed: Colima (MIT) runs the
 containers, the Docker command-line tools (Apache-2.0, not Docker Desktop), and the Supabase CLI (MIT).
 
 ```bash
@@ -75,21 +75,21 @@ cd .. && supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-r
 cd server && npm run test:local
 ```
 
-`supabase/config.toml` makes the local stack behave like the hosted project where it matters: tokens signed with an ES256 key (so sign-in is
+`supabase/config.toml` makes the local stack behave like live where it matters: tokens signed with an ES256 key (so sign-in is
 checked locally exactly as in production), e-mail confirmation required, and migrations applied only by RoleMatch's own runner (`test:local` runs it
 first), never by the Supabase tool. `test:local` refuses to run unless every address is on this machine. Stop everything afterwards to free memory:
 `supabase stop && colima stop`. First-time downloads: the four tools (about 115 MB), Colima's Linux image (332 MB) and five Supabase images (about 3.5 GB on disk).
 
 ## Known gaps
 
-Database, login and file storage run on Supabase, but only the dev project has been tested; no malware scanner; OCR (local Tesseract) has only been measured on invented documents and reads scans and photos unreliably; no password reset or MFA; candidate-level status instead of per-application; job requirement approval is a manual status change.
+No malware scanner; OCR (local Tesseract) has only been measured on invented documents and reads scans and photos unreliably; workflow status is per job, with its production gaps in `docs/architecture/PLAN_STATUS_PER_APPLICATION.md`; one machine, no high availability (above).
 
-## The scoring rules
+## How a match is scored
 
-All weights, score bands, confidence rules and the skill dictionary live in `server/src/ruleset.ts` as one frozen, versioned definition. Recruiters and client administrators cannot change it: there is no setting, screen or API route for it. Only RoleMatch developers change it, through a reviewed code change that bumps `version`. Every match result stores the rules version and a fingerprint of the rules plus skill dictionary, so it can be shown later that everyone was scored under identical rules. Tests check that the rules are frozen, that identity details (name, email, phone, photo, rating) never affect a score, and that no API route can modify the rules.
+The AI alone scores a candidate against a job (`src/aiMatch.ts`; `docs/architecture/ADR-006-ai-only-matching.md`: no formula). The rules in `src/ruleset.ts` and `src/match.ts` give it facts only: where the candidate is, dated years of experience, the versions of the records. Code then checks every answer: cited evidence must exist in the document, and a score its own evidence does not support is refused. A pair is matched once; the first finished match is kept as recorded and never run or charged again (`src/recorded.ts`).
 
 ## Sign-up and verification
-`/signup` collects name, organisation, email and a password of 12+ characters, then e-mails a code (Supabase Auth). Nothing is created in RoleMatch until the code is confirmed; confirming creates a new, separate organisation with that person as administrator. Wrong or reused codes fail, resending is limited to once a minute, repeated attempts are rate limited per address and per email, a hidden form field catches bots, and signing up with an address that already has an account looks identical and creates nothing. `X-Forwarded-For` is ignored unless `TRUST_PROXY=true`, so rate limits cannot be dodged by faking an address. The email is branded in code (`server/src/email.ts`) and sent through Resend, so nobody sees a generic Supabase or Resend message; see `supabase/README.md` to set it up.
+`/signup` collects name, organisation, email and a password of 12+ characters, then e-mails a code (the sign-in service makes it; RoleMatch sends its own branded e-mail through its own mail server, `server/src/email.ts`). Nothing is created in RoleMatch until the code is confirmed; confirming creates a new, separate organisation with that person as administrator. Wrong or reused codes fail, resending is limited to once a minute, repeated attempts are rate limited per address and per email, a hidden form field catches bots, and signing up with an address that already has an account looks identical and creates nothing. `X-Forwarded-For` is ignored unless `TRUST_PROXY=true`, so rate limits cannot be dodged by faking an address.
 
-## Keeping Supabase in step
+## Keeping the database in step
 Schema changes are numbered migrations (`npm run migrate`); the server checks on startup that the live database matches the code, `/api/health` reports it, and `npm run schema:check` proves it. Details in `supabase/README.md`.
