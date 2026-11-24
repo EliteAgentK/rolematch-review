@@ -36,16 +36,6 @@ RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job 
 
 **Testing.** About 1,350 server tests against a local database, and 158 browser tests (Playwright) across engines, sizes and light and dark modes, all run on the developer's machine before each release. A load test (k6) ran 10, 25, 50 and then 100 recruiters at once against a copy on the PC (AI off): with 100, pages answered in about 40 ms (slowest 5% about 0.1 s), every CV was read in about 3 s, nothing failed once a connection fault the test found was fixed, and the PC's processors were at most 13% busy ([`docs/ops/TRENDS_AND_LOAD.md`](docs/ops/TRENDS_AND_LOAD.md)). GitHub Actions does not run at present: the GitHub account's billing must be fixed first.
 
-**Not there yet**, candidly:
-- No malware scanner on uploaded files.
-- Reading has been measured on invented documents and on real ones supplied with permission (30 real CVs, measured repeatedly, and 39 real job descriptions), never independently. OCR has been measured on invented scans only.
-- There is no labelled set of candidates and jobs with known right answers to measure matching against.
-- No privacy notice, terms or cookie page yet; the legal work is planned.
-- The marketing pages (Home, Features, Pricing, Contact) make claims that are not yet proven.
-- Routine updates (Docker, Node.js, the tunnel, the Supabase tool) are held until the owner resumes them.
-
-The wider list: [`docs/product/OPERATING_MODEL.md`](docs/product/OPERATING_MODEL.md) (section 12) and [`docs/architecture/PRODUCTION_READINESS.md`](docs/architecture/PRODUCTION_READINESS.md).
-
 ## Repository map
 
 | Path | What is in it |
