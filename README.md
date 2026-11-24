@@ -26,7 +26,7 @@ RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job 
 
 **Companies kept apart.** A company's requests run in the database under a role that sees only that company's rows (row-level security), and tests try every route across two companies. Platform-wide work (the queue, sign-in, rate limits) runs under one login that can see every company; narrowing it is planned, not done.
 
-**Where it runs, for now.** While RoleMatch is in development, everything runs on one PC (Docker under WSL 2): its own PostgreSQL, the open-source sign-in service it was built on, an encrypted file vault, and a Cloudflare tunnel to the internet ([`docs/ops/LIVE_ON_PC.md`](docs/ops/LIVE_ON_PC.md)). No Supabase hosting is used. One machine is not high availability: a power or network cut there takes the service down. Production moves to a cloud server in South Africa when the first corporate customer signs ([`docs/architecture/PLAN_AZURE_PRODUCTION.md`](docs/architecture/PLAN_AZURE_PRODUCTION.md)); the code is built to move (standard PostgreSQL, settings per machine, the vault behind one interface).
+**Where it runs, for now.** While RoleMatch is in development, everything runs on one PC (Docker under WSL 2): its own PostgreSQL, the open-source sign-in service it was built on, an encrypted file vault, and a Cloudflare tunnel to the internet ([`docs/ops/LIVE_ON_PC.md`](docs/ops/LIVE_ON_PC.md)). One machine is not high availability: a power or network cut there takes the service down. Production moves to a cloud server in South Africa when the first corporate customer signs ([`docs/architecture/PLAN_AZURE_PRODUCTION.md`](docs/architecture/PLAN_AZURE_PRODUCTION.md)); the code is built to move (standard PostgreSQL, settings per machine, the vault behind one interface).
 
 **How it is looked after**
 - Backups: encrypted dumps and the file vault every night (14 kept), copied off the PC to a second machine; the database's change log archived every minute; a restore drill every Monday.
@@ -42,7 +42,7 @@ RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job 
 |---|---|
 | [`src/`](src) | The website (React, Vite, Chakra UI). Holds no secrets and no data of its own; everything comes from `/api`. |
 | [`server/`](server) | The backend (Node.js 24, TypeScript): sign-in, the file vault, the queue, reading, matching, audit, the owner's console and the monitor. See [`server/README.md`](server/README.md). |
-| [`supabase/`](supabase) | The database schema ([`migrations/`](supabase/migrations), applied in order with `npm run migrate`) and the local stack's settings. The name is the tool's that runs the local stack; see [`supabase/README.md`](supabase/README.md). |
+| [`supabase/`](supabase) | The database schema ([`migrations/`](supabase/migrations), applied in order with `npm run migrate`) and the settings of the database on your own machine. |
 | [`deploy/`](deploy) | Everything that runs live: release, backup, restore, daily check, Prometheus, the load target. |
 | [`load/`](load) | The load test (k6): one recruiter's journey under several crowd shapes. |
 | [`docs/`](docs) | Everything written down: product, architecture, operations, parser, research, security. Start at [`docs/README.md`](docs/README.md). |
@@ -54,18 +54,13 @@ RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job 
 
 ## Run it locally
 
-Needs [Node.js](https://nodejs.org) 24 LTS, Docker (Colima on a Mac) and the Supabase command-line tool, which runs PostgreSQL, the sign-in service and storage on your machine. The one-time setup (signing key, which services to start) is in [`server/README.md`](server/README.md), "Testing against a local database".
+Needs [Node.js](https://nodejs.org) 24 and Docker. Then one command:
 
 ```bash
-supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
-cd server && npm install            # then create server/.env from .env.example, with the addresses `supabase status` prints
-npm run migrate                     # apply the database schema
-npm run create-user "My Organisation" you@example.com "Your Name" "a-long-password"
-cd .. && npm install && npm run build
-cd server && npm run start          # open http://localhost:8787
+npm run local
 ```
 
-For website work: `npm run dev` (with the server running), then open <http://localhost:5173>.
+It starts the database, sign-in service and storage on your machine, applies the schema, builds the website and opens the server at <http://localhost:8787>, where you sign up. The AI is off there. What it does is in [`scripts/local.sh`](scripts/local.sh).
 
 ## Checks before every change
 
