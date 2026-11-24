@@ -6,7 +6,7 @@ RoleMatch is a multi-tenant recruitment platform. Recruiters upload CVs and job 
 
 ## Where things stand (23 November 2026)
 
-**In development, live for testing, not yet a production system.** It runs at https://app.rolematch.co.za for the owner and invited testers; no paying customer uses it yet.
+**In development, live for testing, not yet a production system.** It runs at https://app.rolematch.co.za.
 
 **What a recruiter can do today**
 - Sign up (an e-mailed code confirms the address), sign in with a password or a passkey, reset a forgotten password. Sessions last 8 hours.
