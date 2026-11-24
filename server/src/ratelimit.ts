@@ -64,7 +64,7 @@ const defaults = {
   // sign-in: failures are counted three ways, so guessing one account from many addresses, or many accounts from one address, both hit a wall
   login_pair: { ...AUTH_ATTEMPTS, shared: true },                 // one address trying one account
   login_email: { ...AUTH_ATTEMPTS, shared: true },                // any addresses trying one account (was 10 until 2026-11-02)
-  login_ip: { limit: 30, windowMs: 15 * MIN, shared: true },      // one address trying any accounts
+  login_ip: { limit: 30, windowMs: 15 * MIN, shared: true },      // one address trying any accounts: wrong passwords only, so an office signs in at once (guess sender)
   // sign-up and e-mail: these cost real e-mails and must not be usable to flood someone's inbox
   signup_ip: { limit: 5, windowMs: 60 * MIN, shared: true },
   signup_email: { limit: 3, windowMs: 30 * MIN, shared: true },
@@ -73,7 +73,7 @@ const defaults = {
   reset_ip: { limit: 10, windowMs: 60 * MIN, shared: true },
   // checking an e-mailed code: failures only
   verify_email: { ...AUTH_ATTEMPTS, shared: true },               // wrong codes for one address (was 8 until 2026-11-02)
-  verify_ip: { limit: 30, windowMs: 15 * MIN, shared: true },
+  verify_ip: { limit: 30, windowMs: 15 * MIN, shared: true },     // wrong codes only, per sender (guess sender)
   // opening an invitation link that is unknown, used, revoked or expired: failures only, per sender (a valid link is never counted)
   invite_lookup_ip: { ...AUTH_ATTEMPTS, shared: true },
   // accepting an invitation while signed in: failures per person, never per address (an office shares one address, and one colleague's expired links
@@ -204,15 +204,22 @@ export const blockedFor = async (tier: Tier, key: string) => { const v = await r
 export const limitOf = (tier: Tier, people = 0) => { const r = rule(tier, people); return { limit: r.limit, windowMs: r.windowMs, shared: r.shared }; };
 /** "Try again in 12 minutes": what a refused person is told, from the real time left. */
 export const waitText = (sec: number) => sec < 90 ? "about a minute" : `${Math.ceil(sec / 60)} minutes`;
-/** For failure-counting tiers: record one failure. Not for guesses at a secret (a password, an emailed code): those are counted before they are checked, by guess(). */
+/** For failure-counting tiers: record one failure. Not for guesses at a secret (a password, an emailed code): those are counted before they are checked, by guess(),
+ *  which records a sender's failures itself (wrong()). */
 export const recordFailure = async (tier: Tier, key: string) => { await run(tier, key, true); };
 /** A guess at a secret a person could find by trying (a password, an emailed code), under each of `keys`: `wait` is 0 when it may be checked, otherwise
  *  the seconds until it may. The guess is counted BEFORE it is checked, under each key's per-key lock, so however many arrive together no more than the
  *  limit are ever checked (independent security review, 23 Nov 2026: checking the count first and recording a failure after let a burst of simultaneous
  *  guesses all pass before any was counted, some 64 a server instead of 5). A wrong guess stays counted; `right()` takes back a right one, so people who
- *  sign in correctly never use up their attempts. A refused guess counts nothing. */
-export interface Guess { wait: number; right(): Promise<void> }
-export async function guess(keys: readonly (readonly [Tier, string])[]): Promise<Guess> {
+ *  sign in correctly never use up their attempts. A refused guess counts nothing.
+ *  `sender` (the address the guess comes from) is checked first but counted only when the caller says the guess was wrong (`wrong()`): an office of any
+ *  size behind one address may sign in all at the same moment (owner, 23 Nov 2026: "it shouldn't be a cap"; the first load test refused 10 of 50 who did),
+ *  and the address is still stopped after its limit of wrong answers. A burst of wrong ones can pass that limit by at most the requests one server has in
+ *  hand at once; the secret itself (`keys`) cannot be passed at all. */
+export interface Guess { wait: number; right(): Promise<void>; wrong(): Promise<void> }
+export async function guess(keys: readonly (readonly [Tier, string])[], sender?: readonly [Tier, string]): Promise<Guess> {
+  const held = sender ? await blockedFor(sender[0], sender[1]) : 0;
+  if (held) return { wait: held, right: async () => {}, wrong: async () => {} };
   const taken: { tier: Tier; key: string; at: number }[] = [];
   let wait = 0;
   for (const [tier, key] of keys) {
@@ -220,8 +227,8 @@ export async function guess(keys: readonly (readonly [Tier, string])[]): Promise
     if (v.allowed) taken.push({ tier, key, at }); else wait = Math.max(wait, v.retryAfterSec);
   }
   const takeBack = async () => { for (const t of taken.splice(0)) await uncount(t.tier, t.key, t.at); };
-  if (wait) { await takeBack(); return { wait, right: async () => {} }; }
-  return { wait: 0, right: takeBack };
+  if (wait) { await takeBack(); return { wait, right: async () => {}, wrong: async () => {} }; }
+  return { wait: 0, right: takeBack, wrong: async () => { if (sender) await recordFailure(sender[0], sender[1]); } };
 }
 /** Takes back one counted use of `tier` for `key`, the one counted at `at`. */
 async function uncount(tier: Tier, key: string, at: number) {

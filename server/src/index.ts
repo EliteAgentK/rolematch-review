@@ -309,7 +309,7 @@ async function handleApi(req: Request, url: URL, requestId: string, socketIp: st
     const g = await loginGuess(ip, email);
     if (g.wait) return fail(429, "RATE-001", `Too many failed sign-in attempts. Try again in ${waitText(g.wait)}.`, requestId, { "retry-after": String(g.wait) });
     const result = await login(email, password, ip).catch(async (e) => { await g.right(); throw e; });   // unconfirmed, or the service failed: not a wrong password
-    if (!result) return fail(401, "AUTH-001", "Email or password is incorrect.", requestId);
+    if (!result) { await g.wrong(); return fail(401, "AUTH-001", "Email or password is incorrect.", requestId); }
     await g.right();
     return withCookies(json({ user: result.session, session: result.window }), result.cookies);
   });
@@ -428,7 +428,7 @@ async function handleApi(req: Request, url: URL, requestId: string, socketIp: st
     const g = await loginGuess(ip, session.email);
     if (g.wait) return fail(429, "RATE-001", `Too many failed sign-in attempts. Try again in ${waitText(g.wait)}.`, requestId, { "retry-after": String(g.wait) });
     const done = await reauthenticate(req, session, String(((await req.json().catch(() => ({}))) as any).password ?? ""), ip).catch(async (e) => { await g.right(); throw e; });
-    if (!done) return fail(401, "AUTH-001", "That password is not correct.", requestId);
+    if (!done) { await g.wrong(); return fail(401, "AUTH-001", "That password is not correct.", requestId); }
     await g.right();
     return withCookies(json({ session: done.window }), done.cookies);
   }
@@ -993,7 +993,8 @@ async function respond(req: Request, ip: string): Promise<Response> {
       let res: Response;
       if (url.pathname.startsWith("/api/")) {
         // Experiment X6: beyond what can be finished, say so at once. Otherwise everything times out, and the backlog outlives the people who asked (register R113).
-        if (inHand >= config.maxInFlight && !NEVER_REFUSED.test(url.pathname)) res = fail(503, "SVC-BUSY", "RoleMatch is very busy right now. Please try again in a few seconds.", requestId, { "retry-after": "5" });
+        // Refused at the door, before anything is done: the header tells the website so, and it tries again by itself (src/api/client.ts).
+        if (inHand >= config.maxInFlight && !NEVER_REFUSED.test(url.pathname)) res = fail(503, "SVC-BUSY", "RoleMatch is very busy right now. Please try again in a few seconds.", requestId, { "retry-after": "5", "x-rolematch-not-started": "1" });
         else { inHand++; try { res = await asVisitor(visitor, () => handleApi(req, url, requestId, ip)); } finally { inHand--; } }
       } else {
         const v = await consume("static", visitor); // the app's own files are cheap, but not free: one visitor cannot hammer them

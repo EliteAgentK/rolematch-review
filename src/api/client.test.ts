@@ -12,7 +12,8 @@ beforeAll(async () => {
   vi.stubGlobal("BroadcastChannel", undefined);   // other tabs are not part of these tests
   vi.stubGlobal("fetch", async (url: string, init: RequestInit = {}) => {
     asked.push(`${init.method ?? "GET"} ${url}`);
-    return new Response(JSON.stringify(reply(url, init)), { status: 200, headers: { "content-type": "application/json" } });
+    const r = reply(url, init);
+    return r instanceof Response ? r : new Response(JSON.stringify(r), { status: 200, headers: { "content-type": "application/json" } });
   });
   client = await import("./client");
 });
@@ -57,5 +58,38 @@ describe("a list longer than the client reads", () => {
     const list = await client.api.jobs(true);
     expect(list.length).toBe(1);
     expect(client.listCapped(list)).toBeNull();
+  });
+});
+
+// Owner, 23 Nov 2026 ("it shouldn't be a cap"): a server too busy to take a request says so before doing anything, and the website asks again by itself
+// after the wait the server gives, so the person sees a short wait, not an error. Only that answer is retried; any other failure is shown at once.
+describe("a busy server is asked again, quietly", () => {
+  const busy = (notStarted = true) => new Response(JSON.stringify({ error: { code: "SVC-BUSY", message: "RoleMatch is very busy right now. Please try again in a few seconds." } }),
+    { status: 503, headers: { "content-type": "application/json", "retry-after": "5", ...(notStarted ? { "x-rolematch-not-started": "1" } : {}) } });
+  it("refused at the door twice, then answered: the person gets the answer", async () => {
+    vi.useFakeTimers({ toFake: ["setTimeout"] });
+    try {
+      let n = 0;
+      reply = () => (++n <= 2 ? busy() : { user: { email: "a@b.co" }, session: null });
+      const p = client.api.login("a@b.co", "pw");
+      await vi.advanceTimersByTimeAsync(10_000);
+      await expect(p).resolves.toMatchObject({ user: { email: "a@b.co" } });
+      expect(asked).toEqual(["POST /api/auth/login", "POST /api/auth/login", "POST /api/auth/login"]);
+    } finally { vi.useRealTimers(); }
+  });
+  it("still busy after four tries: the busy answer is shown", async () => {
+    vi.useFakeTimers({ toFake: ["setTimeout"] });
+    try {
+      reply = () => busy();
+      const p = client.api.login("a@b.co", "pw").catch((e) => e);
+      await vi.advanceTimersByTimeAsync(30_000);
+      expect(await p).toMatchObject({ status: 503, code: "SVC-BUSY" });
+      expect(asked).toHaveLength(4);
+    } finally { vi.useRealTimers(); }
+  });
+  it("a busy answer from a request already under way is not repeated", async () => {
+    reply = () => busy(false);
+    await expect(client.api.login("a@b.co", "pw")).rejects.toMatchObject({ status: 503 });
+    expect(asked).toHaveLength(1);
   });
 });

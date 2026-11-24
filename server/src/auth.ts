@@ -151,9 +151,9 @@ async function completeOnboarding(t: AuthTokens): Promise<Session | null> {
 export async function finishSignup(email: string, code: string, ip: string): Promise<{ cookies: string[]; window: SessionWindow; session: Session } | null> {
   email = String(email ?? "").trim().toLowerCase(); code = String(code ?? "").trim();
   // too many wrong codes for this address or from this sender: say so, with the real wait, rather than "incorrect" (which invites another guess)
-  const g = await guess([["verify_email", email], ["verify_ip", ip]]);   // counted now; taken back only if the code proves right
+  const g = await guess([["verify_email", email]], ["verify_ip", ip]);   // the address's code counted now, taken back only if it proves right; the sender only if wrong
   if (g.wait) throw new SignupError(429, "RATE-001", `Too many incorrect codes. Try again in ${waitText(g.wait)}.`, g.wait);
-  if (!/^\d{6,10}$/.test(code)) return null;
+  if (!/^\d{6,10}$/.test(code)) { await g.wrong(); return null; }
   // The 15-minute lifetime is ours to enforce, and it is judged on THIS code's own issue time (not on the latest code for the address), BEFORE the provider is asked: once the provider
   // accepts a code the account is confirmed, so refusing afterwards would leave a confirmed person with no organisation. A code we did not issue, one that has been replaced by a
   // newer code, or one already used is refused here without asking the provider.
@@ -171,10 +171,10 @@ export async function finishSignup(email: string, code: string, ip: string): Pro
     return { outcome: "claimed" as const, id: ch.id as string };
   });
   if (claim.outcome === "spent") { await g.right(); return null; }   // the right code again: not a guess
-  if (claim.outcome === "refused") return null;
+  if (claim.outcome === "refused") { await g.wrong(); return null; }
   const release = () => sql`update signup_challenges set consumed_at = null where id = ${claim.id}`;
   const tokens = await verifySignupCode(email, code).catch(async (e) => { await release(); await g.right(); throw e; });   // the provider failed: not a wrong guess
-  if (!tokens) { await release(); return null; }
+  if (!tokens) { await release(); await g.wrong(); return null; }
   await g.right();
   await clear("verify_email", email);
   // The address is now confirmed at the provider and the code is spent. Creating the organisation / joining the portal is all-or-nothing; if it fails, nothing is half-done and the person
@@ -257,9 +257,9 @@ export async function finishPasswordReset(email: string, code: string, password:
   email = String(email ?? "").trim().toLowerCase(); code = String(code ?? "").trim(); password = String(password ?? "");
   if (password.length < 12) throw new SignupError(400, "VAL-001", "Your password must be at least 12 characters.");
   if (password.length > 128) throw new SignupError(400, "VAL-001", "Your password is too long.");
-  const g = await guess([["verify_email", email], ["verify_ip", ip]]);   // counted now; taken back only if the code proves right
+  const g = await guess([["verify_email", email]], ["verify_ip", ip]);   // the address's code counted now, taken back only if it proves right; the sender only if wrong
   if (g.wait) throw new SignupError(429, "RATE-001", `Too many incorrect codes. Try again in ${waitText(g.wait)}.`, g.wait);
-  if (!/^\d{6,10}$/.test(code)) return false;
+  if (!/^\d{6,10}$/.test(code)) { await g.wrong(); return false; }
   const claim = await sql.begin(async (tx) => {
     await tx`select pg_advisory_xact_lock(hashtext(${"reset:" + email}))`;
     const ch = (await tx`select id, superseded_at, consumed_at, issued_at < now() - (${config.otpExpiryMinutes} * interval '1 minute') as expired from password_resets where email = ${email} and code_hash = ${challengeHash(email, code)}`)[0];
@@ -269,10 +269,10 @@ export async function finishPasswordReset(email: string, code: string, password:
     return { outcome: "claimed" as const, id: ch.id as string };
   });
   if (claim.outcome === "spent") { await g.right(); return false; }   // the right code again: not a guess
-  if (claim.outcome === "refused") return false;
+  if (claim.outcome === "refused") { await g.wrong(); return false; }
   const existing = await sessionsOf(email);
   const tokens = await verifyRecoveryCode(email, code).catch(() => null);
-  if (!tokens) { await sql`update password_resets set consumed_at = null where id = ${claim.id}`; return false; }
+  if (!tokens) { await sql`update password_resets set consumed_at = null where id = ${claim.id}`; await g.wrong(); return false; }
   await g.right();
   if (!(await setUserPassword(tokens.userId, password))) { await signOutOnly(tokens.accessToken); throw new SignupError(400, "VAL-001", "That password cannot be used. Ask for a new code and choose another."); }
   await endSessions(existing);
@@ -283,12 +283,13 @@ export async function finishPasswordReset(email: string, code: string, password:
   return true;
 }
 
-// Failed sign-ins are counted three ways, on top of Supabase's own limits, without revealing which e-mails exist:
+// Failed sign-ins are counted three ways, on top of the sign-in service's own limits, without revealing which e-mails exist:
 //   one address on one account, any addresses on one account (a spread-out guesser), one address on any accounts (credential stuffing).
-const loginKeys = (ip: string, email: string) => [["login_pair", `${ip}|${email.toLowerCase()}`], ["login_email", email.toLowerCase()], ["login_ip", ip]] as const;
-/** A sign-in's password, as a guess counted three ways before it is checked (ratelimit.ts guess): `wait` is 0 when it may be tried. The caller takes it
- *  back with right() when the password proves right, and when the attempt failed for any reason other than a wrong password. */
-export const loginGuess = (ip: string, email: string): Promise<Guess> => guess(loginKeys(ip, email));
+// The first two are counted before the password is checked; the third, the sender, only when it proves wrong (ratelimit.ts guess), so a whole office can
+// sign in at the same moment.
+/** A sign-in's password as a guess (ratelimit.ts guess): `wait` is 0 when it may be tried. The caller takes it back with right() when the password
+ *  proves right, and when the attempt failed for any reason other than a wrong password; it calls wrong() when the password is wrong. */
+export const loginGuess = (ip: string, email: string): Promise<Guess> => guess([["login_pair", `${ip}|${email.toLowerCase()}`], ["login_email", email.toLowerCase()]], ["login_ip", ip]);
 
 // ---------------------------------------------------------------- how long a sign-in lasts
 // Eight hours from signing in, for everyone: a working day (owner, 16 Nov 2026). It is the platform's rule, not an organisation's setting (a test

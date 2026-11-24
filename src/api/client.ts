@@ -25,6 +25,10 @@ async function request<T>(path: string, init: RequestInit & { timeoutMs?: number
   const isForm = init.body instanceof FormData;
   const { timeoutMs, quiet, ...rest } = init;
   let res: Response;
+  // A server too busy to take the request says so before doing anything (x-rolematch-not-started), so asking again is always safe: the person waits a
+  // few seconds instead of seeing an error (owner, 23 Nov 2026, after the load test: "it shouldn't be a cap"). Each wait is the server's own, spread a
+  // little so a crowd does not come back all at once; after four tries the busy answer is shown as before.
+  for (let attempt = 1; ; attempt++) {
   try { res = await fetch(`/api${path}`, {
     credentials: "same-origin",
     ...(timeoutMs ? { signal: AbortSignal.timeout(timeoutMs) } : {}),
@@ -33,6 +37,10 @@ async function request<T>(path: string, init: RequestInit & { timeoutMs?: number
   }); } catch (e: any) {
     if (timeoutMs && (e?.name === "TimeoutError" || e?.name === "AbortError")) throw new ApiError(0, "TIMEOUT", "This is taking longer than usual. Nothing is lost, and what you asked for may still happen: wait a minute and check before asking again.");
     throw e;
+  }
+  if (res.status !== 503 || res.headers.get("x-rolematch-not-started") !== "1" || attempt >= 4) break;
+  const waitSec = Number(res.headers.get("retry-after")) || 5;
+  await new Promise((r) => setTimeout(r, waitSec * 1000 * (0.5 + Math.random() * 0.5)));
   }
   // A change saved here tells an Overview open in this browser at once, so it shows the new figures without waiting for its next check (owner, 10 Nov 2026:
   // "if I do something in the matching board ... it should immediately reflect that side"). Only that a change happened, never what it was.

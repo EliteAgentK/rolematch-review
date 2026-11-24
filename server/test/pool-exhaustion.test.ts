@@ -28,4 +28,5 @@ test("a refusal says when to try again", async () => {
   const rs = await Promise.all(Array.from({ length: 60 }, (_, i) => u.req(`/api/candidates?q=word${i}`)));   // searches: the board page is shared now, so it no longer fills the server
   const refused = rs.find((r) => r.status === 503);
   expect(refused?.headers.get("retry-after")).toBe("5");
+  expect(refused?.headers.get("x-rolematch-not-started")).toBe("1");   // refused before anything was done, so the website asks again by itself (src/api/client.ts)
 }, 60000);
